@@ -1,0 +1,65 @@
+version: 2
+jobs:
+  test:
+    working_directory: ~/mern-starter
+    docker:
+      - image: circleci/node:8.10
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Instal dependencies
+          command: yarn install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run linter
+          command: yarn lint
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          name: Run tests
+          command: |
+            ./cc-test-reporter before-build
+            yarn test --ci --coverage --maxWorkers=2
+            ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
+  deploy_production:
+    working_directory: ~/mern-starter
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run:
+        command: |
+          echo "Deploy master"
+          yarn run build
+          ./node_modules/netlify-cli/bin/cli.js deploy \
+            --site-id ${NETLIFY_PROD_APP} \
+            -p build/ \
+            --access-token ${NETLIFY_TOKEN}
+
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - test:
+          context: org-global
+          filters:
+            tags:
+              ignore: /.*/
+
+      - deploy_production:
+          context: org-global
+          filters:
+            tags:
+              only: /v[0-9]+/
+            branches:
+              ignore: /.*/
+          requires:
+            - test
