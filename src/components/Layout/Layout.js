@@ -58,7 +58,7 @@ export default withStyles(styles)(
         </Typography>
         <div className={classes.caption}>{caption}</div>
         <div className={classes.children}>{children}</div>
-        <Typography align="center">Footer</Typography>
+        <Typography align="center" />
       </div>
     </div>
   ),
