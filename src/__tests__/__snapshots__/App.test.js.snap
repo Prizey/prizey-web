@@ -53,9 +53,7 @@ exports[`renders correctly 1`] = `
       </div>
       <p
         className="MuiTypography-root-6 MuiTypography-body2-14 MuiTypography-alignCenter-29"
-      >
-        Footer
-      </p>
+      />
     </div>
   </div>
 </div>
