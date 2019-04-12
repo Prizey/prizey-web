@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import useInterval from 'hooks/useInterval'
+import useInterval from '@use-it/interval'
 import posed from 'react-pose'
 
 const styles = () => ({

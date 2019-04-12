@@ -10,9 +10,9 @@ import { Typography } from '@material-ui/core'
  *  children
  */
 
-const styles = () => ({
+const styles = theme => ({
   caption: {
-    height: '80px',
+    height: theme.spacing.lg,
   },
   children: {
     flexGrow: 1,
@@ -23,12 +23,15 @@ const styles = () => ({
     flexDirection: 'column',
     flexGrow: 1,
     maxWidth: '375px',
-    padding: '30px 20px',
+    padding: `${theme.spacing.md} ${theme.spacing.sm}`,
     width: '100%',
   },
   header: {
-    height: '50px',
-    padding: '8px 15px',
+    height: `${parseInt(theme.spacing.md, 10) * 2}px`,
+    padding: [
+      `${parseInt(theme.spacing.xs, 10) / 2}px`,
+      `${parseInt(theme.spacing.md, 10) / 2}px`,
+    ].join(' '),
     width: '100%',
   },
   root: {

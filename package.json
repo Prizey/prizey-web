@@ -6,6 +6,7 @@
     "@material-ui/core": "^3.3.2",
     "@material-ui/icons": "^3.0.1",
     "@reach/router": "^1.2.1",
+    "@use-it/interval": "^0.1.2",
     "croods": "^0.10.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -15,7 +16,8 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.5",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "seasoned-components": "^0.1.0"
   },
   "scripts": {
     "lint": "node_modules/.bin/eslint --max-warnings 0 .",
