@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
+import { createReducer } from 'croods'
 
 const reducers = {
-  dumb: (state = {}) => state,
+  products: createReducer('products'),
 }
 
 const rootReducer = combineReducers(reducers)

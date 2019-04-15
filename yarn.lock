@@ -2156,9 +2156,10 @@ check-types@^7.3.0:
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-7.4.0.tgz#0378ec1b9616ec71f774931a3c6516fad8c152f4"
 
-chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.1.0:
+chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.5.tgz#0ae8434d962281a5f56c72869e79cb6d9d86ad4d"
+  integrity sha512-i0TprVWp+Kj4WRPtInjexJ8Q+BqTE909VpH8xVhXrJkoc5QC8VO9TryGOqTr+2hljzc1sC62t22h5tZePodM/A==
   dependencies:
     anymatch "^2.0.0"
     async-each "^1.0.1"
@@ -2553,13 +2554,14 @@ create-react-context@^0.2.1:
     fbjs "^0.8.0"
     gud "^1.0.0"
 
-croods@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/croods/-/croods-0.10.1.tgz#3d33ae60e81bf14b583ed07e3ad73fff0154e011"
+croods@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/croods/-/croods-0.13.1.tgz#22551442b58c53c3fdd899f735dfadef3666ebf6"
+  integrity sha512-yqQb+bLeLLmaZmTNV5Lnx+sFJI7PTj84dNzDl8KJB128C8mh9q+Bhaf2dZvgk7h48JYKwKf1926pX20i9ma89Q==
   dependencies:
     lodash "^4.17.10"
     lodash-humps "^3.1.2"
-    nodemon "^1.17.5"
+    nodemon "^1.18.7"
 
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
@@ -6441,11 +6443,12 @@ node-releases@^1.0.0-alpha.11, node-releases@^1.1.13:
   dependencies:
     semver "^5.3.0"
 
-nodemon@^1.17.5:
-  version "1.18.10"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.10.tgz#3ba63f64eb4c283cf3e4f75f30817e9d4f393afe"
+nodemon@^1.18.7:
+  version "1.18.11"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.11.tgz#d836ab663776e7995570b963da5bfc807e53f6b8"
+  integrity sha512-KdN3tm1zkarlqNo4+W9raU3ihM4H15MVMSE/f9rYDZmFgDHAfAJsomYrHhApAkuUemYjFyEeXlpCOQ2v5gtBEw==
   dependencies:
-    chokidar "^2.1.0"
+    chokidar "^2.1.5"
     debug "^3.1.0"
     ignore-by-default "^1.0.1"
     minimatch "^3.0.4"
