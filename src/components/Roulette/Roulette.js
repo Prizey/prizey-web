@@ -43,11 +43,11 @@ export default withStyles(styles)(({ classes, speed, onSelectItem, data }) => {
     <div className={classes.root}>
       {data.map((item, id) => (
         <PosedImg
-          key={id}
+          key={`${item.id}-${id}`}
           onClick={() => onSelectItem(item)}
           pose={next === id ? 'enter' : 'leave'}
-          src={item}
-          alt="unsplash"
+          src={item.image}
+          alt={item.title}
           className={classes.img}
         />
       ))}

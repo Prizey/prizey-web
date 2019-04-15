@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Component-root-5"
+>
+  <div
+    className="Component-header-4"
+  />
+  <div
+    className="Component-container-3"
+  >
+    <h2
+      className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
+    >
+      PRIZEY
+    </h2>
+    <div
+      className="Component-caption-1"
+    />
+    <div
+      className="Component-children-2"
+    />
+    <p
+      className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+    />
+  </div>
+</div>
+`;

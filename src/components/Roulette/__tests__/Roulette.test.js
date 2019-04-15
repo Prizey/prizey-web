@@ -5,9 +5,9 @@ import Roulette from '../Roulette'
 jest.useFakeTimers()
 
 const mockList = [
-  '/mocks/trump-mask.png',
-  '/mocks/sweatshirt.png',
-  '/mocks/shoe.png',
+  { id: 1, image: '/mocks/trump-mask.png', title: 'trump' },
+  { id: 2, image: '/mocks/sweatshirt.png', title: 'sweatshirt' },
+  { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
 ]
 
 it('renders correctly', () => {
@@ -34,5 +34,7 @@ it('go to the next image', () => {
   act(() => {
     jest.runOnlyPendingTimers()
   })
-  expect(tree.findByProps({ pose: 'enter' }).props.src).toEqual(mockList[0])
+  expect(tree.findByProps({ pose: 'enter' }).props.src).toEqual(
+    mockList[0].image,
+  )
 })

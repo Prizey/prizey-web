@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  name="products"
+  path="/products/easy"
+  render={[Function]}
+>
+   - Render:
+   
+  <div
+    className="Component-root-5"
+  >
+    <div
+      className="Component-header-4"
+    />
+    <div
+      className="Component-container-3"
+    >
+      <h2
+        className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
+      >
+        PRIZEY
+      </h2>
+      <div
+        className="Component-caption-1"
+      />
+      <div
+        className="Component-children-2"
+      >
+        <div
+          className="Component-root-43"
+        >
+          <img
+            alt="trump"
+            className="Component-img-42"
+            onClick={[Function]}
+            pose="enter"
+            src="/mocks/trump-mask.png"
+          />
+          <img
+            alt="sweatshirt"
+            className="Component-img-42"
+            onClick={[Function]}
+            pose="leave"
+            src="/mocks/sweatshirt.png"
+          />
+          <img
+            alt="shoe"
+            className="Component-img-42"
+            onClick={[Function]}
+            pose="leave"
+            src="/mocks/shoe.png"
+          />
+        </div>
+      </div>
+      <p
+        className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+      />
+    </div>
+  </div>
+</div>
+`;
