@@ -6,6 +6,11 @@ export const colors = {
 
 const theme = createMuiTheme({
   palette: {
+    difficulty: {
+      easy: '#76ff03',
+      hard: '#ff1744',
+      medium: '#ffff00',
+    },
     text: {
       primary: colors.white,
     },
@@ -24,6 +29,9 @@ const theme = createMuiTheme({
       fontSize: '2.2rem',
       fontWeight: 'bold',
       letterSpacing: '0.52px',
+    },
+    subtitle1: {
+      letterSpacing: '0.25px',
     },
     useNextVariants: true,
   },

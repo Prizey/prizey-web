@@ -13,6 +13,7 @@ import { Typography } from '@material-ui/core'
 const styles = theme => ({
   caption: {
     height: theme.spacing.lg,
+    marginTop: theme.spacing.xs,
   },
   children: {
     flexGrow: 1,
