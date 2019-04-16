@@ -22,12 +22,21 @@ const styles = theme => ({
     width: theme.spacing.sm,
   },
   root_easy: {
+    '&:hover': {
+      background: get(theme.palette, 'difficulty.easy'),
+    },
     background: get(theme.palette, 'difficulty.easy'),
   },
   root_hard: {
+    '&:hover': {
+      background: get(theme.palette, 'difficulty.hard'),
+    },
     background: get(theme.palette, 'difficulty.hard'),
   },
   root_medium: {
+    '&:hover': {
+      background: get(theme.palette, 'difficulty.medium'),
+    },
     background: get(theme.palette, 'difficulty.medium'),
   },
 })
