@@ -1,8 +1,10 @@
 import React from 'react'
+import { List } from 'croods'
 import get from 'lodash/get'
 import { Link } from '@reach/router'
 import { withStyles } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
+import CircularProgress from '@material-ui/core/CircularProgress'
 
 const styles = theme => ({
   icon: {
@@ -42,7 +44,7 @@ const styles = theme => ({
 })
 
 export default withStyles(styles)(
-  ({ classes, productImage, label, difficulty, to, quantity }) => (
+  ({ classes, label, difficulty, to, quantity }) => (
     <Button
       variant="contained"
       color="primary"
@@ -50,7 +52,18 @@ export default withStyles(styles)(
       className={classes[`root_${difficulty}`]}
       component={props => <Link to={to} {...props} />}
     >
-      <img src={productImage} alt="product" className={classes.product} />
+      <List
+        name="products"
+        path={`/products/${difficulty}`}
+        renderLoading={() => <CircularProgress color="inherit" size={25} />}
+        render={list => {
+          const productImage = list[0].image
+          return (
+            <img src={productImage} alt="product" className={classes.product} />
+          )
+        }}
+      />
+
       <span className={classes.label}>{label}</span>
       <img src="/icons/diamond.png" alt="diamond" className={classes.icon} />
       <span className={classes.quantity}>{quantity}</span>

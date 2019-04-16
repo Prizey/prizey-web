@@ -50,11 +50,45 @@ exports[`renders correctly 1`] = `
           <span
             className="MuiButton-label-51"
           >
-            <img
-              alt="product"
-              className="Component-product-45"
-              src="/mocks/trump-mask.png"
-            />
+            <div
+              name="products"
+              path="/products/easy"
+              render={[Function]}
+              renderLoading={[Function]}
+            >
+               - Render: 
+              <img
+                alt="product"
+                className="Component-product-45"
+                src="/mocks/trump-mask.png"
+              />
+              RenderLoading: 
+              <div
+                className="MuiCircularProgress-root-79 MuiCircularProgress-indeterminate-81"
+                role="progressbar"
+                style={
+                  Object {
+                    "height": 25,
+                    "width": 25,
+                  }
+                }
+              >
+                <svg
+                  className="MuiCircularProgress-svg-84"
+                  viewBox="22 22 44 44"
+                >
+                  <circle
+                    className="MuiCircularProgress-circle-85 MuiCircularProgress-circleIndeterminate-87"
+                    cx={44}
+                    cy={44}
+                    fill="none"
+                    r={20.2}
+                    strokeWidth={3.6}
+                    style={Object {}}
+                  />
+                </svg>
+              </div>
+            </div>
             <span
               className="Component-label-44"
             >
@@ -72,7 +106,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="MuiTouchRipple-root-79"
+            className="MuiTouchRipple-root-89"
           />
         </a>
         <a
@@ -96,11 +130,45 @@ exports[`renders correctly 1`] = `
           <span
             className="MuiButton-label-51"
           >
-            <img
-              alt="product"
-              className="Component-product-45"
-              src="/mocks/sweatshirt.png"
-            />
+            <div
+              name="products"
+              path="/products/medium"
+              render={[Function]}
+              renderLoading={[Function]}
+            >
+               - Render: 
+              <img
+                alt="product"
+                className="Component-product-45"
+                src="/mocks/trump-mask.png"
+              />
+              RenderLoading: 
+              <div
+                className="MuiCircularProgress-root-79 MuiCircularProgress-indeterminate-81"
+                role="progressbar"
+                style={
+                  Object {
+                    "height": 25,
+                    "width": 25,
+                  }
+                }
+              >
+                <svg
+                  className="MuiCircularProgress-svg-84"
+                  viewBox="22 22 44 44"
+                >
+                  <circle
+                    className="MuiCircularProgress-circle-85 MuiCircularProgress-circleIndeterminate-87"
+                    cx={44}
+                    cy={44}
+                    fill="none"
+                    r={20.2}
+                    strokeWidth={3.6}
+                    style={Object {}}
+                  />
+                </svg>
+              </div>
+            </div>
             <span
               className="Component-label-44"
             >
@@ -118,7 +186,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="MuiTouchRipple-root-79"
+            className="MuiTouchRipple-root-89"
           />
         </a>
         <a
@@ -142,11 +210,45 @@ exports[`renders correctly 1`] = `
           <span
             className="MuiButton-label-51"
           >
-            <img
-              alt="product"
-              className="Component-product-45"
-              src="/mocks/shoe.png"
-            />
+            <div
+              name="products"
+              path="/products/hard"
+              render={[Function]}
+              renderLoading={[Function]}
+            >
+               - Render: 
+              <img
+                alt="product"
+                className="Component-product-45"
+                src="/mocks/trump-mask.png"
+              />
+              RenderLoading: 
+              <div
+                className="MuiCircularProgress-root-79 MuiCircularProgress-indeterminate-81"
+                role="progressbar"
+                style={
+                  Object {
+                    "height": 25,
+                    "width": 25,
+                  }
+                }
+              >
+                <svg
+                  className="MuiCircularProgress-svg-84"
+                  viewBox="22 22 44 44"
+                >
+                  <circle
+                    className="MuiCircularProgress-circle-85 MuiCircularProgress-circleIndeterminate-87"
+                    cx={44}
+                    cy={44}
+                    fill="none"
+                    r={20.2}
+                    strokeWidth={3.6}
+                    style={Object {}}
+                  />
+                </svg>
+              </div>
+            </div>
             <span
               className="Component-label-44"
             >
@@ -164,7 +266,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="MuiTouchRipple-root-79"
+            className="MuiTouchRipple-root-89"
           />
         </a>
       </div>
