@@ -1,4 +1,5 @@
 import React from 'react'
+import get from 'lodash/get'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 
@@ -13,13 +14,13 @@ const styles = theme => ({
     width: theme.spacing.sm,
   },
   icon_easy: {
-    background: theme.palette.difficulty.easy,
+    background: get(theme.palette, 'difficulty.easy'),
   },
   icon_hard: {
-    background: theme.palette.difficulty.hard,
+    background: get(theme.palette, 'difficulty.hard'),
   },
   icon_medium: {
-    background: theme.palette.difficulty.medium,
+    background: get(theme.palette, 'difficulty.medium'),
   },
   root: {
     alignItems: 'center',

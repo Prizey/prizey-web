@@ -24,30 +24,43 @@ exports[`renders correctly 1`] = `
       </h2>
       <div
         className="Component-caption-1"
-      />
+      >
+        <div
+          className="Component-root-46"
+        >
+          <span
+            className="Component-icon-42 Component-icon_easy-43"
+          />
+          <h3
+            className="MuiTypography-root-6 MuiTypography-subheading-13"
+          >
+            EASY
+          </h3>
+        </div>
+      </div>
       <div
         className="Component-children-2"
       >
         <div
-          className="Component-root-43"
+          className="Component-root-48"
         >
           <img
             alt="trump"
-            className="Component-img-42"
+            className="Component-img-47"
             onClick={[Function]}
             pose="enter"
             src="/mocks/trump-mask.png"
           />
           <img
             alt="sweatshirt"
-            className="Component-img-42"
+            className="Component-img-47"
             onClick={[Function]}
             pose="leave"
             src="/mocks/sweatshirt.png"
           />
           <img
             alt="shoe"
-            className="Component-img-42"
+            className="Component-img-47"
             onClick={[Function]}
             pose="leave"
             src="/mocks/shoe.png"
