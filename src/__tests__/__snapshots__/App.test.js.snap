@@ -3,10 +3,65 @@
 exports[`renders correctly 1`] = `
 <div
   baseUrl="https://prizey-api-staging.herokuapp.com/"
+  renderError={[Function]}
+  renderLoading={[Function]}
 >
   Provider - 
   <div>
     Router
+  </div>
+  Loading - 
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "height": "100vh",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      className="MuiCircularProgress-root-1 MuiCircularProgress-colorPrimary-4 MuiCircularProgress-indeterminate-3"
+      role="progressbar"
+      style={
+        Object {
+          "height": 60,
+          "width": 60,
+        }
+      }
+    >
+      <svg
+        className="MuiCircularProgress-svg-6"
+        viewBox="22 22 44 44"
+      >
+        <circle
+          className="MuiCircularProgress-circle-7 MuiCircularProgress-circleIndeterminate-9"
+          cx={44}
+          cy={44}
+          fill="none"
+          r={20.2}
+          strokeWidth={3.6}
+          style={Object {}}
+        />
+      </svg>
+    </div>
+  </div>
+  Error - 
+  <div
+    style={
+      Object {
+        "padding": 40,
+        "textAlign": "center",
+      }
+    }
+  >
+    <h5
+      baseUrl="https://prizey-api-staging.herokuapp.com/"
+      className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-colorError-45"
+      renderError={[Function]}
+      renderLoading={[Function]}
+    />
   </div>
 </div>
 `;

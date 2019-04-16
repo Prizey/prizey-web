@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Component-root-6"
+>
+  <div
+    className="Component-header-5"
+  />
+  <div
+    className="Component-container-4"
+  >
+    <h2
+      className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
+    >
+      PRIZEY
+    </h2>
+    <div
+      className="Component-caption-2"
+    />
+    <div
+      className="Component-children-3"
+    >
+      <h5
+        className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+      >
+        Pick a difficulty!
+      </h5>
+      <div
+        className="Component-buttonGroup-1"
+      >
+        <a
+          className="MuiButtonBase-root-76 MuiButton-root-50 MuiButton-contained-61 MuiButton-containedPrimary-62 MuiButton-raised-64 MuiButton-raisedPrimary-65 MuiButton-fullWidth-75 Component-root_easy-47"
+          href="/game/easy"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiButton-label-51"
+          >
+            <img
+              alt="product"
+              className="Component-product-45"
+              src="/mocks/trump-mask.png"
+            />
+            <span
+              className="Component-label-44"
+            >
+              EASY
+            </span>
+            <img
+              alt="diamond"
+              className="Component-icon-43"
+              src="/icons/diamond.png"
+            />
+            <span
+              className="Component-quantity-46"
+            >
+              1
+            </span>
+          </span>
+          <span
+            className="MuiTouchRipple-root-79"
+          />
+        </a>
+        <a
+          className="MuiButtonBase-root-76 MuiButton-root-50 MuiButton-contained-61 MuiButton-containedPrimary-62 MuiButton-raised-64 MuiButton-raisedPrimary-65 MuiButton-fullWidth-75 Component-root_medium-49"
+          href="/game/medium"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiButton-label-51"
+          >
+            <img
+              alt="product"
+              className="Component-product-45"
+              src="/mocks/sweatshirt.png"
+            />
+            <span
+              className="Component-label-44"
+            >
+              MEDIUM
+            </span>
+            <img
+              alt="diamond"
+              className="Component-icon-43"
+              src="/icons/diamond.png"
+            />
+            <span
+              className="Component-quantity-46"
+            >
+              5
+            </span>
+          </span>
+          <span
+            className="MuiTouchRipple-root-79"
+          />
+        </a>
+        <a
+          className="MuiButtonBase-root-76 MuiButton-root-50 MuiButton-contained-61 MuiButton-containedPrimary-62 MuiButton-raised-64 MuiButton-raisedPrimary-65 MuiButton-fullWidth-75 Component-root_hard-48"
+          href="/game/hard"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiButton-label-51"
+          >
+            <img
+              alt="product"
+              className="Component-product-45"
+              src="/mocks/shoe.png"
+            />
+            <span
+              className="Component-label-44"
+            >
+              HARD
+            </span>
+            <img
+              alt="diamond"
+              className="Component-icon-43"
+              src="/icons/diamond.png"
+            />
+            <span
+              className="Component-quantity-46"
+            >
+              10
+            </span>
+          </span>
+          <span
+            className="MuiTouchRipple-root-79"
+          />
+        </a>
+      </div>
+      <p
+        className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
+      >
+        The harder difficulty, 
+        <br />
+        the better the prizes.
+      </p>
+    </div>
+    <p
+      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
+    />
+  </div>
+</div>
+`;

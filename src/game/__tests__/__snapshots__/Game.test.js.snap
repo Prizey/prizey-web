@@ -6,48 +6,104 @@ exports[`renders correctly 1`] = `
   path="/products/easy"
   render={[Function]}
 >
-   - Render:
-   
+   - Render: 
   <div
     className="Component-root-5"
   >
     <div
       className="Component-header-4"
-    />
+    >
+      <a
+        aria-current="page"
+        aria-label="Go Back"
+        className="MuiButtonBase-root-13 MuiIconButton-root-7 Component-root-6"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-12"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-16 MuiSvgIcon-fontSizeLarge-24"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-68"
+        />
+      </a>
+    </div>
     <div
       className="Component-container-3"
     >
       <h2
-        className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
+        className="MuiTypography-root-25 MuiTypography-h2-38 MuiTypography-alignCenter-48"
       >
         PRIZEY
       </h2>
       <div
         className="Component-caption-1"
-      />
+      >
+        <div
+          className="Component-root-65"
+        >
+          <span
+            className="Component-icon-61 Component-icon_easy-62"
+          />
+          <h6
+            className="MuiTypography-root-25 MuiTypography-subtitle1-43"
+          >
+            EASY
+          </h6>
+        </div>
+      </div>
       <div
         className="Component-children-2"
       >
         <div
-          className="Component-root-43"
+          className="Component-root-67"
         >
           <img
             alt="trump"
-            className="Component-img-42"
+            className="Component-img-66"
             onClick={[Function]}
             pose="enter"
             src="/mocks/trump-mask.png"
           />
           <img
             alt="sweatshirt"
-            className="Component-img-42"
+            className="Component-img-66"
             onClick={[Function]}
             pose="leave"
             src="/mocks/sweatshirt.png"
           />
           <img
             alt="shoe"
-            className="Component-img-42"
+            className="Component-img-66"
             onClick={[Function]}
             pose="leave"
             src="/mocks/shoe.png"
@@ -55,7 +111,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <p
-        className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+        className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
       />
     </div>
   </div>

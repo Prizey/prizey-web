@@ -7,7 +7,11 @@ jest.mock('croods', () => ({
   Info: ({ children, ...props }) => <div {...props}>Info - {children}</div>,
   List: props => <div {...props}>{props.children}</div>,
   Provider: ({ children, ...props }) => (
-    <div {...props}>Provider - {children}</div>
+    <div {...props}>
+      Provider - {children}
+      Loading - {props.renderLoading(props)}
+      Error - {props.renderError(props)}
+    </div>
   ),
   createReducer: () => (state = {}) => state,
 }))
