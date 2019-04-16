@@ -1,6 +1,7 @@
 import React from 'react'
 import { List } from 'croods'
 
+import GoBack from 'components/GoBack/GoBack'
 import Caption from 'components/Caption/Caption'
 import Layout from 'components/Layout/Layout'
 import Roulette from 'components/Roulette/Roulette'
@@ -16,7 +17,10 @@ export default ({ difficulty = 'easy' }) => (
     name="products"
     path={`/products/${difficulty}`}
     render={list => (
-      <Layout caption={<Caption difficulty={difficulty} />}>
+      <Layout
+        leftIcon={<GoBack to="/" />}
+        caption={<Caption difficulty={difficulty} />}
+      >
         <Roulette
           speed={speeds[difficulty]}
           data={list}

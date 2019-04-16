@@ -4,20 +4,27 @@ import { Provider as CroodsProvider } from 'croods'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 
+import LoadingComponent from 'components/Loading/Loading'
+import ErrorComponent from 'components/Error/Error'
+
 import store from 'store/store'
 import Router from './Router'
 import theme from './theme'
+
+import 'App.css'
 
 export default class extends Component {
   render() {
     return (
       <Provider store={store}>
-        <CroodsProvider baseUrl={process.env.REACT_APP_API_URL}>
+        <CroodsProvider
+          baseUrl={process.env.REACT_APP_API_URL}
+          renderLoading={LoadingComponent}
+          renderError={ErrorComponent}
+        >
           <MuiThemeProvider theme={theme}>
-            <React.Fragment>
-              <CssBaseline />
-              <Router />
-            </React.Fragment>
+            <CssBaseline />
+            <Router />
           </MuiThemeProvider>
         </CroodsProvider>
       </Provider>

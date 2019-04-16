@@ -7,7 +7,7 @@ const styles = theme => ({
   icon: {
     background: theme.palette.text.primary,
     borderRadius: `${parseInt(theme.spacing.sm, 10) / 2}px`,
-    boxShadow: '0 1px 1px 0 rgba(0, 0, 0, 0.5)',
+    boxShadow: theme.shadows[2],
     display: 'block',
     height: theme.spacing.sm,
     marginRight: theme.spacing.xs,
@@ -32,6 +32,6 @@ const styles = theme => ({
 export default withStyles(styles)(({ difficulty, classes }) => (
   <div className={classes.root}>
     <span className={[classes.icon, classes[`icon_${difficulty}`]].join(' ')} />
-    <Typography variant="subheading">{difficulty.toUpperCase()}</Typography>
+    <Typography variant="subtitle1">{difficulty.toUpperCase()}</Typography>
   </div>
 ))

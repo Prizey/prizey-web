@@ -17,6 +17,7 @@ const styles = theme => ({
   },
   children: {
     flexGrow: 1,
+    width: '100%',
   },
   container: {
     alignItems: 'center',
@@ -24,7 +25,7 @@ const styles = theme => ({
     flexDirection: 'column',
     flexGrow: 1,
     maxWidth: '375px',
-    padding: `${theme.spacing.md} ${theme.spacing.sm}`,
+    padding: theme.spacing.md,
     width: '100%',
   },
   header: {
@@ -37,7 +38,6 @@ const styles = theme => ({
   },
   root: {
     alignItems: 'center',
-    background: 'linear-gradient(135deg, #6243db 5%, #d9427d 50%, #de4d40 90%)',
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
