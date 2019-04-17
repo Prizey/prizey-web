@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import Layout from 'components/Layout/Layout'
 
-import DifficultyButton from 'components/DifficultyButton/DifficultyButton'
+import DifficultyButton from './DifficultyButton'
 
 const styles = theme => ({
   buttonGroup: {
