@@ -14,6 +14,9 @@ const styles = theme => ({
     flexGrow: 1,
     textAlign: 'center',
   },
+  loading: {
+    marginRight: theme.spacing.xs,
+  },
   product: {
     marginRight: theme.spacing.xs,
     width: theme.spacing.md,
@@ -55,7 +58,13 @@ export default withStyles(styles)(
       <List
         name="products"
         path={`/products/${difficulty}`}
-        renderLoading={() => <CircularProgress color="inherit" size={25} />}
+        renderLoading={() => (
+          <CircularProgress
+            color="inherit"
+            size={30}
+            className={classes.loading}
+          />
+        )}
         render={list => {
           const productImage = list[0].image
           return (
