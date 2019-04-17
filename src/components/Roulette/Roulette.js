@@ -5,13 +5,15 @@ import posed from 'react-pose'
 
 const styles = () => ({
   img: {
-    height: '300px',
+    maxWidth: '300px',
     position: 'absolute',
-    width: '300px',
+    width: '100%',
   },
   root: {
     height: '300px',
-    width: '300px',
+    maxWidth: '300px',
+    position: 'relative',
+    width: '100%',
   },
 })
 
