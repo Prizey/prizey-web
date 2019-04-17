@@ -1,12 +1,12 @@
 import React from 'react'
 import { Router } from '@reach/router'
 
-import ChooseDifficulty from 'game/ChooseDifficulty'
-import Game from 'game/Game'
+import ChooseDifficultyScreen from 'game/ChooseDifficultyScreen'
+import GameScreen from 'game/GameScreen'
 
 export default props => (
   <Router>
-    <ChooseDifficulty {...props} path="/" />
-    <Game {...props} path="/game/:difficulty" />
+    <ChooseDifficultyScreen {...props} path="/" />
+    <GameScreen {...props} path="/game/:difficulty" />
   </Router>
 )

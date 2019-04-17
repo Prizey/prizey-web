@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import ChooseDifficulty from '../ChooseDifficulty'
+import ChooseDifficultyScreen from '../ChooseDifficultyScreen'
 
 const mockList = [
   { id: 1, image: '/mocks/trump-mask.png', title: 'trump' },
@@ -23,6 +23,6 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
-  const tree = renderer.create(<ChooseDifficulty />).toJSON()
+  const tree = renderer.create(<ChooseDifficultyScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })
