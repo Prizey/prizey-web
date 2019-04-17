@@ -23,7 +23,10 @@ const styles = () => ({
 })
 
 export const enterTransition = ({ speed }) => ({
-  opacity: { duration: Math.min(speed - 50, 500), ease: 'easeIn' },
+  opacity: {
+    duration: Math.min(speed - 50, 500),
+    loop: 100,
+  },
   x: { duration: 10 },
 })
 

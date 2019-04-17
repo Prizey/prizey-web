@@ -18,7 +18,7 @@ it('get the correct item speed', () => {
 it('get the correct transition information', () => {
   const transition = enterTransition({ speed: 250 })
   expect(transition).toEqual({
-    opacity: { duration: 200, ease: 'easeIn' },
+    opacity: { duration: 200, loop: 100 },
     x: { duration: 10 },
   })
 })
