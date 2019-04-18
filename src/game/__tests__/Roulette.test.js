@@ -1,14 +1,27 @@
 import React from 'react'
 import renderer, { act } from 'react-test-renderer'
-import Roulette from '../Roulette'
+import Roulette, { getItemSpeed, enterTransition } from '../Roulette'
 
 jest.useFakeTimers()
 
 const mockList = [
-  { id: 1, image: '/mocks/trump-mask.png', title: 'trump' },
-  { id: 2, image: '/mocks/sweatshirt.png', title: 'sweatshirt' },
-  { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
+  { id: 1, image: '/mocks/trump-mask.png', price: 10, title: 'trump' },
+  { id: 2, image: '/mocks/sweatshirt.png', price: 10, title: 'sweatshirt' },
+  { id: 3, image: '/mocks/shoe.png', price: 10, title: 'shoe' },
 ]
+
+it('gets the correct item speed', () => {
+  const speed = getItemSpeed(10, 1000, 1)
+  expect(speed).toEqual(10000)
+})
+
+it('gets the correct transition information', () => {
+  const transition = enterTransition({ speed: 250 })
+  expect(transition).toEqual({
+    opacity: { duration: 200, loop: 100 },
+    x: { duration: 10 },
+  })
+})
 
 it('renders correctly', () => {
   const tree = renderer
@@ -23,7 +36,7 @@ it('the tap works', () => {
     <Roulette speed={250} data={mockList} onSelectItem={onTap} />,
   ).root
 
-  tree.findByProps({ pose: 'enter' }).props.onClick()
+  tree.findByProps({ testID: 'rouletteItem-0' }).props.onMouseDown()
 
   expect(onTap).toHaveBeenCalledWith(mockList[0])
 })
@@ -35,6 +48,6 @@ it('go to the next image', () => {
     jest.runOnlyPendingTimers()
   })
   expect(tree.findByProps({ pose: 'enter' }).props.src).toEqual(
-    mockList[0].image,
+    mockList[1].image,
   )
 })
