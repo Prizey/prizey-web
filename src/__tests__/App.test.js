@@ -16,6 +16,16 @@ jest.mock('croods', () => ({
   createReducer: () => (state = {}) => state,
 }))
 
+jest.mock('croods-auth', () => ({
+  Auth: props => (
+    <div {...props}>
+      Auth - {props.render(props)} - {props.renderLoading()}
+    </div>
+  ),
+  createReducer: () => (state = {}) => state,
+  credentials: { foo: 'bar' },
+}))
+
 it('renders correctly', () => {
   const tree = renderer.create(<App />).toJSON()
   expect(tree).toMatchSnapshot()
