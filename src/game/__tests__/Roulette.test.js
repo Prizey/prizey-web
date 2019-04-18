@@ -10,12 +10,12 @@ const mockList = [
   { id: 3, image: '/mocks/shoe.png', price: 10, title: 'shoe' },
 ]
 
-it('get the correct item speed', () => {
+it('gets the correct item speed', () => {
   const speed = getItemSpeed(10, 1000, 1)
   expect(speed).toEqual(10000)
 })
 
-it('get the correct transition information', () => {
+it('gets the correct transition information', () => {
   const transition = enterTransition({ speed: 250 })
   expect(transition).toEqual({
     opacity: { duration: 200, loop: 100 },

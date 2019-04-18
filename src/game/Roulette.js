@@ -56,12 +56,6 @@ export default withStyles(styles)(({ classes, speed, onSelectItem, data }) => {
       setNext((next + 1) % data.length)
     }, getItemSpeed(item.price, speed, multiplier))
 
-    // console.log(
-    //   'price and velocity',
-    //   item.price,
-    //   getItemSpeed(item.price, speed, multiplier),
-    // )
-
     return () => clearTimeout(timeout)
   }, [speed, data, next, setNext])
 
