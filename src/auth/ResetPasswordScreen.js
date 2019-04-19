@@ -3,7 +3,7 @@ import { Redirect } from '@reach/router'
 import { ResetPassword } from 'croods-auth'
 import { NewPassword } from 'seasoned-auth-forms-web'
 
-import Layout from 'components/Layout/Layout'
+import AuthForm from './AuthForm'
 
 export const appendToken = (create, location) => values => {
   const urlParams = new URLSearchParams(location.search)
@@ -14,21 +14,16 @@ export const appendToken = (create, location) => values => {
   })
 }
 
-export const Form = ({ create, creating, error, location }) => (
-  <Layout>
-    <NewPassword
-      onSubmit={appendToken(create, location)}
-      submitting={creating}
-      submitError={error}
-    />
-  </Layout>
-)
-
 export default props => (
   <ResetPassword
     {...props}
     setCurrentUser={() => {}}
-    render={renderProps => <Form {...renderProps} />}
+    render={renderProps =>
+      AuthForm(NewPassword)({
+        ...renderProps,
+        create: appendToken(renderProps.create, renderProps.location),
+      })
+    }
     renderCreated={() => <Redirect to="/" noThrow />}
   />
 )

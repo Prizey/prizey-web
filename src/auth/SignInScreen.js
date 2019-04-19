@@ -3,13 +3,7 @@ import { Redirect } from '@reach/router'
 import { SignIn } from 'croods-auth'
 import { SignIn as SignInForm } from 'seasoned-auth-forms-web'
 
-import Layout from 'components/Layout/Layout'
-
-export const Form = ({ create, creating, error }) => (
-  <Layout>
-    <SignInForm onSubmit={create} submitting={creating} submitError={error} />
-  </Layout>
-)
+import AuthForm from './AuthForm'
 
 export default ({ currentUser, navigate, ...props }) => {
   useEffect(() => {
@@ -26,7 +20,7 @@ export default ({ currentUser, navigate, ...props }) => {
       currentUser={currentUser}
       navigate={navigate}
       {...props}
-      render={renderProps => <Form {...renderProps} />}
+      render={AuthForm(SignInForm)}
       renderCreated={() => <Redirect to="/" noThrow />}
     />
   )

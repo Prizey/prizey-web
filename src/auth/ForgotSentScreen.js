@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from 'components/Layout/Layout'
+import Layout from 'design/Layout/Layout'
 import { Typography } from '@material-ui/core'
 
 export default () => (
