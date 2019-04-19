@@ -5,8 +5,8 @@ import { Auth, credentials as credentialsProps } from 'croods-auth'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 
-import LoadingComponent from 'components/Loading/Loading'
-import ErrorComponent from 'components/Error/Error'
+import LoadingComponent from 'design/Loading/Loading'
+import ErrorComponent from 'design/Error/Error'
 
 import store from 'store/store'
 import Router from './Router'

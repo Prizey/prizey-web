@@ -1,10 +1,10 @@
 import React from 'react'
 import { List } from 'croods'
 
-import GoBack from 'components/GoBack/GoBack'
-import Caption from 'components/Caption/Caption'
-import Layout from 'components/Layout/Layout'
-import Roulette from 'components/Roulette/Roulette'
+import GoBack from 'design/GoBack/GoBack'
+import Caption from 'design/Caption/Caption'
+import Layout from 'design/Layout/Layout'
+import Roulette from './Roulette'
 
 const InnerComponent = ({ speed, difficulty, list }) => (
   <Layout

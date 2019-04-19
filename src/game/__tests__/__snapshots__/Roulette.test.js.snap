@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Component-root-2"
+>
+  <div
+    onMouseDown={[Function]}
+    testID="rouletteItem-0"
+  >
+    <img
+      alt="trump"
+      className="Component-img-1"
+      pose="enter"
+      speed={5000}
+      src="/mocks/trump-mask.png"
+    />
+  </div>
+  <div
+    onMouseDown={[Function]}
+    testID="rouletteItem-1"
+  >
+    <img
+      alt="sweatshirt"
+      className="Component-img-1"
+      pose="leave"
+      speed={5000}
+      src="/mocks/sweatshirt.png"
+    />
+  </div>
+  <div
+    onMouseDown={[Function]}
+    testID="rouletteItem-2"
+  >
+    <img
+      alt="shoe"
+      className="Component-img-1"
+      pose="leave"
+      speed={5000}
+      src="/mocks/shoe.png"
+    />
+  </div>
+</div>
+`;

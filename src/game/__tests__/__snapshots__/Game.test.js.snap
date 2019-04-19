@@ -93,27 +93,42 @@ exports[`renders correctly 1`] = `
           <div
             className="Component-root-67"
           >
-            <img
-              alt="trump"
-              className="Component-img-66"
-              onClick={[Function]}
-              pose="enter"
-              src="/mocks/trump-mask.png"
-            />
-            <img
-              alt="sweatshirt"
-              className="Component-img-66"
-              onClick={[Function]}
-              pose="leave"
-              src="/mocks/sweatshirt.png"
-            />
-            <img
-              alt="shoe"
-              className="Component-img-66"
-              onClick={[Function]}
-              pose="leave"
-              src="/mocks/shoe.png"
-            />
+            <div
+              onMouseDown={[Function]}
+              testID="rouletteItem-0"
+            >
+              <img
+                alt="trump"
+                className="Component-img-66"
+                pose="enter"
+                speed={NaN}
+                src="/mocks/trump-mask.png"
+              />
+            </div>
+            <div
+              onMouseDown={[Function]}
+              testID="rouletteItem-1"
+            >
+              <img
+                alt="sweatshirt"
+                className="Component-img-66"
+                pose="leave"
+                speed={NaN}
+                src="/mocks/sweatshirt.png"
+              />
+            </div>
+            <div
+              onMouseDown={[Function]}
+              testID="rouletteItem-2"
+            >
+              <img
+                alt="shoe"
+                className="Component-img-66"
+                pose="leave"
+                speed={NaN}
+                src="/mocks/shoe.png"
+              />
+            </div>
           </div>
         </div>
         <p
