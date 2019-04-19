@@ -5,38 +5,38 @@ exports[`renders correctly 1`] = `
   className="Component-root-2"
 >
   <div
+    aria-label="rouletteItem-0"
     onMouseDown={[Function]}
-    testID="rouletteItem-0"
   >
     <img
       alt="trump"
       className="Component-img-1"
       pose="enter"
-      speed={5000}
+      speed={2000}
       src="/mocks/trump-mask.png"
     />
   </div>
   <div
+    aria-label="rouletteItem-1"
     onMouseDown={[Function]}
-    testID="rouletteItem-1"
   >
     <img
       alt="sweatshirt"
       className="Component-img-1"
       pose="leave"
-      speed={5000}
+      speed={2000}
       src="/mocks/sweatshirt.png"
     />
   </div>
   <div
+    aria-label="rouletteItem-2"
     onMouseDown={[Function]}
-    testID="rouletteItem-2"
   >
     <img
       alt="shoe"
       className="Component-img-1"
       pose="leave"
-      speed={5000}
+      speed={2000}
       src="/mocks/shoe.png"
     />
   </div>

@@ -1,12 +1,12 @@
 import React from 'react'
-import { List } from 'croods'
+import { List, Info } from 'croods'
 
 import GoBack from 'design/GoBack/GoBack'
 import Caption from 'design/Caption/Caption'
 import Layout from 'design/Layout/Layout'
 import Roulette from './Roulette'
 
-const InnerComponent = ({ speed, difficulty, list }) => (
+const InnerComponent = ({ speed, difficulty, list, multiplier }) => (
   <Layout
     leftIcon={<GoBack to="/" />}
     caption={<Caption difficulty={difficulty} />}
@@ -14,6 +14,7 @@ const InnerComponent = ({ speed, difficulty, list }) => (
     <Roulette
       speed={speed}
       data={list}
+      multiplier={multiplier}
       onSelectItem={item =>
         // eslint-disable-next-line no-alert
         window.alert(`you tapped the item ${item.title}`)
@@ -23,15 +24,17 @@ const InnerComponent = ({ speed, difficulty, list }) => (
 )
 
 const SpeedComponent = difficulty => list => (
-  <List
-    name="game_settings"
-    path={`/game_settings`}
-    render={speedList => {
-      const speed = speedList[0][`${difficulty}CarouselSpeed`]
+  <Info
+    name="game"
+    path="/game_setting"
+    id={1}
+    render={settings => {
+      const speed = settings[`${difficulty}CarouselSpeed`]
 
       return InnerComponent({
         difficulty,
         list,
+        multiplier: settings.priceMultiplier,
         speed,
       })
     }}

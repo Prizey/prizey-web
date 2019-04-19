@@ -9,7 +9,14 @@ const mockList = [
 ]
 
 jest.mock('croods', () => ({
-  Info: ({ children, ...props }) => <div {...props}>Info - {children}</div>,
+  Info: ({ children, ...props }) => (
+    <div {...props}>
+      Info -{' '}
+      {props.render({
+        easyCarouselSpeed: 500,
+      })}
+    </div>
+  ),
   List: props => (
     <div {...props}>
       {props.children} - Render: {props.render(mockList)}
@@ -30,6 +37,6 @@ it('trigger the alert', () => {
   global.alert = jest.fn()
   const tree = renderer.create(<GameScreen />).root
 
-  tree.findByProps({ data: mockList }).props.onSelectItem({ title: 'item' })
+  tree.findByProps({ speed: 500 }).props.onSelectItem({ title: 'item' })
   expect(global.alert).toHaveBeenCalledTimes(1)
 })
