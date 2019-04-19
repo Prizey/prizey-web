@@ -15,13 +15,9 @@ export default ({ currentUser, navigate, ...props }) => {
   useEffect(() => {
     if (currentUser) {
       const queryString = new URLSearchParams(window.location.search)
-      setTimeout(
-        () =>
-          navigate(queryString.get('next') || '/', {
-            replace: true,
-          }),
-        0,
-      )
+      navigate(queryString.get('next') || '/', {
+        replace: true,
+      })
     }
   }, [currentUser, navigate])
 

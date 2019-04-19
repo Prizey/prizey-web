@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import SignInScreen from '../SignInScreen'
+import ResetPasswordScreen, { appendToken } from '../ResetPasswordScreen'
 
 jest.mock('croods-auth', () => ({
-  SignIn: props => (
+  ResetPassword: props => (
     <div {...props}>
       New - <div>render - {props.render(props)}</div>
       <div>renderCreated - {props.renderCreated({ user: { id: 1 } })}</div>
@@ -13,7 +13,7 @@ jest.mock('croods-auth', () => ({
 }))
 
 jest.mock('seasoned-auth-forms-web', () => ({
-  SignIn: props => <div {...props}>SignIn</div>,
+  NewPassword: props => <div {...props}>NewPassword</div>,
 }))
 
 jest.mock('@reach/router', () => ({
@@ -31,17 +31,23 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
-  const tree = renderer.create(<SignInScreen />).toJSON()
+  const tree = renderer.create(<ResetPasswordScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('redirect correctly', () => {
-  const params = {
-    currentUser: true,
-    navigate: jest.fn(),
+it('apppend a token on create', () => {
+  const location = {
+    search: 'reset_password_token=123123',
   }
-  const tree = renderer.create(<SignInScreen {...params} />)
-  tree.update()
+  const data = {
+    password: '123123',
+  }
+  const create = jest.fn()
 
-  expect(params.navigate).toHaveBeenCalledTimes(1)
+  appendToken(create, location)(data)
+
+  expect(create).toHaveBeenCalledWith({
+    ...data,
+    resetPasswordToken: '123123',
+  })
 })

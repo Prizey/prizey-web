@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import SignInScreen from '../SignInScreen'
+import SignUpScreen from '../SignUpScreen'
 
 jest.mock('croods-auth', () => ({
-  SignIn: props => (
+  SignUp: props => (
     <div {...props}>
       New - <div>render - {props.render(props)}</div>
       <div>renderCreated - {props.renderCreated({ user: { id: 1 } })}</div>
@@ -13,7 +13,7 @@ jest.mock('croods-auth', () => ({
 }))
 
 jest.mock('seasoned-auth-forms-web', () => ({
-  SignIn: props => <div {...props}>SignIn</div>,
+  SignUp: props => <div {...props}>SignUp</div>,
 }))
 
 jest.mock('@reach/router', () => ({
@@ -31,17 +31,14 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
-  const tree = renderer.create(<SignInScreen />).toJSON()
+  const tree = renderer.create(<SignUpScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('redirect correctly', () => {
   const params = {
     currentUser: true,
-    navigate: jest.fn(),
   }
-  const tree = renderer.create(<SignInScreen {...params} />)
-  tree.update()
-
-  expect(params.navigate).toHaveBeenCalledTimes(1)
+  const tree = renderer.create(<SignUpScreen {...params} />).toJSON()
+  expect(tree).toMatchSnapshot()
 })
