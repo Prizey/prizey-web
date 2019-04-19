@@ -36,7 +36,7 @@ it('the tap works', () => {
     <Roulette speed={250} data={mockList} onSelectItem={onTap} />,
   ).root
 
-  tree.findByProps({ testID: 'rouletteItem-0' }).props.onMouseDown()
+  tree.findByProps({ 'aria-label': 'rouletteItem-0' }).props.onMouseDown()
 
   expect(onTap).toHaveBeenCalledWith(mockList[0])
 })

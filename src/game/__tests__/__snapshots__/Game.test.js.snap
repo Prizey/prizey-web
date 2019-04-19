@@ -8,11 +8,13 @@ exports[`renders correctly 1`] = `
 >
    - Render: 
   <div
-    name="game_settings"
-    path="/game_settings"
+    id={1}
+    name="game"
+    path="/game_setting"
     render={[Function]}
   >
-     - Render: 
+    Info -
+     
     <div
       className="Component-root-5"
     >
@@ -94,8 +96,8 @@ exports[`renders correctly 1`] = `
             className="Component-root-67"
           >
             <div
+              aria-label="rouletteItem-0"
               onMouseDown={[Function]}
-              testID="rouletteItem-0"
             >
               <img
                 alt="trump"
@@ -106,8 +108,8 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
+              aria-label="rouletteItem-1"
               onMouseDown={[Function]}
-              testID="rouletteItem-1"
             >
               <img
                 alt="sweatshirt"
@@ -118,8 +120,8 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
+              aria-label="rouletteItem-2"
               onMouseDown={[Function]}
-              testID="rouletteItem-2"
             >
               <img
                 alt="shoe"

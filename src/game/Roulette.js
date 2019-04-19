@@ -64,7 +64,7 @@ export default withStyles(styles)(({ classes, speed, onSelectItem, data }) => {
       {data.map((item, id) => (
         <div
           key={`${item.id}-${id}`}
-          testID={`rouletteItem-${id}`}
+          aria-label={`rouletteItem-${id}`}
           onMouseDown={() => onSelectItem(item)}
         >
           <PosedImg

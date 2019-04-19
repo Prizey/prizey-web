@@ -5,8 +5,8 @@ exports[`renders correctly 1`] = `
   className="Component-root-2"
 >
   <div
+    aria-label="rouletteItem-0"
     onMouseDown={[Function]}
-    testID="rouletteItem-0"
   >
     <img
       alt="trump"
@@ -17,8 +17,8 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <div
+    aria-label="rouletteItem-1"
     onMouseDown={[Function]}
-    testID="rouletteItem-1"
   >
     <img
       alt="sweatshirt"
@@ -29,8 +29,8 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <div
+    aria-label="rouletteItem-2"
     onMouseDown={[Function]}
-    testID="rouletteItem-2"
   >
     <img
       alt="shoe"
