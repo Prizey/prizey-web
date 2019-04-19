@@ -6,7 +6,7 @@ import Caption from 'design/Caption/Caption'
 import Layout from 'design/Layout/Layout'
 import Roulette from './Roulette'
 
-const InnerComponent = ({ speed, difficulty, list }) => (
+const InnerComponent = ({ speed, difficulty, list, multiplier }) => (
   <Layout
     leftIcon={<GoBack to="/" />}
     caption={<Caption difficulty={difficulty} />}
@@ -14,7 +14,7 @@ const InnerComponent = ({ speed, difficulty, list }) => (
     <Roulette
       speed={speed}
       data={list}
-      aria-label="roulette"
+      multiplier={multiplier}
       onSelectItem={item =>
         // eslint-disable-next-line no-alert
         window.alert(`you tapped the item ${item.title}`)

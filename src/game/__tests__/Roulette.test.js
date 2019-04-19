@@ -11,14 +11,14 @@ const mockList = [
 ]
 
 it('gets the correct item speed', () => {
-  const speed = getItemSpeed(10, 1000, 1)
-  expect(speed).toEqual(10000)
+  const speed = getItemSpeed(10, 100, 1)
+  expect(speed).toEqual(1000)
 })
 
 it('gets the correct transition information', () => {
   const transition = enterTransition({ speed: 250 })
   expect(transition).toEqual({
-    opacity: { duration: 200, loop: 100 },
+    opacity: { duration: 200 },
     x: { duration: 10 },
   })
 })
