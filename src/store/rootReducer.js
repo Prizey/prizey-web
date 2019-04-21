@@ -6,7 +6,7 @@ import { reducer as formReducer } from 'redux-form'
 const reducers = {
   auth: createAuthReducer(),
   form: formReducer(),
-  game_settings: createReducer('game_settings'),
+  game: createReducer('game'),
   products: createReducer('products'),
 }
 

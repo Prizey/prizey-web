@@ -11,14 +11,14 @@ const mockList = [
 ]
 
 it('gets the correct item speed', () => {
-  const speed = getItemSpeed(10, 1000, 1)
-  expect(speed).toEqual(10000)
+  const speed = getItemSpeed(10, 100, 1)
+  expect(speed).toEqual(1000)
 })
 
 it('gets the correct transition information', () => {
   const transition = enterTransition({ speed: 250 })
   expect(transition).toEqual({
-    opacity: { duration: 200, loop: 100 },
+    opacity: { duration: 200 },
     x: { duration: 10 },
   })
 })
@@ -36,7 +36,7 @@ it('the tap works', () => {
     <Roulette speed={250} data={mockList} onSelectItem={onTap} />,
   ).root
 
-  tree.findByProps({ testID: 'rouletteItem-0' }).props.onMouseDown()
+  tree.findByProps({ 'aria-label': 'rouletteItem-0' }).props.onMouseDown()
 
   expect(onTap).toHaveBeenCalledWith(mockList[0])
 })
