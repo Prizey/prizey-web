@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from '@reach/router'
 import { withStyles } from '@material-ui/core/styles'
 import { Button, Typography } from '@material-ui/core'
@@ -81,13 +82,13 @@ const InnerComponent = withStyles(styles)(
   ),
 )
 
-export default ({ difficulty }) => (
-  <InnerComponent
-    product={{
-      image: '/mocks/trump-mask.png',
-      price: 15.99,
-      title: 'Donald Trump Face Mask',
-    }}
-    difficulty={difficulty}
-  />
-)
+export const mapState = ({ order = {} }) => ({
+  product: order.product,
+})
+
+export default connect(
+  mapState,
+  null,
+)(({ difficulty, product }) => (
+  <InnerComponent product={product} difficulty={difficulty} />
+))

@@ -1,7 +1,11 @@
 import * as Types from './types'
 
 const initialState = {
-  product: null,
+  product: {
+    image: '/mocks/trump-mask.png',
+    price: 19.99,
+    title: 'Donald Trump Face Mask',
+  },
 }
 
 const orderReducer = (state = initialState, action) => {
