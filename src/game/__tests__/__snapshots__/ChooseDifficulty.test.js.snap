@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`redirects correctly 1`] = `null`;
+
 exports[`renders correctly 1`] = `
 <div
   className="Component-root-6"
