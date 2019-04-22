@@ -1,55 +1,93 @@
 import React from 'react'
+import { Link } from '@reach/router'
 import { withStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
+import { Button, Typography } from '@material-ui/core'
 
 import GoBack from 'design/GoBack/GoBack'
 import Layout from 'design/Layout/Layout'
 import Caption from 'design/Caption/Caption'
 
-import DifficultyButton from './DifficultyButton'
-
 const styles = theme => ({
-  buttonGroup: {
+  icon: {
+    height: theme.spacing.md,
+  },
+  productImage: {
+    display: 'block',
+    margin: 'auto',
     marginBottom: theme.spacing.md,
     marginTop: theme.spacing.md,
+    width: '130px',
+  },
+  quantity: {
+    marginLeft: theme.spacing.xs,
+    marginRight: theme.spacing.xs,
+    width: theme.spacing.sm,
+  },
+  rightIcon: {
+    alignItems: 'center',
+    display: 'flex',
+    height: theme.spacing.md,
+    position: 'absolute',
+    right: 0,
   },
 })
 
-export default withStyles(styles)(({ classes, difficulty }) => (
-  <Layout
-    leftIcon={<GoBack to="/" />}
-    caption={<Caption difficulty={difficulty} />}
-  >
-    <Typography align="center" variant="h5">
-      Donald Trump Face Mask
-    </Typography>
+const InnerComponent = withStyles(styles)(
+  ({ product, classes, difficulty }) => (
+    <Layout
+      leftIcon={<GoBack to={`game/${difficulty}`} />}
+      caption={<Caption difficulty={difficulty} />}
+    >
+      <Typography align="center" variant="h5">
+        {product.title}
+      </Typography>
 
-    <div className={classes.buttonGroup}>
-      <DifficultyButton
-        label="EASY"
-        difficulty="easy"
-        quantity={1}
-        to="/game/easy"
+      <img
+        alt={product.title}
+        src={product.image}
+        className={classes.productImage}
       />
 
-      <DifficultyButton
-        label="MEDIUM"
-        difficulty="medium"
-        quantity={5}
-        to="/game/medium"
-      />
+      <Typography align="center">MSRP: ${product.price}</Typography>
 
-      <DifficultyButton
-        label="HARD"
-        difficulty="hard"
-        quantity={10}
-        to="/game/hard"
-      />
-    </div>
+      <Button
+        variant="contained"
+        color="secondary"
+        fullWidth
+        component={props => <Link to="/" {...props} />}
+      >
+        <span>SELL IT BACK</span>
+        <div className={classes.rightIcon}>
+          <img
+            src="/icons/diamond.png"
+            alt="diamond"
+            className={classes.icon}
+          />
+          <span className={classes.quantity}>3</span>
+        </div>
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        fullWidth
+        onClick={() => {
+          // eslint-disable-next-line no-alert
+          window.alert(`shipping process of the item ${product.title}`)
+        }}
+      >
+        I WANT IT!
+      </Button>
+    </Layout>
+  ),
+)
 
-    <Typography align="center">
-      The harder difficulty, <br />
-      the better the prizes.
-    </Typography>
-  </Layout>
-))
+export default ({ difficulty }) => (
+  <InnerComponent
+    product={{
+      image: '/mocks/trump-mask.png',
+      price: 15.99,
+      title: 'Donald Trump Face Mask',
+    }}
+    difficulty={difficulty}
+  />
+)
