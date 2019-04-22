@@ -1,5 +1,6 @@
 import React from 'react'
 import { List, Info } from 'croods'
+import { Redirect } from '@reach/router'
 
 import GoBack from 'design/GoBack/GoBack'
 import Caption from 'design/Caption/Caption'
@@ -41,10 +42,13 @@ const SpeedComponent = difficulty => list => (
   />
 )
 
-export default ({ difficulty = 'easy' }) => (
-  <List
-    name="products"
-    path={`/products/${difficulty}`}
-    render={SpeedComponent(difficulty)}
-  />
-)
+export default ({ currentUser, difficulty = 'easy' }) =>
+  currentUser ? (
+    <List
+      name="products"
+      path={`/products/${difficulty}`}
+      render={SpeedComponent(difficulty)}
+    />
+  ) : (
+    <Redirect to={`sign-in?next=/game/${difficulty}`} noThrow />
+  )

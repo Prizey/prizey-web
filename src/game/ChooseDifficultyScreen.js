@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
+import { Redirect } from '@reach/router'
 
 import DifficultyButton from './DifficultyButton'
 
@@ -12,7 +13,7 @@ const styles = theme => ({
   },
 })
 
-export default withStyles(styles)(({ classes }) => (
+const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
   <Layout>
     <Typography align="center" variant="h5">
       Pick a difficulty!
@@ -50,3 +51,6 @@ export default withStyles(styles)(({ classes }) => (
     </Typography>
   </Layout>
 ))
+
+export default ({ currentUser }) =>
+  currentUser ? <ChooseDifficultyScreen /> : <Redirect to="sign-in" noThrow />
