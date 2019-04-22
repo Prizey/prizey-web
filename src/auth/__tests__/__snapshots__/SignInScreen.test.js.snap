@@ -28,6 +28,11 @@ exports[`renders correctly 1`] = `
         <div
           className="Component-children-75"
         >
+          <h5
+            className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54"
+          >
+            Login
+          </h5>
           <div
             renderButton={[Function]}
           >
