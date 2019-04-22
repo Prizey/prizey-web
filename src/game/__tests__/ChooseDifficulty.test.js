@@ -23,6 +23,11 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
+  const tree = renderer.create(<ChooseDifficultyScreen currentUser />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+it('redirects correctly', () => {
   const tree = renderer.create(<ChooseDifficultyScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })

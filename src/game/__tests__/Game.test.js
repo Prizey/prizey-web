@@ -14,6 +14,7 @@ jest.mock('croods', () => ({
       Info -{' '}
       {props.render({
         easyCarouselSpeed: 500,
+        priceMultiplier: 1,
       })}
     </div>
   ),
@@ -29,13 +30,18 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
+  const tree = renderer.create(<GameScreen currentUser />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+it('redirects correctly', () => {
   const tree = renderer.create(<GameScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('trigger the alert', () => {
   global.alert = jest.fn()
-  const tree = renderer.create(<GameScreen />).root
+  const tree = renderer.create(<GameScreen currentUser />).root
 
   tree.findByProps({ speed: 500 }).props.onSelectItem({ title: 'item' })
   expect(global.alert).toHaveBeenCalledTimes(1)
