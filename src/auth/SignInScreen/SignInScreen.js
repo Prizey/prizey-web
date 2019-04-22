@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { Redirect } from '@reach/router'
 import { SignIn } from 'croods-auth'
-import { SignIn as SignInForm } from 'seasoned-auth-forms-web'
+import SignInForm from './SignInForm'
 
-import AuthForm from './AuthForm'
+import AuthForm from '../AuthForm'
 
 export default ({ currentUser, navigate, ...props }) => {
   useEffect(() => {

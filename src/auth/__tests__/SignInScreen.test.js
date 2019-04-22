@@ -2,6 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 
 import SignInScreen from '../SignInScreen'
+import { FormBottom } from '../SignInScreen/SignInForm'
 
 jest.mock('croods-auth', () => ({
   SignIn: props => (
@@ -13,7 +14,7 @@ jest.mock('croods-auth', () => ({
 }))
 
 jest.mock('seasoned-auth-forms-web', () => ({
-  SignIn: props => <div {...props}>SignIn</div>,
+  SignIn: props => <div {...props}>SignIn - {props.renderButton(props)}</div>,
 }))
 
 jest.mock('@reach/router', () => ({
@@ -29,6 +30,11 @@ jest.mock('croods', () => ({
     </div>
   ),
 }))
+
+it('renders the form correctly', () => {
+  const tree = renderer.create(<FormBottom />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
 
 it('renders correctly', () => {
   const tree = renderer.create(<SignInScreen />).toJSON()
