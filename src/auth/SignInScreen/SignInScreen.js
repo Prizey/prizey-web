@@ -16,12 +16,14 @@ export default ({ currentUser, navigate, ...props }) => {
   }, [currentUser, navigate])
 
   return (
-    <SignIn
-      currentUser={currentUser}
-      navigate={navigate}
-      {...props}
-      render={AuthForm(SignInForm)}
-      renderCreated={() => <Redirect to="/" noThrow />}
-    />
+    <React.Fragment>
+      <SignIn
+        currentUser={currentUser}
+        navigate={navigate}
+        {...props}
+        render={AuthForm(SignInForm, 'Login')}
+        renderCreated={() => <Redirect to="/" noThrow />}
+      />
+    </React.Fragment>
   )
 }

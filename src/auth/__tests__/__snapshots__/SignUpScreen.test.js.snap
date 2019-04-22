@@ -18,31 +18,84 @@ exports[`renders correctly 1`] = `
   <div>
     render - 
     <div
-      className="Component-root-5"
+      className="Component-root-78"
     >
       <div
-        className="Component-header-4"
+        className="Component-header-77"
       />
       <div
-        className="Component-container-3"
+        className="Component-container-76"
       >
         <h2
-          className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
+          className="MuiTypography-root-31 MuiTypography-h2-44 MuiTypography-alignCenter-54"
         >
           PRIZEY
         </h2>
         <div
-          className="Component-caption-1"
+          className="Component-caption-74"
         />
         <div
-          className="Component-children-2"
+          className="Component-children-75"
         >
-          <div>
-            SignUp
+          <h5
+            className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54"
+          >
+            Create your account!
+          </h5>
+          <div
+            renderButton={[Function]}
+          >
+            SignUp - 
+            <button
+              className="MuiButtonBase-root-28 MuiButton-root-2 MuiButton-contained-13 MuiButton-containedPrimary-14 MuiButton-raised-16 MuiButton-raisedPrimary-17 MuiButton-fullWidth-27"
+              disabled={false}
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              renderButton={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-3"
+              >
+                REGISTER
+              </span>
+              <span
+                className="MuiTouchRipple-root-67"
+              />
+            </button>
+            <div
+              className="Component-links-1"
+            >
+              <div
+                style={
+                  Object {
+                    "textDecoration": "none",
+                  }
+                }
+                to="/sign-in"
+              >
+                Link - 
+                <span
+                  className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorPrimary-61"
+                >
+                  Already have an account?
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <p
-          className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+          className="MuiTypography-root-31 MuiTypography-body1-40 MuiTypography-alignCenter-54"
         />
       </div>
     </div>
@@ -57,4 +110,54 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`renders the form correctly 1`] = `
+Array [
+  <button
+    className="MuiButtonBase-root-28 MuiButton-root-2 MuiButton-contained-13 MuiButton-containedPrimary-14 MuiButton-raised-16 MuiButton-raisedPrimary-17 MuiButton-fullWidth-27"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-3"
+    >
+      REGISTER
+    </span>
+    <span
+      className="MuiTouchRipple-root-67"
+    />
+  </button>,
+  <div
+    className="Component-links-1"
+  >
+    <div
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      to="/sign-in"
+    >
+      Link - 
+      <span
+        className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorPrimary-61"
+      >
+        Already have an account?
+      </span>
+    </div>
+  </div>,
+]
 `;
