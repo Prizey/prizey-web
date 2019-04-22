@@ -1,13 +1,11 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import { Button, Typography } from '@material-ui/core'
-import { Link } from '@reach/router'
+import { Button } from '@material-ui/core'
 import { SignIn } from 'seasoned-auth-forms-web'
 
+import SecondaryLink from 'design/SecondaryLink'
+
 const styles = theme => ({
-  link: {
-    textDecoration: 'none',
-  },
   links: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -21,16 +19,8 @@ export const FormBottom = withStyles(styles)(({ classes, ...props }) => (
       LOGIN
     </Button>
     <div className={classes.links}>
-      <Link to="/sign-up" className={classes.link}>
-        <Typography color="primary" variant="caption">
-          Register
-        </Typography>
-      </Link>
-      <Link to="/forgot-password" className={classes.link}>
-        <Typography color="primary" variant="caption">
-          Forgot your password?
-        </Typography>
-      </Link>
+      <SecondaryLink to="/sign-up" label="Register" />
+      <SecondaryLink to="/forgot-password" label="Forgot your password?" />
     </div>
   </React.Fragment>
 ))
