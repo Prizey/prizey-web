@@ -8,6 +8,7 @@
     "@reach/router": "^1.2.1",
     "@use-it/interval": "^0.1.2",
     "croods": "^0.13.1",
+    "croods-auth": "^1.0.2",
     "lodash": "^4.17.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -16,8 +17,10 @@
     "react-scripts": "2.0.5",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.5",
+    "redux-form": "^8.2.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "seasoned-auth-forms-web": "^0.3.3",
     "seasoned-components": "^0.1.0"
   },
   "scripts": {
