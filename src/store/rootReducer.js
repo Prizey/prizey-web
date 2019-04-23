@@ -11,6 +11,7 @@ const reducers = {
   game: createReducer('game'),
   order: orderReducer,
   products: createReducer('products'),
+  tickets: createReducer('tickets'),
 }
 
 const rootReducer = combineReducers(reducers)
