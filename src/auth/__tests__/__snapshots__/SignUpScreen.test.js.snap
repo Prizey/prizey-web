@@ -18,13 +18,13 @@ exports[`renders correctly 1`] = `
   <div>
     render - 
     <div
-      className="Component-root-78"
+      className="Component-root-79"
     >
       <div
-        className="Component-header-77"
+        className="Component-header-78"
       />
       <div
-        className="Component-container-76"
+        className="Component-container-77"
       >
         <h2
           className="MuiTypography-root-31 MuiTypography-h2-44 MuiTypography-alignCenter-54"
@@ -32,13 +32,13 @@ exports[`renders correctly 1`] = `
           PRIZEY
         </h2>
         <div
-          className="Component-caption-74"
+          className="Component-caption-75"
         />
         <div
-          className="Component-children-75"
+          className="Component-children-76"
         >
           <h5
-            className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54"
+            className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54 Component-pageTitle-74"
           >
             Create your account!
           </h5>

@@ -1,7 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ForgotPasswordScreen, { appendRedirect } from '../ForgotPasswordScreen'
+import ForgotPasswordScreen, {
+  appendRedirect,
+} from '../ForgotPasswordScreen/ForgotPasswordScreen'
 
 jest.mock('croods-auth', () => ({
   ForgotPassword: props => (
@@ -13,7 +15,9 @@ jest.mock('croods-auth', () => ({
 }))
 
 jest.mock('seasoned-auth-forms-web', () => ({
-  ForgotPassword: props => <div {...props}>ForgotPassword</div>,
+  ForgotPassword: props => (
+    <div {...props}>ForgotPassword - {props.renderButton(props)}</div>
+  ),
 }))
 
 jest.mock('@reach/router', () => ({
