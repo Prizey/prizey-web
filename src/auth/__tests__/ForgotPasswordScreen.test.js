@@ -5,8 +5,6 @@ import ForgotPasswordScreen, {
   appendRedirect,
 } from '../ForgotPasswordScreen/ForgotPasswordScreen'
 
-import { FormBottom } from '../ForgotPasswordScreen/ForgotPasswordForm'
-
 jest.mock('croods-auth', () => ({
   ForgotPassword: props => (
     <div {...props}>
@@ -35,11 +33,6 @@ jest.mock('croods', () => ({
     </div>
   ),
 }))
-
-it('renders the form correctly', () => {
-  const tree = renderer.create(<FormBottom />).toJSON()
-  expect(tree).toMatchSnapshot()
-})
 
 it('renders correctly', () => {
   const tree = renderer.create(<ForgotPasswordScreen />).toJSON()
