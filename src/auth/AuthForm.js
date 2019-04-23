@@ -1,14 +1,22 @@
 import React from 'react'
+import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
 
-const AuthForm = (Component, title) => ({ create, creating, error }) => (
-  <Layout>
-    <Typography align="center" variant="h5">
-      {title}
-    </Typography>
-    <Component onSubmit={create} submitting={creating} submitError={error} />
-  </Layout>
-)
+const styles = theme => ({
+  pageTitle: {
+    marginBottom: theme.spacing.sm,
+  },
+})
 
-export default AuthForm
+const createAuthForm = (Component, title) =>
+  withStyles(styles)(({ classes, create, creating, error }) => (
+    <Layout>
+      <Typography align="center" variant="h5" className={classes.pageTitle}>
+        {title}
+      </Typography>
+      <Component onSubmit={create} submitting={creating} submitError={error} />
+    </Layout>
+  ))
+
+export default createAuthForm

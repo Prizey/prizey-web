@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h6
-        className="MuiTypography-root-6 MuiTypography-h6-23"
+        className="MuiTypography-root-6 MuiTypography-h6-23 MuiTypography-alignCenter-29"
       >
         Instructions for reseting your password have been sent to your email
       </h6>

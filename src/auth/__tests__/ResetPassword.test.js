@@ -1,7 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ResetPasswordScreen, { appendToken } from '../ResetPasswordScreen'
+import ResetPasswordScreen, {
+  appendToken,
+} from '../ResetPasswordScreen/ResetPasswordScreen'
+
+import { FormBottom } from '../ResetPasswordScreen/ResetPasswordForm'
 
 jest.mock('croods-auth', () => ({
   ResetPassword: props => (
@@ -13,7 +17,9 @@ jest.mock('croods-auth', () => ({
 }))
 
 jest.mock('seasoned-auth-forms-web', () => ({
-  NewPassword: props => <div {...props}>NewPassword</div>,
+  NewPassword: props => (
+    <div {...props}>NewPassword - {props.renderButton(props)}</div>
+  ),
 }))
 
 jest.mock('@reach/router', () => ({
@@ -29,6 +35,11 @@ jest.mock('croods', () => ({
     </div>
   ),
 }))
+
+it('renders the form correctly', () => {
+  const tree = renderer.create(<FormBottom />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
 
 it('renders correctly', () => {
   const tree = renderer.create(<ResetPasswordScreen />).toJSON()
