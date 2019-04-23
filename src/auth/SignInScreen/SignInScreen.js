@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import { Redirect } from '@reach/router'
 import { SignIn } from 'croods-auth'
 import SignInForm from './SignInForm'
+import createAuthForm from '../AuthForm'
 
-import AuthForm from '../AuthForm'
+const AuthForm = createAuthForm(SignInForm, 'Login')
 
 export default ({ currentUser, navigate, ...props }) => {
   useEffect(() => {
@@ -16,14 +17,12 @@ export default ({ currentUser, navigate, ...props }) => {
   }, [currentUser, navigate])
 
   return (
-    <React.Fragment>
-      <SignIn
-        currentUser={currentUser}
-        navigate={navigate}
-        {...props}
-        render={AuthForm(SignInForm, 'Login')}
-        renderCreated={() => <Redirect to="/" noThrow />}
-      />
-    </React.Fragment>
+    <SignIn
+      currentUser={currentUser}
+      navigate={navigate}
+      {...props}
+      render={renderProps => <AuthForm {...renderProps} />}
+      renderCreated={() => <Redirect to="/" noThrow />}
+    />
   )
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Redirect } from '@reach/router'
 import { ResetPassword } from 'croods-auth'
-import { NewPassword } from 'seasoned-auth-forms-web'
+import ResetPasswordForm from './ResetPasswordForm'
 
-import AuthForm from './AuthForm'
+import createAuthForm from '../AuthForm'
+
+const AuthForm = createAuthForm(ResetPasswordForm, 'Recover Your Password')
 
 export const appendToken = (create, location) => values => {
   const urlParams = new URLSearchParams(location.search)
@@ -18,12 +20,12 @@ export default props => (
   <ResetPassword
     {...props}
     setCurrentUser={() => {}}
-    render={renderProps =>
-      AuthForm(NewPassword)({
-        ...renderProps,
-        create: appendToken(renderProps.create, renderProps.location),
-      })
-    }
+    render={renderProps => (
+      <AuthForm
+        {...renderProps}
+        create={appendToken(renderProps.create, renderProps.location)}
+      />
+    )}
     renderCreated={() => <Redirect to="/" noThrow />}
   />
 )

@@ -1,8 +1,8 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import { Button } from '@material-ui/core'
 import { SignUp } from 'seasoned-auth-forms-web'
 
+import SubmitButton from 'design/SubmitButton/SubmitButton'
 import SecondaryLink from 'design/SecondaryLink'
 
 const styles = theme => ({
@@ -15,9 +15,7 @@ const styles = theme => ({
 
 export const FormBottom = withStyles(styles)(({ classes, ...props }) => (
   <React.Fragment>
-    <Button {...props} variant="contained" color="primary" fullWidth>
-      REGISTER
-    </Button>
+    <SubmitButton {...props} label="REGISTER" />
     <div className={classes.links}>
       <SecondaryLink to="/sign-in" label="Already have an account?" />
     </div>
