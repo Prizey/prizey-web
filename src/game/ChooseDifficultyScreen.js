@@ -53,4 +53,4 @@ const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
 ))
 
 export default ({ currentUser }) =>
-  currentUser ? <ChooseDifficultyScreen /> : <Redirect to="sign-in" noThrow />
+  currentUser ? <ChooseDifficultyScreen /> : <Redirect to="/sign-in" noThrow />
