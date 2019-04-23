@@ -5,8 +5,6 @@ import ResetPasswordScreen, {
   appendToken,
 } from '../ResetPasswordScreen/ResetPasswordScreen'
 
-import { FormBottom } from '../ResetPasswordScreen/ResetPasswordForm'
-
 jest.mock('croods-auth', () => ({
   ResetPassword: props => (
     <div {...props}>
@@ -35,11 +33,6 @@ jest.mock('croods', () => ({
     </div>
   ),
 }))
-
-it('renders the form correctly', () => {
-  const tree = renderer.create(<FormBottom />).toJSON()
-  expect(tree).toMatchSnapshot()
-})
 
 it('renders correctly', () => {
   const tree = renderer.create(<ResetPasswordScreen />).toJSON()
