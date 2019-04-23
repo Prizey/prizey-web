@@ -3,6 +3,7 @@ import { Router } from '@reach/router'
 
 import ChooseDifficultyScreen from 'game/ChooseDifficultyScreen'
 import GameScreen from 'game/GameScreen'
+import ClaimProductScreen from 'game/ClaimProductScreen'
 
 import SignInScreen from 'auth/SignInScreen'
 import SignUpScreen from 'auth/SignUpScreen'
@@ -14,6 +15,7 @@ export default props => (
   <Router>
     <ChooseDifficultyScreen {...props} path="/" />
     <GameScreen {...props} path="/game/:difficulty" />
+    <ClaimProductScreen {...props} path="/game/:difficulty/claim" />
 
     <SignInScreen {...props} path="/sign-in" />
     <SignUpScreen {...props} path="/sign-up" />

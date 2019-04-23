@@ -54,6 +54,7 @@ exports[`renders correctly 1`] = `
           >
             <div
               name="products"
+              parentId="easy"
               path="/products/easy"
               render={[Function]}
               renderLoading={[Function]}
@@ -134,6 +135,7 @@ exports[`renders correctly 1`] = `
           >
             <div
               name="products"
+              parentId="medium"
               path="/products/medium"
               render={[Function]}
               renderLoading={[Function]}
@@ -214,6 +216,7 @@ exports[`renders correctly 1`] = `
           >
             <div
               name="products"
+              parentId="hard"
               path="/products/hard"
               render={[Function]}
               renderLoading={[Function]}

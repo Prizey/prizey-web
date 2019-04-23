@@ -8,6 +8,12 @@ const mockList = [
   { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
 ]
 
+jest.mock('react-redux', () => ({
+  connect: () => Component => props => (
+    <Component {...props} chooseProduct={jest.fn} />
+  ),
+}))
+
 jest.mock('croods', () => ({
   Info: ({ children, ...props }) => (
     <div {...props}>
@@ -40,9 +46,12 @@ it('redirects correctly', () => {
 })
 
 it('trigger the alert', () => {
-  global.alert = jest.fn()
-  const tree = renderer.create(<GameScreen currentUser />).root
+  const navigate = jest.fn()
+  const tree = renderer.create(<GameScreen currentUser navigate={navigate} />)
+    .root
 
-  tree.findByProps({ speed: 500 }).props.onSelectItem({ title: 'item' })
-  expect(global.alert).toHaveBeenCalledTimes(1)
+  tree
+    .findByProps({ 'aria-label': 'roulette' })
+    .props.onSelectItem({ title: 'item' })
+  expect(navigate).toHaveBeenCalledTimes(1)
 })

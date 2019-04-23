@@ -56,6 +56,7 @@ export default withStyles(styles)(
       component={props => <Link to={to} {...props} />}
     >
       <List
+        parentId={difficulty}
         name="products"
         path={`/products/${difficulty}`}
         renderLoading={() => (
