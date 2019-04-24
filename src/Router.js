@@ -2,6 +2,7 @@ import React from 'react'
 import { Router } from '@reach/router'
 
 import ChooseDifficultyScreen from 'game/ChooseDifficultyScreen'
+import HomeScreen from 'game/home/HomeScreen'
 import GameScreen from 'game/GameScreen'
 import ClaimProductScreen from 'game/ClaimProductScreen'
 
@@ -13,7 +14,8 @@ import ForgotSentScreen from 'auth/ForgotSentScreen'
 
 export default props => (
   <Router>
-    <ChooseDifficultyScreen {...props} path="/" />
+    <HomeScreen {...props} path="/" />
+    <ChooseDifficultyScreen {...props} path="/game" />
     <GameScreen {...props} path="/game/:difficulty" />
     <ClaimProductScreen {...props} path="/game/:difficulty/claim" />
 
