@@ -1,20 +1,14 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { List, Info } from 'croods'
 import { Redirect, Link } from '@reach/router'
 import { Button, Typography } from '@material-ui/core'
-
-import { chooseProduct } from 'store/order/actions'
 
 import Layout from 'design/Layout/Layout'
 import Roulette from '../Roulette'
 
 const nextUrl = '/game'
 
-const InnerComponent = connect(
-  null,
-  { chooseProduct },
-)(({ speed, list, multiplier }) => (
+const ScreenWithRoullette = ({ speed, list, multiplier }) => (
   <Layout>
     <Link to={nextUrl} style={{ textDecoration: 'none' }}>
       <Roulette
@@ -39,7 +33,7 @@ const InnerComponent = connect(
       </Button>
     </Link>
   </Layout>
-))
+)
 
 const SpeedComponent = (difficulty, navigate) => list => (
   <Info
@@ -50,7 +44,7 @@ const SpeedComponent = (difficulty, navigate) => list => (
       const speed = settings[`${difficulty}CarouselSpeed`]
 
       return (
-        <InnerComponent
+        <ScreenWithRoullette
           list={list}
           difficulty={difficulty}
           multiplier={settings.priceMultiplier}
