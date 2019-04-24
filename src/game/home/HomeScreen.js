@@ -16,19 +16,19 @@ const InnerComponent = connect(
   { chooseProduct },
 )(({ speed, list, multiplier }) => (
   <Layout>
-    <Roulette
-      aria-label="roulette"
-      speed={speed}
-      data={list}
-      multiplier={multiplier}
-    />
-    <br />
-    <Typography align="center" variant="h5">
-      Tap the screen, <br />
-      win what you tap.
-    </Typography>
-    <br />
     <Link to={nextUrl} style={{ textDecoration: 'none' }}>
+      <Roulette
+        aria-label="roulette"
+        speed={speed}
+        data={list}
+        multiplier={multiplier}
+      />
+      <br />
+      <Typography align="center" variant="h5">
+        Tap the screen, <br />
+        win what you tap.
+      </Typography>
+      <br />
       <Button
         variant="contained"
         color="primary"

@@ -37,55 +37,6 @@ exports[`renders correctly 1`] = `
         <div
           className="Component-children-2"
         >
-          <div
-            className="Component-root-43"
-          >
-            <div
-              aria-label="rouletteItem-0"
-              onMouseDown={[Function]}
-            >
-              <img
-                alt="trump"
-                className="Component-img-42"
-                pose="enter"
-                speed={NaN}
-                src="/mocks/trump-mask.png"
-              />
-            </div>
-            <div
-              aria-label="rouletteItem-1"
-              onMouseDown={[Function]}
-            >
-              <img
-                alt="sweatshirt"
-                className="Component-img-42"
-                pose="leave"
-                speed={NaN}
-                src="/mocks/sweatshirt.png"
-              />
-            </div>
-            <div
-              aria-label="rouletteItem-2"
-              onMouseDown={[Function]}
-            >
-              <img
-                alt="shoe"
-                className="Component-img-42"
-                pose="leave"
-                speed={NaN}
-                src="/mocks/shoe.png"
-              />
-            </div>
-          </div>
-          <br />
-          <h5
-            className="MuiTypography-root-6 MuiTypography-h5-22 MuiTypography-alignCenter-29"
-          >
-            Tap the screen, 
-            <br />
-            win what you tap.
-          </h5>
-          <br />
           <a
             href="/game"
             onClick={[Function]}
@@ -95,6 +46,55 @@ exports[`renders correctly 1`] = `
               }
             }
           >
+            <div
+              className="Component-root-43"
+            >
+              <div
+                aria-label="rouletteItem-0"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="trump"
+                  className="Component-img-42"
+                  pose="enter"
+                  speed={NaN}
+                  src="/mocks/trump-mask.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-1"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="sweatshirt"
+                  className="Component-img-42"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/sweatshirt.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-2"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="shoe"
+                  className="Component-img-42"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/shoe.png"
+                />
+              </div>
+            </div>
+            <br />
+            <h5
+              className="MuiTypography-root-6 MuiTypography-h5-22 MuiTypography-alignCenter-29"
+            >
+              Tap the screen, 
+              <br />
+              win what you tap.
+            </h5>
+            <br />
             <button
               aria-label="I want it"
               className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-contained-55 MuiButton-containedPrimary-56 MuiButton-raised-58 MuiButton-raisedPrimary-59 MuiButton-fullWidth-69"
