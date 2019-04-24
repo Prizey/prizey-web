@@ -81,8 +81,7 @@ const theme = createMuiTheme({
     xs: '10px',
   },
   typography: {
-    fontFamily:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue","Lucida Grande", "Segoe UI"',
+    fontFamily: 'Roboto, "Helvetica Neue","Lucida Grande", "Segoe UI"',
     fontSize: 14,
     h2: {
       fontSize: '2.2rem',
