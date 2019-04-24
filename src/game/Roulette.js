@@ -64,7 +64,7 @@ export default withStyles(styles)(
           <div
             key={`${item.id}-${id}`}
             aria-label={`rouletteItem-${id}`}
-            onMouseDown={() => onSelectItem(item)}
+            onMouseDown={() => onSelectItem && onSelectItem(item)}
           >
             <PosedImg
               pose={next === id ? 'enter' : 'leave'}

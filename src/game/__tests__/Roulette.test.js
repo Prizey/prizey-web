@@ -11,7 +11,7 @@ const mockList = [
 ]
 
 it('gets the correct item speed', () => {
-  const speed = getItemSpeed(10, 100, 1)
+  const speed = getItemSpeed(10, 1000, 1)
   expect(speed).toEqual(1000)
 })
 
@@ -25,7 +25,7 @@ it('gets the correct transition information', () => {
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Roulette speed={250} data={mockList} />)
+    .create(<Roulette speed={2000} data={mockList} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
