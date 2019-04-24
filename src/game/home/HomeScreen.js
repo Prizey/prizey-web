@@ -1,13 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { List, Info } from 'croods'
-import { Redirect } from '@reach/router'
+import { Redirect, Link } from '@reach/router'
 import { Button, Typography } from '@material-ui/core'
 
 import { chooseProduct } from 'store/order/actions'
 
 import Layout from 'design/Layout/Layout'
 import Roulette from '../Roulette'
+
+const nextUrl = '/game'
 
 const InnerComponent = connect(
   null,
@@ -19,7 +21,6 @@ const InnerComponent = connect(
       speed={speed}
       data={list}
       multiplier={multiplier}
-      onSelectItem={window.alert(`You got it!`)}
     />
     <br />
     <Typography align="center" variant="h5">
@@ -27,15 +28,16 @@ const InnerComponent = connect(
       win what you tap.
     </Typography>
     <br />
-    <Button
-      variant="contained"
-      color="primary"
-      fullWidth
-      aria-label="I want it"
-    >
-      {/* TODO: on click redirect to ??? */}
-      PLAY FOR $1
-    </Button>
+    <Link to={nextUrl} style={{ textDecoration: 'none' }}>
+      <Button
+        variant="contained"
+        color="primary"
+        fullWidth
+        aria-label="I want it"
+      >
+        PLAY FOR $1
+      </Button>
+    </Link>
   </Layout>
 ))
 
