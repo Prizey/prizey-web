@@ -10,6 +10,11 @@ const mockList = [
   { id: 3, image: '/mocks/shoe.png', price: 10, title: 'shoe' },
 ]
 
+it('gets the correct item speed when multiplier is less than zero', () => {
+  const speed = getItemSpeed(10, 100, 0)
+  expect(speed).toEqual(100)
+})
+
 it('gets the correct item speed', () => {
   const speed = getItemSpeed(10, 100, 1)
   expect(speed).toEqual(1000)

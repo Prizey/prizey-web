@@ -4,7 +4,10 @@ import posed from 'react-pose'
 
 export const getItemSpeed = (price, speed, multiplier) => {
   const PRICE_FACTOR = process.env.REACT_APP_PRICE_FACTOR || 1
-  const deltaSpeed = (PRICE_FACTOR / parseFloat(price)) * multiplier * speed
+  const deltaSpeed =
+    multiplier > 0
+      ? (PRICE_FACTOR / parseFloat(price)) * multiplier * speed
+      : speed
   return Math.min(Math.max(deltaSpeed, 80), 2000)
 }
 
