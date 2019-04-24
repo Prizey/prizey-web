@@ -11,8 +11,8 @@ const mockList = [
 ]
 
 it('gets the correct item speed', () => {
-  const speed = getItemSpeed(10, 1000, 2)
-  expect(speed).toEqual(2000)
+  const speed = getItemSpeed(10, 100, 1)
+  expect(speed).toEqual(1000)
 })
 
 it('gets the correct transition information', () => {
