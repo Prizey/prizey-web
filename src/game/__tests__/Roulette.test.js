@@ -30,7 +30,7 @@ it('gets the correct transition information', () => {
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Roulette speed={2000} data={mockList} />)
+    .create(<Roulette speed={250} data={mockList} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
