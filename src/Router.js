@@ -11,6 +11,8 @@ import ResetPasswordScreen from 'auth/ResetPasswordScreen'
 import ForgotPasswordScreen from 'auth/ForgotPasswordScreen'
 import ForgotSentScreen from 'auth/ForgotSentScreen'
 
+import ShippingInfo from 'shipping/ShippingInfo'
+
 export default props => (
   <Router>
     <ChooseDifficultyScreen {...props} path="/" />
@@ -22,5 +24,7 @@ export default props => (
     <ResetPasswordScreen {...props} path="/reset-password" />
     <ForgotPasswordScreen {...props} path="/forgot-password" />
     <ForgotSentScreen {...props} path="/forgot-password/sent" />
+
+    <ShippingInfo {...props} path="/shipping-info" />
   </Router>
 )
