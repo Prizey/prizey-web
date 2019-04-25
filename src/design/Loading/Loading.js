@@ -11,6 +11,6 @@ export default ({ style = {} } = {}) => (
       ...style,
     }}
   >
-    <CircularProgress size={60} />
+    <CircularProgress size={60} color="primary" />
   </div>
 )

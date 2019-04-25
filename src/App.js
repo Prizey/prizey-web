@@ -18,22 +18,20 @@ export default class extends Component {
   render() {
     return (
       <Provider store={store}>
-        <CroodsProvider
-          baseUrl={process.env.REACT_APP_API_URL}
-          renderLoading={LoadingComponent}
-          renderError={ErrorComponent}
-          {...credentialsProps}
-        >
-          <Auth
+        <MuiThemeProvider theme={theme}>
+          <CssBaseline />
+          <CroodsProvider
+            baseUrl={process.env.REACT_APP_API_URL}
             renderLoading={LoadingComponent}
-            render={props => (
-              <MuiThemeProvider theme={theme}>
-                <CssBaseline />
-                <Router {...props} />
-              </MuiThemeProvider>
-            )}
-          />
-        </CroodsProvider>
+            renderError={ErrorComponent}
+            {...credentialsProps}
+          >
+            <Auth
+              renderLoading={LoadingComponent}
+              render={props => <Router {...props} />}
+            />
+          </CroodsProvider>
+        </MuiThemeProvider>
       </Provider>
     )
   }
