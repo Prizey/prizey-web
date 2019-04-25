@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="Component-root-1"
+  onSubmit={[MockFunction]}
+>
+  <div
+    component={[Function]}
+    label="Full Name"
+    name="fullname"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    component={[Function]}
+    label="Address"
+    name="address"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    component={[Function]}
+    label="City"
+    name="city"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    component={[Function]}
+    label="State / Province / Region"
+    name="stateProvinceRegion"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    component={[Function]}
+    label="Postal Code / ZIP"
+    name="zipcode"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    component={[Function]}
+    label="Clothing Size"
+    name="clothingSize"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    component={[Function]}
+    label="Shoe Size"
+    name="shoeSize"
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    }
+  >
+    Field
+  </div>
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  />
+  <button>
+    Button
+  </button>
+</form>
+`;

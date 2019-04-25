@@ -7,11 +7,12 @@ import orderReducer from './order/reducer'
 
 const reducers = {
   auth: createAuthReducer(),
-  form: formReducer(),
+  form: formReducer,
   game: createReducer('game'),
   order: orderReducer,
   products: createReducer('products'),
   tickets: createReducer('tickets'),
+  users: createReducer('users'),
 }
 
 const rootReducer = combineReducers(reducers)

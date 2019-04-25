@@ -16,6 +16,11 @@ const theme = createMuiTheme({
       },
     },
     MuiInput: {
+      formControl: {
+        'label + &': {
+          marginTop: 0,
+        },
+      },
       root: {
         background: 'rgba(0, 0, 0, 0.087)',
         borderTopLeftRadius: '4px',
@@ -37,7 +42,7 @@ const theme = createMuiTheme({
         fontSize: '12px',
         left: '16px',
         position: 'relative',
-        top: '38px',
+        top: '22px',
         transform: 'none',
       },
       shrink: {

@@ -18,6 +18,7 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.5",
     "redux-form": "^8.2.0",
+    "redux-form-validators": "^3.3.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "seasoned-auth-forms-web": "^0.3.3",
