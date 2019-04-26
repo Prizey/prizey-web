@@ -41,6 +41,7 @@ exports[`renders correctly 1`] = `
           <div
             initialValues={true}
             onSubmit={[MockFunction]}
+            render={[Function]}
           >
             Formik - 
             <div

@@ -24,8 +24,10 @@ const styles = theme => ({
 })
 
 export default withStyles(styles)(props => (
-  <Formik initialValues={props.user} onSubmit={props.onSubmit}>
-    {() => (
+  <Formik
+    initialValues={props.user}
+    onSubmit={props.onSubmit}
+    render={() => (
       <Form className={props.classes.root}>
         {fieldList.map(field => (
           <Field
@@ -50,5 +52,5 @@ export default withStyles(styles)(props => (
         {props.renderButton && props.renderButton(props)}
       </Form>
     )}
-  </Formik>
+  />
 ))
