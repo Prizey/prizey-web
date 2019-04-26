@@ -2,14 +2,6 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 
-/**
- * Props:
- *  LeftIcon
- *  RightIcon
- *  caption
- *  children
- */
-
 const styles = theme => ({
   caption: {
     height: theme.spacing.lg,
@@ -40,9 +32,10 @@ const styles = theme => ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    height: '100vh',
+    height: '100%',
     justifyContent: 'center',
-    width: '100vw',
+    minHeight: '100vh',
+    width: '100%',
   },
 })
 
