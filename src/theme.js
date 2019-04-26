@@ -22,6 +22,10 @@ const theme = createMuiTheme({
         },
       },
       root: {
+        '@media (max-width: 425px)': {
+          marginBottom: '15px',
+          padding: '10px 16px 7px',
+        },
         background: 'rgba(0, 0, 0, 0.087)',
         borderTopLeftRadius: '4px',
         borderTopRightRadius: '4px',

@@ -2,10 +2,11 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import UserForm from '../UserForm'
 
-jest.mock('redux-form', () => ({
-  Field: props => <div {...props}>Field</div>,
-  reduxForm: () => Component => props => (
-    <Component handleSubmit={() => jest.fn()} {...props} />
+jest.mock('formik', () => ({
+  Field: props => <div {...props}>Field - {props.validate('')}</div>,
+  Form: ({ children, ...props }) => <div {...props}>Form - {children}</div>,
+  Formik: props => (
+    <div {...props}>Formik - {props.children({ foo: 'bar' })}</div>
   ),
 }))
 

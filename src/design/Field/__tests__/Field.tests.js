@@ -5,7 +5,14 @@ import { InputField as Field } from '../Field'
 
 it('renders correctly the desktop field', () => {
   const tree = renderer
-    .create(<Field label="foo" meta={{}} input={{ name: 'foo' }} width="md" />)
+    .create(
+      <Field
+        label="foo"
+        form={{ errors: {}, touched: {} }}
+        field={{ name: 'foo' }}
+        width="md"
+      />,
+    )
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
@@ -15,8 +22,8 @@ it('renders correctly the desktop field with error', () => {
     .create(
       <Field
         label="foo"
-        meta={{ error: 'bar', touched: true }}
-        input={{ name: 'foo' }}
+        form={{ errors: { foo: 'bar' }, touched: { foo: true } }}
+        field={{ name: 'foo' }}
         width="md"
       />,
     )
@@ -26,7 +33,14 @@ it('renders correctly the desktop field with error', () => {
 
 it('renders correctly the mobile field', () => {
   const tree = renderer
-    .create(<Field label="foo" meta={{}} input={{ name: 'foo' }} width="xs" />)
+    .create(
+      <Field
+        label="foo"
+        form={{ errors: {}, touched: {} }}
+        field={{ name: 'foo' }}
+        width="xs"
+      />,
+    )
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
@@ -36,8 +50,8 @@ it('renders correctly the mobile field with error', () => {
     .create(
       <Field
         label="foo"
-        meta={{ error: 'bar', touched: true }}
-        input={{ name: 'foo' }}
+        form={{ errors: { foo: 'bar' }, touched: { foo: true } }}
+        field={{ name: 'foo' }}
         width="xs"
       />,
     )

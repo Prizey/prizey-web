@@ -79,9 +79,27 @@ exports[`renders correctly the mobile field 1`] = `
   className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
   id="foo-fieldset"
 >
-  <p>
-    Mobile Field
-  </p>
+  <div
+    className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInputBase-input-46 MuiInput-input-31"
+      disabled={false}
+      id="foo"
+      name="foo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root-53"
+    id="foo-text"
+  />
 </fieldset>
 `;
 
@@ -90,8 +108,28 @@ exports[`renders correctly the mobile field with error 1`] = `
   className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
   id="foo-fieldset"
 >
-  <p>
-    Mobile Field
+  <div
+    className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-error-42 MuiInput-error-28 MuiInputBase-formControl-37 MuiInput-formControl-24"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInputBase-input-46 MuiInput-input-31"
+      disabled={false}
+      id="foo"
+      name="foo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root-53 MuiFormHelperText-error-54"
+    id="foo-text"
+  >
+    bar
   </p>
 </fieldset>
 `;

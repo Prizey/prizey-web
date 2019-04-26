@@ -5,18 +5,16 @@ import { FormControl } from '@material-ui/core'
 import MobileField from './MobileField'
 import DesktopField from './DesktopField'
 
-export const InputField = ({ width, input, meta, ...props }) => {
-  const { touched, error } = meta
+export const InputField = ({ width, field, form, ...props }) => {
   const UseField = isWidthUp('sm', width) ? DesktopField : MobileField
-
   return (
     <FormControl
       component="fieldset"
-      error={touched && !!error}
-      id={`${input.name}-fieldset`}
+      error={form.touched[field.name] && !!form.errors[field.name]}
+      id={`${field.name}-fieldset`}
       fullWidth
     >
-      <UseField {...props} input={input} meta={meta} />
+      <UseField {...props} field={field} form={form} />
     </FormControl>
   )
 }
