@@ -4,7 +4,7 @@ import { Redirect } from '@reach/router'
 import { withStyles } from '@material-ui/core/styles'
 import { Button, Typography } from '@material-ui/core'
 
-import { clearProduct } from 'store/order/actions'
+import { clearProduct } from 'store/basket/actions'
 
 import GoBack from 'design/GoBack/GoBack'
 import Layout from 'design/Layout/Layout'
@@ -23,7 +23,7 @@ const styles = theme => ({
 })
 
 const InnerComponent = withStyles(styles)(
-  ({ product, classes, difficulty, ...props }) =>
+  ({ product, classes, difficulty, navigate, ...props }) =>
     product ? (
       <Layout
         leftIcon={<GoBack to="/" />}
@@ -49,8 +49,7 @@ const InnerComponent = withStyles(styles)(
           fullWidth
           aria-label="I want it"
           onClick={() => {
-            // eslint-disable-next-line no-alert
-            window.alert(`You claimed the item ${product.title}`)
+            navigate('/shipping-info')
           }}
         >
           I WANT IT!
@@ -61,8 +60,8 @@ const InnerComponent = withStyles(styles)(
     ),
 )
 
-export const mapState = ({ order = {} }) => ({
-  product: order.product,
+export const mapState = ({ basket = {} }) => ({
+  product: basket.product,
 })
 
 const ClaimProductScreen = connect(

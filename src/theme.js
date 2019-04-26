@@ -10,6 +10,12 @@ const theme = createMuiTheme({
       label: {
         fontSize: '14px',
       },
+      outlinedPrimary: {
+        '&:hover': {
+          borderWidth: '2px',
+        },
+        borderWidth: '2px',
+      },
       root: {
         height: '44px',
         marginTop: '20px',

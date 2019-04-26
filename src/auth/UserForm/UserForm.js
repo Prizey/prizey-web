@@ -7,7 +7,7 @@ import { Formik, Form, Field } from 'formik'
 import InputField from 'design/Field'
 import ErrorComponent from 'design/Error/Error'
 
-const fieldList = [
+export const fieldList = [
   { label: 'Full Name', name: 'fullname' },
   { label: 'Address', name: 'address' },
   { label: 'City', name: 'city' },

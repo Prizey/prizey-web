@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`redirects correctly 1`] = `null`;
+
+exports[`renders Component correctly 1`] = `
+<div
+  className="Component-root-8"
+>
+  <div
+    className="Component-header-7"
+  />
+  <div
+    className="Component-container-6"
+  >
+    <h2
+      className="MuiTypography-root-9 MuiTypography-h2-22 MuiTypography-alignCenter-32"
+    >
+      PRIZEY
+    </h2>
+    <div
+      className="Component-caption-4"
+    />
+    <div
+      className="Component-children-5"
+    >
+      <h5
+        className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32 Component-title-2"
+      >
+        Confirm Order
+      </h5>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        Full Name
+        :
+         
+        <span
+          className="Component-value-3"
+        >
+          john john
+        </span>
+      </p>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        Address
+        :
+         
+        <span
+          className="Component-value-3"
+        >
+          1# street
+        </span>
+      </p>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        City
+        :
+         
+        <span
+          className="Component-value-3"
+        >
+          porto alegre
+        </span>
+      </p>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        State / Province / Region
+        :
+         
+        <span
+          className="Component-value-3"
+        >
+          RS
+        </span>
+      </p>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        Postal Code / ZIP
+        :
+         
+        <span
+          className="Component-value-3"
+        />
+      </p>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        Clothing Size
+        :
+         
+        <span
+          className="Component-value-3"
+        >
+          M
+        </span>
+      </p>
+      <p
+        className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+      >
+        Shoe Size
+        :
+         
+        <span
+          className="Component-value-3"
+        >
+          42
+        </span>
+      </p>
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      />
+      <button
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-46"
+        >
+          SHIP IT!
+        </span>
+        <span
+          className="MuiTouchRipple-root-74"
+        />
+      </button>
+      <button
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-outlined-53 MuiButton-outlinedPrimary-54 MuiButton-fullWidth-70"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-46"
+        >
+          CANCEL
+        </span>
+        <span
+          className="MuiTouchRipple-root-74"
+        />
+      </button>
+    </div>
+    <p
+      className="MuiTypography-root-9 MuiTypography-body1-18 MuiTypography-alignCenter-32"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  afterCreated={[Function]}
+  name="orders"
+  render={[Function]}
+>
+  New -
+  <div>
+    render -
+    <div
+      className="Component-root-8"
+    >
+      <div
+        className="Component-header-7"
+      />
+      <div
+        className="Component-container-6"
+      >
+        <h2
+          className="MuiTypography-root-9 MuiTypography-h2-22 MuiTypography-alignCenter-32"
+        >
+          PRIZEY
+        </h2>
+        <div
+          className="Component-caption-4"
+        />
+        <div
+          className="Component-children-5"
+        >
+          <h5
+            className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32 Component-title-2"
+          >
+            Confirm Order
+          </h5>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            Full Name
+            :
+             
+            <span
+              className="Component-value-3"
+            >
+              john john
+            </span>
+          </p>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            Address
+            :
+             
+            <span
+              className="Component-value-3"
+            >
+              1# street
+            </span>
+          </p>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            City
+            :
+             
+            <span
+              className="Component-value-3"
+            >
+              porto alegre
+            </span>
+          </p>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            State / Province / Region
+            :
+             
+            <span
+              className="Component-value-3"
+            >
+              RS
+            </span>
+          </p>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            Postal Code / ZIP
+            :
+             
+            <span
+              className="Component-value-3"
+            />
+          </p>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            Clothing Size
+            :
+             
+            <span
+              className="Component-value-3"
+            >
+              M
+            </span>
+          </p>
+          <p
+            className="MuiTypography-root-9 MuiTypography-body2-17 Component-field-1"
+          >
+            Shoe Size
+            :
+             
+            <span
+              className="Component-value-3"
+            >
+              42
+            </span>
+          </p>
+          <div
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          />
+          <button
+            className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-46"
+            >
+              SHIP IT!
+            </span>
+            <span
+              className="MuiTouchRipple-root-74"
+            />
+          </button>
+          <button
+            className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-outlined-53 MuiButton-outlinedPrimary-54 MuiButton-fullWidth-70"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-46"
+            >
+              CANCEL
+            </span>
+            <span
+              className="MuiTouchRipple-root-74"
+            />
+          </button>
+        </div>
+        <p
+          className="MuiTypography-root-9 MuiTypography-body1-18 MuiTypography-alignCenter-32"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    renderCreated - 
+  </div>
+</div>
+`;

@@ -32,19 +32,19 @@ it('redirects correctly', () => {
 })
 
 it('map the state to props', () => {
-  const order = {
+  const basket = {
     product: { image: '/mock/trump-mask.png', title: 'Trump mask' },
   }
 
-  expect(mapState({ order })).toEqual({ product: order.product })
+  expect(mapState({ basket })).toEqual({ product: basket.product })
 })
 
 it('trigger the alert', () => {
-  global.alert = jest.fn()
+  const navigate = jest.fn()
   const tree = renderer.create(
-    <ClaimProductScreen difficulty="easy" currentUser />,
+    <ClaimProductScreen difficulty="easy" currentUser navigate={navigate} />,
   ).root
 
   tree.findByProps({ 'aria-label': 'I want it' }).props.onClick()
-  expect(global.alert).toHaveBeenCalledTimes(1)
+  expect(navigate).toHaveBeenCalledTimes(1)
 })
