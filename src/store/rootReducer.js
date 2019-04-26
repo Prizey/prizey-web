@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux'
 import { createReducer } from 'croods'
 import { createReducer as createAuthReducer } from 'croods-auth'
-import orderReducer from './order/reducer'
+import basketReducer from './basket/reducer'
 
 const reducers = {
   auth: createAuthReducer(),
+  basket: basketReducer,
   game: createReducer('game'),
-  order: orderReducer,
+  orders: createReducer('orders'),
   products: createReducer('products'),
   tickets: createReducer('tickets'),
   users: createReducer('users'),
