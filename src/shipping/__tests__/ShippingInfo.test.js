@@ -25,7 +25,7 @@ jest.mock('formik', () => ({
   Field: props => <div {...props}>Field</div>,
   Form: ({ children, ...props }) => <div {...props}>Form - {children}</div>,
   Formik: props => (
-    <div {...props}>Formik - {props.children({ foo: 'bar' })}</div>
+    <div {...props}>Formik - {props.render({ foo: 'bar' })}</div>
   ),
 }))
 
