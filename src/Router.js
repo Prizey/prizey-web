@@ -12,6 +12,7 @@ import ForgotPasswordScreen from 'auth/ForgotPasswordScreen'
 import ForgotSentScreen from 'auth/ForgotSentScreen'
 
 import ShippingInfo from 'shipping/ShippingInfo'
+import ConfirmOrder from 'shipping/ConfirmOrder'
 
 export default props => (
   <Router>
@@ -26,5 +27,6 @@ export default props => (
     <ForgotSentScreen {...props} path="/forgot-password/sent" />
 
     <ShippingInfo {...props} path="/shipping-info" />
+    <ConfirmOrder {...props} path="/shipping-info/confirm" />
   </Router>
 )
