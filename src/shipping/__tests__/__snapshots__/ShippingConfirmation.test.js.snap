@@ -4,15 +4,15 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-6"
+  className="Component-root-5"
 >
   <div
-    className="Component-header-5"
+    className="Component-header-4"
   >
     <a
       aria-current="page"
       aria-label="Go Back"
-      className="MuiButtonBase-root-14 MuiIconButton-root-8 Component-root-7"
+      className="MuiButtonBase-root-13 MuiIconButton-root-7 Component-root-6"
       href="/"
       onBlur={[Function]}
       onClick={[Function]}
@@ -30,11 +30,11 @@ exports[`renders correctly 1`] = `
       tabIndex="0"
     >
       <span
-        className="MuiIconButton-label-13"
+        className="MuiIconButton-label-12"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-17 MuiSvgIcon-fontSizeLarge-25"
+          className="MuiSvgIcon-root-16 MuiSvgIcon-fontSizeLarge-24"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -54,37 +54,42 @@ exports[`renders correctly 1`] = `
     </a>
   </div>
   <div
-    className="Component-container-4"
+    className="Component-container-3"
   >
     <h2
-      className="MuiTypography-root-26 MuiTypography-h2-39 MuiTypography-alignCenter-49"
+      className="MuiTypography-root-25 MuiTypography-h2-38 MuiTypography-alignCenter-48"
     >
       PRIZEY
     </h2>
     <div
-      className="Component-caption-2"
+      className="Component-caption-1"
     />
     <div
-      className="Component-children-3"
+      className="Component-children-2"
     >
       <h5
-        className="MuiTypography-root-26 MuiTypography-h5-42 MuiTypography-alignCenter-49"
+        className="MuiTypography-root-25 MuiTypography-h5-41 MuiTypography-alignCenter-48"
       >
         Sweet!
       </h5>
       <img
         alt="Trump mask"
-        className="Component-productImage-1"
+        className="Component-productImage-61"
         src="/mock/trump-mask.png"
+        style={
+          Object {
+            "width": "200px",
+          }
+        }
       />
       <p
-        className="MuiTypography-root-26 MuiTypography-body1-35 MuiTypography-alignCenter-49"
+        className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
       >
         We'll confirm through email.
       </p>
       <button
         aria-label="Play again"
-        className="MuiButtonBase-root-14 MuiButton-root-62 MuiButton-contained-73 MuiButton-containedPrimary-74 MuiButton-raised-76 MuiButton-raisedPrimary-77 MuiButton-fullWidth-87"
+        className="MuiButtonBase-root-13 MuiButton-root-62 MuiButton-contained-73 MuiButton-containedPrimary-74 MuiButton-raised-76 MuiButton-raisedPrimary-77 MuiButton-fullWidth-87"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -112,7 +117,7 @@ exports[`renders correctly 1`] = `
       </button>
     </div>
     <p
-      className="MuiTypography-root-26 MuiTypography-body1-35 MuiTypography-alignCenter-49"
+      className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
     />
   </div>
 </div>
