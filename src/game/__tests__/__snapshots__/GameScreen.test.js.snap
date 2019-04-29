@@ -134,6 +134,14 @@ exports[`renders correctly 1`] = `
               />
             </div>
           </div>
+          <br />
+          <p
+            className="MuiTypography-root-25 MuiTypography-body2-33 MuiTypography-colorTextSecondary-58 MuiTypography-alignCenter-48"
+          >
+            Tap the screen, 
+            <br />
+            win what you tap.
+          </p>
         </div>
         <p
           className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"

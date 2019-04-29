@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { List, Info } from 'croods'
+import { List } from 'croods'
 import { Redirect } from '@reach/router'
+import { Typography } from '@material-ui/core'
 
 import { chooseProduct } from 'store/basket/actions'
 
@@ -9,8 +10,9 @@ import GoBack from 'design/GoBack/GoBack'
 import Caption from 'design/Caption/Caption'
 import Layout from 'design/Layout/Layout'
 import Roulette from './Roulette'
+import SpeedComponent from './SpeedComponent'
 
-const InnerComponent = connect(
+const GameComponent = connect(
   null,
   { chooseProduct },
 )(({ speed, difficulty, list, multiplier, ...props }) => (
@@ -28,19 +30,21 @@ const InnerComponent = connect(
         props.navigate(`/game/${difficulty}/claim`)
       }}
     />
+    <br />
+    <Typography align="center" variant="body2" color="textSecondary">
+      Tap the screen, <br />
+      win what you tap.
+    </Typography>
   </Layout>
 ))
 
-const SpeedComponent = (difficulty, navigate) => list => (
-  <Info
-    name="game"
-    path="/game_setting"
-    id={1}
+const ScreenWithSpeed = (difficulty, navigate) => list => (
+  <SpeedComponent
     render={settings => {
       const speed = settings[`${difficulty}CarouselSpeed`]
 
       return (
-        <InnerComponent
+        <GameComponent
           list={list}
           difficulty={difficulty}
           multiplier={settings.priceMultiplier}
@@ -57,7 +61,7 @@ export default ({ currentUser, navigate, difficulty = 'easy' }) =>
     <List
       name="products"
       path={`/products/${difficulty}`}
-      render={SpeedComponent(difficulty, navigate)}
+      render={ScreenWithSpeed(difficulty, navigate)}
     />
   ) : (
     <Redirect to={`/sign-in?next=/game/${difficulty}`} noThrow />
