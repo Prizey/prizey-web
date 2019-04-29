@@ -83,6 +83,7 @@ const theme = createMuiTheme({
     },
     text: {
       primary: colors.white,
+      secondary: 'rgba(255, 255, 255, 0.6)',
     },
     type: 'light',
   },

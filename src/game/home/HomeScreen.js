@@ -1,10 +1,11 @@
 import React from 'react'
-import { List, Info } from 'croods'
+import { List } from 'croods'
 import { Redirect, Link } from '@reach/router'
 import { Button, Typography } from '@material-ui/core'
 
 import Layout from 'design/Layout/Layout'
 import Roulette from '../Roulette'
+import SpeedComponent from '../SpeedComponent'
 
 const nextUrl = '/game'
 
@@ -35,11 +36,8 @@ const ScreenWithRoullette = ({ speed, list, multiplier }) => (
   </Layout>
 )
 
-const SpeedComponent = (difficulty, navigate) => list => (
-  <Info
-    name="game"
-    path="/game_setting"
-    id={1}
+const ScreenWithSpeed = (difficulty, navigate) => list => (
+  <SpeedComponent
     render={settings => {
       const speed = settings[`${difficulty}CarouselSpeed`]
 
@@ -61,7 +59,7 @@ export default ({ currentUser, navigate, difficulty = 'easy' }) =>
     <List
       name="products"
       path={`/products/${difficulty}`}
-      render={SpeedComponent(difficulty, navigate)}
+      render={ScreenWithSpeed(difficulty, navigate)}
     />
   ) : (
     <Redirect to={`/sign-in?next=/`} noThrow />
