@@ -7,36 +7,35 @@ import { clearProduct } from 'store/basket/actions'
 
 import GoBack from 'design/GoBack/GoBack'
 import Layout from 'design/Layout/Layout'
-import Caption from 'design/Caption/Caption'
 import ProductImage from 'design/ProductImage'
 
-import SellItBack from './SellItBack'
-
-const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
+const ShippingComponent = ({
+  product,
+  classes,
+  difficulty,
+  navigate,
+  ...props
+}) =>
   product ? (
-    <Layout
-      leftIcon={<GoBack to="/" />}
-      caption={<Caption difficulty={difficulty} />}
-    >
+    <Layout leftIcon={<GoBack to="/" />}>
       <Typography align="center" variant="h5">
-        {product.title}
+        Sweet!
       </Typography>
 
-      <ProductImage product={product} />
-      <Typography align="center">MSRP: ${product.price}</Typography>
-
-      <SellItBack amount={3} clearProduct={props.clearProduct} />
+      <ProductImage product={product} style={{ width: '200px' }} />
+      <Typography align="center">We&apos;ll confirm through email.</Typography>
 
       <Button
         variant="contained"
         color="primary"
         fullWidth
-        aria-label="I want it"
+        aria-label="Play again"
         onClick={() => {
-          navigate('/shipping-info')
+          props.clearProduct()
+          navigate('/')
         }}
       >
-        I WANT IT!
+        PLAY AGAIN
       </Button>
     </Layout>
   ) : (
@@ -47,14 +46,14 @@ export const mapState = ({ basket = {} }) => ({
   product: basket.product,
 })
 
-const ClaimProductScreen = connect(
+const ShippingConfirmation = connect(
   mapState,
   { clearProduct },
-)(props => <InnerComponent {...props} />)
+)(props => <ShippingComponent {...props} />)
 
 export default ({ currentUser, ...props }) =>
   currentUser ? (
-    <ClaimProductScreen {...props} />
+    <ShippingConfirmation {...props} />
   ) : (
     <Redirect to="/sign-in" noThrow />
   )

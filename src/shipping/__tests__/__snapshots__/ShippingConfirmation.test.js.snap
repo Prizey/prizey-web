@@ -49,7 +49,7 @@ exports[`renders correctly 1`] = `
         </svg>
       </span>
       <span
-        className="MuiTouchRipple-root-96"
+        className="MuiTouchRipple-root-88"
       />
     </a>
   </div>
@@ -63,97 +63,33 @@ exports[`renders correctly 1`] = `
     </h2>
     <div
       className="Component-caption-1"
-    >
-      <div
-        className="Component-root-65"
-      >
-        <span
-          className="Component-icon-61 Component-icon_easy-62"
-        />
-        <h6
-          className="MuiTypography-root-25 MuiTypography-subtitle1-43"
-        >
-          EASY
-        </h6>
-      </div>
-    </div>
+    />
     <div
       className="Component-children-2"
     >
       <h5
         className="MuiTypography-root-25 MuiTypography-h5-41 MuiTypography-alignCenter-48"
       >
-        Trump mask
+        Sweet!
       </h5>
       <img
         alt="Trump mask"
-        className="Component-productImage-66"
+        className="Component-productImage-61"
         src="/mock/trump-mask.png"
-        style={Object {}}
+        style={
+          Object {
+            "width": "200px",
+          }
+        }
       />
       <p
         className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
       >
-        MSRP: $
+        We'll confirm through email.
       </p>
-      <div
-        afterCreate={[Function]}
-        name="tickets"
-        path="/ticket_transactions"
-        render={[Function]}
-      >
-        New - 
-        <div>
-          render - 
-          <button
-            aria-label="action-button"
-            className="MuiButtonBase-root-13 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedSecondary-83 MuiButton-raised-84 MuiButton-raisedSecondary-86 MuiButton-fullWidth-95"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            <span
-              className="MuiButton-label-71"
-            >
-              <span>
-                SELL IT BACK
-              </span>
-              <div
-                className="Component-rightIcon-69"
-              >
-                <img
-                  alt="diamond"
-                  className="Component-icon-67"
-                  src="/icons/diamond.png"
-                />
-                <span
-                  className="Component-quantity-68"
-                >
-                  3
-                </span>
-              </div>
-            </span>
-            <span
-              className="MuiTouchRipple-root-96"
-            />
-          </button>
-        </div>
-      </div>
       <button
-        aria-label="I want it"
-        className="MuiButtonBase-root-13 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95"
+        aria-label="Play again"
+        className="MuiButtonBase-root-13 MuiButton-root-62 MuiButton-contained-73 MuiButton-containedPrimary-74 MuiButton-raised-76 MuiButton-raisedPrimary-77 MuiButton-fullWidth-87"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -171,12 +107,12 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-71"
+          className="MuiButton-label-63"
         >
-          I WANT IT!
+          PLAY AGAIN
         </span>
         <span
-          className="MuiTouchRipple-root-96"
+          className="MuiTouchRipple-root-88"
         />
       </button>
     </div>
