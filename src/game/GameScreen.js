@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { List, Info } from 'croods'
 import { Redirect } from '@reach/router'
 
-import { chooseProduct } from 'store/order/actions'
+import { chooseProduct } from 'store/basket/actions'
 
 import GoBack from 'design/GoBack/GoBack'
 import Caption from 'design/Caption/Caption'

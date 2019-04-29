@@ -10,13 +10,28 @@ const theme = createMuiTheme({
       label: {
         fontSize: '14px',
       },
+      outlinedPrimary: {
+        '&:hover': {
+          borderWidth: '2px',
+        },
+        borderWidth: '2px',
+      },
       root: {
         height: '44px',
         marginTop: '20px',
       },
     },
     MuiInput: {
+      formControl: {
+        'label + &': {
+          marginTop: 0,
+        },
+      },
       root: {
+        '@media (max-width: 425px)': {
+          marginBottom: '15px',
+          padding: '10px 16px 7px',
+        },
         background: 'rgba(0, 0, 0, 0.087)',
         borderTopLeftRadius: '4px',
         borderTopRightRadius: '4px',
@@ -37,7 +52,7 @@ const theme = createMuiTheme({
         fontSize: '12px',
         left: '16px',
         position: 'relative',
-        top: '38px',
+        top: '22px',
         transform: 'none',
       },
       shrink: {

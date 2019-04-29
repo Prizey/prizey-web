@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  onSubmit={[MockFunction]}
+  render={[Function]}
+>
+  Formik - 
+  <div
+    className="Component-root-1"
+  >
+    Form - 
+    <div
+      component={[Function]}
+      label="Full Name"
+      name="fullname"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      component={[Function]}
+      label="Address"
+      name="address"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      component={[Function]}
+      label="City"
+      name="city"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      component={[Function]}
+      label="State / Province / Region"
+      name="stateProvinceRegion"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      component={[Function]}
+      label="Postal Code / ZIP"
+      name="zipcode"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      component={[Function]}
+      label="Clothing Size"
+      name="clothingSize"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      component={[Function]}
+      label="Shoe Size"
+      name="shoeSize"
+      type="text"
+      validate={[Function]}
+    >
+      Field - 
+      required field
+    </div>
+    <div
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    />
+    <button>
+      Button
+    </button>
+  </div>
+</div>
+`;
