@@ -80,7 +80,8 @@ export class SellItBackComponent extends React.Component {
           close={() => this.setState({ dialogIsOpen: false })}
           confirm={handleConfirm(this.props)}
         >
-          When you sell back, you can&apos;t undo this.
+          You&apos;ll sell the product and get diamonds. This can&apos;t be
+          undone.
         </PlayAgain>
 
         {this.renderButton(this.props)}
