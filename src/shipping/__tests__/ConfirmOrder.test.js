@@ -78,6 +78,11 @@ it('redirects correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
+it("redirects correctly when doesn't have product", () => {
+  const tree = renderer.create(<ConfirmOrderScreen currentUser />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
 it('check cancel action', () => {
   const navigate = jest.fn()
   handleCancel(navigate)()
@@ -112,6 +117,7 @@ it('open modal when click on button', () => {
   const params = {
     classes: {},
     currentUser: true,
+    product: true,
   }
   const tree = renderer.create(<ConfirmOrderComponent {...params} />).root
 
@@ -123,6 +129,7 @@ it('close modal when click on close', () => {
   const params = {
     classes: {},
     currentUser: true,
+    product: true,
   }
   const tree = renderer.create(<ConfirmOrderComponent {...params} />).root
 
