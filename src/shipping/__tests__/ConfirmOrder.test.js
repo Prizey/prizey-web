@@ -2,11 +2,16 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import ConfirmOrder, {
   ConfirmOrderComponent,
+  ConfirmOrderScreen,
   handleCancel,
   handleShipIt,
   handleAfterCreate,
   mapState,
 } from '../ConfirmOrder'
+
+jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
+  <div {...props}>{children}</div>
+))
 
 jest.mock('react-redux', () => ({
   connect: () => Component => props => (
@@ -35,6 +40,7 @@ jest.mock('croods', () => ({
 
 it('renders correctly', () => {
   const params = {
+    classes: {},
     currentUser: {
       address: '1# street',
       city: 'porto alegre',
@@ -63,12 +69,12 @@ it('renders Component correctly', () => {
     },
   }
 
-  const tree = renderer.create(<ConfirmOrderComponent {...params} />).toJSON()
+  const tree = renderer.create(<ConfirmOrderScreen {...params} />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('redirects correctly', () => {
-  const tree = renderer.create(<ConfirmOrderComponent />).toJSON()
+  const tree = renderer.create(<ConfirmOrderScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
@@ -76,7 +82,7 @@ it('check cancel action', () => {
   const navigate = jest.fn()
   handleCancel(navigate)()
 
-  expect(navigate).toHaveBeenCalledWith('/shipping-info')
+  expect(navigate).toHaveBeenCalledWith('/')
 })
 
 it('check cancel action', () => {
@@ -100,4 +106,26 @@ it('map the state to props', () => {
   }
 
   expect(mapState({ basket })).toEqual({ product: basket.product })
+})
+
+it('open modal when click on button', () => {
+  const params = {
+    classes: {},
+    currentUser: true,
+  }
+  const tree = renderer.create(<ConfirmOrderComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Cancel' }).props.onClick()
+  expect(tree.instance.state.dialogIsOpen).toEqual(true)
+})
+
+it('close modal when click on close', () => {
+  const params = {
+    classes: {},
+    currentUser: true,
+  }
+  const tree = renderer.create(<ConfirmOrderComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Play again modal' }).props.close()
+  expect(tree.instance.state.dialogIsOpen).toEqual(false)
 })

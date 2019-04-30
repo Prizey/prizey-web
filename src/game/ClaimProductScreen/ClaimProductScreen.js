@@ -25,7 +25,11 @@ const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
       <ProductImage product={product} />
       <Typography align="center">MSRP: ${product.price}</Typography>
 
-      <SellItBack amount={3} clearProduct={props.clearProduct} />
+      <SellItBack
+        amount={3}
+        clearProduct={props.clearProduct}
+        navigate={navigate}
+      />
 
       <Button
         variant="contained"

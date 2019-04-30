@@ -1,6 +1,14 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import SellItBack, { afterCreate, createInnerComponent } from '../SellItBack'
+import renderer, { act } from 'react-test-renderer'
+import SellItBack, {
+  SellItBackComponent,
+  handleConfirm,
+  afterCreate,
+} from '../SellItBack'
+
+jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
+  <div {...props}>{children}</div>
+))
 
 jest.mock('croods', () => ({
   New: props => (
@@ -11,28 +19,63 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
-  const tree = renderer
-    .create(<SellItBack amount={3} clearProduct={jest.fn} />)
-    .toJSON()
-  expect(tree).toMatchSnapshot()
+  act(() => {
+    const tree = renderer
+      .create(<SellItBack amount={3} clearProduct={jest.fn} />)
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
 
 it('call the clear on after create', () => {
-  const clearProduct = jest.fn()
-  afterCreate({ clearProduct })()
+  const navigate = jest.fn()
+  afterCreate({ navigate })()
 
-  expect(clearProduct).toHaveBeenCalledTimes(1)
+  expect(navigate).toHaveBeenCalledTimes(1)
 })
 
 it('call the create when click on button', () => {
-  const Component = createInnerComponent({ amount: 3, classes: {} })
   const params = {
+    amount: 3,
     create: jest.fn(),
     creating: false,
-    error: null,
   }
-  const tree = renderer.create(<Component {...params} />).root
-  tree.findByProps({ 'aria-label': 'action-button' }).props.onClick()
 
+  handleConfirm(params)()
   expect(params.create).toHaveBeenCalledTimes(1)
+})
+
+it('block the create if is creating', () => {
+  const params = {
+    amount: 3,
+    create: jest.fn(),
+    creating: true,
+  }
+
+  handleConfirm(params)()
+  expect(params.create).not.toHaveBeenCalled()
+})
+
+it('open modal when click on button', () => {
+  const params = {
+    amount: 3,
+    classes: {},
+    clearProduct: jest.fn(),
+  }
+  const tree = renderer.create(<SellItBackComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Sell it Back' }).props.onClick()
+  expect(tree.instance.state.dialogIsOpen).toEqual(true)
+})
+
+it('close modal when click on close', () => {
+  const params = {
+    amount: 3,
+    classes: {},
+    clearProduct: jest.fn(),
+  }
+  const tree = renderer.create(<SellItBackComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Play again modal' }).props.close()
+  expect(tree.instance.state.dialogIsOpen).toEqual(false)
 })
