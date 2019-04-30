@@ -40,6 +40,7 @@ jest.mock('croods', () => ({
 
 it('renders correctly', () => {
   const params = {
+    classes: {},
     currentUser: {
       address: '1# street',
       city: 'porto alegre',

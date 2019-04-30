@@ -116,7 +116,9 @@ export default connect(
 )(props => (
   <New
     name="orders"
-    render={renderProps => <ConfirmOrderScreen {...props} {...renderProps} />}
+    render={renderProps => (
+      <ConfirmOrderComponent {...props} {...renderProps} />
+    )}
     afterCreate={handleAfterCreate(props.navigate)}
   />
 ))
