@@ -35,18 +35,45 @@ export class SellItBackComponent extends React.Component {
     dialogIsOpen: false,
   }
 
+  renderError = ({ error }) =>
+    error && (
+      <Typography color="error" align="center" variant="h6">
+        {error}
+      </Typography>
+    )
+
+  renderButton = ({ creating, classes }) => (
+    <Button
+      aria-label="Sell it Back"
+      variant="contained"
+      color="secondary"
+      fullWidth
+      onClick={() => this.setState({ dialogIsOpen: true })}
+    >
+      {creating ? (
+        <CircularProgress color="inherit" size={30} />
+      ) : (
+        <Fragment>
+          <span>SELL IT BACK</span>
+          <div className={classes.rightIcon}>
+            <img
+              src="/icons/diamond.png"
+              alt="diamond"
+              className={classes.icon}
+            />
+            <span className={classes.quantity}>3</span>
+          </div>
+        </Fragment>
+      )}
+    </Button>
+  )
+
   render() {
     const { dialogIsOpen } = this.state
-    const { classes, creating, error } = this.props
 
     return (
       <Fragment>
-        {error && (
-          <Typography color="error" align="center" variant="h6">
-            {error}
-          </Typography>
-        )}
-
+        {this.renderError(this.props)}
         <PlayAgain
           aria-label="Play again modal"
           isOpen={dialogIsOpen}
@@ -56,29 +83,7 @@ export class SellItBackComponent extends React.Component {
           When you sell back, you can&apos;t undo this.
         </PlayAgain>
 
-        <Button
-          aria-label="Sell it Back"
-          variant="contained"
-          color="secondary"
-          fullWidth
-          onClick={() => this.setState({ dialogIsOpen: true })}
-        >
-          {creating ? (
-            <CircularProgress color="inherit" size={30} />
-          ) : (
-            <Fragment>
-              <span>SELL IT BACK</span>
-              <div className={classes.rightIcon}>
-                <img
-                  src="/icons/diamond.png"
-                  alt="diamond"
-                  className={classes.icon}
-                />
-                <span className={classes.quantity}>3</span>
-              </div>
-            </Fragment>
-          )}
-        </Button>
+        {this.renderButton(this.props)}
       </Fragment>
     )
   }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 import { New } from 'croods'
 import { withStyles } from '@material-ui/core/styles'
@@ -39,16 +39,60 @@ export class ConfirmOrderComponent extends React.Component {
     dialogIsOpen: false,
   }
 
+  renderHeader = ({ classes, navigate }) => (
+    <Fragment>
+      <PlayAgain
+        aria-label="Play again modal"
+        isOpen={this.state.dialogIsOpen}
+        close={() => this.setState({ dialogIsOpen: false })}
+        confirm={handleCancel(navigate)}
+      >
+        This action can&apos;t be undone.
+      </PlayAgain>
+
+      <Typography align="center" variant="h5" className={classes.title}>
+        Confirm Order
+      </Typography>
+    </Fragment>
+  )
+
+  renderFields = ({ classes, currentUser }) =>
+    fieldList.map(field => (
+      <Typography key={field.name} className={classes.field} variant="body2">
+        {field.label}:{' '}
+        <span className={classes.value}>{currentUser[field.name]}</span>
+      </Typography>
+    ))
+
+  renderBottom = ({ product, create, creating, error }) => (
+    <Fragment>
+      <div style={{ textAlign: 'center' }}>
+        {creating && <CircularProgress color="primary" size={36} />}
+        {error && <ErrorComponent>{error}</ErrorComponent>}
+      </div>
+
+      <Button
+        variant="contained"
+        color="primary"
+        fullWidth
+        onClick={handleShipIt(product, create)}
+      >
+        SHIP IT!
+      </Button>
+      <Button
+        aria-label="Cancel"
+        variant="outlined"
+        color="primary"
+        fullWidth
+        onClick={() => this.setState({ dialogIsOpen: true })}
+      >
+        CANCEL
+      </Button>
+    </Fragment>
+  )
+
   render() {
-    const {
-      product,
-      create,
-      creating,
-      error,
-      navigate,
-      classes,
-      currentUser,
-    } = this.props
+    const { currentUser } = this.props
 
     if (!currentUser) {
       return <Redirect to="/sign-in" noThrow />
@@ -56,52 +100,9 @@ export class ConfirmOrderComponent extends React.Component {
 
     return (
       <Layout>
-        <PlayAgain
-          aria-label="Play again modal"
-          isOpen={this.state.dialogIsOpen}
-          close={() => this.setState({ dialogIsOpen: false })}
-          confirm={handleCancel(navigate)}
-        >
-          This action can&apos;t be undone.
-        </PlayAgain>
-
-        <Typography align="center" variant="h5" className={classes.title}>
-          Confirm Order
-        </Typography>
-
-        {fieldList.map(field => (
-          <Typography
-            key={field.name}
-            className={classes.field}
-            variant="body2"
-          >
-            {field.label}:{' '}
-            <span className={classes.value}>{currentUser[field.name]}</span>
-          </Typography>
-        ))}
-
-        <div style={{ textAlign: 'center' }}>
-          {creating && <CircularProgress color="primary" size={36} />}
-          {error && <ErrorComponent>{error}</ErrorComponent>}
-        </div>
-
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          onClick={handleShipIt(product, create)}
-        >
-          SHIP IT!
-        </Button>
-        <Button
-          aria-label="Cancel"
-          variant="outlined"
-          color="primary"
-          fullWidth
-          onClick={() => this.setState({ dialogIsOpen: true })}
-        >
-          CANCEL
-        </Button>
+        {this.renderHeader(this.props)}
+        {this.renderFields(this.props)}
+        {this.renderBottom(this.props)}
       </Layout>
     )
   }
