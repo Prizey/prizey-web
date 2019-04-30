@@ -48,6 +48,7 @@ export class SellItBackComponent extends React.Component {
         )}
 
         <PlayAgain
+          aria-label="Play again modal"
           isOpen={dialogIsOpen}
           close={() => this.setState({ dialogIsOpen: false })}
           confirm={handleConfirm(this.props)}
@@ -56,7 +57,7 @@ export class SellItBackComponent extends React.Component {
         </PlayAgain>
 
         <Button
-          aria-label="action-button"
+          aria-label="Sell it Back"
           variant="contained"
           color="secondary"
           fullWidth

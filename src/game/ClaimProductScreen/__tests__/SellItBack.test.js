@@ -1,7 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import renderer, { act } from 'react-test-renderer'
-import SellItBack, { afterCreate } from '../SellItBack'
+import SellItBack, {
+  SellItBackComponent,
+  handleConfirm,
+  afterCreate,
+} from '../SellItBack'
+
+jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
+  <div {...props}>{children}</div>
+))
 
 jest.mock('croods', () => ({
   New: props => (
@@ -11,41 +18,64 @@ jest.mock('croods', () => ({
   ),
 }))
 
-describe('', () => {
-  beforeAll(() => {
-    ReactDOM.createPortal = element => <div>{element}</div>
+it('renders correctly', () => {
+  act(() => {
+    const tree = renderer
+      .create(<SellItBack amount={3} clearProduct={jest.fn} />)
+      .toJSON()
+    expect(tree).toMatchSnapshot()
   })
+})
 
-  it('renders correctly', () => {
-    act(() => {
-      const tree = renderer
-        .create(<SellItBack amount={3} clearProduct={jest.fn} />)
-        .toJSON()
-      expect(tree).toMatchSnapshot()
-    })
-  })
+it('call the clear on after create', () => {
+  const navigate = jest.fn()
+  afterCreate({ navigate })()
 
-  it('call the clear on after create', () => {
-    const navigate = jest.fn()
-    afterCreate({ navigate })()
+  expect(navigate).toHaveBeenCalledTimes(1)
+})
 
-    expect(navigate).toHaveBeenCalledTimes(1)
-  })
+it('call the create when click on button', () => {
+  const params = {
+    amount: 3,
+    create: jest.fn(),
+    creating: false,
+  }
 
-  // it('call the create when click on button', () => {
-  //   const params = {
-  //     amount: 3,
-  //     classes: {},
-  //     create: jest.fn(),
-  //     creating: false,
-  //     error: null,
-  //   }
+  handleConfirm(params)()
+  expect(params.create).toHaveBeenCalledTimes(1)
+})
 
-  //     const tree = renderer.create(<SellItBackComponent {...params} />).root
+it('block the create if is creating', () => {
+  const params = {
+    amount: 3,
+    create: jest.fn(),
+    creating: true,
+  }
 
-  //     console.log(renderer.create(<SellItBackComponent {...params} />))
-  //     tree.findByProps({ 'aria-label': 'action-button' }).props.onClick()
+  handleConfirm(params)()
+  expect(params.create).not.toHaveBeenCalled()
+})
 
-  //     expect(params.create).toHaveBeenCalledTimes(1)
-  //   })
+it('open modal when click on button', () => {
+  const params = {
+    amount: 3,
+    classes: {},
+    clearProduct: jest.fn(),
+  }
+  const tree = renderer.create(<SellItBackComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Sell it Back' }).props.onClick()
+  expect(tree.instance.state.dialogIsOpen).toEqual(true)
+})
+
+it('close modal when click on close', () => {
+  const params = {
+    amount: 3,
+    classes: {},
+    clearProduct: jest.fn(),
+  }
+  const tree = renderer.create(<SellItBackComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Play again modal' }).props.close()
+  expect(tree.instance.state.dialogIsOpen).toEqual(false)
 })

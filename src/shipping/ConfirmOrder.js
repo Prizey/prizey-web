@@ -34,7 +34,7 @@ export const mapState = ({ basket = {} }) => ({
   product: basket.product,
 })
 
-class ConfirmOrderComponent extends React.Component {
+export class ConfirmOrderComponent extends React.Component {
   state = {
     dialogIsOpen: false,
   }
@@ -57,6 +57,7 @@ class ConfirmOrderComponent extends React.Component {
     return (
       <Layout>
         <PlayAgain
+          aria-label="Play again modal"
           isOpen={this.state.dialogIsOpen}
           close={() => this.setState({ dialogIsOpen: false })}
           confirm={handleCancel(navigate)}
@@ -93,6 +94,7 @@ class ConfirmOrderComponent extends React.Component {
           SHIP IT!
         </Button>
         <Button
+          aria-label="Cancel"
           variant="outlined"
           color="primary"
           fullWidth

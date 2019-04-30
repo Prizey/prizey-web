@@ -27,10 +27,11 @@ const PlayAgain = ({ children, classes, isOpen, close, confirm }) => (
       <DialogContentText>{children}</DialogContentText>
     </DialogContent>
     <DialogActions>
-      <Button onClick={close} color="primary" autoFocus>
+      <Button onClick={close} color="primary" autoFocus aria-label="cancel">
         Cancel
       </Button>
       <Button
+        aria-label="confirm"
         onClick={() => {
           close()
           confirm()

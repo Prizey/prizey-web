@@ -106,7 +106,7 @@ exports[`renders correctly 1`] = `
         <div>
           render - 
           <button
-            aria-label="action-button"
+            aria-label="Sell it Back"
             className="MuiButtonBase-root-13 MuiButton-root-87 MuiButton-contained-98 MuiButton-containedSecondary-100 MuiButton-raised-101 MuiButton-raisedSecondary-103 MuiButton-fullWidth-112"
             disabled={false}
             onBlur={[Function]}

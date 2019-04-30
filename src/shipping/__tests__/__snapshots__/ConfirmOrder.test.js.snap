@@ -23,6 +23,97 @@ exports[`renders Component correctly 1`] = `
     <div
       className="Component-children-5"
     >
+      <div
+        aria-labelledby="Are you sure?"
+        classes={
+          Object {
+            "paper": "PlayAgain-paper-45",
+          }
+        }
+        fullWidth={true}
+        onClose={[Function]}
+        open={false}
+      >
+        <div
+          className="MuiDialogTitle-root-46"
+        >
+          <h2
+            className="MuiTypography-root-9 MuiTypography-title-15"
+          >
+            Are you sure?
+          </h2>
+        </div>
+        <div
+          className="MuiDialogContent-root-47"
+        >
+          <p
+            className="MuiTypography-root-9 MuiDialogContentText-root-48 MuiTypography-subheading-16 MuiTypography-colorTextSecondary-42"
+          >
+            This action can't be undone.
+          </p>
+        </div>
+        <div
+          className="MuiDialogActions-root-49"
+        >
+          <button
+            aria-label="cancel"
+            autoFocus={true}
+            className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-text-53 MuiButton-textPrimary-54 MuiButton-flat-56 MuiButton-flatPrimary-57 MuiDialogActions-action-50"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-52"
+            >
+              Cancel
+            </span>
+            <span
+              className="MuiTouchRipple-root-80"
+            />
+          </button>
+          <button
+            aria-label="confirm"
+            className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-text-53 MuiButton-textPrimary-54 MuiButton-flat-56 MuiButton-flatPrimary-57 MuiDialogActions-action-50"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-52"
+            >
+              Confirm
+            </span>
+            <span
+              className="MuiTouchRipple-root-80"
+            />
+          </button>
+        </div>
+      </div>
       <h5
         className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32 ConfirmOrderComponent-title-2"
       >
@@ -118,7 +209,7 @@ exports[`renders Component correctly 1`] = `
         }
       />
       <button
-        className="MuiButtonBase-root-88 MuiButton-root-62 MuiButton-contained-73 MuiButton-containedPrimary-74 MuiButton-raised-76 MuiButton-raisedPrimary-77 MuiButton-fullWidth-87"
+        className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -136,16 +227,17 @@ exports[`renders Component correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-63"
+          className="MuiButton-label-52"
         >
           SHIP IT!
         </span>
         <span
-          className="MuiTouchRipple-root-91"
+          className="MuiTouchRipple-root-80"
         />
       </button>
       <button
-        className="MuiButtonBase-root-88 MuiButton-root-62 MuiButton-outlined-70 MuiButton-outlinedPrimary-71 MuiButton-fullWidth-87"
+        aria-label="Cancel"
+        className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-outlined-59 MuiButton-outlinedPrimary-60 MuiButton-fullWidth-76"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -163,12 +255,12 @@ exports[`renders Component correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-63"
+          className="MuiButton-label-52"
         >
           CANCEL
         </span>
         <span
-          className="MuiTouchRipple-root-91"
+          className="MuiTouchRipple-root-80"
         />
       </button>
     </div>
@@ -208,6 +300,97 @@ exports[`renders correctly 1`] = `
         <div
           className="Component-children-5"
         >
+          <div
+            aria-labelledby="Are you sure?"
+            classes={
+              Object {
+                "paper": "PlayAgain-paper-45",
+              }
+            }
+            fullWidth={true}
+            onClose={[Function]}
+            open={false}
+          >
+            <div
+              className="MuiDialogTitle-root-46"
+            >
+              <h2
+                className="MuiTypography-root-9 MuiTypography-title-15"
+              >
+                Are you sure?
+              </h2>
+            </div>
+            <div
+              className="MuiDialogContent-root-47"
+            >
+              <p
+                className="MuiTypography-root-9 MuiDialogContentText-root-48 MuiTypography-subheading-16 MuiTypography-colorTextSecondary-42"
+              >
+                This action can't be undone.
+              </p>
+            </div>
+            <div
+              className="MuiDialogActions-root-49"
+            >
+              <button
+                aria-label="cancel"
+                autoFocus={true}
+                className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-text-53 MuiButton-textPrimary-54 MuiButton-flat-56 MuiButton-flatPrimary-57 MuiDialogActions-action-50"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-52"
+                >
+                  Cancel
+                </span>
+                <span
+                  className="MuiTouchRipple-root-80"
+                />
+              </button>
+              <button
+                aria-label="confirm"
+                className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-text-53 MuiButton-textPrimary-54 MuiButton-flat-56 MuiButton-flatPrimary-57 MuiDialogActions-action-50"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-52"
+                >
+                  Confirm
+                </span>
+                <span
+                  className="MuiTouchRipple-root-80"
+                />
+              </button>
+            </div>
+          </div>
           <h5
             className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32 ConfirmOrderComponent-title-2"
           >
@@ -303,7 +486,7 @@ exports[`renders correctly 1`] = `
             }
           />
           <button
-            className="MuiButtonBase-root-88 MuiButton-root-62 MuiButton-contained-73 MuiButton-containedPrimary-74 MuiButton-raised-76 MuiButton-raisedPrimary-77 MuiButton-fullWidth-87"
+            className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -321,16 +504,17 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-63"
+              className="MuiButton-label-52"
             >
               SHIP IT!
             </span>
             <span
-              className="MuiTouchRipple-root-91"
+              className="MuiTouchRipple-root-80"
             />
           </button>
           <button
-            className="MuiButtonBase-root-88 MuiButton-root-62 MuiButton-outlined-70 MuiButton-outlinedPrimary-71 MuiButton-fullWidth-87"
+            aria-label="Cancel"
+            className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-outlined-59 MuiButton-outlinedPrimary-60 MuiButton-fullWidth-76"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -348,12 +532,12 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-63"
+              className="MuiButton-label-52"
             >
               CANCEL
             </span>
             <span
-              className="MuiTouchRipple-root-91"
+              className="MuiTouchRipple-root-80"
             />
           </button>
         </div>

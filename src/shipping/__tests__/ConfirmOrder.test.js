@@ -1,12 +1,17 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import ConfirmOrder, {
+  ConfirmOrderComponent,
   ConfirmOrderScreen,
   handleCancel,
   handleShipIt,
   handleAfterCreate,
   mapState,
 } from '../ConfirmOrder'
+
+jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
+  <div {...props}>{children}</div>
+))
 
 jest.mock('react-redux', () => ({
   connect: () => Component => props => (
@@ -100,4 +105,26 @@ it('map the state to props', () => {
   }
 
   expect(mapState({ basket })).toEqual({ product: basket.product })
+})
+
+it('open modal when click on button', () => {
+  const params = {
+    classes: {},
+    currentUser: true,
+  }
+  const tree = renderer.create(<ConfirmOrderComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Cancel' }).props.onClick()
+  expect(tree.instance.state.dialogIsOpen).toEqual(true)
+})
+
+it('close modal when click on close', () => {
+  const params = {
+    classes: {},
+    currentUser: true,
+  }
+  const tree = renderer.create(<ConfirmOrderComponent {...params} />).root
+
+  tree.findByProps({ 'aria-label': 'Play again modal' }).props.close()
+  expect(tree.instance.state.dialogIsOpen).toEqual(false)
 })
