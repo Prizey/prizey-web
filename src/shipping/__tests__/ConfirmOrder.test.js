@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import ConfirmOrder, {
-  ConfirmOrderComponent,
+  ConfirmOrderScreen,
   handleCancel,
   handleShipIt,
   handleAfterCreate,
@@ -63,12 +63,12 @@ it('renders Component correctly', () => {
     },
   }
 
-  const tree = renderer.create(<ConfirmOrderComponent {...params} />).toJSON()
+  const tree = renderer.create(<ConfirmOrderScreen {...params} />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('redirects correctly', () => {
-  const tree = renderer.create(<ConfirmOrderComponent />).toJSON()
+  const tree = renderer.create(<ConfirmOrderScreen />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
@@ -76,7 +76,7 @@ it('check cancel action', () => {
   const navigate = jest.fn()
   handleCancel(navigate)()
 
-  expect(navigate).toHaveBeenCalledWith('/shipping-info')
+  expect(navigate).toHaveBeenCalledWith('/')
 })
 
 it('check cancel action', () => {

@@ -7,6 +7,7 @@ import { Redirect } from '@reach/router'
 
 import Layout from 'design/Layout/Layout'
 import ErrorComponent from 'design/Error/Error'
+import PlayAgain from 'design/PlayAgain'
 
 import { fieldList } from 'auth/UserForm'
 
@@ -22,7 +23,7 @@ const styles = theme => ({
   },
 })
 
-export const handleCancel = navigate => () => navigate('/shipping-info')
+export const handleCancel = navigate => () => navigate('/')
 export const handleShipIt = (product = {}, create) => () =>
   create({ productId: product.id || 0 })
 
@@ -33,10 +34,36 @@ export const mapState = ({ basket = {} }) => ({
   product: basket.product,
 })
 
-export const ConfirmOrderComponent = withStyles(styles)(
-  ({ product, create, creating, error, navigate, classes, currentUser }) =>
-    currentUser ? (
+class ConfirmOrderComponent extends React.Component {
+  state = {
+    dialogIsOpen: false,
+  }
+
+  render() {
+    const {
+      product,
+      create,
+      creating,
+      error,
+      navigate,
+      classes,
+      currentUser,
+    } = this.props
+
+    if (!currentUser) {
+      return <Redirect to="/sign-in" noThrow />
+    }
+
+    return (
       <Layout>
+        <PlayAgain
+          isOpen={this.state.dialogIsOpen}
+          close={() => this.setState({ dialogIsOpen: false })}
+          confirm={handleCancel(navigate)}
+        >
+          This action can&apos;t be undone.
+        </PlayAgain>
+
         <Typography align="center" variant="h5" className={classes.title}>
           Confirm Order
         </Typography>
@@ -69,15 +96,16 @@ export const ConfirmOrderComponent = withStyles(styles)(
           variant="outlined"
           color="primary"
           fullWidth
-          onClick={handleCancel(navigate)}
+          onClick={() => this.setState({ dialogIsOpen: true })}
         >
           CANCEL
         </Button>
       </Layout>
-    ) : (
-      <Redirect to="/sign-in?next=/shipping-info/confirm" noThrow />
-    ),
-)
+    )
+  }
+}
+
+export const ConfirmOrderScreen = withStyles(styles)(ConfirmOrderComponent)
 
 export default connect(
   mapState,
@@ -85,9 +113,7 @@ export default connect(
 )(props => (
   <New
     name="orders"
-    render={renderProps => (
-      <ConfirmOrderComponent {...props} {...renderProps} />
-    )}
-    afterCreated={handleAfterCreate(props.navigate)}
+    render={renderProps => <ConfirmOrderScreen {...props} {...renderProps} />}
+    afterCreate={handleAfterCreate(props.navigate)}
   />
 ))
