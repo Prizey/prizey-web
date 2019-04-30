@@ -32,7 +32,7 @@ const ShippingComponent = ({
         aria-label="Play again"
         onClick={() => {
           props.clearProduct()
-          navigate('/')
+          navigate('/game')
         }}
       >
         PLAY AGAIN
