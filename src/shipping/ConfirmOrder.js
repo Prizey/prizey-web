@@ -88,6 +88,6 @@ export default connect(
     render={renderProps => (
       <ConfirmOrderComponent {...props} {...renderProps} />
     )}
-    afterCreated={handleAfterCreate(props.navigate)}
+    afterCreate={handleAfterCreate(props.navigate)}
   />
 ))

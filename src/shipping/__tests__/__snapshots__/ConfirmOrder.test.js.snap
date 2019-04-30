@@ -181,7 +181,7 @@ exports[`renders Component correctly 1`] = `
 
 exports[`renders correctly 1`] = `
 <div
-  afterCreated={[Function]}
+  afterCreate={[Function]}
   name="orders"
   render={[Function]}
 >
