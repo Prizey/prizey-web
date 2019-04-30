@@ -5,6 +5,7 @@ import ChooseDifficultyScreen from 'game/ChooseDifficultyScreen'
 import HomeScreen from 'game/home/HomeScreen'
 import GameScreen from 'game/GameScreen'
 import ClaimProductScreen from 'game/ClaimProductScreen'
+import SoldBackScreen from 'game/SoldBackScreen'
 
 import SignInScreen from 'auth/SignInScreen'
 import SignUpScreen from 'auth/SignUpScreen'
@@ -23,6 +24,7 @@ export default props => (
     <ChooseDifficultyScreen {...props} path="/game" />
     <GameScreen {...props} path="/game/:difficulty" />
     <ClaimProductScreen {...props} path="/game/:difficulty/claim" />
+    <SoldBackScreen {...props} path="/sold-back" />
 
     <SignInScreen {...props} path="/sign-in" />
     <SignUpScreen {...props} path="/sign-up" />
