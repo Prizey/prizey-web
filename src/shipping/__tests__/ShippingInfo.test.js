@@ -32,6 +32,7 @@ jest.mock('formik', () => ({
 it('renders correctly', () => {
   const params = {
     currentUser: true,
+    setCurrentUser: jest.fn(),
   }
   const tree = renderer.create(<ShippingInfo {...params} />).toJSON()
   expect(tree).toMatchSnapshot()
