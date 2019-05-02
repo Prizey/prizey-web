@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`redirects correctly 1`] = `null`;
+
+exports[`renders correctly 1`] = `
+<div
+  name="purchaseOptions"
+  path="/purchase_options"
+  render={[Function]}
+>
+   - Render: 
+  <div
+    className="Component-root-9"
+  >
+    <div
+      className="Component-header-8"
+    >
+      <a
+        aria-current="page"
+        aria-label="Go Back"
+        className="MuiButtonBase-root-17 MuiIconButton-root-11 Component-root-10"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-16"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-20 MuiSvgIcon-fontSizeLarge-28"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-91"
+        />
+      </a>
+    </div>
+    <div
+      className="Component-container-7"
+    >
+      <h2
+        className="MuiTypography-root-29 MuiTypography-h2-42 MuiTypography-alignCenter-52"
+      >
+        PRIZEY
+      </h2>
+      <div
+        className="Component-caption-5"
+      />
+      <div
+        className="Component-children-6"
+      >
+        <h5
+          className="MuiTypography-root-29 MuiTypography-h5-45 MuiTypography-alignCenter-52"
+        >
+          Purchase diamonds to play, win something every time.
+        </h5>
+        <div
+          className="Component-buttonGroup-3"
+        >
+          <a
+            className="MuiButtonBase-root-17 MuiButton-root-65 MuiButton-contained-76 MuiButton-containedPrimary-77 MuiButton-raised-79 MuiButton-raisedPrimary-80 MuiButton-fullWidth-90 Component-button0-1"
+            href="/payment/1"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <span
+              className="MuiButton-label-66"
+            >
+              <img
+                alt="diamond"
+                className="Component-icon-4"
+                src="/icons/diamond.png"
+              />
+              10 DIAMONDS = $ 10.00
+            </span>
+            <span
+              className="MuiTouchRipple-root-91"
+            />
+          </a>
+          <a
+            className="MuiButtonBase-root-17 MuiButton-root-65 MuiButton-contained-76 MuiButton-containedPrimary-77 MuiButton-raised-79 MuiButton-raisedPrimary-80 MuiButton-fullWidth-90 Component-button1-2"
+            href="/payment/2"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <span
+              className="MuiButton-label-66"
+            >
+              <img
+                alt="diamond"
+                className="Component-icon-4"
+                src="/icons/diamond.png"
+              />
+              25 DIAMONDS = $ 25.00
+            </span>
+            <span
+              className="MuiTouchRipple-root-91"
+            />
+          </a>
+          <a
+            className="MuiButtonBase-root-17 MuiButton-root-65 MuiButton-contained-76 MuiButton-containedPrimary-77 MuiButton-raised-79 MuiButton-raisedPrimary-80 MuiButton-fullWidth-90"
+            href="/payment/3"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <span
+              className="MuiButton-label-66"
+            >
+              <img
+                alt="diamond"
+                className="Component-icon-4"
+                src="/icons/diamond.png"
+              />
+              50 DIAMONDS = $ 50.00
+            </span>
+            <span
+              className="MuiTouchRipple-root-91"
+            />
+          </a>
+        </div>
+        <p
+          className="MuiTypography-root-29 MuiTypography-body2-37 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
+        >
+          By proceeding, you agree you're 18+.
+        </p>
+      </div>
+      <p
+        className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignCenter-52"
+      />
+    </div>
+  </div>
+</div>
+`;

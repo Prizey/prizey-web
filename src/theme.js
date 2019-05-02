@@ -74,6 +74,10 @@ const theme = createMuiTheme({
     error: {
       main: '#40c4ff',
     },
+    paywall: {
+      first: '#40c4ff',
+      second: '#536dfe',
+    },
     primary: {
       dark: '#ffff00',
       main: '#ffff00',
