@@ -19,6 +19,7 @@ import ShippingInfo from 'shipping/ShippingInfo'
 import ConfirmOrder from 'shipping/ConfirmOrder'
 
 import PaymentInfo from 'payment/PaymentInfo'
+import FirstPaywall from 'payment/FirstPaywall'
 
 export default props => (
   <Router>
@@ -39,6 +40,7 @@ export default props => (
     <ShippingInfo {...props} path="/shipping-info" />
     <ConfirmOrder {...props} path="/shipping-info/confirm" />
 
+    <FirstPaywall {...props} path="/buy-diamonds" />
     <PaymentInfo {...props} path="/payment/:purchaseId" />
   </Router>
 )
