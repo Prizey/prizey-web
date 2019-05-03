@@ -7,8 +7,14 @@ import { Formik, Form, Field } from 'formik'
 
 import 'react-credit-cards/es/styles-compiled.css'
 
-import InputField from 'design/Field'
+import MaskedInputField from 'design/MaskedField'
 import ErrorComponent from 'design/Error/Error'
+
+import {
+  inputMasks,
+  validateCardNumber,
+  validateExpiry,
+} from './creditCardHelpers'
 
 const styles = theme => ({
   card: {
@@ -16,6 +22,27 @@ const styles = theme => ({
     marginTop: theme.spacing.md,
   },
 })
+
+const gridFields = [
+  {
+    label: 'Expires at',
+    mask: inputMasks.expiry,
+    name: 'expiry',
+    validate: value => {
+      if (isEmpty(value)) {
+        return 'required field'
+      }
+
+      return validateExpiry(value) || 'invalid expiry'
+    },
+  },
+  {
+    label: 'CVV',
+    mask: inputMasks.cvc,
+    name: 'cvc',
+    validate: value => isEmpty(value) && 'required field',
+  },
+]
 
 const CreditCardComponent = ({
   classes,
@@ -28,7 +55,7 @@ const CreditCardComponent = ({
   return (
     <Formik
       initialValues={{
-        cvv: '',
+        cvc: '',
         expiry: '',
         number: '',
       }}
@@ -40,42 +67,42 @@ const CreditCardComponent = ({
               number={values.number}
               name=""
               expiry={values.expiry}
-              cvc={values.cvv}
+              cvc={values.cvc}
               focused={focused}
               placeholders={{ name: '' }}
             />
           </div>
 
           <Field
-            component={InputField}
+            component={MaskedInputField}
             name="number"
             label="Card number"
             type="text"
+            mask={inputMasks.number}
             onFocus={() => setFocused('number')}
-            validate={value => isEmpty(value) && 'required field'}
+            validate={value => {
+              if (isEmpty(value)) {
+                return 'required field'
+              }
+
+              return validateCardNumber(value) || 'invalid number'
+            }}
           />
 
           <Grid container spacing={24}>
-            <Grid item xs>
-              <Field
-                component={InputField}
-                name="expiry"
-                label="Expires at"
-                type="text"
-                onFocus={() => setFocused('expiry')}
-                validate={value => isEmpty(value) && 'required field'}
-              />
-            </Grid>
-            <Grid item xs>
-              <Field
-                component={InputField}
-                name="cvv"
-                label="CVV"
-                type="text"
-                onFocus={() => setFocused('cvc')}
-                validate={value => isEmpty(value) && 'required field'}
-              />
-            </Grid>
+            {gridFields.map((field, idx) => (
+              <Grid item xs key={idx}>
+                <Field
+                  component={MaskedInputField}
+                  name={field.name}
+                  label={field.label}
+                  type="text"
+                  mask={field.mask}
+                  onFocus={() => setFocused(field.name)}
+                  validate={field.validate}
+                />
+              </Grid>
+            ))}
           </Grid>
 
           {submitting && <CircularProgress color="primary" size={36} />}
