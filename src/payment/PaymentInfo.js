@@ -9,10 +9,7 @@ import Layout from 'design/Layout/Layout'
 import GoBack from 'design/GoBack/GoBack'
 import CreditCardForm from './CreditCardForm'
 
-export const getPurchaseDetail = (amount, price) =>
-  `${amount} Diamond${amount > 1 ? 's' : ''} = $ ${parseFloat(price).toFixed(
-    2,
-  )}`
+import getPurchaseDetail from './purchaseDescription'
 
 const styles = theme => ({
   icon: {

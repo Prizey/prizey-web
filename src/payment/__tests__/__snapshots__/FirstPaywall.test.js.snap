@@ -107,7 +107,7 @@ exports[`renders correctly 1`] = `
                 className="Component-icon-4"
                 src="/icons/diamond.png"
               />
-              10 DIAMONDS = $ 10.00
+              10 Diamonds = $ 10.00
             </span>
             <span
               className="MuiTouchRipple-root-91"
@@ -139,7 +139,7 @@ exports[`renders correctly 1`] = `
                 className="Component-icon-4"
                 src="/icons/diamond.png"
               />
-              25 DIAMONDS = $ 25.00
+              25 Diamonds = $ 25.00
             </span>
             <span
               className="MuiTouchRipple-root-91"
@@ -171,7 +171,7 @@ exports[`renders correctly 1`] = `
                 className="Component-icon-4"
                 src="/icons/diamond.png"
               />
-              50 DIAMONDS = $ 50.00
+              50 Diamonds = $ 50.00
             </span>
             <span
               className="MuiTouchRipple-root-91"

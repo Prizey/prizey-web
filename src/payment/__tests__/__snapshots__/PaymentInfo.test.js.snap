@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`get the purchase details 1`] = `"10 Diamonds = $ 10.00"`;
-
 exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `

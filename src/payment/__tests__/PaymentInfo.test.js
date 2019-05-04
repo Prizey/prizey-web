@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import PaymentInfo, { afterPurchase, getPurchaseDetail } from '../PaymentInfo'
+import PaymentInfo, { afterPurchase } from '../PaymentInfo'
 import { handleSubmit } from '../CreditCardForm'
 
 const mockList = [
@@ -43,11 +43,6 @@ it('renders correctly', () => {
 it('redirects correctly', () => {
   const tree = renderer.create(<PaymentInfo />).toJSON()
   expect(tree).toMatchSnapshot()
-})
-
-it('get the purchase details', () => {
-  const detail = getPurchaseDetail(10, 10)
-  expect(detail).toMatchSnapshot()
 })
 
 it('redirects after purchase', () => {
