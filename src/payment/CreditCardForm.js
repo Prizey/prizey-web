@@ -1,119 +1,67 @@
 import React, { useState } from 'react'
-import isEmpty from 'lodash/isEmpty'
-import Card from 'react-credit-cards'
-import { withStyles } from '@material-ui/core/styles'
+import {
+  CardNumberElement,
+  CardExpiryElement,
+  CardCVCElement,
+  injectStripe,
+} from 'react-stripe-elements'
 import { Grid, Button, CircularProgress } from '@material-ui/core'
-import { Formik, Form, Field } from 'formik'
-
 import 'react-credit-cards/es/styles-compiled.css'
 
-import MaskedInputField from 'design/MaskedField'
 import ErrorComponent from 'design/Error/Error'
+import StripeField from 'design/StripeField'
 
-import {
-  inputMasks,
-  validateCardNumber,
-  validateExpiry,
-} from './creditCardHelpers'
+export const handleSubmit = ({
+  setError,
+  stripe,
+  create,
+  purchase,
+}) => async evt => {
+  evt.preventDefault()
 
-const styles = theme => ({
-  card: {
-    marginBottom: theme.spacing.sm,
-    marginTop: theme.spacing.md,
-  },
-})
+  try {
+    const result = await stripe.createToken({ type: 'card' })
+    if (result.error) {
+      setError(result.error.message)
+    } else {
+      create({
+        credit_card_token: result.token.id,
+        purchase_option_id: purchase.id,
+      })
+    }
+  } catch (err) {
+    setError(err.message)
+  }
 
-const gridFields = [
-  {
-    label: 'Expires at',
-    mask: inputMasks.expiry,
-    name: 'expiry',
-    validate: value => {
-      if (isEmpty(value)) {
-        return 'required field'
-      }
+  return false
+}
 
-      return validateExpiry(value) || 'invalid expiry'
-    },
-  },
-  {
-    label: 'CVV',
-    mask: inputMasks.cvc,
-    name: 'cvc',
-    validate: value => isEmpty(value) && 'required field',
-  },
-]
-
-const CreditCardComponent = ({
-  classes,
-  onSubmit,
-  submitting,
-  submitError,
-}) => {
-  const [focused, setFocused] = useState(null)
-
+export const CreditCardComponent = ({ classes, creating, error, ...props }) => {
+  const [stripeError, setError] = useState(null)
   return (
-    <Formik
-      initialValues={{
-        cvc: '',
-        expiry: '',
-        number: '',
-      }}
-      onSubmit={onSubmit}
-      render={({ values }) => (
-        <Form>
-          <div className={classes.card}>
-            <Card
-              number={values.number}
-              name=""
-              expiry={values.expiry}
-              cvc={values.cvc}
-              focused={focused}
-              placeholders={{ name: '' }}
-            />
-          </div>
+    <form onSubmit={handleSubmit({ setError, ...props })}>
+      {/* <CardNumberElement /> */}
+      <StripeField label="Card Number" component={CardNumberElement} />
 
-          <Field
-            component={MaskedInputField}
-            name="number"
-            label="Card number"
-            type="text"
-            mask={inputMasks.number}
-            onFocus={() => setFocused('number')}
-            validate={value => {
-              if (isEmpty(value)) {
-                return 'required field'
-              }
+      <Grid container spacing={24}>
+        <Grid item xs>
+          {/* <CardExpiryElement /> */}
+          <StripeField label="Expiry (MM / YY)" component={CardExpiryElement} />
+        </Grid>
+        <Grid item xs>
+          {/* <CardCVCElement /> */}
+          <StripeField label="CVC" component={CardCVCElement} />
+        </Grid>
+      </Grid>
 
-              return validateCardNumber(value) || 'invalid number'
-            }}
-          />
-
-          <Grid container spacing={24}>
-            {gridFields.map((field, idx) => (
-              <Grid item xs key={idx}>
-                <Field
-                  component={MaskedInputField}
-                  name={field.name}
-                  label={field.label}
-                  type="text"
-                  mask={field.mask}
-                  onFocus={() => setFocused(field.name)}
-                  validate={field.validate}
-                />
-              </Grid>
-            ))}
-          </Grid>
-
-          {submitting && <CircularProgress color="primary" size={36} />}
-          {submitError && <ErrorComponent>{submitError}</ErrorComponent>}
-          <Button variant="contained" color="primary" type="submit" fullWidth>
-            PAY
-          </Button>
-        </Form>
-      )}
-    />
+      {creating && <CircularProgress color="primary" size={36} />}
+      {error && <ErrorComponent>{error}</ErrorComponent>}
+      {stripeError && <ErrorComponent>{stripeError}</ErrorComponent>}
+      <Button variant="contained" color="primary" type="submit" fullWidth>
+        PAY
+      </Button>
+    </form>
   )
 }
 
-export default withStyles(styles)(CreditCardComponent)
+export default injectStripe(CreditCardComponent)

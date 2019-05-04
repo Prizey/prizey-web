@@ -1,13 +1,15 @@
 import React from 'react'
-import { List } from 'croods'
+import { New, List } from 'croods'
+import { StripeProvider, Elements } from 'react-stripe-elements'
 import { Redirect } from '@reach/router'
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import Layout from 'design/Layout/Layout'
 
+import GoBack from 'design/GoBack/GoBack'
 import CreditCardForm from './CreditCardForm'
 
-const getButtonText = (amount, price) =>
+export const getPurchaseDetail = (amount, price) =>
   `${amount} Diamond${amount > 1 ? 's' : ''} = $ ${parseFloat(price).toFixed(
     2,
   )}`
@@ -17,18 +19,37 @@ const styles = theme => ({
     float: 'left',
     height: theme.spacing.md,
   },
+  purchase: {
+    marginBottom: theme.spacing.md,
+  },
 })
 
-export const PaymentInfoComponent = withStyles(styles)(
-  ({ classes, purchase = {} }) => (
-    <Layout>
-      <Typography align="center" variant="h5">
-        <img src="/icons/diamond.png" alt="diamond" className={classes.icon} />
-        {getButtonText(purchase.ticketAmount, purchase.price)}
-      </Typography>
+export const afterPurchase = navigate => () => navigate('/')
 
-      <CreditCardForm />
-    </Layout>
+export const PaymentInfoComponent = withStyles(styles)(
+  ({ navigate, classes, purchase }) => (
+    <StripeProvider apiKey={process.env.REACT_APP_STRIPE_TOKEN}>
+      <Layout leftIcon={<GoBack to="/buy-diamonds" />}>
+        <Typography align="center" variant="h5" className={classes.purchase}>
+          <img
+            src="/icons/diamond.png"
+            alt="diamond"
+            className={classes.icon}
+          />
+          {getPurchaseDetail(purchase.ticketAmount, purchase.price)}
+        </Typography>
+
+        <New
+          name="payments"
+          render={props => (
+            <Elements>
+              <CreditCardForm purchase={purchase} {...props} />
+            </Elements>
+          )}
+          afterCreate={afterPurchase(navigate)}
+        />
+      </Layout>
+    </StripeProvider>
   ),
 )
 
