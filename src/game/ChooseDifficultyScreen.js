@@ -29,7 +29,7 @@ const difficulties = [
   {
     difficulty: 'hard',
     label: 'HARD',
-    quantity: 100,
+    quantity: 10,
     to: '/game/hard',
   },
 ]
@@ -59,9 +59,20 @@ const ChooseDifficultyScreen = withStyles(styles)(
   ),
 )
 
+const RedirectUserWithoutBalance = ({ currentUser }) => {
+  const userCanPlay = difficulties.filter(
+    difficulty => currentUser.tickets >= difficulty.quantity,
+  )
+  return userCanPlay.length ? (
+    <ChooseDifficultyScreen currentUser={currentUser} />
+  ) : (
+    <Redirect to="/buy-diamonds" noThrow />
+  )
+}
+
 export default ({ currentUser }) =>
   currentUser ? (
-    <ChooseDifficultyScreen currentUser={currentUser} />
+    <RedirectUserWithoutBalance currentUser={currentUser} />
   ) : (
     <Redirect to="/sign-in" noThrow />
   )

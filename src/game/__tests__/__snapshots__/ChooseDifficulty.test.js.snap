@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`redirects correctly 1`] = `null`;
-
 exports[`renders correctly 1`] = `
 <div
   className="Component-root-6"
@@ -33,7 +31,7 @@ exports[`renders correctly 1`] = `
       >
         <a
           className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_easy-48"
-          href="/buy-more"
+          href="/game/easy"
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -114,7 +112,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_medium-50"
-          href="/buy-more"
+          href="/game/medium"
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -195,7 +193,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_hard-49"
-          href="/buy-more"
+          href="/game/hard"
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -267,7 +265,7 @@ exports[`renders correctly 1`] = `
             <span
               className="Component-quantity-47"
             >
-              100
+              10
             </span>
           </span>
           <span
@@ -289,3 +287,5 @@ exports[`renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`when we don't have the currentUser yet redirects correctly 1`] = `null`;

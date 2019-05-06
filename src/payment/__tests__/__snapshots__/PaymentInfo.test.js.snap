@@ -217,6 +217,13 @@ exports[`renders correctly 1`] = `
                       </fieldset>
                     </div>
                   </div>
+                  <div
+                    style={
+                      Object {
+                        "textAlign": "center",
+                      }
+                    }
+                  />
                   <button
                     className="MuiButtonBase-root-15 MuiButton-root-221 MuiButton-contained-232 MuiButton-containedPrimary-233 MuiButton-raised-235 MuiButton-raisedPrimary-236 MuiButton-fullWidth-246"
                     disabled={false}
