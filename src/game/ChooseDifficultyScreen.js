@@ -34,31 +34,37 @@ const difficulties = [
   },
 ]
 
-const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
-  <Layout>
-    <Typography align="center" variant="h5">
-      Pick a difficulty!
-    </Typography>
+const ChooseDifficultyScreen = withStyles(styles)(
+  ({ classes, currentUser }) => (
+    <Layout>
+      <Typography align="center" variant="h5">
+        Pick a difficulty!
+      </Typography>
 
-    <div className={classes.buttonGroup}>
-      {difficulties.map(item => (
-        <DifficultyButton key={item.difficulty} {...item} />
-      ))}
-    </div>
+      <div className={classes.buttonGroup}>
+        {difficulties.map(item => (
+          <DifficultyButton
+            key={item.difficulty}
+            {...item}
+            availableTickets={currentUser.tickets}
+          />
+        ))}
+      </div>
 
-    <Typography align="center">
-      The harder difficulty, <br />
-      the better the prizes.
-    </Typography>
-  </Layout>
-))
+      <Typography align="center">
+        The harder difficulty, <br />
+        the better the prizes.
+      </Typography>
+    </Layout>
+  ),
+)
 
 const RedirectUserWithoutBalance = ({ currentUser }) => {
   const userCanPlay = difficulties.filter(
     difficulty => currentUser.tickets >= difficulty.quantity,
   )
   return userCanPlay.length ? (
-    <ChooseDifficultyScreen />
+    <ChooseDifficultyScreen currentUser={currentUser} />
   ) : (
     <Redirect to="/buy-diamonds" noThrow />
   )

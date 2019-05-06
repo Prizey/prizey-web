@@ -46,14 +46,19 @@ const styles = theme => ({
   },
 })
 
+export const getPageLink = ({ to, quantity, availableTickets }) =>
+  availableTickets >= quantity ? to : '/buy-more'
+
 export default withStyles(styles)(
-  ({ classes, label, difficulty, to, quantity }) => (
+  ({ classes, label, difficulty, to, quantity, availableTickets }) => (
     <Button
       variant="contained"
       color="primary"
       fullWidth
       className={classes[`root_${difficulty}`]}
-      component={props => <Link to={to} {...props} />}
+      component={props => (
+        <Link to={getPageLink({ availableTickets, quantity, to })} {...props} />
+      )}
     >
       <List
         parentId={difficulty}
