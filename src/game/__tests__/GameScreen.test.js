@@ -40,11 +40,6 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('redirects correctly', () => {
-  const tree = renderer.create(<GameScreen />).toJSON()
-  expect(tree).toMatchSnapshot()
-})
-
 it('trigger the alert', () => {
   const navigate = jest.fn()
   const tree = renderer.create(<GameScreen currentUser navigate={navigate} />)
@@ -54,4 +49,11 @@ it('trigger the alert', () => {
     .findByProps({ 'aria-label': 'roulette' })
     .props.onSelectItem({ title: 'item' })
   expect(navigate).toHaveBeenCalledTimes(1)
+})
+
+describe("when we don't have the currentUser yet", () => {
+  it('redirects correctly', () => {
+    const tree = renderer.create(<GameScreen />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

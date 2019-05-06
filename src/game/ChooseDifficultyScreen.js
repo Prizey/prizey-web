@@ -13,6 +13,27 @@ const styles = theme => ({
   },
 })
 
+const difficulties = [
+  {
+    difficulty: 'easy',
+    label: 'EASY',
+    quantity: 1,
+    to: '/game/easy',
+  },
+  {
+    difficulty: 'medium',
+    label: 'MEDIUM',
+    quantity: 5,
+    to: '/game/medium',
+  },
+  {
+    difficulty: 'hard',
+    label: 'HARD',
+    quantity: 10,
+    to: '/game/hard',
+  },
+]
+
 const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
   <Layout>
     <Typography align="center" variant="h5">
@@ -20,29 +41,9 @@ const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
     </Typography>
 
     <div className={classes.buttonGroup}>
-      <DifficultyButton
-        productImage="/mocks/trump-mask.png"
-        label="EASY"
-        difficulty="easy"
-        quantity={1}
-        to="/game/easy"
-      />
-
-      <DifficultyButton
-        productImage="/mocks/sweatshirt.png"
-        label="MEDIUM"
-        difficulty="medium"
-        quantity={5}
-        to="/game/medium"
-      />
-
-      <DifficultyButton
-        productImage="/mocks/shoe.png"
-        label="HARD"
-        difficulty="hard"
-        quantity={10}
-        to="/game/hard"
-      />
+      {difficulties.map(item => (
+        <DifficultyButton key={item.difficulty} {...item} />
+      ))}
     </div>
 
     <Typography align="center">
@@ -52,5 +53,20 @@ const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
   </Layout>
 ))
 
+const RedirectUserWithoutBalance = ({ currentUser }) => {
+  const userCanPlay = difficulties.filter(
+    difficulty => currentUser.tickets >= difficulty.quantity,
+  )
+  return userCanPlay.length ? (
+    <ChooseDifficultyScreen />
+  ) : (
+    <Redirect to="/buy-diamonds" noThrow />
+  )
+}
+
 export default ({ currentUser }) =>
-  currentUser ? <ChooseDifficultyScreen /> : <Redirect to="/sign-in" noThrow />
+  currentUser ? (
+    <RedirectUserWithoutBalance currentUser={currentUser} />
+  ) : (
+    <Redirect to="/sign-in" noThrow />
+  )
