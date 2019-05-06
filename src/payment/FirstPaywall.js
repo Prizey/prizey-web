@@ -8,6 +8,8 @@ import { Redirect, Link } from '@reach/router'
 
 import GoBack from 'design/GoBack/GoBack'
 
+import getButtonText from './purchaseDescription'
+
 const styles = theme => ({
   button0: {
     '&:hover': {
@@ -30,11 +32,6 @@ const styles = theme => ({
     marginRight: theme.spacing.xs,
   },
 })
-
-const getButtonText = (amount, price) =>
-  `${amount} DIAMOND${amount > 1 ? 'S' : ''} = $ ${parseFloat(price).toFixed(
-    2,
-  )}`
 
 const FirstPaywallScreen = withStyles(styles)(({ classes, buttons }) => (
   <Layout leftIcon={<GoBack to="/" />}>

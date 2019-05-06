@@ -9,6 +9,7 @@ const reducers = {
   game: createReducer('game'),
   orders: createReducer('orders'),
   products: createReducer('products'),
+  purchase: createReducer('purchase'),
   purchaseOptions: createReducer('purchaseOptions'),
   tickets: createReducer('tickets'),
   users: createReducer('users'),
