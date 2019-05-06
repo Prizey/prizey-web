@@ -55,7 +55,7 @@ const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
 
 const RedirectUserWithoutBalance = ({ currentUser }) => {
   const userCanPlay = difficulties.filter(
-    dif => currentUser.tickets >= dif.quantity,
+    difficulty => currentUser.tickets >= difficulty.quantity,
   )
   return userCanPlay.length ? (
     <ChooseDifficultyScreen />
