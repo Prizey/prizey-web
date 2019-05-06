@@ -33,7 +33,7 @@ exports[`renders correctly 1`] = `
       >
         <a
           className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_easy-48"
-          href="/game/easy"
+          href="/buy-more"
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_medium-50"
-          href="/game/medium"
+          href="/buy-more"
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -195,7 +195,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_hard-49"
-          href="/game/hard"
+          href="/buy-more"
           onBlur={[Function]}
           onClick={[Function]}
           onContextMenu={[Function]}
@@ -267,7 +267,7 @@ exports[`renders correctly 1`] = `
             <span
               className="Component-quantity-47"
             >
-              10
+              100
             </span>
           </span>
           <span

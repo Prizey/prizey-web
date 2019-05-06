@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import FirstPaywall from '../FirstPaywall'
+import Paywall from '../Paywall'
 
 const mockList = [
   { id: 1, price: '10.0', ticketAmount: 10 },
@@ -17,11 +17,11 @@ jest.mock('croods', () => ({
 }))
 
 it('renders correctly', () => {
-  const tree = renderer.create(<FirstPaywall currentUser />).toJSON()
+  const tree = renderer.create(<Paywall currentUser />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('redirects correctly', () => {
-  const tree = renderer.create(<FirstPaywall />).toJSON()
+  const tree = renderer.create(<Paywall />).toJSON()
   expect(tree).toMatchSnapshot()
 })

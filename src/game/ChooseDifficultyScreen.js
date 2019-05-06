@@ -13,44 +13,55 @@ const styles = theme => ({
   },
 })
 
-const ChooseDifficultyScreen = withStyles(styles)(({ classes }) => (
-  <Layout>
-    <Typography align="center" variant="h5">
-      Pick a difficulty!
-    </Typography>
+const difficulties = [
+  {
+    difficulty: 'easy',
+    label: 'EASY',
+    quantity: 1,
+    to: '/game/easy',
+  },
+  {
+    difficulty: 'medium',
+    label: 'MEDIUM',
+    quantity: 5,
+    to: '/game/medium',
+  },
+  {
+    difficulty: 'hard',
+    label: 'HARD',
+    quantity: 100,
+    to: '/game/hard',
+  },
+]
 
-    <div className={classes.buttonGroup}>
-      <DifficultyButton
-        productImage="/mocks/trump-mask.png"
-        label="EASY"
-        difficulty="easy"
-        quantity={1}
-        to="/game/easy"
-      />
+const ChooseDifficultyScreen = withStyles(styles)(
+  ({ classes, currentUser }) => (
+    <Layout>
+      <Typography align="center" variant="h5">
+        Pick a difficulty!
+      </Typography>
 
-      <DifficultyButton
-        productImage="/mocks/sweatshirt.png"
-        label="MEDIUM"
-        difficulty="medium"
-        quantity={5}
-        to="/game/medium"
-      />
+      <div className={classes.buttonGroup}>
+        {difficulties.map(item => (
+          <DifficultyButton
+            key={item.difficulty}
+            {...item}
+            availableTickets={currentUser.tickets}
+          />
+        ))}
+      </div>
 
-      <DifficultyButton
-        productImage="/mocks/shoe.png"
-        label="HARD"
-        difficulty="hard"
-        quantity={10}
-        to="/game/hard"
-      />
-    </div>
-
-    <Typography align="center">
-      The harder difficulty, <br />
-      the better the prizes.
-    </Typography>
-  </Layout>
-))
+      <Typography align="center">
+        The harder difficulty, <br />
+        the better the prizes.
+      </Typography>
+    </Layout>
+  ),
+)
 
 export default ({ currentUser }) =>
-  currentUser ? <ChooseDifficultyScreen /> : <Redirect to="/sign-in" noThrow />
+  currentUser ? (
+    <ChooseDifficultyScreen currentUser={currentUser} />
+  ) : (
+    <Redirect to="/sign-in" noThrow />
+  )
