@@ -32,7 +32,9 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('redirects correctly', () => {
-  const tree = renderer.create(<ChooseDifficultyScreen />).toJSON()
-  expect(tree).toMatchSnapshot()
+describe("when we don't have the currentUser yet", () => {
+  it('redirects correctly', () => {
+    const tree = renderer.create(<ChooseDifficultyScreen />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
