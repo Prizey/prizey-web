@@ -54,9 +54,11 @@ export const CreditCardComponent = ({ classes, creating, error, ...props }) => {
         </Grid>
       </Grid>
 
-      {creating && <CircularProgress color="primary" size={36} />}
-      {error && <ErrorComponent>{error}</ErrorComponent>}
-      {stripeError && <ErrorComponent>{stripeError}</ErrorComponent>}
+      <div style={{ textAlign: 'center' }}>
+        {creating && <CircularProgress color="primary" size={36} />}
+        {error && <ErrorComponent>{error}</ErrorComponent>}
+        {stripeError && <ErrorComponent>{stripeError}</ErrorComponent>}
+      </div>
       <Button variant="contained" color="primary" type="submit" fullWidth>
         PAY
       </Button>
