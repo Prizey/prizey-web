@@ -53,13 +53,14 @@ export const PaymentInfoComponent = withStyles(styles)(
 export const reducePurchaseState = (list, id) =>
   list.find(item => item.id === parseInt(id, 10))
 
-export default ({ currentUser, purchaseId }) =>
+export default ({ navigate, currentUser, purchaseId }) =>
   currentUser ? (
     <List
       name="purchaseOptions"
       path="/purchase_options"
       render={purchases => (
         <PaymentInfoComponent
+          navigate={navigate}
           purchase={reducePurchaseState(purchases, purchaseId)}
         />
       )}
