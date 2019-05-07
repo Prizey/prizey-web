@@ -9,7 +9,9 @@ exports[`renders correctly 1`] = `
   render={[Function]}
 >
    - Render: 
-  <div>
+  <div
+    apiKey="pk_test_iZ0Zhbe6LCwVBFX1B7b0qhWq00eFCM2s7B"
+  >
     <div
       className="Component-root-8"
     >
