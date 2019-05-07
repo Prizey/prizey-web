@@ -5,6 +5,7 @@ import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
 import DifficultyButton from './DifficultyButton'
+import SpeedComponent from './SpeedComponent'
 
 const styles = theme => ({
   buttonGroup: {
@@ -17,25 +18,22 @@ const difficulties = [
   {
     difficulty: 'easy',
     label: 'EASY',
-    quantity: 1,
     to: '/game/easy',
   },
   {
     difficulty: 'medium',
     label: 'MEDIUM',
-    quantity: 5,
     to: '/game/medium',
   },
   {
     difficulty: 'hard',
     label: 'HARD',
-    quantity: 10,
     to: '/game/hard',
   },
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
-  ({ classes, currentUser }) => (
+  ({ classes, settings, currentUser }) => (
     <Layout>
       <Typography align="center" variant="h5">
         Pick a difficulty!
@@ -46,6 +44,7 @@ const ChooseDifficultyScreen = withStyles(styles)(
           <DifficultyButton
             key={item.difficulty}
             {...item}
+            quantity={settings[`${item.difficulty}TicketAmount`]}
             availableTickets={currentUser.tickets}
           />
         ))}
@@ -59,16 +58,22 @@ const ChooseDifficultyScreen = withStyles(styles)(
   ),
 )
 
-const RedirectUserWithoutBalance = ({ currentUser }) => {
-  const userCanPlay = difficulties.filter(
-    difficulty => currentUser.tickets >= difficulty.quantity,
-  )
-  return userCanPlay.length ? (
-    <ChooseDifficultyScreen currentUser={currentUser} />
-  ) : (
-    <Redirect to="/buy-diamonds" noThrow />
-  )
-}
+const RedirectUserWithoutBalance = ({ currentUser }) => (
+  <SpeedComponent
+    render={settings => {
+      const userCanPlay = difficulties.filter(
+        ({ difficulty }) =>
+          currentUser.tickets >= settings[`${difficulty}TicketAmount`],
+      )
+
+      return userCanPlay.length ? (
+        <ChooseDifficultyScreen settings={settings} currentUser={currentUser} />
+      ) : (
+        <Redirect to="/buy-diamonds" noThrow />
+      )
+    }}
+  />
+)
 
 export default ({ currentUser }) =>
   currentUser ? (
