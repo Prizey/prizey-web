@@ -1,11 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`redirects correctly 1`] = `null`;
-
-exports[`renders correctly 1`] = `
+exports[`redirects correctly 1`] = `
 <div
   name="products"
-  path="/products/easy"
+  path="/products/home"
   render={[Function]}
 >
    - Render: 
@@ -18,36 +16,32 @@ exports[`renders correctly 1`] = `
     Info -
      
     <div
-      className="Component-root-5"
+      className="Component-root-6"
     >
       <div
-        className="Component-header-4"
+        className="Component-header-5"
       />
       <div
-        className="Component-container-3"
+        className="Component-container-4"
       >
         <h2
-          className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
+          className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
         >
           PRIZEY
         </h2>
         <div
-          className="Component-caption-1"
+          className="Component-caption-2"
         />
         <div
-          className="Component-children-2"
+          className="Component-children-3"
         >
           <a
+            className="Component-root-1"
             href="/game"
             onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "none",
-              }
-            }
           >
             <div
-              className="Component-root-43"
+              className="Component-root-44"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -55,7 +49,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="trump"
-                  className="Component-img-42"
+                  className="Component-img-43"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -67,7 +61,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-42"
+                  className="Component-img-43"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -79,7 +73,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="shoe"
-                  className="Component-img-42"
+                  className="Component-img-43"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -88,16 +82,15 @@ exports[`renders correctly 1`] = `
             </div>
             <br />
             <h5
-              className="MuiTypography-root-6 MuiTypography-h5-22 MuiTypography-alignCenter-29"
+              className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
             >
               Tap the screen, 
               <br />
               win what you tap.
             </h5>
-            <br />
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-contained-55 MuiButton-containedPrimary-56 MuiButton-raised-58 MuiButton-raisedPrimary-59 MuiButton-fullWidth-69"
+              className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -114,18 +107,144 @@ exports[`renders correctly 1`] = `
               type="button"
             >
               <span
-                className="MuiButton-label-45"
+                className="MuiButton-label-46"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-73"
+                className="MuiTouchRipple-root-74"
               />
             </button>
           </a>
         </div>
         <p
-          className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+          className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  name="products"
+  path="/products/home"
+  render={[Function]}
+>
+   - Render: 
+  <div
+    id={1}
+    name="game"
+    path="/game_setting"
+    render={[Function]}
+  >
+    Info -
+     
+    <div
+      className="Component-root-6"
+    >
+      <div
+        className="Component-header-5"
+      />
+      <div
+        className="Component-container-4"
+      >
+        <h2
+          className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
+        >
+          PRIZEY
+        </h2>
+        <div
+          className="Component-caption-2"
+        />
+        <div
+          className="Component-children-3"
+        >
+          <a
+            className="Component-root-1"
+            href="/game"
+            onClick={[Function]}
+          >
+            <div
+              className="Component-root-44"
+            >
+              <div
+                aria-label="rouletteItem-0"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="trump"
+                  className="Component-img-43"
+                  pose="enter"
+                  speed={NaN}
+                  src="/mocks/trump-mask.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-1"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="sweatshirt"
+                  className="Component-img-43"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/sweatshirt.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-2"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="shoe"
+                  className="Component-img-43"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/shoe.png"
+                />
+              </div>
+            </div>
+            <br />
+            <h5
+              className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+            >
+              Tap the screen, 
+              <br />
+              win what you tap.
+            </h5>
+            <button
+              aria-label="I want it"
+              className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
+              disabled={false}
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-46"
+              >
+                PLAY FOR $1
+              </span>
+              <span
+                className="MuiTouchRipple-root-74"
+              />
+            </button>
+          </a>
+        </div>
+        <p
+          className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
         />
       </div>
     </div>
