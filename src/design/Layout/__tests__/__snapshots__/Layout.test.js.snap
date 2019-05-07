@@ -2,16 +2,16 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-5"
+  className="Component-root-7"
 >
   <div
-    className="Component-header-4"
+    className="Component-header-6"
   />
   <div
     className="Component-container-3"
   >
     <h2
-      className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
+      className="MuiTypography-root-8 MuiTypography-h2-21 MuiTypography-alignCenter-31"
     >
       PRIZEY
     </h2>
@@ -21,9 +21,58 @@ exports[`renders correctly 1`] = `
     <div
       className="Component-children-2"
     />
-    <p
-      className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
-    />
+    <div
+      className="Component-footer-4"
+    >
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;

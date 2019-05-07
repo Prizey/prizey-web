@@ -2,16 +2,16 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-6"
+  className="Component-root-8"
 >
   <div
-    className="Component-header-5"
+    className="Component-header-7"
   />
   <div
     className="Component-container-4"
   >
     <h2
-      className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
+      className="MuiTypography-root-9 MuiTypography-h2-22 MuiTypography-alignCenter-32"
     >
       PRIZEY
     </h2>
@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
       className="Component-children-3"
     >
       <h5
-        className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+        className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
       >
         Pick a difficulty!
       </h5>
@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
         className="Component-buttonGroup-1"
       >
         <a
-          className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_easy-48"
+          className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-fullWidth-78 Component-root_easy-50"
           href="/game/easy"
           onBlur={[Function]}
           onClick={[Function]}
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiButton-label-52"
+            className="MuiButton-label-54"
           >
             <div
               name="products"
@@ -60,12 +60,12 @@ exports[`renders correctly 1`] = `
                - Render: 
               <img
                 alt="product"
-                className="Component-product-46"
+                className="Component-product-48"
                 src="/mocks/trump-mask.png"
               />
               RenderLoading: 
               <div
-                className="MuiCircularProgress-root-80 MuiCircularProgress-indeterminate-82 Component-loading-45"
+                className="MuiCircularProgress-root-82 MuiCircularProgress-indeterminate-84 Component-loading-47"
                 role="progressbar"
                 style={
                   Object {
@@ -75,11 +75,11 @@ exports[`renders correctly 1`] = `
                 }
               >
                 <svg
-                  className="MuiCircularProgress-svg-85"
+                  className="MuiCircularProgress-svg-87"
                   viewBox="22 22 44 44"
                 >
                   <circle
-                    className="MuiCircularProgress-circle-86 MuiCircularProgress-circleIndeterminate-88"
+                    className="MuiCircularProgress-circle-88 MuiCircularProgress-circleIndeterminate-90"
                     cx={44}
                     cy={44}
                     fill="none"
@@ -91,27 +91,27 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <span
-              className="Component-label-44"
+              className="Component-label-46"
             >
               EASY
             </span>
             <img
               alt="diamond"
-              className="Component-icon-43"
+              className="Component-icon-45"
               src="/icons/diamond.png"
             />
             <span
-              className="Component-quantity-47"
+              className="Component-quantity-49"
             >
               1
             </span>
           </span>
           <span
-            className="MuiTouchRipple-root-90"
+            className="MuiTouchRipple-root-92"
           />
         </a>
         <a
-          className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_medium-50"
+          className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-fullWidth-78 Component-root_medium-52"
           href="/game/medium"
           onBlur={[Function]}
           onClick={[Function]}
@@ -129,7 +129,7 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiButton-label-52"
+            className="MuiButton-label-54"
           >
             <div
               name="products"
@@ -141,12 +141,12 @@ exports[`renders correctly 1`] = `
                - Render: 
               <img
                 alt="product"
-                className="Component-product-46"
+                className="Component-product-48"
                 src="/mocks/trump-mask.png"
               />
               RenderLoading: 
               <div
-                className="MuiCircularProgress-root-80 MuiCircularProgress-indeterminate-82 Component-loading-45"
+                className="MuiCircularProgress-root-82 MuiCircularProgress-indeterminate-84 Component-loading-47"
                 role="progressbar"
                 style={
                   Object {
@@ -156,11 +156,11 @@ exports[`renders correctly 1`] = `
                 }
               >
                 <svg
-                  className="MuiCircularProgress-svg-85"
+                  className="MuiCircularProgress-svg-87"
                   viewBox="22 22 44 44"
                 >
                   <circle
-                    className="MuiCircularProgress-circle-86 MuiCircularProgress-circleIndeterminate-88"
+                    className="MuiCircularProgress-circle-88 MuiCircularProgress-circleIndeterminate-90"
                     cx={44}
                     cy={44}
                     fill="none"
@@ -172,27 +172,27 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <span
-              className="Component-label-44"
+              className="Component-label-46"
             >
               MEDIUM
             </span>
             <img
               alt="diamond"
-              className="Component-icon-43"
+              className="Component-icon-45"
               src="/icons/diamond.png"
             />
             <span
-              className="Component-quantity-47"
+              className="Component-quantity-49"
             >
               5
             </span>
           </span>
           <span
-            className="MuiTouchRipple-root-90"
+            className="MuiTouchRipple-root-92"
           />
         </a>
         <a
-          className="MuiButtonBase-root-77 MuiButton-root-51 MuiButton-contained-62 MuiButton-containedPrimary-63 MuiButton-raised-65 MuiButton-raisedPrimary-66 MuiButton-fullWidth-76 Component-root_hard-49"
+          className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-fullWidth-78 Component-root_hard-51"
           href="/game/hard"
           onBlur={[Function]}
           onClick={[Function]}
@@ -210,7 +210,7 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiButton-label-52"
+            className="MuiButton-label-54"
           >
             <div
               name="products"
@@ -222,12 +222,12 @@ exports[`renders correctly 1`] = `
                - Render: 
               <img
                 alt="product"
-                className="Component-product-46"
+                className="Component-product-48"
                 src="/mocks/trump-mask.png"
               />
               RenderLoading: 
               <div
-                className="MuiCircularProgress-root-80 MuiCircularProgress-indeterminate-82 Component-loading-45"
+                className="MuiCircularProgress-root-82 MuiCircularProgress-indeterminate-84 Component-loading-47"
                 role="progressbar"
                 style={
                   Object {
@@ -237,11 +237,11 @@ exports[`renders correctly 1`] = `
                 }
               >
                 <svg
-                  className="MuiCircularProgress-svg-85"
+                  className="MuiCircularProgress-svg-87"
                   viewBox="22 22 44 44"
                 >
                   <circle
-                    className="MuiCircularProgress-circle-86 MuiCircularProgress-circleIndeterminate-88"
+                    className="MuiCircularProgress-circle-88 MuiCircularProgress-circleIndeterminate-90"
                     cx={44}
                     cy={44}
                     fill="none"
@@ -253,37 +253,86 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <span
-              className="Component-label-44"
+              className="Component-label-46"
             >
               HARD
             </span>
             <img
               alt="diamond"
-              className="Component-icon-43"
+              className="Component-icon-45"
               src="/icons/diamond.png"
             />
             <span
-              className="Component-quantity-47"
+              className="Component-quantity-49"
             >
               10
             </span>
           </span>
           <span
-            className="MuiTouchRipple-root-90"
+            className="MuiTouchRipple-root-92"
           />
         </a>
       </div>
       <p
-        className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
+        className="MuiTypography-root-9 MuiTypography-body1-18 MuiTypography-alignCenter-32"
       >
         The harder difficulty, 
         <br />
         the better the prizes.
       </p>
     </div>
-    <p
-      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
-    />
+    <div
+      className="Component-footer-5"
+    >
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;
