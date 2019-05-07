@@ -38,5 +38,5 @@ export default ({ currentUser, setCurrentUser }) =>
       }}
     />
   ) : (
-    <Redirect to="/sign-in?next=/shipping-info" noThrow />
+    <Redirect to="/sign-in?next=/game" noThrow />
   )

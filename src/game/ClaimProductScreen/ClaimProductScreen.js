@@ -60,5 +60,5 @@ export default ({ currentUser, ...props }) =>
   currentUser ? (
     <ClaimProductScreen {...props} />
   ) : (
-    <Redirect to="/sign-in" noThrow />
+    <Redirect to="/sign-in?next=/game" noThrow />
   )
