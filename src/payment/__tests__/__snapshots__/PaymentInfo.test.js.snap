@@ -65,6 +65,7 @@ exports[`renders correctly 1`] = `
         className="Component-container-5"
       >
         <img
+          alt="Prizey"
           className="Component-logoImage-9"
           src="/logo.png"
         />
