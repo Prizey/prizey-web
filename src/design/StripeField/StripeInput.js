@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 const styles = () => ({
   root: {
     cursor: 'text',
+    marginTop: 8,
     padding: '6px 0 7px',
     width: '100%',
   },
