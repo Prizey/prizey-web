@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 
@@ -28,6 +28,10 @@ const styles = theme => ({
     ].join(' '),
     width: '100%',
   },
+  logoImage: {
+    marginBottom: theme.spacing.xs,
+    width: '145px',
+  },
   root: {
     alignItems: 'center',
     display: 'flex',
@@ -47,9 +51,9 @@ export default withStyles(styles)(
         {rightIcon}
       </div>
       <div className={classes.container}>
-        <Typography align="center" variant="h2">
-          PRIZEY
-        </Typography>
+        <Fragment>
+          <img src={'/logo.png'} className={classes.logoImage} />
+        </Fragment>
         <div className={classes.caption}>{caption}</div>
         <div className={classes.children}>{children}</div>
         <Typography align="center" />

@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-6"
+  className="Component-root-7"
 >
   <div
     className="Component-header-5"
@@ -10,11 +10,10 @@ exports[`renders correctly 1`] = `
   <div
     className="Component-container-4"
   >
-    <h2
-      className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
-    >
-      PRIZEY
-    </h2>
+    <img
+      className="Component-logoImage-6"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-2"
     />
@@ -22,17 +21,17 @@ exports[`renders correctly 1`] = `
       className="Component-children-3"
     >
       <h2
-        className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30 Component-pageTitle-1"
+        className="MuiTypography-root-8 MuiTypography-h2-21 MuiTypography-alignCenter-31 Component-pageTitle-1"
       >
         You are blocked!
       </h2>
       <h5
-        className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+        className="MuiTypography-root-8 MuiTypography-h5-24 MuiTypography-alignCenter-31"
       >
         Due to recent events on your account history we blocked you, but do not worry, enter in contact through
          
         <a
-          className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedPrimary-55 MuiButton-raised-57 MuiButton-raisedPrimary-58 MuiButton-fullWidth-68"
+          className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-contained-55 MuiButton-containedPrimary-56 MuiButton-raised-58 MuiButton-raisedPrimary-59 MuiButton-fullWidth-69"
           href="mailto:contact@prizeyapp.com"
           onBlur={[Function]}
           onContextMenu={[Function]}
@@ -49,18 +48,18 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiButton-label-44"
+            className="MuiButton-label-45"
           >
             contact@prizeyapp.com
           </span>
           <span
-            className="MuiTouchRipple-root-72"
+            className="MuiTouchRipple-root-73"
           />
         </a>
       </h5>
     </div>
     <p
-      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
+      className="MuiTypography-root-8 MuiTypography-body1-17 MuiTypography-alignCenter-31"
     />
   </div>
 </div>
