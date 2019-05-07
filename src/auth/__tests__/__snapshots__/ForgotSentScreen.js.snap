@@ -2,17 +2,17 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-6"
+  className="Component-root-8"
 >
   <div
-    className="Component-header-4"
+    className="Component-header-6"
   />
   <div
     className="Component-container-3"
   >
     <img
       alt="Prizey"
-      className="Component-logoImage-5"
+      className="Component-logoImage-7"
       src="/logo.png"
     />
     <div
@@ -22,14 +22,63 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h6
-        className="MuiTypography-root-7 MuiTypography-h6-24 MuiTypography-alignCenter-30"
+        className="MuiTypography-root-9 MuiTypography-h6-26 MuiTypography-alignCenter-32"
       >
         Instructions for reseting your password have been sent to your email
       </h6>
     </div>
-    <p
-      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
-    />
+    <div
+      className="Component-footer-4"
+    >
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;

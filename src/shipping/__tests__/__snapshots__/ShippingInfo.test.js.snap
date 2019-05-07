@@ -14,17 +14,17 @@ exports[`renders correctly 1`] = `
   <div>
     render -
     <div
-      className="Component-root-6"
+      className="Component-root-8"
     >
       <div
-        className="Component-header-4"
+        className="Component-header-6"
       />
       <div
         className="Component-container-3"
       >
         <img
           alt="Prizey"
-          className="Component-logoImage-5"
+          className="Component-logoImage-7"
           src="/logo.png"
         />
         <div
@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <h5
-            className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+            className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
           >
             Shipping Address
           </h5>
@@ -45,7 +45,7 @@ exports[`renders correctly 1`] = `
           >
             Formik - 
             <div
-              className="Component-root-43"
+              className="Component-root-45"
             >
               Form - 
               <div
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
                 }
               />
               <button
-                className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-contained-55 MuiButton-containedPrimary-56 MuiButton-raised-58 MuiButton-raisedPrimary-59 MuiButton-fullWidth-69"
+                className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -136,20 +136,69 @@ exports[`renders correctly 1`] = `
                 type="submit"
               >
                 <span
-                  className="MuiButton-label-45"
+                  className="MuiButton-label-47"
                 >
                   SHIP IT!
                 </span>
                 <span
-                  className="MuiTouchRipple-root-73"
+                  className="MuiTouchRipple-root-75"
                 />
               </button>
             </div>
           </div>
         </div>
-        <p
-          className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
-        />
+        <div
+          className="Component-footer-4"
+        >
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

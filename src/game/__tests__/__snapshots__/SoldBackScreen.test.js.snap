@@ -4,17 +4,17 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-6"
+  className="Component-root-8"
 >
   <div
-    className="Component-header-4"
+    className="Component-header-6"
   />
   <div
     className="Component-container-3"
   >
     <img
       alt="Prizey"
-      className="Component-logoImage-5"
+      className="Component-logoImage-7"
       src="/logo.png"
     />
     <div
@@ -24,14 +24,14 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h5
-        className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+        className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
       >
         Congrats! You sold the product for 3 diamonds.
       </h5>
       <br />
       <button
         aria-label="Go to home"
-        className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedSecondary-56 MuiButton-raised-57 MuiButton-raisedSecondary-59 MuiButton-fullWidth-68"
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedSecondary-58 MuiButton-raised-59 MuiButton-raisedSecondary-61 MuiButton-fullWidth-70"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -49,17 +49,17 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-44"
+          className="MuiButton-label-46"
         >
           Go to home
         </span>
         <span
-          className="MuiTouchRipple-root-72"
+          className="MuiTouchRipple-root-74"
         />
       </button>
       <button
         aria-label="Play Again"
-        className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedPrimary-55 MuiButton-raised-57 MuiButton-raisedPrimary-58 MuiButton-fullWidth-68"
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -77,18 +77,67 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-44"
+          className="MuiButton-label-46"
         >
           Play Again
         </span>
         <span
-          className="MuiTouchRipple-root-72"
+          className="MuiTouchRipple-root-74"
         />
       </button>
     </div>
-    <p
-      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
-    />
+    <div
+      className="Component-footer-4"
+    >
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;
