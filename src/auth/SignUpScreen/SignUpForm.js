@@ -20,9 +20,10 @@ const styles = theme => ({
 export const FormBottom = withStyles(styles)(({ classes, ...props }) => (
   <React.Fragment>
     <SubmitButton {...props} label="REGISTER" />
-    <Typography align="center" variant="h6" className={classes.message}>
-      You confirm you&apos;re 18
+    <Typography align="center" className={classes.message}>
+      By proceeding, you agree you&apos;re 18+.
     </Typography>
+
     <div className={classes.links}>
       <SecondaryLink to="/sign-in" label="Already have an account?" />
     </div>
