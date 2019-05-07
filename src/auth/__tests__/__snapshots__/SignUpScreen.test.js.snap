@@ -18,16 +18,16 @@ exports[`renders correctly 1`] = `
   <div>
     render - 
     <div
-      className="Component-root-81"
+      className="Component-root-83"
     >
       <div
-        className="Component-header-79"
+        className="Component-header-81"
       />
       <div
         className="Component-container-78"
       >
         <img
-          className="Component-logoImage-80"
+          className="Component-logoImage-82"
           src="/logo.png"
         />
         <div
@@ -72,11 +72,11 @@ exports[`renders correctly 1`] = `
                 className="MuiTouchRipple-root-68"
               />
             </button>
-            <h6
-              className="MuiTypography-root-32 MuiTypography-h6-49 MuiTypography-alignCenter-55 Component-message-2"
+            <p
+              className="MuiTypography-root-32 MuiTypography-body1-41 MuiTypography-alignCenter-55 Component-message-2"
             >
-              You confirm you're 18
-            </h6>
+              By proceeding, you agree you're 18+.
+            </p>
             <div
               className="Component-links-1"
             >
@@ -98,9 +98,58 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
         </div>
-        <p
-          className="MuiTypography-root-32 MuiTypography-body1-41 MuiTypography-alignCenter-55"
-        />
+        <div
+          className="Component-footer-79"
+        >
+          <a
+            className="Component-footerLink-80"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-80"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-80"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-80"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -144,11 +193,11 @@ Array [
       className="MuiTouchRipple-root-68"
     />
   </button>,
-  <h6
-    className="MuiTypography-root-32 MuiTypography-h6-49 MuiTypography-alignCenter-55 Component-message-2"
+  <p
+    className="MuiTypography-root-32 MuiTypography-body1-41 MuiTypography-alignCenter-55 Component-message-2"
   >
-    You confirm you're 18
-  </h6>,
+    By proceeding, you agree you're 18+.
+  </p>,
   <div
     className="Component-links-1"
   >
