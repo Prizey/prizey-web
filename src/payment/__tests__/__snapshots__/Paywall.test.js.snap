@@ -10,15 +10,15 @@ exports[`renders correctly 1`] = `
 >
    - Render: 
   <div
-    className="Component-root-10"
+    className="Component-root-12"
   >
     <div
-      className="Component-header-8"
+      className="Component-header-10"
     >
       <a
         aria-current="page"
         aria-label="Go Back"
-        className="MuiButtonBase-root-18 MuiIconButton-root-12 Component-root-11"
+        className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-13"
         href="/"
         onBlur={[Function]}
         onClick={[Function]}
@@ -36,11 +36,11 @@ exports[`renders correctly 1`] = `
         tabIndex="0"
       >
         <span
-          className="MuiIconButton-label-17"
+          className="MuiIconButton-label-19"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-21 MuiSvgIcon-fontSizeLarge-29"
+            className="MuiSvgIcon-root-23 MuiSvgIcon-fontSizeLarge-31"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ exports[`renders correctly 1`] = `
           </svg>
         </span>
         <span
-          className="MuiTouchRipple-root-92"
+          className="MuiTouchRipple-root-94"
         />
       </a>
     </div>
@@ -63,7 +63,7 @@ exports[`renders correctly 1`] = `
       className="Component-container-7"
     >
       <img
-        className="Component-logoImage-9"
+        className="Component-logoImage-11"
         src="/logo.png"
       />
       <div
@@ -73,7 +73,7 @@ exports[`renders correctly 1`] = `
         className="Component-children-6"
       >
         <h5
-          className="MuiTypography-root-30 MuiTypography-h5-46 MuiTypography-alignCenter-53"
+          className="MuiTypography-root-32 MuiTypography-h5-48 MuiTypography-alignCenter-55"
         >
           Purchase diamonds to play, win something every time.
         </h5>
@@ -81,7 +81,7 @@ exports[`renders correctly 1`] = `
           className="Component-buttonGroup-3"
         >
           <a
-            className="MuiButtonBase-root-18 MuiButton-root-66 MuiButton-contained-77 MuiButton-containedPrimary-78 MuiButton-raised-80 MuiButton-raisedPrimary-81 MuiButton-fullWidth-91 Component-button0-1"
+            className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-button0-1"
             href="/payment/1"
             onBlur={[Function]}
             onClick={[Function]}
@@ -99,7 +99,7 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-67"
+              className="MuiButton-label-69"
             >
               <img
                 alt="diamond"
@@ -109,11 +109,11 @@ exports[`renders correctly 1`] = `
               10 Diamonds = $ 10.00
             </span>
             <span
-              className="MuiTouchRipple-root-92"
+              className="MuiTouchRipple-root-94"
             />
           </a>
           <a
-            className="MuiButtonBase-root-18 MuiButton-root-66 MuiButton-contained-77 MuiButton-containedPrimary-78 MuiButton-raised-80 MuiButton-raisedPrimary-81 MuiButton-fullWidth-91 Component-button1-2"
+            className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-button1-2"
             href="/payment/2"
             onBlur={[Function]}
             onClick={[Function]}
@@ -131,7 +131,7 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-67"
+              className="MuiButton-label-69"
             >
               <img
                 alt="diamond"
@@ -141,11 +141,11 @@ exports[`renders correctly 1`] = `
               25 Diamonds = $ 25.00
             </span>
             <span
-              className="MuiTouchRipple-root-92"
+              className="MuiTouchRipple-root-94"
             />
           </a>
           <a
-            className="MuiButtonBase-root-18 MuiButton-root-66 MuiButton-contained-77 MuiButton-containedPrimary-78 MuiButton-raised-80 MuiButton-raisedPrimary-81 MuiButton-fullWidth-91"
+            className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93"
             href="/payment/3"
             onBlur={[Function]}
             onClick={[Function]}
@@ -163,7 +163,7 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-67"
+              className="MuiButton-label-69"
             >
               <img
                 alt="diamond"
@@ -173,19 +173,68 @@ exports[`renders correctly 1`] = `
               50 Diamonds = $ 50.00
             </span>
             <span
-              className="MuiTouchRipple-root-92"
+              className="MuiTouchRipple-root-94"
             />
           </a>
         </div>
         <p
-          className="MuiTypography-root-30 MuiTypography-body2-38 MuiTypography-colorTextSecondary-63 MuiTypography-alignCenter-53"
+          className="MuiTypography-root-32 MuiTypography-body2-40 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
         >
           By proceeding, you agree you're 18+.
         </p>
       </div>
-      <p
-        className="MuiTypography-root-30 MuiTypography-body1-39 MuiTypography-alignCenter-53"
-      />
+      <div
+        className="Component-footer-8"
+      >
+        <a
+          className="Component-footerLink-9"
+          href="https://termly.io/en/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+          >
+            TERMS
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-9"
+          href="https://termly.io/en/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+          >
+            PRIVACY
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-9"
+          href="https://termly.io/en/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+          >
+            FAIRNESS
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-9"
+          href="https://termly.io/en/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+          >
+            ALL PRIZES
+          </span>
+        </a>
+      </div>
     </div>
   </div>
 </div>

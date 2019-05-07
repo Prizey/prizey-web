@@ -16,15 +16,15 @@ exports[`renders correctly 1`] = `
     Info -
      
     <div
-      className="Component-root-6"
+      className="Component-root-8"
     >
       <div
-        className="Component-header-4"
+        className="Component-header-6"
       >
         <a
           aria-current="page"
           aria-label="Go Back"
-          className="MuiButtonBase-root-14 MuiIconButton-root-8 Component-root-7"
+          className="MuiButtonBase-root-16 MuiIconButton-root-10 Component-root-9"
           href="/"
           onBlur={[Function]}
           onClick={[Function]}
@@ -42,11 +42,11 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiIconButton-label-13"
+            className="MuiIconButton-label-15"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-17 MuiSvgIcon-fontSizeLarge-25"
+              className="MuiSvgIcon-root-19 MuiSvgIcon-fontSizeLarge-27"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -61,7 +61,7 @@ exports[`renders correctly 1`] = `
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-69"
+            className="MuiTouchRipple-root-71"
           />
         </a>
       </div>
@@ -69,20 +69,20 @@ exports[`renders correctly 1`] = `
         className="Component-container-3"
       >
         <img
-          className="Component-logoImage-5"
+          className="Component-logoImage-7"
           src="/logo.png"
         />
         <div
           className="Component-caption-1"
         >
           <div
-            className="Component-root-30"
+            className="Component-root-32"
           >
             <span
-              className="Component-icon-26 Component-icon_easy-27"
+              className="Component-icon-28 Component-icon_easy-29"
             />
             <h6
-              className="MuiTypography-root-31 MuiTypography-subtitle1-49"
+              className="MuiTypography-root-33 MuiTypography-subtitle1-51"
             >
               EASY
             </h6>
@@ -92,7 +92,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <div
-            className="Component-root-68"
+            className="Component-root-70"
           >
             <div
               aria-label="rouletteItem-0"
@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="trump"
-                className="Component-img-67"
+                className="Component-img-69"
                 pose="enter"
                 speed={NaN}
                 src="/mocks/trump-mask.png"
@@ -112,7 +112,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="sweatshirt"
-                className="Component-img-67"
+                className="Component-img-69"
                 pose="leave"
                 speed={NaN}
                 src="/mocks/sweatshirt.png"
@@ -124,7 +124,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="shoe"
-                className="Component-img-67"
+                className="Component-img-69"
                 pose="leave"
                 speed={NaN}
                 src="/mocks/shoe.png"
@@ -133,16 +133,65 @@ exports[`renders correctly 1`] = `
           </div>
           <br />
           <p
-            className="MuiTypography-root-31 MuiTypography-body2-39 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+            className="MuiTypography-root-33 MuiTypography-body2-41 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
           >
             Tap the screen, 
             <br />
             win what you tap.
           </p>
         </div>
-        <p
-          className="MuiTypography-root-31 MuiTypography-body1-40 MuiTypography-alignCenter-54"
-        />
+        <div
+          className="Component-footer-4"
+        >
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
