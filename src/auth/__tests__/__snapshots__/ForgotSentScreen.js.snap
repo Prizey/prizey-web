@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-5"
+  className="Component-root-6"
 >
   <div
     className="Component-header-4"
@@ -10,11 +10,10 @@ exports[`renders correctly 1`] = `
   <div
     className="Component-container-3"
   >
-    <h2
-      className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
-    >
-      PRIZEY
-    </h2>
+    <img
+      className="Component-logoImage-5"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-1"
     />
@@ -22,13 +21,13 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h6
-        className="MuiTypography-root-6 MuiTypography-h6-23 MuiTypography-alignCenter-29"
+        className="MuiTypography-root-7 MuiTypography-h6-24 MuiTypography-alignCenter-30"
       >
         Instructions for reseting your password have been sent to your email
       </h6>
     </div>
     <p
-      className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
     />
   </div>
 </div>

@@ -4,7 +4,7 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-5"
+  className="Component-root-6"
 >
   <div
     className="Component-header-4"
@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
     <a
       aria-current="page"
       aria-label="Go Back"
-      className="MuiButtonBase-root-13 MuiIconButton-root-7 Component-root-6"
+      className="MuiButtonBase-root-14 MuiIconButton-root-8 Component-root-7"
       href="/"
       onBlur={[Function]}
       onClick={[Function]}
@@ -30,11 +30,11 @@ exports[`renders correctly 1`] = `
       tabIndex="0"
     >
       <span
-        className="MuiIconButton-label-12"
+        className="MuiIconButton-label-13"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-16 MuiSvgIcon-fontSizeLarge-24"
+          className="MuiSvgIcon-root-17 MuiSvgIcon-fontSizeLarge-25"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -49,29 +49,28 @@ exports[`renders correctly 1`] = `
         </svg>
       </span>
       <span
-        className="MuiTouchRipple-root-113"
+        className="MuiTouchRipple-root-114"
       />
     </a>
   </div>
   <div
     className="Component-container-3"
   >
-    <h2
-      className="MuiTypography-root-25 MuiTypography-h2-38 MuiTypography-alignCenter-48"
-    >
-      PRIZEY
-    </h2>
+    <img
+      className="Component-logoImage-5"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-1"
     >
       <div
-        className="Component-root-65"
+        className="Component-root-30"
       >
         <span
-          className="Component-icon-61 Component-icon_easy-62"
+          className="Component-icon-26 Component-icon_easy-27"
         />
         <h6
-          className="MuiTypography-root-25 MuiTypography-subtitle1-43"
+          className="MuiTypography-root-31 MuiTypography-subtitle1-49"
         >
           EASY
         </h6>
@@ -81,18 +80,18 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h5
-        className="MuiTypography-root-25 MuiTypography-h5-41 MuiTypography-alignCenter-48"
+        className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54"
       >
         Trump mask
       </h5>
       <img
         alt="Trump mask"
-        className="Component-productImage-66"
+        className="Component-productImage-67"
         src="/mock/trump-mask.png"
         style={Object {}}
       />
       <p
-        className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
+        className="MuiTypography-root-31 MuiTypography-body1-40 MuiTypography-alignCenter-54"
       >
         MSRP: $
       </p>
@@ -107,7 +106,7 @@ exports[`renders correctly 1`] = `
           render - 
           <button
             aria-label="Sell it Back"
-            className="MuiButtonBase-root-13 MuiButton-root-87 MuiButton-contained-98 MuiButton-containedSecondary-100 MuiButton-raised-101 MuiButton-raisedSecondary-103 MuiButton-fullWidth-112"
+            className="MuiButtonBase-root-14 MuiButton-root-88 MuiButton-contained-99 MuiButton-containedSecondary-101 MuiButton-raised-102 MuiButton-raisedSecondary-104 MuiButton-fullWidth-113"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -125,35 +124,35 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-88"
+              className="MuiButton-label-89"
             >
               <span>
                 SELL IT BACK
               </span>
               <div
-                className="Component-rightIcon-69"
+                className="Component-rightIcon-70"
               >
                 <img
                   alt="diamond"
-                  className="Component-icon-67"
+                  className="Component-icon-68"
                   src="/icons/diamond.png"
                 />
                 <span
-                  className="Component-quantity-68"
+                  className="Component-quantity-69"
                 >
                   3
                 </span>
               </div>
             </span>
             <span
-              className="MuiTouchRipple-root-113"
+              className="MuiTouchRipple-root-114"
             />
           </button>
         </div>
       </div>
       <button
         aria-label="I want it"
-        className="MuiButtonBase-root-13 MuiButton-root-87 MuiButton-contained-98 MuiButton-containedPrimary-99 MuiButton-raised-101 MuiButton-raisedPrimary-102 MuiButton-fullWidth-112"
+        className="MuiButtonBase-root-14 MuiButton-root-88 MuiButton-contained-99 MuiButton-containedPrimary-100 MuiButton-raised-102 MuiButton-raisedPrimary-103 MuiButton-fullWidth-113"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -171,17 +170,17 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-88"
+          className="MuiButton-label-89"
         >
           I WANT IT!
         </span>
         <span
-          className="MuiTouchRipple-root-113"
+          className="MuiTouchRipple-root-114"
         />
       </button>
     </div>
     <p
-      className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
+      className="MuiTypography-root-31 MuiTypography-body1-40 MuiTypography-alignCenter-54"
     />
   </div>
 </div>

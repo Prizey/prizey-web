@@ -4,7 +4,7 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-5"
+  className="Component-root-6"
 >
   <div
     className="Component-header-4"
@@ -12,11 +12,10 @@ exports[`renders correctly 1`] = `
   <div
     className="Component-container-3"
   >
-    <h2
-      className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
-    >
-      PRIZEY
-    </h2>
+    <img
+      className="Component-logoImage-5"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-1"
     />
@@ -24,14 +23,14 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h5
-        className="MuiTypography-root-6 MuiTypography-h5-22 MuiTypography-alignCenter-29"
+        className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
       >
         Congrats! You sold the product for 3 diamonds.
       </h5>
       <br />
       <button
         aria-label="Go to home"
-        className="MuiButtonBase-root-68 MuiButton-root-42 MuiButton-contained-53 MuiButton-containedSecondary-55 MuiButton-raised-56 MuiButton-raisedSecondary-58 MuiButton-fullWidth-67"
+        className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedSecondary-56 MuiButton-raised-57 MuiButton-raisedSecondary-59 MuiButton-fullWidth-68"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -49,17 +48,17 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-43"
+          className="MuiButton-label-44"
         >
           Go to home
         </span>
         <span
-          className="MuiTouchRipple-root-71"
+          className="MuiTouchRipple-root-72"
         />
       </button>
       <button
         aria-label="Play Again"
-        className="MuiButtonBase-root-68 MuiButton-root-42 MuiButton-contained-53 MuiButton-containedPrimary-54 MuiButton-raised-56 MuiButton-raisedPrimary-57 MuiButton-fullWidth-67"
+        className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedPrimary-55 MuiButton-raised-57 MuiButton-raisedPrimary-58 MuiButton-fullWidth-68"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -77,17 +76,17 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-43"
+          className="MuiButton-label-44"
         >
           Play Again
         </span>
         <span
-          className="MuiTouchRipple-root-71"
+          className="MuiTouchRipple-root-72"
         />
       </button>
     </div>
     <p
-      className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
     />
   </div>
 </div>

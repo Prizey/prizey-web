@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
   <div>
     render -
     <div
-      className="Component-root-5"
+      className="Component-root-6"
     >
       <div
         className="Component-header-4"
@@ -22,11 +22,10 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-container-3"
       >
-        <h2
-          className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
-        >
-          PRIZEY
-        </h2>
+        <img
+          className="Component-logoImage-5"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-1"
         />
@@ -34,7 +33,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <h5
-            className="MuiTypography-root-6 MuiTypography-h5-22 MuiTypography-alignCenter-29"
+            className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
           >
             Shipping Address
           </h5>
@@ -45,7 +44,7 @@ exports[`renders correctly 1`] = `
           >
             Formik - 
             <div
-              className="Component-root-42"
+              className="Component-root-43"
             >
               Form - 
               <div
@@ -119,7 +118,7 @@ exports[`renders correctly 1`] = `
                 }
               />
               <button
-                className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedPrimary-55 MuiButton-raised-57 MuiButton-raisedPrimary-58 MuiButton-fullWidth-68"
+                className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-contained-55 MuiButton-containedPrimary-56 MuiButton-raised-58 MuiButton-raisedPrimary-59 MuiButton-fullWidth-69"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -136,19 +135,19 @@ exports[`renders correctly 1`] = `
                 type="submit"
               >
                 <span
-                  className="MuiButton-label-44"
+                  className="MuiButton-label-45"
                 >
                   SHIP IT!
                 </span>
                 <span
-                  className="MuiTouchRipple-root-72"
+                  className="MuiTouchRipple-root-73"
                 />
               </button>
             </div>
           </div>
         </div>
         <p
-          className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
+          className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
         />
       </div>
     </div>

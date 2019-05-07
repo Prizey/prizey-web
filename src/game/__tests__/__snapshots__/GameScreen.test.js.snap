@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
     Info -
      
     <div
-      className="Component-root-5"
+      className="Component-root-6"
     >
       <div
         className="Component-header-4"
@@ -24,7 +24,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-current="page"
           aria-label="Go Back"
-          className="MuiButtonBase-root-13 MuiIconButton-root-7 Component-root-6"
+          className="MuiButtonBase-root-14 MuiIconButton-root-8 Component-root-7"
           href="/"
           onBlur={[Function]}
           onClick={[Function]}
@@ -42,11 +42,11 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiIconButton-label-12"
+            className="MuiIconButton-label-13"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-16 MuiSvgIcon-fontSizeLarge-24"
+              className="MuiSvgIcon-root-17 MuiSvgIcon-fontSizeLarge-25"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -61,29 +61,28 @@ exports[`renders correctly 1`] = `
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-68"
+            className="MuiTouchRipple-root-69"
           />
         </a>
       </div>
       <div
         className="Component-container-3"
       >
-        <h2
-          className="MuiTypography-root-25 MuiTypography-h2-38 MuiTypography-alignCenter-48"
-        >
-          PRIZEY
-        </h2>
+        <img
+          className="Component-logoImage-5"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-1"
         >
           <div
-            className="Component-root-65"
+            className="Component-root-30"
           >
             <span
-              className="Component-icon-61 Component-icon_easy-62"
+              className="Component-icon-26 Component-icon_easy-27"
             />
             <h6
-              className="MuiTypography-root-25 MuiTypography-subtitle1-43"
+              className="MuiTypography-root-31 MuiTypography-subtitle1-49"
             >
               EASY
             </h6>
@@ -93,7 +92,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <div
-            className="Component-root-67"
+            className="Component-root-68"
           >
             <div
               aria-label="rouletteItem-0"
@@ -101,7 +100,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="trump"
-                className="Component-img-66"
+                className="Component-img-67"
                 pose="enter"
                 speed={NaN}
                 src="/mocks/trump-mask.png"
@@ -113,7 +112,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="sweatshirt"
-                className="Component-img-66"
+                className="Component-img-67"
                 pose="leave"
                 speed={NaN}
                 src="/mocks/sweatshirt.png"
@@ -125,7 +124,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="shoe"
-                className="Component-img-66"
+                className="Component-img-67"
                 pose="leave"
                 speed={NaN}
                 src="/mocks/shoe.png"
@@ -134,7 +133,7 @@ exports[`renders correctly 1`] = `
           </div>
           <br />
           <p
-            className="MuiTypography-root-25 MuiTypography-body2-33 MuiTypography-colorTextSecondary-58 MuiTypography-alignCenter-48"
+            className="MuiTypography-root-31 MuiTypography-body2-39 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
           >
             Tap the screen, 
             <br />
@@ -142,7 +141,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <p
-          className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
+          className="MuiTypography-root-31 MuiTypography-body1-40 MuiTypography-alignCenter-54"
         />
       </div>
     </div>
