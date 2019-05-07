@@ -9,7 +9,16 @@ const mockList = [
 ]
 
 jest.mock('croods', () => ({
-  Info: ({ children, ...props }) => <div {...props}>Info - {children}</div>,
+  Info: ({ children, ...props }) => (
+    <div {...props}>
+      Info -{' '}
+      {props.render({
+        easyTicketAmount: 1,
+        hardicketAmount: 2,
+        mediumTicketAmount: 3,
+      })}
+    </div>
+  ),
   List: props => (
     <div {...props}>
       {props.children} - Render: {props.render(mockList)}
