@@ -52,7 +52,7 @@ export default withStyles(styles)(
       </div>
       <div className={classes.container}>
         <Fragment>
-          <img src={'/logo.png'} className={classes.logoImage} />
+          <img src={'/logo.png'} className={classes.logoImage} alt="Prizey" />
         </Fragment>
         <div className={classes.caption}>{caption}</div>
         <div className={classes.children}>{children}</div>

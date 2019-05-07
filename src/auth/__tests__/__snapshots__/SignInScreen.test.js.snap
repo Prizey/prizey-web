@@ -18,6 +18,7 @@ exports[`renders correctly 1`] = `
         className="Component-container-77"
       >
         <img
+          alt="Prizey"
           className="Component-logoImage-79"
           src="/logo.png"
         />
