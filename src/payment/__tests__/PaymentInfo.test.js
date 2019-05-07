@@ -45,11 +45,22 @@ it('redirects correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('redirects after purchase', () => {
-  const navigate = jest.fn()
-  afterPurchase(navigate)()
+describe('test the actions after payment', () => {
+  it('redirects after purchase and update the tickets', () => {
+    const params = {
+      currentUser: { id: 1, tickets: 0 },
+      navigate: jest.fn(),
+      purchase: { ticketAmount: 10 },
+      setCurrentUser: jest.fn(),
+    }
+    afterPurchase(params)()
 
-  expect(navigate).toHaveBeenCalledWith('/')
+    expect(params.setCurrentUser).toHaveBeenCalledWith({
+      id: 1,
+      tickets: 10,
+    })
+    expect(params.navigate).toHaveBeenCalledWith('/game')
+  })
 })
 
 it('handle the submit process on sucess', async () => {
