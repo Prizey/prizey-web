@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
   <div>
     render -
     <div
-      className="Component-root-10"
+      className="Component-root-11"
     >
       <div
         className="Component-header-9"
@@ -24,11 +24,10 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-container-6"
       >
-        <h2
-          className="MuiTypography-root-11 MuiTypography-h2-24 MuiTypography-alignCenter-34"
-        >
-          PRIZEY
-        </h2>
+        <img
+          className="Component-logoImage-10"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-4"
         />
@@ -39,7 +38,7 @@ exports[`renders correctly 1`] = `
             aria-labelledby="Are you sure?"
             classes={
               Object {
-                "paper": "PlayAgain-paper-47",
+                "paper": "PlayAgain-paper-12",
               }
             }
             fullWidth={true}
@@ -47,30 +46,30 @@ exports[`renders correctly 1`] = `
             open={false}
           >
             <div
-              className="MuiDialogTitle-root-48"
+              className="MuiDialogTitle-root-13"
             >
               <h2
-                className="MuiTypography-root-11 MuiTypography-title-17"
+                className="MuiTypography-root-14 MuiTypography-title-20"
               >
                 Are you sure?
               </h2>
             </div>
             <div
-              className="MuiDialogContent-root-49"
+              className="MuiDialogContent-root-50"
             >
               <p
-                className="MuiTypography-root-11 MuiDialogContentText-root-50 MuiTypography-subheading-18 MuiTypography-colorTextSecondary-44"
+                className="MuiTypography-root-14 MuiDialogContentText-root-51 MuiTypography-subheading-21 MuiTypography-colorTextSecondary-47"
               >
                 This action can't be undone.
               </p>
             </div>
             <div
-              className="MuiDialogActions-root-51"
+              className="MuiDialogActions-root-52"
             >
               <button
                 aria-label="cancel"
                 autoFocus={true}
-                className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59 MuiDialogActions-action-52"
+                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-text-56 MuiButton-textPrimary-57 MuiButton-flat-59 MuiButton-flatPrimary-60 MuiDialogActions-action-53"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -88,17 +87,17 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-54"
+                  className="MuiButton-label-55"
                 >
                   Cancel
                 </span>
                 <span
-                  className="MuiTouchRipple-root-82"
+                  className="MuiTouchRipple-root-83"
                 />
               </button>
               <button
                 aria-label="confirm"
-                className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59 MuiDialogActions-action-52"
+                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-text-56 MuiButton-textPrimary-57 MuiButton-flat-59 MuiButton-flatPrimary-60 MuiDialogActions-action-53"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -116,23 +115,23 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-54"
+                  className="MuiButton-label-55"
                 >
                   Confirm
                 </span>
                 <span
-                  className="MuiTouchRipple-root-82"
+                  className="MuiTouchRipple-root-83"
                 />
               </button>
             </div>
           </div>
           <h5
-            className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-alignCenter-34 ConfirmOrderComponent-title-2"
+            className="MuiTypography-root-14 MuiTypography-h5-30 MuiTypography-alignCenter-37 ConfirmOrderComponent-title-2"
           >
             Confirm Order
           </h5>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             Full Name
             :
@@ -144,7 +143,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             Address
             :
@@ -156,7 +155,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             City
             :
@@ -168,7 +167,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             State / Province / Region
             :
@@ -180,7 +179,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             Postal Code / ZIP
             :
@@ -190,7 +189,7 @@ exports[`renders correctly 1`] = `
             />
           </p>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             Clothing Size
             :
@@ -202,7 +201,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-11 MuiTypography-body2-19 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
           >
             Shoe Size
             :
@@ -221,7 +220,7 @@ exports[`renders correctly 1`] = `
             }
           />
           <button
-            className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-fullWidth-78"
+            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -239,17 +238,17 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-54"
+              className="MuiButton-label-55"
             >
               SHIP IT!
             </span>
             <span
-              className="MuiTouchRipple-root-82"
+              className="MuiTouchRipple-root-83"
             />
           </button>
           <button
             aria-label="Cancel"
-            className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-outlined-61 MuiButton-outlinedPrimary-62 MuiButton-fullWidth-78"
+            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-outlined-62 MuiButton-outlinedPrimary-63 MuiButton-fullWidth-79"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -267,12 +266,12 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-54"
+              className="MuiButton-label-55"
             >
               CANCEL
             </span>
             <span
-              className="MuiTouchRipple-root-82"
+              className="MuiTouchRipple-root-83"
             />
           </button>
         </div>
@@ -286,7 +285,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               TERMS
             </span>
@@ -298,7 +297,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               PRIVACY
             </span>
@@ -310,7 +309,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               FAIRNESS
             </span>
@@ -322,7 +321,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               ALL PRIZES
             </span>

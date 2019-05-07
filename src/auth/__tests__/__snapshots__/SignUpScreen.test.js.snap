@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
   <div>
     render - 
     <div
-      className="Component-root-81"
+      className="Component-root-82"
     >
       <div
         className="Component-header-80"
@@ -26,11 +26,10 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-container-77"
       >
-        <h2
-          className="MuiTypography-root-31 MuiTypography-h2-44 MuiTypography-alignCenter-54"
-        >
-          PRIZEY
-        </h2>
+        <img
+          className="Component-logoImage-81"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-75"
         />

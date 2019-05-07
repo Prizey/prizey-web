@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-8"
+  className="Component-root-9"
 >
   <div
     className="Component-header-7"
@@ -10,11 +10,10 @@ exports[`renders correctly 1`] = `
   <div
     className="Component-container-4"
   >
-    <h2
-      className="MuiTypography-root-9 MuiTypography-h2-22 MuiTypography-alignCenter-32"
-    >
-      PRIZEY
-    </h2>
+    <img
+      className="Component-logoImage-8"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-2"
     />
@@ -22,17 +21,17 @@ exports[`renders correctly 1`] = `
       className="Component-children-3"
     >
       <h2
-        className="MuiTypography-root-9 MuiTypography-h2-22 MuiTypography-alignCenter-32 Component-pageTitle-1"
+        className="MuiTypography-root-10 MuiTypography-h2-23 MuiTypography-alignCenter-33 Component-pageTitle-1"
       >
         You are blocked!
       </h2>
       <h5
-        className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
+        className="MuiTypography-root-10 MuiTypography-h5-26 MuiTypography-alignCenter-33"
       >
         Due to recent events on your account history we blocked you, but do not worry, enter in contact through
          
         <a
-          className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
+          className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
           href="mailto:contact@prizeyapp.com"
           onBlur={[Function]}
           onContextMenu={[Function]}
@@ -49,12 +48,12 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiButton-label-46"
+            className="MuiButton-label-47"
           >
             contact@prizeyapp.com
           </span>
           <span
-            className="MuiTouchRipple-root-74"
+            className="MuiTouchRipple-root-75"
           />
         </a>
       </h5>
@@ -69,7 +68,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
         >
           TERMS
         </span>
@@ -81,7 +80,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
         >
           PRIVACY
         </span>
@@ -93,7 +92,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
         >
           FAIRNESS
         </span>
@@ -105,7 +104,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
         >
           ALL PRIZES
         </span>

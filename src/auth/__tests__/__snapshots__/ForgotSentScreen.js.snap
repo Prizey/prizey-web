@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-7"
+  className="Component-root-8"
 >
   <div
     className="Component-header-6"
@@ -10,11 +10,10 @@ exports[`renders correctly 1`] = `
   <div
     className="Component-container-3"
   >
-    <h2
-      className="MuiTypography-root-8 MuiTypography-h2-21 MuiTypography-alignCenter-31"
-    >
-      PRIZEY
-    </h2>
+    <img
+      className="Component-logoImage-7"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-1"
     />
@@ -22,7 +21,7 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h6
-        className="MuiTypography-root-8 MuiTypography-h6-25 MuiTypography-alignCenter-31"
+        className="MuiTypography-root-9 MuiTypography-h6-26 MuiTypography-alignCenter-32"
       >
         Instructions for reseting your password have been sent to your email
       </h6>
@@ -37,7 +36,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
         >
           TERMS
         </span>
@@ -49,7 +48,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
         >
           PRIVACY
         </span>
@@ -61,7 +60,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
         >
           FAIRNESS
         </span>
@@ -73,7 +72,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+          className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
         >
           ALL PRIZES
         </span>

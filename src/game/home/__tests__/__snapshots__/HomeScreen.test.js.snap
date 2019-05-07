@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
     Info -
      
     <div
-      className="Component-root-7"
+      className="Component-root-8"
     >
       <div
         className="Component-header-6"
@@ -26,11 +26,10 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-container-3"
       >
-        <h2
-          className="MuiTypography-root-8 MuiTypography-h2-21 MuiTypography-alignCenter-31"
-        >
-          PRIZEY
-        </h2>
+        <img
+          className="Component-logoImage-7"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-1"
         />
@@ -47,7 +46,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <div
-              className="Component-root-45"
+              className="Component-root-10"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -55,7 +54,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="trump"
-                  className="Component-img-44"
+                  className="Component-img-9"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -67,7 +66,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-44"
+                  className="Component-img-9"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -79,7 +78,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="shoe"
-                  className="Component-img-44"
+                  className="Component-img-9"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -88,7 +87,7 @@ exports[`renders correctly 1`] = `
             </div>
             <br />
             <h5
-              className="MuiTypography-root-8 MuiTypography-h5-24 MuiTypography-alignCenter-31"
+              className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-alignCenter-34"
             >
               Tap the screen, 
               <br />
@@ -97,7 +96,7 @@ exports[`renders correctly 1`] = `
             <br />
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
+              className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-containedPrimary-59 MuiButton-raised-61 MuiButton-raisedPrimary-62 MuiButton-fullWidth-72"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -114,12 +113,12 @@ exports[`renders correctly 1`] = `
               type="button"
             >
               <span
-                className="MuiButton-label-47"
+                className="MuiButton-label-48"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-75"
+                className="MuiTouchRipple-root-76"
               />
             </button>
           </a>
@@ -134,7 +133,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
             >
               TERMS
             </span>
@@ -146,7 +145,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
             >
               PRIVACY
             </span>
@@ -158,7 +157,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
             >
               FAIRNESS
             </span>
@@ -170,7 +169,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-8 MuiTypography-caption-18 MuiTypography-colorTextSecondary-41 MuiTypography-alignCenter-31"
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
             >
               ALL PRIZES
             </span>
