@@ -39,6 +39,15 @@ export const UserProfile = ({
         </Button>
       )}
     />
+    <Button
+      href={'mailto:contact@prizey.app'}
+      variant="outlined"
+      color="primary"
+      type="link"
+      fullWidth
+    >
+      CONTACT US
+    </Button>
   </Layout>
 )
 
