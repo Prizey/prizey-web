@@ -8,6 +8,7 @@ import { clearProduct } from 'store/basket/actions'
 import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
 import ProductImage from 'design/ProductImage'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 
 const ShippingComponent = ({
   product,
@@ -23,6 +24,7 @@ const ShippingComponent = ({
       location={location}
       currentUser={currentUser}
       leftIcon={<UserBalance />}
+      rightIcon={<ProfileLink />}
     >
       <Typography align="center" variant="h5">
         Sweet!

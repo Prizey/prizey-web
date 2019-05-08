@@ -21,6 +21,8 @@ jest.mock('croods', () => ({
   ),
 }))
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('formik', () => ({
   Field: props => <div {...props}>Field</div>,
   Form: ({ children, ...props }) => <div {...props}>Form - {children}</div>,

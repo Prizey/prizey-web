@@ -20,7 +20,55 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="Component-header-9"
-      />
+      >
+        <a
+          aria-label="My profile"
+          className="MuiButtonBase-root-19 MuiIconButton-root-13 Component-root-12"
+          href="/profile"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiIconButton-label-18"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-22 MuiSvgIcon-fontSizeLarge-30"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <g>
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+                />
+                <path
+                  d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+                />
+              </g>
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-99"
+          />
+        </a>
+      </div>
       <div
         className="Component-container-6"
       >
@@ -39,7 +87,7 @@ exports[`renders correctly 1`] = `
             aria-labelledby="Are you sure?"
             classes={
               Object {
-                "paper": "PlayAgain-paper-12",
+                "paper": "PlayAgain-paper-31",
               }
             }
             fullWidth={true}
@@ -47,30 +95,30 @@ exports[`renders correctly 1`] = `
             open={false}
           >
             <div
-              className="MuiDialogTitle-root-13"
+              className="MuiDialogTitle-root-32"
             >
               <h2
-                className="MuiTypography-root-14 MuiTypography-title-20"
+                className="MuiTypography-root-33 MuiTypography-title-39"
               >
                 Are you sure?
               </h2>
             </div>
             <div
-              className="MuiDialogContent-root-50"
+              className="MuiDialogContent-root-69"
             >
               <p
-                className="MuiTypography-root-14 MuiDialogContentText-root-51 MuiTypography-subheading-21 MuiTypography-colorTextSecondary-47"
+                className="MuiTypography-root-33 MuiDialogContentText-root-70 MuiTypography-subheading-40 MuiTypography-colorTextSecondary-66"
               >
                 This action can't be undone.
               </p>
             </div>
             <div
-              className="MuiDialogActions-root-52"
+              className="MuiDialogActions-root-71"
             >
               <button
                 aria-label="cancel"
                 autoFocus={true}
-                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-text-56 MuiButton-textPrimary-57 MuiButton-flat-59 MuiButton-flatPrimary-60 MuiDialogActions-action-53"
+                className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-text-75 MuiButton-textPrimary-76 MuiButton-flat-78 MuiButton-flatPrimary-79 MuiDialogActions-action-72"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -88,17 +136,17 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-55"
+                  className="MuiButton-label-74"
                 >
                   Cancel
                 </span>
                 <span
-                  className="MuiTouchRipple-root-83"
+                  className="MuiTouchRipple-root-99"
                 />
               </button>
               <button
                 aria-label="confirm"
-                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-text-56 MuiButton-textPrimary-57 MuiButton-flat-59 MuiButton-flatPrimary-60 MuiDialogActions-action-53"
+                className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-text-75 MuiButton-textPrimary-76 MuiButton-flat-78 MuiButton-flatPrimary-79 MuiDialogActions-action-72"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -116,23 +164,23 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-55"
+                  className="MuiButton-label-74"
                 >
                   Confirm
                 </span>
                 <span
-                  className="MuiTouchRipple-root-83"
+                  className="MuiTouchRipple-root-99"
                 />
               </button>
             </div>
           </div>
           <h5
-            className="MuiTypography-root-14 MuiTypography-h5-30 MuiTypography-alignCenter-37 ConfirmOrderComponent-title-2"
+            className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56 ConfirmOrderComponent-title-2"
           >
             Confirm Order
           </h5>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             Full Name
             :
@@ -144,7 +192,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             Address
             :
@@ -156,7 +204,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             City
             :
@@ -168,7 +216,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             State / Province / Region
             :
@@ -180,7 +228,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             Postal Code / ZIP
             :
@@ -190,7 +238,7 @@ exports[`renders correctly 1`] = `
             />
           </p>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             Clothing Size
             :
@@ -202,7 +250,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-14 MuiTypography-body2-22 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
           >
             Shoe Size
             :
@@ -221,7 +269,7 @@ exports[`renders correctly 1`] = `
             }
           />
           <button
-            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79"
+            className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-contained-84 MuiButton-containedPrimary-85 MuiButton-raised-87 MuiButton-raisedPrimary-88 MuiButton-fullWidth-98"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -239,17 +287,17 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-55"
+              className="MuiButton-label-74"
             >
               SHIP IT!
             </span>
             <span
-              className="MuiTouchRipple-root-83"
+              className="MuiTouchRipple-root-99"
             />
           </button>
           <button
             aria-label="Cancel"
-            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-outlined-62 MuiButton-outlinedPrimary-63 MuiButton-fullWidth-79"
+            className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-outlined-81 MuiButton-outlinedPrimary-82 MuiButton-fullWidth-98"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -267,12 +315,12 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-55"
+              className="MuiButton-label-74"
             >
               CANCEL
             </span>
             <span
-              className="MuiTouchRipple-root-83"
+              className="MuiTouchRipple-root-99"
             />
           </button>
         </div>
@@ -286,7 +334,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
             >
               TERMS
             </span>
@@ -298,7 +346,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
             >
               PRIVACY
             </span>
@@ -310,7 +358,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
             >
               FAIRNESS
             </span>
@@ -322,7 +370,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
             >
               ALL PRIZES
             </span>

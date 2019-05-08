@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Layout from 'design/Layout/Layout'
 
 import GoBack from 'design/GoBack/GoBack'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import CreditCardForm from './CreditCardForm'
 
 import getPurchaseDetail from './purchaseDescription'
@@ -41,6 +42,7 @@ export const PaymentInfoComponent = withStyles(styles)(
         location={location}
         currentUser={currentUser}
         leftIcon={<GoBack to="/buy-diamonds" />}
+        rightIcon={<ProfileLink />}
       >
         <Typography align="center" variant="h5" className={classes.purchase}>
           <img

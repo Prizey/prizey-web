@@ -4,12 +4,14 @@ import { Button, Typography } from '@material-ui/core'
 
 import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 
 const SoldBackComponent = ({ navigate, currentUser, location }) => (
   <Layout
     location={location}
     currentUser={currentUser}
     leftIcon={<UserBalance />}
+    rightIcon={<ProfileLink />}
   >
     <Typography align="center" variant="h5">
       Congrats! You sold the product for 3 diamonds.

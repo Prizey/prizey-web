@@ -5,6 +5,7 @@ import { Button, Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 import Layout from 'design/Layout/Layout'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
 
@@ -20,7 +21,7 @@ const styles = theme => ({
 
 const ScreenWithRoullette = withStyles(styles)(
   ({ classes, speed, list, multiplier, currentUser, location }) => (
-    <Layout location={location} currentUser={currentUser}>
+    <Layout location={location} currentUser={currentUser} rightIcon={<ProfileLink />}>
       <Link to={nextUrl} className={classes.root}>
         <Roulette
           aria-label="roulette"

@@ -1,0 +1,21 @@
+import React from 'react'
+import { Link } from '@reach/router'
+import { withStyles } from '@material-ui/core/styles'
+import IconButton from '@material-ui/core/IconButton'
+import AccountCircleIcon from '@material-ui/icons/AccountCircleOutlined'
+
+const styles = theme => ({
+  root: {
+    padding: parseInt(theme.spacing.xs, 10) / 2,
+  },
+})
+
+export default withStyles(styles)(({ classes }) => (
+  <IconButton
+    className={classes.root}
+    aria-label="My profile"
+    component={props => <Link to={'/profile'} {...props} />}
+  >
+    <AccountCircleIcon fontSize="large" />
+  </IconButton>
+))

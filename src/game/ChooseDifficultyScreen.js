@@ -5,6 +5,7 @@ import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
 import UserBalance from 'design/UserBalance'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import DifficultyButton from './DifficultyButton'
 import SpeedComponent from './SpeedComponent'
 
@@ -39,6 +40,7 @@ const ChooseDifficultyScreen = withStyles(styles)(
       location={location}
       currentUser={currentUser}
       leftIcon={<UserBalance />}
+      rightIcon={<ProfileLink />}
     >
       <Typography align="center" variant="h5">
         Pick a difficulty!

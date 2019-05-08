@@ -15,8 +15,9 @@ export const UserProfile = ({
   create,
   creating,
   error,
+  location,
 }) => (
-  <Layout>
+  <Layout location={location}>
     <Typography align="center" variant="h5">
       My Profile
     </Typography>
@@ -51,7 +52,7 @@ export const UserProfile = ({
   </Layout>
 )
 
-export default ({ currentUser, setCurrentUser }) => {
+export default ({ currentUser, setCurrentUser, location }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return currentUser ? (
@@ -65,6 +66,7 @@ export default ({ currentUser, setCurrentUser }) => {
           isOpen={isOpen}
           isClose={() => setIsOpen(false)}
           currentUser={currentUser}
+          location={location}
         />
       )}
       renderCreated={response => {
