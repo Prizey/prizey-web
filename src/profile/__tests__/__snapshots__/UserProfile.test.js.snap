@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`redirects correctly 1`] = `null`;
+
+exports[`renders correctly 1`] = `
+<div
+  method="PUT"
+  name="users"
+  path="/auth"
+  render={[Function]}
+  renderCreated={[Function]}
+>
+  New -
+  <div>
+    render -
+    <div
+      className="Component-root-8"
+    >
+      <div
+        className="Component-header-6"
+      />
+      <div
+        className="Component-container-3"
+      >
+        <img
+          alt="Prizey"
+          className="Component-logoImage-7"
+          src="/logo.png"
+        />
+        <div
+          className="Component-caption-1"
+        />
+        <div
+          className="Component-children-2"
+        >
+          <h5
+            className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
+          >
+            My Profile
+          </h5>
+          <div
+            close={[Function]}
+            isOpen={true}
+            message="You updated your profile!"
+            name="snackbar"
+          >
+            Snackbar
+          </div>
+          <div
+            initialValues={true}
+            onSubmit={[MockFunction]}
+            render={[Function]}
+          >
+            Formik - 
+            <div
+              className="Component-root-45"
+            >
+              Form - 
+              <div
+                component={[Function]}
+                label="Full Name"
+                name="fullname"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="Address"
+                name="address"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="City"
+                name="city"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="State / Province / Region"
+                name="stateProvinceRegion"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="Postal Code / ZIP"
+                name="zipcode"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="Clothing Size"
+                name="clothingSize"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="Shoe Size"
+                name="shoeSize"
+                type="text"
+                validate={[Function]}
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="New Password"
+                name="password"
+                type="password"
+              >
+                Field
+              </div>
+              <div
+                component={[Function]}
+                label="Password Confirmation"
+                name="password_confirmation"
+                type="password"
+              >
+                Field
+              </div>
+              <div
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              />
+              <button
+                className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="submit"
+              >
+                <span
+                  className="MuiButton-label-47"
+                >
+                  UPDATE PROFILE
+                </span>
+                <span
+                  className="MuiTouchRipple-root-75"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Component-footer-4"
+        >
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    renderCreated - 
+  </div>
+</div>
+`;
