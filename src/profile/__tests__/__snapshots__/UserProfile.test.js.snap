@@ -18,7 +18,78 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="Component-header-6"
-      />
+      >
+        <a
+          aria-current="page"
+          aria-label="Go Back"
+          className="MuiButtonBase-root-16 MuiIconButton-root-10 Component-root-9"
+          href="/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiIconButton-label-15"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-19 MuiSvgIcon-fontSizeLarge-27"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+              />
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-91"
+          />
+        </a>
+        <div
+          currentUser={true}
+          setCurrentUser={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  undefined,
+                ],
+                Array [
+                  undefined,
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "isThrow": false,
+                  "value": undefined,
+                },
+                Object {
+                  "isThrow": false,
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+        >
+          Logout
+        </div>
+      </div>
       <div
         className="Component-container-3"
       >
@@ -34,9 +105,15 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <h5
-            className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
+            className="MuiTypography-root-28 MuiTypography-h5-44 MuiTypography-alignCenter-51"
+            style={
+              Object {
+                "marginBottom": "50px",
+                "marginTop": "-50px",
+              }
+            }
           >
-            My Profile
+            Profile
           </h5>
           <div
             close={[Function]}
@@ -53,7 +130,7 @@ exports[`renders correctly 1`] = `
           >
             Formik - 
             <div
-              className="Component-root-45"
+              className="Component-root-64"
             >
               Form - 
               <div
@@ -143,7 +220,7 @@ exports[`renders correctly 1`] = `
                 }
               />
               <button
-                className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
+                className="MuiButtonBase-root-16 MuiButton-root-65 MuiButton-contained-76 MuiButton-containedPrimary-77 MuiButton-raised-79 MuiButton-raisedPrimary-80 MuiButton-fullWidth-90"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -160,18 +237,18 @@ exports[`renders correctly 1`] = `
                 type="submit"
               >
                 <span
-                  className="MuiButton-label-47"
+                  className="MuiButton-label-66"
                 >
                   UPDATE PROFILE
                 </span>
                 <span
-                  className="MuiTouchRipple-root-75"
+                  className="MuiTouchRipple-root-91"
                 />
               </button>
             </div>
           </div>
           <a
-            className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-outlined-54 MuiButton-outlinedPrimary-55 MuiButton-fullWidth-71"
+            className="MuiButtonBase-root-16 MuiButton-root-65 MuiButton-outlined-73 MuiButton-outlinedPrimary-74 MuiButton-fullWidth-90"
             href="mailto:contact@prizey.app"
             onBlur={[Function]}
             onContextMenu={[Function]}
@@ -188,12 +265,12 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-47"
+              className="MuiButton-label-66"
             >
               CONTACT US
             </span>
             <span
-              className="MuiTouchRipple-root-75"
+              className="MuiTouchRipple-root-91"
             />
           </a>
         </div>
@@ -207,7 +284,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+              className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
             >
               TERMS
             </span>
@@ -219,7 +296,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+              className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
             >
               PRIVACY
             </span>
@@ -231,7 +308,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+              className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
             >
               FAIRNESS
             </span>
@@ -243,7 +320,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+              className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
             >
               ALL PRIZES
             </span>

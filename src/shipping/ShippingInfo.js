@@ -14,7 +14,11 @@ export const ShippingForm = ({
   creating,
   error,
 }) => (
-  <Layout rightIcon={<ProfileLink />} location={location} currentUser={currentUser}>
+  <Layout
+    rightIcon={<ProfileLink />}
+    location={location}
+    currentUser={currentUser}
+  >
     <Typography align="center" variant="h5">
       Shipping Address
     </Typography>

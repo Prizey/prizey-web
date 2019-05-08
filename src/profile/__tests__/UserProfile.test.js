@@ -37,6 +37,8 @@ jest.mock('design/Snackbar/Snackbar', () => props => (
   </div>
 ))
 
+jest.mock('../../auth/Logout', () => props => <div {...props}>Logout</div>)
+
 it('renders correctly', () => {
   const params = {
     currentUser: true,

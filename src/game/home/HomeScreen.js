@@ -21,7 +21,11 @@ const styles = theme => ({
 
 const ScreenWithRoullette = withStyles(styles)(
   ({ classes, speed, list, multiplier, currentUser, location }) => (
-    <Layout location={location} currentUser={currentUser} rightIcon={<ProfileLink />}>
+    <Layout
+      location={location}
+      currentUser={currentUser}
+      rightIcon={<ProfileLink />}
+    >
       <Link to={nextUrl} className={classes.root}>
         <Roulette
           aria-label="roulette"

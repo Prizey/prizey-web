@@ -5,8 +5,10 @@ import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
 import SimpleSnackBar from 'design/Snackbar/Snackbar'
+import GoBack from 'design/GoBack/GoBack'
 
 import UserForm from 'auth/UserForm'
+import Logout from 'auth/Logout'
 
 export const UserProfile = ({
   isOpen,
@@ -16,10 +18,25 @@ export const UserProfile = ({
   creating,
   error,
   location,
+  setCurrentUser,
 }) => (
-  <Layout location={location}>
-    <Typography align="center" variant="h5">
-      My Profile
+  <Layout
+    location={location}
+    leftIcon={<GoBack to="/" />}
+    rightIcon={
+      <Logout setCurrentUser={setCurrentUser} currentUser={currentUser}>
+        <Typography align="left" style={{ marginRight: '20px' }}>
+          Logout
+        </Typography>
+      </Logout>
+    }
+  >
+    <Typography
+      align="center"
+      variant="h5"
+      style={{ marginBottom: '50px', marginTop: '-50px' }}
+    >
+      Profile
     </Typography>
 
     <SimpleSnackBar
@@ -67,6 +84,7 @@ export default ({ currentUser, setCurrentUser, location }) => {
           isClose={() => setIsOpen(false)}
           currentUser={currentUser}
           location={location}
+          setCurrentUser={setCurrentUser}
         />
       )}
       renderCreated={response => {

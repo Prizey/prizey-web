@@ -100,7 +100,11 @@ export class ConfirmOrderComponent extends React.Component {
     }
 
     return (
-      <Layout location={location} currentUser={currentUser} rightIcon={<ProfileLink />}>
+      <Layout
+        location={location}
+        currentUser={currentUser}
+        rightIcon={<ProfileLink />}
+      >
         {this.renderHeader(this.props)}
         {this.renderFields(this.props)}
         {this.renderBottom(this.props)}
