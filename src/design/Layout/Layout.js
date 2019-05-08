@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
+import RegisterPageView from './RegisterPageView'
 
 const styles = theme => ({
   caption: {
@@ -60,8 +61,17 @@ const footerLinks = [
 ]
 
 export default withStyles(styles)(
-  ({ classes, leftIcon, rightIcon, caption, children }) => (
+  ({
+    classes,
+    leftIcon,
+    rightIcon,
+    caption,
+    children,
+    location,
+    currentUser,
+  }) => (
     <div className={classes.root}>
+      <RegisterPageView location={location} currentUser={currentUser} />
       <div className={classes.header}>
         {leftIcon}
         {rightIcon}

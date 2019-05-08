@@ -15,28 +15,40 @@ import SpeedComponent from './SpeedComponent'
 const GameComponent = connect(
   null,
   { chooseProduct },
-)(({ speed, difficulty, list, multiplier, ...props }) => (
-  <Layout
-    leftIcon={<GoBack to="/" />}
-    caption={<Caption difficulty={difficulty} />}
-  >
-    <Roulette
-      aria-label="roulette"
-      speed={speed}
-      data={list}
-      multiplier={multiplier}
-      onSelectItem={item => {
-        props.chooseProduct(item)
-        props.navigate(`/game/${difficulty}/claim`)
-      }}
-    />
-    <br />
-    <Typography align="center" variant="body2" color="textSecondary">
-      Tap the screen, <br />
-      win what you tap.
-    </Typography>
-  </Layout>
-))
+)(
+  ({
+    speed,
+    difficulty,
+    list,
+    multiplier,
+    currentUser,
+    location,
+    ...props
+  }) => (
+    <Layout
+      leftIcon={<GoBack to="/" />}
+      caption={<Caption difficulty={difficulty} />}
+      location={location}
+      currentUser={currentUser}
+    >
+      <Roulette
+        aria-label="roulette"
+        speed={speed}
+        data={list}
+        multiplier={multiplier}
+        onSelectItem={item => {
+          props.chooseProduct(item)
+          props.navigate(`/game/${difficulty}/claim`)
+        }}
+      />
+      <br />
+      <Typography align="center" variant="body2" color="textSecondary">
+        Tap the screen, <br />
+        win what you tap.
+      </Typography>
+    </Layout>
+  ),
+)
 
 const ScreenWithSpeed = (difficulty, navigate) => list => (
   <SpeedComponent

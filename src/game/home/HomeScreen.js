@@ -9,8 +9,14 @@ import SpeedComponent from '../SpeedComponent'
 
 const nextUrl = '/game'
 
-const ScreenWithRoullette = ({ speed, list, multiplier }) => (
-  <Layout>
+const ScreenWithRoullette = ({
+  speed,
+  list,
+  multiplier,
+  currentUser,
+  location,
+}) => (
+  <Layout location={location} currentUser={currentUser}>
     <Link to={nextUrl} style={{ textDecoration: 'none' }}>
       <Roulette
         aria-label="roulette"

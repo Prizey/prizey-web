@@ -14,10 +14,16 @@ const ShippingComponent = ({
   classes,
   difficulty,
   navigate,
+  currentUser,
+  location,
   ...props
 }) =>
   product ? (
-    <Layout leftIcon={<GoBack to="/" />}>
+    <Layout
+      location={location}
+      currentUser={currentUser}
+      leftIcon={<GoBack to="/" />}
+    >
       <Typography align="center" variant="h5">
         Sweet!
       </Typography>

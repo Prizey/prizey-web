@@ -4,8 +4,8 @@ import { Button, Typography } from '@material-ui/core'
 
 import Layout from 'design/Layout/Layout'
 
-const SoldBackComponent = ({ navigate }) => (
-  <Layout>
+const SoldBackComponent = ({ navigate, currentUser, location }) => (
+  <Layout location={location} currentUser={currentUser}>
     <Typography align="center" variant="h5">
       Congrats! You sold the product for 3 diamonds.
     </Typography>

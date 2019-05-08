@@ -6,8 +6,14 @@ import { Redirect } from '@reach/router'
 
 import UserForm from 'auth/UserForm'
 
-export const ShippingForm = ({ currentUser, create, creating, error }) => (
-  <Layout>
+export const ShippingForm = ({
+  currentUser,
+  location,
+  create,
+  creating,
+  error,
+}) => (
+  <Layout location={location} currentUser={currentUser}>
     <Typography align="center" variant="h5">
       Shipping Address
     </Typography>

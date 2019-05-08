@@ -34,8 +34,12 @@ const styles = theme => ({
 })
 
 const PaywallScreen = withStyles(styles)(
-  ({ classes, buttons, buyMore = false }) => (
-    <Layout leftIcon={<GoBack to="/" />}>
+  ({ classes, buttons, buyMore = false, currentUser, location }) => (
+    <Layout
+      location={location}
+      currentUser={currentUser}
+      leftIcon={<GoBack to="/" />}
+    >
       <Typography align="center" variant="h5">
         {buyMore
           ? "You don't have enough for that game, add more to your account to play."

@@ -33,8 +33,8 @@ const difficulties = [
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
-  ({ classes, settings, currentUser }) => (
-    <Layout>
+  ({ classes, settings, currentUser, location }) => (
+    <Layout location={location} currentUser={currentUser}>
       <Typography align="center" variant="h5">
         Pick a difficulty!
       </Typography>

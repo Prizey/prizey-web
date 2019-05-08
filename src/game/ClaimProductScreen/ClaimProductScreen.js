@@ -12,11 +12,21 @@ import ProductImage from 'design/ProductImage'
 
 import SellItBack from './SellItBack'
 
-const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
+const InnerComponent = ({
+  product,
+  classes,
+  difficulty,
+  navigate,
+  currentUser,
+  location,
+  ...props
+}) =>
   product ? (
     <Layout
       leftIcon={<GoBack to="/" />}
       caption={<Caption difficulty={difficulty} />}
+      location={location}
+      currentUser={currentUser}
     >
       <Typography align="center" variant="h5">
         {product.title}
