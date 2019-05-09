@@ -14,19 +14,19 @@ exports[`renders correctly 1`] = `
   <div>
     render -
     <div
-      className="Component-root-5"
+      className="Component-root-8"
     >
       <div
-        className="Component-header-4"
+        className="Component-header-6"
       />
       <div
         className="Component-container-3"
       >
-        <h2
-          className="MuiTypography-root-6 MuiTypography-h2-19 MuiTypography-alignCenter-29"
-        >
-          PRIZEY
-        </h2>
+        <img
+          alt="Prizey"
+          className="Component-logoImage-7"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-1"
         />
@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <h5
-            className="MuiTypography-root-6 MuiTypography-h5-22 MuiTypography-alignCenter-29"
+            className="MuiTypography-root-9 MuiTypography-h5-25 MuiTypography-alignCenter-32"
           >
             Shipping Address
           </h5>
@@ -45,7 +45,7 @@ exports[`renders correctly 1`] = `
           >
             Formik - 
             <div
-              className="Component-root-42"
+              className="Component-root-45"
             >
               Form - 
               <div
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
                 }
               />
               <button
-                className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedPrimary-55 MuiButton-raised-57 MuiButton-raisedPrimary-58 MuiButton-fullWidth-68"
+                className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -136,20 +136,69 @@ exports[`renders correctly 1`] = `
                 type="submit"
               >
                 <span
-                  className="MuiButton-label-44"
+                  className="MuiButton-label-47"
                 >
                   SHIP IT!
                 </span>
                 <span
-                  className="MuiTouchRipple-root-72"
+                  className="MuiTouchRipple-root-75"
                 />
               </button>
             </div>
           </div>
         </div>
-        <p
-          className="MuiTypography-root-6 MuiTypography-body1-15 MuiTypography-alignCenter-29"
-        />
+        <div
+          className="Component-footer-4"
+        >
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-9 MuiTypography-caption-19 MuiTypography-colorTextSecondary-42 MuiTypography-alignCenter-32"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

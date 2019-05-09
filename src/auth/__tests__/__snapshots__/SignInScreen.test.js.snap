@@ -9,19 +9,19 @@ exports[`renders correctly 1`] = `
   <div>
     render - 
     <div
-      className="Component-root-79"
+      className="Component-root-82"
     >
       <div
-        className="Component-header-78"
+        className="Component-header-80"
       />
       <div
         className="Component-container-77"
       >
-        <h2
-          className="MuiTypography-root-31 MuiTypography-h2-44 MuiTypography-alignCenter-54"
-        >
-          PRIZEY
-        </h2>
+        <img
+          alt="Prizey"
+          className="Component-logoImage-81"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-75"
         />
@@ -100,9 +100,58 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
         </div>
-        <p
-          className="MuiTypography-root-31 MuiTypography-body1-40 MuiTypography-alignCenter-54"
-        />
+        <div
+          className="Component-footer-78"
+        >
+          <a
+            className="Component-footerLink-79"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-79"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-79"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-79"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

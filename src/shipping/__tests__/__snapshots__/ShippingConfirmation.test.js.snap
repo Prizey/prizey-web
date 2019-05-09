@@ -4,15 +4,15 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-5"
+  className="Component-root-8"
 >
   <div
-    className="Component-header-4"
+    className="Component-header-6"
   >
     <a
       aria-current="page"
       aria-label="Go Back"
-      className="MuiButtonBase-root-13 MuiIconButton-root-7 Component-root-6"
+      className="MuiButtonBase-root-16 MuiIconButton-root-10 Component-root-9"
       href="/"
       onBlur={[Function]}
       onClick={[Function]}
@@ -30,11 +30,11 @@ exports[`renders correctly 1`] = `
       tabIndex="0"
     >
       <span
-        className="MuiIconButton-label-12"
+        className="MuiIconButton-label-15"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-16 MuiSvgIcon-fontSizeLarge-24"
+          className="MuiSvgIcon-root-19 MuiSvgIcon-fontSizeLarge-27"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -49,18 +49,18 @@ exports[`renders correctly 1`] = `
         </svg>
       </span>
       <span
-        className="MuiTouchRipple-root-88"
+        className="MuiTouchRipple-root-91"
       />
     </a>
   </div>
   <div
     className="Component-container-3"
   >
-    <h2
-      className="MuiTypography-root-25 MuiTypography-h2-38 MuiTypography-alignCenter-48"
-    >
-      PRIZEY
-    </h2>
+    <img
+      alt="Prizey"
+      className="Component-logoImage-7"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-1"
     />
@@ -68,13 +68,13 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h5
-        className="MuiTypography-root-25 MuiTypography-h5-41 MuiTypography-alignCenter-48"
+        className="MuiTypography-root-28 MuiTypography-h5-44 MuiTypography-alignCenter-51"
       >
         Sweet!
       </h5>
       <img
         alt="Trump mask"
-        className="Component-productImage-61"
+        className="Component-productImage-64"
         src="/mock/trump-mask.png"
         style={
           Object {
@@ -83,13 +83,13 @@ exports[`renders correctly 1`] = `
         }
       />
       <p
-        className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
+        className="MuiTypography-root-28 MuiTypography-body1-37 MuiTypography-alignCenter-51"
       >
         We'll confirm through email.
       </p>
       <button
         aria-label="Play again"
-        className="MuiButtonBase-root-13 MuiButton-root-62 MuiButton-contained-73 MuiButton-containedPrimary-74 MuiButton-raised-76 MuiButton-raisedPrimary-77 MuiButton-fullWidth-87"
+        className="MuiButtonBase-root-16 MuiButton-root-65 MuiButton-contained-76 MuiButton-containedPrimary-77 MuiButton-raised-79 MuiButton-raisedPrimary-80 MuiButton-fullWidth-90"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -107,18 +107,67 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-63"
+          className="MuiButton-label-66"
         >
           PLAY AGAIN
         </span>
         <span
-          className="MuiTouchRipple-root-88"
+          className="MuiTouchRipple-root-91"
         />
       </button>
     </div>
-    <p
-      className="MuiTypography-root-25 MuiTypography-body1-34 MuiTypography-alignCenter-48"
-    />
+    <div
+      className="Component-footer-4"
+    >
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-5"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;

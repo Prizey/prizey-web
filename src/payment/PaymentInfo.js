@@ -21,10 +21,21 @@ const styles = theme => ({
   },
 })
 
-export const afterPurchase = navigate => () => navigate('/')
+export const afterPurchase = ({
+  navigate,
+  currentUser,
+  setCurrentUser,
+  purchase,
+}) => () => {
+  setCurrentUser({
+    ...currentUser,
+    tickets: currentUser.tickets + purchase.ticketAmount,
+  })
+  return navigate('/game')
+}
 
 export const PaymentInfoComponent = withStyles(styles)(
-  ({ navigate, classes, purchase }) => (
+  ({ navigate, currentUser, setCurrentUser, classes, purchase }) => (
     <StripeProvider apiKey={process.env.REACT_APP_STRIPE_TOKEN}>
       <Layout leftIcon={<GoBack to="/buy-diamonds" />}>
         <Typography align="center" variant="h5" className={classes.purchase}>
@@ -43,7 +54,12 @@ export const PaymentInfoComponent = withStyles(styles)(
               <CreditCardForm purchase={purchase} {...props} />
             </Elements>
           )}
-          afterCreate={afterPurchase(navigate)}
+          afterCreate={afterPurchase({
+            currentUser,
+            navigate,
+            purchase,
+            setCurrentUser,
+          })}
         />
       </Layout>
     </StripeProvider>
@@ -53,7 +69,7 @@ export const PaymentInfoComponent = withStyles(styles)(
 export const reducePurchaseState = (list, id) =>
   list.find(item => item.id === parseInt(id, 10))
 
-export default ({ navigate, currentUser, purchaseId }) =>
+export default ({ navigate, currentUser, setCurrentUser, purchaseId }) =>
   currentUser ? (
     <List
       name="purchaseOptions"
@@ -61,6 +77,8 @@ export default ({ navigate, currentUser, purchaseId }) =>
       render={purchases => (
         <PaymentInfoComponent
           navigate={navigate}
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
           purchase={reducePurchaseState(purchases, purchaseId)}
         />
       )}

@@ -2,19 +2,19 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Component-root-6"
+  className="Component-root-9"
 >
   <div
-    className="Component-header-5"
+    className="Component-header-7"
   />
   <div
     className="Component-container-4"
   >
-    <h2
-      className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
-    >
-      PRIZEY
-    </h2>
+    <img
+      alt="Prizey"
+      className="Component-logoImage-8"
+      src="/logo.png"
+    />
     <div
       className="Component-caption-2"
     />
@@ -22,17 +22,17 @@ exports[`renders correctly 1`] = `
       className="Component-children-3"
     >
       <h2
-        className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30 Component-pageTitle-1"
+        className="MuiTypography-root-10 MuiTypography-h2-23 MuiTypography-alignCenter-33 Component-pageTitle-1"
       >
         You are blocked!
       </h2>
       <h5
-        className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+        className="MuiTypography-root-10 MuiTypography-h5-26 MuiTypography-alignCenter-33"
       >
         Due to recent events on your account history we blocked you, but do not worry, enter in contact through
          
         <a
-          className="MuiButtonBase-root-69 MuiButton-root-43 MuiButton-contained-54 MuiButton-containedPrimary-55 MuiButton-raised-57 MuiButton-raisedPrimary-58 MuiButton-fullWidth-68"
+          className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
           href="mailto:contact@prizeyapp.com"
           onBlur={[Function]}
           onContextMenu={[Function]}
@@ -49,19 +49,68 @@ exports[`renders correctly 1`] = `
           tabIndex="0"
         >
           <span
-            className="MuiButton-label-44"
+            className="MuiButton-label-47"
           >
             contact@prizeyapp.com
           </span>
           <span
-            className="MuiTouchRipple-root-72"
+            className="MuiTouchRipple-root-75"
           />
         </a>
       </h5>
     </div>
-    <p
-      className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
-    />
+    <div
+      className="Component-footer-5"
+    >
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;

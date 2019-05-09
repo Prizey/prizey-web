@@ -142,19 +142,19 @@ exports[`renders correctly 1`] = `
     Info -
      
     <div
-      className="Component-root-6"
+      className="Component-root-8"
     >
       <div
-        className="Component-header-5"
+        className="Component-header-6"
       />
       <div
         className="Component-container-4"
       >
-        <h2
-          className="MuiTypography-root-7 MuiTypography-h2-20 MuiTypography-alignCenter-30"
-        >
-          PRIZEY
-        </h2>
+        <img
+          alt="Prizey"
+          className="Component-logoImage-7"
+          src="/logo.png"
+        />
         <div
           className="Component-caption-2"
         />
@@ -167,7 +167,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
           >
             <div
-              className="Component-root-44"
+              className="Component-root-10"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -175,7 +175,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="trump"
-                  className="Component-img-43"
+                  className="Component-img-9"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -187,7 +187,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-43"
+                  className="Component-img-9"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -199,7 +199,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="shoe"
-                  className="Component-img-43"
+                  className="Component-img-9"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -208,7 +208,7 @@ exports[`renders correctly 1`] = `
             </div>
             <br />
             <h5
-              className="MuiTypography-root-7 MuiTypography-h5-23 MuiTypography-alignCenter-30"
+              className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-alignCenter-34"
             >
               Tap the screen, 
               <br />
@@ -216,7 +216,7 @@ exports[`renders correctly 1`] = `
             </h5>
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-fullWidth-70"
+              className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-containedPrimary-59 MuiButton-raised-61 MuiButton-raisedPrimary-62 MuiButton-fullWidth-72"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -233,19 +233,68 @@ exports[`renders correctly 1`] = `
               type="button"
             >
               <span
-                className="MuiButton-label-46"
+                className="MuiButton-label-48"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-74"
+                className="MuiTouchRipple-root-76"
               />
             </button>
           </a>
         </div>
-        <p
-          className="MuiTypography-root-7 MuiTypography-body1-16 MuiTypography-alignCenter-30"
-        />
+        <div
+          className="Component-footer-4"
+        >
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-5"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

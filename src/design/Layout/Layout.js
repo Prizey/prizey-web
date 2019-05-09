@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 
@@ -20,6 +20,15 @@ const styles = theme => ({
     padding: theme.spacing.md,
     width: '100%',
   },
+  footer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginTop: theme.spacing.md,
+    width: '100%',
+  },
+  footerLink: {
+    textDecoration: 'none',
+  },
   header: {
     height: `${parseInt(theme.spacing.md, 10) * 2}px`,
     padding: [
@@ -27,6 +36,10 @@ const styles = theme => ({
       `${parseInt(theme.spacing.md, 10) / 2}px`,
     ].join(' '),
     width: '100%',
+  },
+  logoImage: {
+    marginBottom: theme.spacing.xs,
+    width: '145px',
   },
   root: {
     alignItems: 'center',
@@ -39,6 +52,13 @@ const styles = theme => ({
   },
 })
 
+const footerLinks = [
+  { href: 'https://termly.io/en/', label: 'TERMS' },
+  { href: 'https://termly.io/en/', label: 'PRIVACY' },
+  { href: 'https://termly.io/en/', label: 'FAIRNESS' },
+  { href: 'https://termly.io/en/', label: 'ALL PRIZES' },
+]
+
 export default withStyles(styles)(
   ({ classes, leftIcon, rightIcon, caption, children }) => (
     <div className={classes.root}>
@@ -47,12 +67,30 @@ export default withStyles(styles)(
         {rightIcon}
       </div>
       <div className={classes.container}>
-        <Typography align="center" variant="h2">
-          PRIZEY
-        </Typography>
+        <Fragment>
+          <img src={'/logo.png'} className={classes.logoImage} alt="Prizey" />
+        </Fragment>
         <div className={classes.caption}>{caption}</div>
         <div className={classes.children}>{children}</div>
-        <Typography align="center" />
+        <div className={classes.footer}>
+          {footerLinks.map(link => (
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={link.label}
+              className={classes.footerLink}
+            >
+              <Typography
+                align="center"
+                variant="caption"
+                color="textSecondary"
+              >
+                {link.label}
+              </Typography>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   ),
