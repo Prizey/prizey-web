@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
-import { New } from 'croods'
 import { withStyles } from '@material-ui/core/styles'
 import { Button, Typography } from '@material-ui/core'
 import CircularProgress from '@material-ui/core/CircularProgress'
 
 import PlayAgain from 'design/PlayAgain'
+import TransactionComponent from 'game/TransactionComponent'
 
 const styles = theme => ({
   icon: {
@@ -95,9 +95,7 @@ export const afterCreate = ({ navigate }) => () => {
 }
 
 export default withStyles(styles)(props => (
-  <New
-    name="tickets"
-    path="/ticket_transactions"
+  <TransactionComponent
     render={renderProps => <SellItBackComponent {...props} {...renderProps} />}
     afterCreate={afterCreate(props)}
   />

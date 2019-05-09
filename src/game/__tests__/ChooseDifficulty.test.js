@@ -25,6 +25,11 @@ jest.mock('croods', () => ({
       RenderLoading: {props.renderLoading()}
     </div>
   ),
+  New: props => (
+    <div {...props}>
+      New - <div>render - {props.render(props)}</div>
+    </div>
+  ),
   Provider: ({ children, ...props }) => (
     <div {...props}>Provider - {children}</div>
   ),
