@@ -31,13 +31,19 @@ export const ShippingForm = ({
   </Layout>
 )
 
-export default ({ currentUser, setCurrentUser }) =>
+export default ({ currentUser, location, setCurrentUser }) =>
   currentUser ? (
     <New
       name="users"
       path="/auth"
       method="PUT"
-      render={props => <ShippingForm {...props} currentUser={currentUser} />}
+      render={props => (
+        <ShippingForm
+          {...props}
+          currentUser={currentUser}
+          location={location}
+        />
+      )}
       renderCreated={response => {
         setCurrentUser(response.data)
         return <Redirect to="/shipping-info/confirm" noThrow />

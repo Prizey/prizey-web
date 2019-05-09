@@ -42,7 +42,12 @@ const ScreenWithRoullette = ({
   </Layout>
 )
 
-const ScreenWithSpeed = (difficulty, navigate) => list => (
+const ScreenWithSpeed = (
+  difficulty,
+  navigate,
+  currentUser,
+  location,
+) => list => (
   <SpeedComponent
     render={settings => {
       const speed = settings[`${difficulty}CarouselSpeed`]
@@ -54,18 +59,22 @@ const ScreenWithSpeed = (difficulty, navigate) => list => (
           multiplier={settings.priceMultiplier}
           navigate={navigate}
           speed={speed}
+          currentUser={currentUser}
+          location={location}
         />
       )
     }}
   />
 )
 
-export default ({ currentUser, navigate, difficulty = 'easy' }) =>
+export default ({ currentUser, location, navigate, difficulty = 'easy' }) =>
   currentUser ? (
     <List
+      currentUser={currentUser}
+      location={location}
       name="products"
       path={`/products/${difficulty}`}
-      render={ScreenWithSpeed(difficulty, navigate)}
+      render={ScreenWithSpeed(difficulty, navigate, currentUser, location)}
     />
   ) : (
     <Redirect to={`/sign-in?next=/`} noThrow />

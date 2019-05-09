@@ -58,7 +58,7 @@ const ChooseDifficultyScreen = withStyles(styles)(
   ),
 )
 
-const RedirectUserWithoutBalance = ({ currentUser }) => (
+const RedirectUserWithoutBalance = ({ currentUser, location }) => (
   <SpeedComponent
     render={settings => {
       const userCanPlay = difficulties.filter(
@@ -67,7 +67,11 @@ const RedirectUserWithoutBalance = ({ currentUser }) => (
       )
 
       return userCanPlay.length ? (
-        <ChooseDifficultyScreen settings={settings} currentUser={currentUser} />
+        <ChooseDifficultyScreen
+          settings={settings}
+          currentUser={currentUser}
+          location={location}
+        />
       ) : (
         <Redirect to="/buy-diamonds" noThrow />
       )
@@ -75,9 +79,9 @@ const RedirectUserWithoutBalance = ({ currentUser }) => (
   />
 )
 
-export default ({ currentUser }) =>
+export default ({ currentUser, location }) =>
   currentUser ? (
-    <RedirectUserWithoutBalance currentUser={currentUser} />
+    <RedirectUserWithoutBalance currentUser={currentUser} location={location} />
   ) : (
     <Redirect to="/sign-in" noThrow />
   )
