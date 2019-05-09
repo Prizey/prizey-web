@@ -47,12 +47,17 @@ const styles = theme => ({
   },
 })
 
-export const handleClick = props => () => {
-  if (props.availableTickets < props.quantity) {
-    return props.navigate('/buy-more')
+export const handleClick = ({
+  availableTickets,
+  quantity,
+  navigate,
+  create,
+}) => () => {
+  if (availableTickets < quantity) {
+    return navigate('/buy-more')
   }
 
-  return props.create({ amount: props.quantity * -1 })
+  return create({ amount: quantity * -1 })
 }
 
 export const afterCreate = ({ setCurrentUser, navigate, to }) => ({
