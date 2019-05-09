@@ -8,6 +8,8 @@ const mockList = [
   { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
 ]
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('react-redux', () => ({
   connect: () => Component => props => (
     <Component {...props} chooseProduct={jest.fn} />

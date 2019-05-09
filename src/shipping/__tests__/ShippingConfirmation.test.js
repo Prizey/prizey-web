@@ -2,6 +2,8 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import ShippingConfirmation, { mapState } from '../ShippingConfirmation'
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('react-redux', () => ({
   connect: () => Component => props => (
     <Component

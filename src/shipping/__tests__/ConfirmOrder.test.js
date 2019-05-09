@@ -9,6 +9,8 @@ import ConfirmOrder, {
   mapState,
 } from '../ConfirmOrder'
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
   <div {...props}>{children}</div>
 ))

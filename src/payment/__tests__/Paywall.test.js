@@ -8,6 +8,8 @@ const mockList = [
   { id: 3, price: '50.0', ticketAmount: 50 },
 ]
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('croods', () => ({
   List: props => (
     <div {...props}>

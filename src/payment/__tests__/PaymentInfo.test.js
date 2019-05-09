@@ -11,6 +11,8 @@ const mockList = [
 
 window.Stripe = () => {}
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('react-stripe-elements', () => ({
   CardCVCElement: props => <input {...props} />,
   CardExpiryElement: props => <input {...props} />,

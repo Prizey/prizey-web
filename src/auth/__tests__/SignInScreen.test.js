@@ -31,6 +31,8 @@ jest.mock('croods', () => ({
   ),
 }))
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 it('renders the form correctly', () => {
   const tree = renderer.create(<FormBottom />).toJSON()
   expect(tree).toMatchSnapshot()

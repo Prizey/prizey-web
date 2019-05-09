@@ -8,6 +8,8 @@ const mockList = [
   { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
 ]
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('croods', () => ({
   Info: ({ children, ...props }) => (
     <div {...props}>

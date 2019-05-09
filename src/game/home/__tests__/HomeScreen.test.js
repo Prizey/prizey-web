@@ -35,6 +35,8 @@ jest.mock('croods', () => ({
   createReducer: () => (state = {}) => state,
 }))
 
+jest.mock('../../../design/Layout/RegisterPageView')
+
 it('renders correctly', () => {
   const tree = renderer.create(<HomeScreen currentUser />).toJSON()
   expect(tree).toMatchSnapshot()
