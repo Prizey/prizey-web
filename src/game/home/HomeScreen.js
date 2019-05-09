@@ -64,10 +64,10 @@ const ScreenWithSpeed = (difficulty, navigate) => list => (
   />
 )
 
-export default ({ navigate, difficulty = 'home' }) => (
+export default ({ navigate, difficulty = 'medium' }) => (
   <List
     name="products"
-    path={`/products/${difficulty}`}
+    path="/products/homepage"
     render={ScreenWithSpeed(difficulty, navigate)}
   />
 )
