@@ -9,6 +9,7 @@ import LoadingComponent from 'design/Loading/Loading'
 import ErrorComponent from 'design/Error/Error'
 
 import store from 'store/store'
+import FlashMessage from 'seasoned-flash'
 import Router from './Router'
 import theme from './theme'
 
@@ -17,22 +18,24 @@ import 'App.css'
 export default class extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <MuiThemeProvider theme={theme}>
-          <CssBaseline />
-          <CroodsProvider
-            baseUrl={process.env.REACT_APP_API_URL}
-            renderLoading={LoadingComponent}
-            renderError={ErrorComponent}
-            {...credentialsProps}
-          >
-            <Auth
+      <FlashMessage>
+        <Provider store={store}>
+          <MuiThemeProvider theme={theme}>
+            <CssBaseline />
+            <CroodsProvider
+              baseUrl={process.env.REACT_APP_API_URL}
               renderLoading={LoadingComponent}
-              render={props => <Router {...props} />}
-            />
-          </CroodsProvider>
-        </MuiThemeProvider>
-      </Provider>
+              renderError={ErrorComponent}
+              {...credentialsProps}
+            >
+              <Auth
+                renderLoading={LoadingComponent}
+                render={props => <Router {...props} />}
+              />
+            </CroodsProvider>
+          </MuiThemeProvider>
+        </Provider>
+      </FlashMessage>
     )
   }
 }

@@ -27,7 +27,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "seasoned-auth-forms-web": "^0.3.3",
-    "seasoned-components": "^0.1.0"
+    "seasoned-components": "^0.1.0",
+    "seasoned-flash": "^0.0.2"
   },
   "scripts": {
     "lint": "node_modules/.bin/eslint --max-warnings 0 .",

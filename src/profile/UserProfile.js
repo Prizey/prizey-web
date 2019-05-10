@@ -1,18 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { New } from 'croods'
 import { Button, Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
-import SimpleSnackBar from 'design/Snackbar/Snackbar'
+import { useFlash } from 'seasoned-flash'
 import GoBack from 'design/GoBack/GoBack'
 
 import UserForm from 'auth/UserForm'
 import Logout from 'auth/Logout'
 
-export const UserProfile = ({
-  isOpen,
-  isClose,
+const UserProfile = ({
   currentUser,
   create,
   creating,
@@ -39,12 +37,6 @@ export const UserProfile = ({
       Profile
     </Typography>
 
-    <SimpleSnackBar
-      isOpen={isOpen}
-      close={isClose}
-      message={'You updated your profile!'}
-    />
-
     <UserForm
       onSubmit={create}
       submitting={creating}
@@ -70,7 +62,7 @@ export const UserProfile = ({
 )
 
 export default ({ currentUser, setCurrentUser, location }) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const { success } = useFlash()
 
   return currentUser ? (
     <New
@@ -80,8 +72,6 @@ export default ({ currentUser, setCurrentUser, location }) => {
       render={props => (
         <UserProfile
           {...props}
-          isOpen={isOpen}
-          isClose={() => setIsOpen(false)}
           currentUser={currentUser}
           location={location}
           setCurrentUser={setCurrentUser}
@@ -89,7 +79,9 @@ export default ({ currentUser, setCurrentUser, location }) => {
       )}
       renderCreated={response => {
         setCurrentUser(response.data)
-        setIsOpen(true)
+      }}
+      afterCreate={() => {
+        success('You updated your profile!')
       }}
     />
   ) : (

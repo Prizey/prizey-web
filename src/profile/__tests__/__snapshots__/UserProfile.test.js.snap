@@ -4,6 +4,7 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
+  afterCreate={[Function]}
   method="PUT"
   name="users"
   path="/auth"
@@ -70,15 +71,8 @@ exports[`renders correctly 1`] = `
                 Array [
                   undefined,
                 ],
-                Array [
-                  undefined,
-                ],
               ],
               "results": Array [
-                Object {
-                  "isThrow": false,
-                  "value": undefined,
-                },
                 Object {
                   "isThrow": false,
                   "value": undefined,
@@ -115,14 +109,6 @@ exports[`renders correctly 1`] = `
           >
             Profile
           </h5>
-          <div
-            close={[Function]}
-            isOpen={true}
-            message="You updated your profile!"
-            name="snackbar"
-          >
-            Snackbar
-          </div>
           <div
             initialValues={true}
             onSubmit={[MockFunction]}
@@ -331,6 +317,7 @@ exports[`renders correctly 1`] = `
   </div>
   <div>
     renderCreated - 
+    afterCreate - 
   </div>
 </div>
 `;

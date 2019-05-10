@@ -8615,6 +8615,13 @@ seasoned-components@^0.1.0:
   resolved "https://registry.yarnpkg.com/seasoned-components/-/seasoned-components-0.1.0.tgz#60263de3145fb162fda60bed220a2527a8ad8816"
   integrity sha512-QG7VrX+VNFIHfrzoyIDPr2iWtowfWYJNshCW+ubSxLu4kdoBMqsklo0KW4hs3BftRHkrRlgczdQolG7UdviIGw==
 
+seasoned-flash@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seasoned-flash/-/seasoned-flash-0.0.2.tgz#bab3b64d796ed359b7024794e90f82d15be9e095"
+  integrity sha512-YurLIBDFBrg17rAL0oen/fAihwvCA2Tu9x9qmY8HQTlZ+UdlxkZZD3lSY52GiZ6/mLP3sRFdrhJ0ccieJfe9dQ==
+  dependencies:
+    seasoned-components "^0.1.0"
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
