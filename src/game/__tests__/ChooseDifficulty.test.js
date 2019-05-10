@@ -9,6 +9,7 @@ const mockList = [
 ]
 
 jest.mock('../../design/Layout/RegisterPageView')
+jest.mock('design/UserBalance', () => () => null)
 
 jest.mock('croods', () => ({
   Info: ({ children, ...props }) => (
@@ -25,6 +26,11 @@ jest.mock('croods', () => ({
     <div {...props}>
       {props.children} - Render: {props.render(mockList)}
       RenderLoading: {props.renderLoading()}
+    </div>
+  ),
+  New: props => (
+    <div {...props}>
+      New - <div>render - {props.render(props)}</div>
     </div>
   ),
   Provider: ({ children, ...props }) => (

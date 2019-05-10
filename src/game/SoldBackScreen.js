@@ -2,10 +2,15 @@ import React from 'react'
 import { Redirect } from '@reach/router'
 import { Button, Typography } from '@material-ui/core'
 
+import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
 
 const SoldBackComponent = ({ navigate, currentUser, location }) => (
-  <Layout location={location} currentUser={currentUser}>
+  <Layout
+    location={location}
+    currentUser={currentUser}
+    leftIcon={<UserBalance />}
+  >
     <Typography align="center" variant="h5">
       Congrats! You sold the product for 3 diamonds.
     </Typography>

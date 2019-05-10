@@ -7,6 +7,7 @@ import Layout from 'design/Layout/Layout'
 import { Redirect, Link } from '@reach/router'
 
 import GoBack from 'design/GoBack/GoBack'
+import UserBalance from 'design/UserBalance'
 
 import getButtonText from './purchaseDescription'
 
@@ -38,7 +39,7 @@ const PaywallScreen = withStyles(styles)(
     <Layout
       location={location}
       currentUser={currentUser}
-      leftIcon={<GoBack to="/" />}
+      leftIcon={buyMore ? <UserBalance /> : <GoBack to="/" />}
     >
       <Typography align="center" variant="h5">
         {buyMore

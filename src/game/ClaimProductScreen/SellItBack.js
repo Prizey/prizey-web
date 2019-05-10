@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react'
-import { New } from 'croods'
 import { withStyles } from '@material-ui/core/styles'
 import { Button, Typography } from '@material-ui/core'
 import CircularProgress from '@material-ui/core/CircularProgress'
 
 import PlayAgain from 'design/PlayAgain'
+import TransactionComponent from 'game/TransactionComponent'
+
+const TICKET_AMOUNT = 3
 
 const styles = theme => ({
   icon: {
@@ -61,7 +63,7 @@ export class SellItBackComponent extends React.Component {
               alt="diamond"
               className={classes.icon}
             />
-            <span className={classes.quantity}>3</span>
+            <span className={classes.quantity}>{TICKET_AMOUNT}</span>
           </div>
         </Fragment>
       )}
@@ -90,14 +92,20 @@ export class SellItBackComponent extends React.Component {
   }
 }
 
-export const afterCreate = ({ navigate }) => () => {
+export const afterCreate = ({
+  navigate,
+  currentUser,
+  setCurrentUser,
+}) => () => {
+  setCurrentUser({
+    ...currentUser,
+    tickets: currentUser.tickets + TICKET_AMOUNT,
+  })
   navigate('/sold-back')
 }
 
 export default withStyles(styles)(props => (
-  <New
-    name="tickets"
-    path="/ticket_transactions"
+  <TransactionComponent
     render={renderProps => <SellItBackComponent {...props} {...renderProps} />}
     afterCreate={afterCreate(props)}
   />

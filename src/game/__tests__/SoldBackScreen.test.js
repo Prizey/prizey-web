@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer'
 import SoldBackScreen from '../SoldBackScreen'
 
 jest.mock('../../design/Layout/RegisterPageView')
+jest.mock('design/UserBalance', () => () => null)
 
 it('renders correctly', () => {
   const tree = renderer.create(<SoldBackScreen currentUser />).toJSON()

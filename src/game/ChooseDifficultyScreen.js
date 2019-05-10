@@ -4,6 +4,7 @@ import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
+import UserBalance from 'design/UserBalance'
 import DifficultyButton from './DifficultyButton'
 import SpeedComponent from './SpeedComponent'
 
@@ -33,8 +34,12 @@ const difficulties = [
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
-  ({ classes, settings, currentUser, location }) => (
-    <Layout location={location} currentUser={currentUser}>
+  ({ navigate, classes, settings, currentUser, location, setCurrentUser }) => (
+    <Layout
+      location={location}
+      currentUser={currentUser}
+      leftIcon={<UserBalance />}
+    >
       <Typography align="center" variant="h5">
         Pick a difficulty!
       </Typography>
@@ -46,6 +51,8 @@ const ChooseDifficultyScreen = withStyles(styles)(
             {...item}
             quantity={settings[`${item.difficulty}TicketAmount`]}
             availableTickets={currentUser.tickets}
+            navigate={navigate}
+            setCurrentUser={setCurrentUser}
           />
         ))}
       </div>
@@ -58,7 +65,12 @@ const ChooseDifficultyScreen = withStyles(styles)(
   ),
 )
 
-const RedirectUserWithoutBalance = ({ currentUser, location }) => (
+const RedirectUserWithoutBalance = ({
+  navigate,
+  location,
+  currentUser,
+  setCurrentUser,
+}) => (
   <SpeedComponent
     render={settings => {
       const userCanPlay = difficulties.filter(
@@ -68,9 +80,11 @@ const RedirectUserWithoutBalance = ({ currentUser, location }) => (
 
       return userCanPlay.length ? (
         <ChooseDifficultyScreen
+          location={location}
+          navigate={navigate}
           settings={settings}
           currentUser={currentUser}
-          location={location}
+          setCurrentUser={setCurrentUser}
         />
       ) : (
         <Redirect to="/buy-diamonds" noThrow />
@@ -79,9 +93,14 @@ const RedirectUserWithoutBalance = ({ currentUser, location }) => (
   />
 )
 
-export default ({ currentUser, location }) =>
+export default ({ navigate, setCurrentUser, currentUser, location }) =>
   currentUser ? (
-    <RedirectUserWithoutBalance currentUser={currentUser} location={location} />
+    <RedirectUserWithoutBalance
+      navigate={navigate}
+      setCurrentUser={setCurrentUser}
+      location={location}
+      currentUser={currentUser}
+    />
   ) : (
     <Redirect to="/sign-in" noThrow />
   )

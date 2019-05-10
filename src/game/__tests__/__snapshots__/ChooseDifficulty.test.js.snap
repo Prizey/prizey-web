@@ -37,247 +37,280 @@ exports[`renders correctly 1`] = `
         <div
           className="Component-buttonGroup-1"
         >
-          <a
-            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_easy-51"
-            href="/game/easy"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
+          <div
+            afterCreate={[Function]}
+            name="tickets"
+            path="/ticket_transactions"
+            render={[Function]}
           >
-            <span
-              className="MuiButton-label-55"
-            >
-              <div
-                name="products"
-                parentId="easy"
-                path="/products/easy"
-                render={[Function]}
-                renderLoading={[Function]}
+            New - 
+            <div>
+              render - 
+              <button
+                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_easy-51"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                 - Render: 
-                <img
-                  alt="product"
-                  className="Component-product-49"
-                  src="/mocks/trump-mask.png"
-                />
-                RenderLoading: 
-                <div
-                  className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
-                  role="progressbar"
-                  style={
-                    Object {
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
+                <span
+                  className="MuiButton-label-55"
                 >
-                  <svg
-                    className="MuiCircularProgress-svg-88"
-                    viewBox="22 22 44 44"
+                  <div
+                    name="products"
+                    parentId="easy"
+                    path="/products/easy"
+                    render={[Function]}
+                    renderLoading={[Function]}
                   >
-                    <circle
-                      className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
-                      cx={44}
-                      cy={44}
-                      fill="none"
-                      r={20.2}
-                      strokeWidth={3.6}
-                      style={Object {}}
+                     - Render: 
+                    <img
+                      alt="product"
+                      className="Component-product-49"
+                      src="/mocks/trump-mask.png"
                     />
-                  </svg>
-                </div>
-              </div>
-              <span
-                className="Component-label-47"
-              >
-                EASY
-              </span>
-              <img
-                alt="diamond"
-                className="Component-icon-46"
-                src="/icons/diamond.png"
-              />
-              <span
-                className="Component-quantity-50"
-              >
-                1
-              </span>
-            </span>
-            <span
-              className="MuiTouchRipple-root-93"
-            />
-          </a>
-          <a
-            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_medium-53"
-            href="/game/medium"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
+                    RenderLoading: 
+                    <div
+                      className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
+                      role="progressbar"
+                      style={
+                        Object {
+                          "height": 30,
+                          "width": 30,
+                        }
+                      }
+                    >
+                      <svg
+                        className="MuiCircularProgress-svg-88"
+                        viewBox="22 22 44 44"
+                      >
+                        <circle
+                          className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
+                          cx={44}
+                          cy={44}
+                          fill="none"
+                          r={20.2}
+                          strokeWidth={3.6}
+                          style={Object {}}
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    className="Component-label-47"
+                  >
+                    EASY
+                  </span>
+                  <img
+                    alt="diamond"
+                    className="Component-icon-46"
+                    src="/icons/diamond.png"
+                  />
+                  <span
+                    className="Component-quantity-50"
+                  >
+                    1
+                  </span>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-93"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            afterCreate={[Function]}
+            name="tickets"
+            path="/ticket_transactions"
+            render={[Function]}
           >
-            <span
-              className="MuiButton-label-55"
-            >
-              <div
-                name="products"
-                parentId="medium"
-                path="/products/medium"
-                render={[Function]}
-                renderLoading={[Function]}
+            New - 
+            <div>
+              render - 
+              <button
+                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_medium-53"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                 - Render: 
-                <img
-                  alt="product"
-                  className="Component-product-49"
-                  src="/mocks/trump-mask.png"
-                />
-                RenderLoading: 
-                <div
-                  className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
-                  role="progressbar"
-                  style={
-                    Object {
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
+                <span
+                  className="MuiButton-label-55"
                 >
-                  <svg
-                    className="MuiCircularProgress-svg-88"
-                    viewBox="22 22 44 44"
+                  <div
+                    name="products"
+                    parentId="medium"
+                    path="/products/medium"
+                    render={[Function]}
+                    renderLoading={[Function]}
                   >
-                    <circle
-                      className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
-                      cx={44}
-                      cy={44}
-                      fill="none"
-                      r={20.2}
-                      strokeWidth={3.6}
-                      style={Object {}}
+                     - Render: 
+                    <img
+                      alt="product"
+                      className="Component-product-49"
+                      src="/mocks/trump-mask.png"
                     />
-                  </svg>
-                </div>
-              </div>
-              <span
-                className="Component-label-47"
-              >
-                MEDIUM
-              </span>
-              <img
-                alt="diamond"
-                className="Component-icon-46"
-                src="/icons/diamond.png"
-              />
-              <span
-                className="Component-quantity-50"
-              >
-                3
-              </span>
-            </span>
-            <span
-              className="MuiTouchRipple-root-93"
-            />
-          </a>
-          <a
-            className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_hard-52"
-            href="/buy-more"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
+                    RenderLoading: 
+                    <div
+                      className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
+                      role="progressbar"
+                      style={
+                        Object {
+                          "height": 30,
+                          "width": 30,
+                        }
+                      }
+                    >
+                      <svg
+                        className="MuiCircularProgress-svg-88"
+                        viewBox="22 22 44 44"
+                      >
+                        <circle
+                          className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
+                          cx={44}
+                          cy={44}
+                          fill="none"
+                          r={20.2}
+                          strokeWidth={3.6}
+                          style={Object {}}
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    className="Component-label-47"
+                  >
+                    MEDIUM
+                  </span>
+                  <img
+                    alt="diamond"
+                    className="Component-icon-46"
+                    src="/icons/diamond.png"
+                  />
+                  <span
+                    className="Component-quantity-50"
+                  >
+                    3
+                  </span>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-93"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            afterCreate={[Function]}
+            name="tickets"
+            path="/ticket_transactions"
+            render={[Function]}
           >
-            <span
-              className="MuiButton-label-55"
-            >
-              <div
-                name="products"
-                parentId="hard"
-                path="/products/hard"
-                render={[Function]}
-                renderLoading={[Function]}
+            New - 
+            <div>
+              render - 
+              <button
+                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_hard-52"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                 - Render: 
-                <img
-                  alt="product"
-                  className="Component-product-49"
-                  src="/mocks/trump-mask.png"
-                />
-                RenderLoading: 
-                <div
-                  className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
-                  role="progressbar"
-                  style={
-                    Object {
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
+                <span
+                  className="MuiButton-label-55"
                 >
-                  <svg
-                    className="MuiCircularProgress-svg-88"
-                    viewBox="22 22 44 44"
+                  <div
+                    name="products"
+                    parentId="hard"
+                    path="/products/hard"
+                    render={[Function]}
+                    renderLoading={[Function]}
                   >
-                    <circle
-                      className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
-                      cx={44}
-                      cy={44}
-                      fill="none"
-                      r={20.2}
-                      strokeWidth={3.6}
-                      style={Object {}}
+                     - Render: 
+                    <img
+                      alt="product"
+                      className="Component-product-49"
+                      src="/mocks/trump-mask.png"
                     />
-                  </svg>
-                </div>
-              </div>
-              <span
-                className="Component-label-47"
-              >
-                HARD
-              </span>
-              <img
-                alt="diamond"
-                className="Component-icon-46"
-                src="/icons/diamond.png"
-              />
-              <span
-                className="Component-quantity-50"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-93"
-            />
-          </a>
+                    RenderLoading: 
+                    <div
+                      className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
+                      role="progressbar"
+                      style={
+                        Object {
+                          "height": 30,
+                          "width": 30,
+                        }
+                      }
+                    >
+                      <svg
+                        className="MuiCircularProgress-svg-88"
+                        viewBox="22 22 44 44"
+                      >
+                        <circle
+                          className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
+                          cx={44}
+                          cy={44}
+                          fill="none"
+                          r={20.2}
+                          strokeWidth={3.6}
+                          style={Object {}}
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    className="Component-label-47"
+                  >
+                    HARD
+                  </span>
+                  <img
+                    alt="diamond"
+                    className="Component-icon-46"
+                    src="/icons/diamond.png"
+                  />
+                  <span
+                    className="Component-quantity-50"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root-93"
+                />
+              </button>
+            </div>
+          </div>
         </div>
         <p
           className="MuiTypography-root-10 MuiTypography-body1-19 MuiTypography-alignCenter-33"

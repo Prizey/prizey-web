@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Component-root-2"
+>
+  <img
+    alt="diamond"
+    className="Component-icon-1"
+    src="/icons/diamond.png"
+  />
+  <p
+    className="MuiTypography-root-3 MuiTypography-body1-12"
+  >
+    10
+  </p>
+</div>
+`;

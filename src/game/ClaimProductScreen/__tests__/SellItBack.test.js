@@ -18,64 +18,83 @@ jest.mock('croods', () => ({
   ),
 }))
 
-it('renders correctly', () => {
-  act(() => {
-    const tree = renderer
-      .create(<SellItBack amount={3} clearProduct={jest.fn} />)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+describe('when component is mounted', () => {
+  it('renders correctly', () => {
+    act(() => {
+      const params = {
+        currentUser: { tickets: 10 },
+        navigate: jest.fn(),
+        setCurrentUser: jest.fn(),
+      }
+      const tree = renderer.create(<SellItBack {...params} />).toJSON()
+      expect(tree).toMatchSnapshot()
+    })
   })
 })
 
-it('call the clear on after create', () => {
-  const navigate = jest.fn()
-  afterCreate({ navigate })()
+describe('when component is triggered', () => {
+  it('open modal', () => {
+    const params = {
+      amount: 3,
+      classes: {},
+      clearProduct: jest.fn(),
+    }
+    const tree = renderer.create(<SellItBackComponent {...params} />).root
 
-  expect(navigate).toHaveBeenCalledTimes(1)
-})
+    tree.findByProps({ 'aria-label': 'Sell it Back' }).props.onClick()
+    expect(tree.instance.state.dialogIsOpen).toEqual(true)
+  })
 
-it('call the create when click on button', () => {
-  const params = {
-    amount: 3,
-    create: jest.fn(),
-    creating: false,
-  }
+  describe('when the dialog appears', () => {
+    it('call the create when click on confirm', () => {
+      const params = {
+        amount: 3,
+        create: jest.fn(),
+        creating: false,
+      }
 
-  handleConfirm(params)()
-  expect(params.create).toHaveBeenCalledTimes(1)
-})
+      handleConfirm(params)()
+      expect(params.create).toHaveBeenCalledTimes(1)
+    })
 
-it('block the create if is creating', () => {
-  const params = {
-    amount: 3,
-    create: jest.fn(),
-    creating: true,
-  }
+    it("do nothing if it's creating", () => {
+      const params = {
+        amount: 3,
+        create: jest.fn(),
+        creating: true,
+      }
 
-  handleConfirm(params)()
-  expect(params.create).not.toHaveBeenCalled()
-})
+      handleConfirm(params)()
+      expect(params.create).not.toHaveBeenCalled()
+    })
 
-it('open modal when click on button', () => {
-  const params = {
-    amount: 3,
-    classes: {},
-    clearProduct: jest.fn(),
-  }
-  const tree = renderer.create(<SellItBackComponent {...params} />).root
+    it('close the dialog when click on close button', () => {
+      const params = {
+        amount: 3,
+        classes: {},
+        clearProduct: jest.fn(),
+      }
+      const tree = renderer.create(<SellItBackComponent {...params} />).root
 
-  tree.findByProps({ 'aria-label': 'Sell it Back' }).props.onClick()
-  expect(tree.instance.state.dialogIsOpen).toEqual(true)
-})
+      tree.findByProps({ 'aria-label': 'Play again modal' }).props.close()
+      expect(tree.instance.state.dialogIsOpen).toEqual(false)
+    })
+  })
 
-it('close modal when click on close', () => {
-  const params = {
-    amount: 3,
-    classes: {},
-    clearProduct: jest.fn(),
-  }
-  const tree = renderer.create(<SellItBackComponent {...params} />).root
+  describe('when confirming in the dialog', () => {
+    it('call the navigate and set the user tickets', () => {
+      const params = {
+        currentUser: { id: 1, tickets: 10 },
+        navigate: jest.fn(),
+        setCurrentUser: jest.fn(),
+      }
 
-  tree.findByProps({ 'aria-label': 'Play again modal' }).props.close()
-  expect(tree.instance.state.dialogIsOpen).toEqual(false)
+      afterCreate(params)()
+      expect(params.setCurrentUser).toHaveBeenCalledWith({
+        id: 1,
+        tickets: params.currentUser.tickets + 3,
+      })
+      expect(params.navigate).toHaveBeenCalledWith('/sold-back')
+    })
+  })
 })

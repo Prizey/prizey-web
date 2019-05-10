@@ -1,10 +1,12 @@
 import React from 'react'
 import { List } from 'croods'
 import get from 'lodash/get'
-import { Link } from '@reach/router'
 import { withStyles } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
+import { Redirect } from '@reach/router'
 import CircularProgress from '@material-ui/core/CircularProgress'
+
+import TransactionComponent from 'game/TransactionComponent'
 
 const styles = theme => ({
   icon: {
@@ -46,19 +48,34 @@ const styles = theme => ({
   },
 })
 
-export const getPageLink = ({ to, quantity, availableTickets }) =>
-  availableTickets >= quantity ? to : '/buy-more'
+export const handleClick = ({
+  availableTickets,
+  quantity,
+  navigate,
+  create,
+}) => () => {
+  if (availableTickets < quantity) {
+    return navigate('/buy-more')
+  }
 
-export default withStyles(styles)(
-  ({ classes, label, difficulty, to, quantity, availableTickets }) => (
+  return create({ amount: quantity * -1 })
+}
+
+export const afterCreate = ({ setCurrentUser, navigate, to }) => ({
+  created: { user },
+}) => {
+  setCurrentUser(user)
+  return navigate(to)
+}
+
+export const DifficultyButtonComponent = withStyles(styles)(
+  ({ classes, label, difficulty, ...props }) => (
     <Button
       variant="contained"
       color="primary"
       fullWidth
       className={classes[`root_${difficulty}`]}
-      component={props => (
-        <Link to={getPageLink({ availableTickets, quantity, to })} {...props} />
-      )}
+      onClick={handleClick(props)}
     >
       <List
         parentId={difficulty}
@@ -81,7 +98,20 @@ export default withStyles(styles)(
 
       <span className={classes.label}>{label}</span>
       <img src="/icons/diamond.png" alt="diamond" className={classes.icon} />
-      <span className={classes.quantity}>{quantity}</span>
+      <span className={classes.quantity}>{props.quantity}</span>
     </Button>
   ),
+)
+
+export default props => (
+  <TransactionComponent
+    render={({ error, ...renderProps }) =>
+      error ? (
+        <Redirect to="/buy-more" noThrow />
+      ) : (
+        <DifficultyButtonComponent {...props} {...renderProps} />
+      )
+    }
+    afterCreate={afterCreate(props)}
+  />
 )

@@ -4,6 +4,8 @@ import ShippingConfirmation, { mapState } from '../ShippingConfirmation'
 
 jest.mock('../../design/Layout/RegisterPageView')
 
+jest.mock('design/UserBalance', () => () => null)
+
 jest.mock('react-redux', () => ({
   connect: () => Component => props => (
     <Component

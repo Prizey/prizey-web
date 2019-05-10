@@ -19,7 +19,7 @@ jest.mock('croods', () => ({
     <div {...props}>
       Info -{' '}
       {props.render({
-        easyCarouselSpeed: 500,
+        mediumCarouselSpeed: 500,
         priceMultiplier: 1,
       })}
     </div>
@@ -37,12 +37,18 @@ jest.mock('croods', () => ({
 
 jest.mock('../../../design/Layout/RegisterPageView')
 
-it('renders correctly', () => {
-  const tree = renderer.create(<HomeScreen currentUser />).toJSON()
-  expect(tree).toMatchSnapshot()
-})
+describe('when component is mounted', () => {
+  describe('when user is logged in', () => {
+    it('renders correctly', () => {
+      const tree = renderer.create(<HomeScreen currentUser />).toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
 
-it('redirects correctly', () => {
-  const tree = renderer.create(<HomeScreen />).toJSON()
-  expect(tree).toMatchSnapshot()
+  describe('when user is not logged in', () => {
+    it('redirects correctly', () => {
+      const tree = renderer.create(<HomeScreen />).toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
 })
