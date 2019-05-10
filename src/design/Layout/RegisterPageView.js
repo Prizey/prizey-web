@@ -17,7 +17,7 @@ export default class RegisterPageView extends React.Component {
       : {}
 
     ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_CODE, {
-      testMode: process.env.REACT_APP_DEBUG === '1',
+      testMode: process.env.NODE_ENV === '1',
       ...gaOptions,
     })
 
