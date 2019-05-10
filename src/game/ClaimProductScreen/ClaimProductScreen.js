@@ -12,7 +12,15 @@ import ProductImage from 'design/ProductImage'
 
 import SellItBack from './SellItBack'
 
-const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
+const ClaimProductComponent = ({
+  currentUser,
+  setCurrentUser,
+  product,
+  classes,
+  difficulty,
+  navigate,
+  ...props
+}) =>
   product ? (
     <Layout
       leftIcon={<UserBalance />}
@@ -29,6 +37,8 @@ const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
         amount={3}
         clearProduct={props.clearProduct}
         navigate={navigate}
+        currentUser={currentUser}
+        setCurrentUser={setCurrentUser}
       />
 
       <Button
@@ -54,11 +64,11 @@ export const mapState = ({ basket = {} }) => ({
 const ClaimProductScreen = connect(
   mapState,
   { clearProduct },
-)(props => <InnerComponent {...props} />)
+)(ClaimProductComponent)
 
 export default ({ currentUser, ...props }) =>
   currentUser ? (
-    <ClaimProductScreen {...props} />
+    <ClaimProductScreen currentUser={currentUser} {...props} />
   ) : (
     <Redirect to="/sign-in?next=/game" noThrow />
   )

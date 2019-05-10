@@ -2,6 +2,8 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import ClaimProductScreen, { mapState } from '../ClaimProductScreen'
 
+jest.mock('design/UserBalance', () => () => null)
+
 jest.mock('react-redux', () => ({
   connect: () => Component => props => (
     <Component
