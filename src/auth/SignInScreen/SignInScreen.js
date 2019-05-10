@@ -6,7 +6,7 @@ import createAuthForm from '../AuthForm'
 
 const AuthForm = createAuthForm(SignInForm, 'Login')
 
-export default ({ currentUser, navigate, ...props }) => {
+export default ({ currentUser, location, navigate, ...props }) => {
   useEffect(() => {
     if (currentUser) {
       const queryString = new URLSearchParams(window.location.search)
@@ -18,6 +18,7 @@ export default ({ currentUser, navigate, ...props }) => {
 
   return (
     <SignIn
+      location={location}
       currentUser={currentUser}
       navigate={navigate}
       {...props}

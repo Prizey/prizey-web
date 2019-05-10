@@ -19,10 +19,13 @@ const ClaimProductComponent = ({
   classes,
   difficulty,
   navigate,
+  location,
   ...props
 }) =>
   product ? (
     <Layout
+      location={location}
+      currentUser={currentUser}
       leftIcon={<UserBalance />}
       caption={<Caption difficulty={difficulty} />}
     >

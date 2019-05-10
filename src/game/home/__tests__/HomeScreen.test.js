@@ -35,6 +35,8 @@ jest.mock('croods', () => ({
   createReducer: () => (state = {}) => state,
 }))
 
+jest.mock('../../../design/Layout/RegisterPageView')
+
 describe('when component is mounted', () => {
   describe('when user is logged in', () => {
     it('renders correctly', () => {

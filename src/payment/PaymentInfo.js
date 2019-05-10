@@ -35,9 +35,13 @@ export const afterPurchase = ({
 }
 
 export const PaymentInfoComponent = withStyles(styles)(
-  ({ navigate, currentUser, setCurrentUser, classes, purchase }) => (
+  ({ navigate, currentUser, setCurrentUser, classes, purchase, location }) => (
     <StripeProvider apiKey={process.env.REACT_APP_STRIPE_TOKEN}>
-      <Layout leftIcon={<GoBack to="/buy-diamonds" />}>
+      <Layout
+        location={location}
+        currentUser={currentUser}
+        leftIcon={<GoBack to="/buy-diamonds" />}
+      >
         <Typography align="center" variant="h5" className={classes.purchase}>
           <img
             src="/icons/diamond.png"

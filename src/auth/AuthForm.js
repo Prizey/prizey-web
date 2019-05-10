@@ -10,13 +10,19 @@ const styles = theme => ({
 })
 
 const createAuthForm = (Component, title) =>
-  withStyles(styles)(({ classes, create, creating, error }) => (
-    <Layout>
-      <Typography align="center" variant="h5" className={classes.pageTitle}>
-        {title}
-      </Typography>
-      <Component onSubmit={create} submitting={creating} submitError={error} />
-    </Layout>
-  ))
+  withStyles(styles)(
+    ({ classes, create, creating, error, currentUser, location }) => (
+      <Layout location={location} currentUser={currentUser}>
+        <Typography align="center" variant="h5" className={classes.pageTitle}>
+          {title}
+        </Typography>
+        <Component
+          onSubmit={create}
+          submitting={creating}
+          submitError={error}
+        />
+      </Layout>
+    ),
+  )
 
 export default createAuthForm

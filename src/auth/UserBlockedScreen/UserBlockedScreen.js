@@ -9,25 +9,27 @@ const styles = theme => ({
   },
 })
 
-const createBlockedPage = withStyles(styles)(({ classes }) => (
-  <Layout>
-    <Typography align="center" variant="h2" className={classes.pageTitle}>
-      You are blocked!
-    </Typography>
+const createBlockedPage = withStyles(styles)(
+  ({ classes, currentUser, location }) => (
+    <Layout location={location} currentUser={currentUser}>
+      <Typography align="center" variant="h2" className={classes.pageTitle}>
+        You are blocked!
+      </Typography>
 
-    <Typography align="center" variant="h5">
-      Due to recent events on your account history we blocked you, but do not
-      worry, enter in contact through{' '}
-      <Button
-        href="mailto:contact@prizeyapp.com"
-        variant="contained"
-        color="primary"
-        fullWidth
-      >
-        contact@prizeyapp.com
-      </Button>
-    </Typography>
-  </Layout>
-))
+      <Typography align="center" variant="h5">
+        Due to recent events on your account history we blocked you, but do not
+        worry, enter in contact through{' '}
+        <Button
+          href="mailto:contact@prizeyapp.com"
+          variant="contained"
+          color="primary"
+          fullWidth
+        >
+          contact@prizeyapp.com
+        </Button>
+      </Typography>
+    </Layout>
+  ),
+)
 
 export default createBlockedPage

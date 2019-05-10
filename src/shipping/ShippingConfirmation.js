@@ -14,10 +14,16 @@ const ShippingComponent = ({
   classes,
   difficulty,
   navigate,
+  currentUser,
+  location,
   ...props
 }) =>
   product ? (
-    <Layout leftIcon={<UserBalance />}>
+    <Layout
+      location={location}
+      currentUser={currentUser}
+      leftIcon={<UserBalance />}
+    >
       <Typography align="center" variant="h5">
         Sweet!
       </Typography>

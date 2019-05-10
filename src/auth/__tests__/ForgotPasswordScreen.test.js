@@ -34,6 +34,8 @@ jest.mock('croods', () => ({
   ),
 }))
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 it('renders correctly', () => {
   const tree = renderer.create(<ForgotPasswordScreen />).toJSON()
   expect(tree).toMatchSnapshot()

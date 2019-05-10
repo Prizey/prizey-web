@@ -6,8 +6,14 @@ import { Redirect } from '@reach/router'
 
 import UserForm from 'auth/UserForm'
 
-export const ShippingForm = ({ currentUser, create, creating, error }) => (
-  <Layout>
+export const ShippingForm = ({
+  currentUser,
+  location,
+  create,
+  creating,
+  error,
+}) => (
+  <Layout location={location} currentUser={currentUser}>
     <Typography align="center" variant="h5">
       Shipping Address
     </Typography>
@@ -25,13 +31,19 @@ export const ShippingForm = ({ currentUser, create, creating, error }) => (
   </Layout>
 )
 
-export default ({ currentUser, setCurrentUser }) =>
+export default ({ currentUser, location, setCurrentUser }) =>
   currentUser ? (
     <New
       name="users"
       path="/auth"
       method="PUT"
-      render={props => <ShippingForm {...props} currentUser={currentUser} />}
+      render={props => (
+        <ShippingForm
+          {...props}
+          currentUser={currentUser}
+          location={location}
+        />
+      )}
       renderCreated={response => {
         setCurrentUser(response.data)
         return <Redirect to="/shipping-info/confirm" noThrow />

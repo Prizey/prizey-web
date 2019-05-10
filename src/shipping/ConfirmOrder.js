@@ -92,14 +92,14 @@ export class ConfirmOrderComponent extends React.Component {
   )
 
   render() {
-    const { product, currentUser } = this.props
+    const { product, currentUser, location } = this.props
 
     if (!currentUser || !product) {
       return <Redirect to="/sign-in?next=/game" noThrow />
     }
 
     return (
-      <Layout>
+      <Layout location={location} currentUser={currentUser}>
         {this.renderHeader(this.props)}
         {this.renderFields(this.props)}
         {this.renderBottom(this.props)}

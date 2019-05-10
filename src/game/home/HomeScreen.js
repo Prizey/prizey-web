@@ -19,8 +19,8 @@ const styles = theme => ({
 })
 
 const ScreenWithRoullette = withStyles(styles)(
-  ({ classes, speed, list, multiplier }) => (
-    <Layout>
+  ({ classes, speed, list, multiplier, currentUser, location }) => (
+    <Layout location={location} currentUser={currentUser}>
       <Link to={nextUrl} className={classes.root}>
         <Roulette
           aria-label="roulette"
@@ -46,7 +46,12 @@ const ScreenWithRoullette = withStyles(styles)(
   ),
 )
 
-const ScreenWithSpeed = (difficulty, navigate) => list => (
+const ScreenWithSpeed = (
+  difficulty,
+  navigate,
+  currentUser,
+  location,
+) => list => (
   <SpeedComponent
     render={settings => {
       const speed = settings[`${difficulty}CarouselSpeed`]
@@ -58,16 +63,20 @@ const ScreenWithSpeed = (difficulty, navigate) => list => (
           multiplier={settings.priceMultiplier}
           navigate={navigate}
           speed={speed}
+          currentUser={currentUser}
+          location={location}
         />
       )
     }}
   />
 )
 
-export default ({ navigate, difficulty = 'medium' }) => (
+export default ({ currentUser, location, navigate, difficulty = 'medium' }) => (
   <List
+    currentUser={currentUser}
+    location={location}
     name="products"
-    path="/products/homepage"
-    render={ScreenWithSpeed(difficulty, navigate)}
+    path={`/products/homepage`}
+    render={ScreenWithSpeed(difficulty, navigate, currentUser, location)}
   />
 )

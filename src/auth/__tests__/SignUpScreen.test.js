@@ -4,6 +4,8 @@ import renderer from 'react-test-renderer'
 import SignUpScreen from '../SignUpScreen'
 import { FormBottom } from '../SignUpScreen/SignUpForm'
 
+jest.mock('../../design/Layout/RegisterPageView')
+
 jest.mock('croods-auth', () => ({
   SignUp: props => (
     <div {...props}>

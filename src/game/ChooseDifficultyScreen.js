@@ -34,8 +34,12 @@ const difficulties = [
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
-  ({ navigate, classes, settings, currentUser, setCurrentUser }) => (
-    <Layout leftIcon={<UserBalance />}>
+  ({ navigate, classes, settings, currentUser, location, setCurrentUser }) => (
+    <Layout
+      location={location}
+      currentUser={currentUser}
+      leftIcon={<UserBalance />}
+    >
       <Typography align="center" variant="h5">
         Pick a difficulty!
       </Typography>
@@ -65,6 +69,7 @@ const RedirectUserWithoutBalance = ({
   navigate,
   currentUser,
   setCurrentUser,
+  location,
 }) => (
   <SpeedComponent
     render={settings => {
@@ -75,6 +80,7 @@ const RedirectUserWithoutBalance = ({
 
       return userCanPlay.length ? (
         <ChooseDifficultyScreen
+          location={location}
           navigate={navigate}
           settings={settings}
           currentUser={currentUser}
@@ -87,11 +93,12 @@ const RedirectUserWithoutBalance = ({
   />
 )
 
-export default ({ navigate, setCurrentUser, currentUser }) =>
+export default ({ navigate, setCurrentUser, currentUser, location }) =>
   currentUser ? (
     <RedirectUserWithoutBalance
       navigate={navigate}
       setCurrentUser={setCurrentUser}
+      location={location}
       currentUser={currentUser}
     />
   ) : (
