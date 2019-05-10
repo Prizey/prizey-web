@@ -19,6 +19,7 @@ const styles = () => ({
   },
   root: {
     height: '300px',
+    margin: 'auto',
     maxWidth: '300px',
     position: 'relative',
     width: '100%',
