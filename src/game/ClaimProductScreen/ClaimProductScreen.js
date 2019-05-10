@@ -5,7 +5,7 @@ import { Button, Typography } from '@material-ui/core'
 
 import { clearProduct } from 'store/basket/actions'
 
-import GoBack from 'design/GoBack/GoBack'
+import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
 import Caption from 'design/Caption/Caption'
 import ProductImage from 'design/ProductImage'
@@ -15,7 +15,7 @@ import SellItBack from './SellItBack'
 const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
   product ? (
     <Layout
-      leftIcon={<GoBack to="/" />}
+      leftIcon={<UserBalance />}
       caption={<Caption difficulty={difficulty} />}
     >
       <Typography align="center" variant="h5">
