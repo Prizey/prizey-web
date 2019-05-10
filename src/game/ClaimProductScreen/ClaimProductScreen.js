@@ -5,17 +5,25 @@ import { Button, Typography } from '@material-ui/core'
 
 import { clearProduct } from 'store/basket/actions'
 
-import GoBack from 'design/GoBack/GoBack'
+import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
 import Caption from 'design/Caption/Caption'
 import ProductImage from 'design/ProductImage'
 
 import SellItBack from './SellItBack'
 
-const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
+const ClaimProductComponent = ({
+  currentUser,
+  setCurrentUser,
+  product,
+  classes,
+  difficulty,
+  navigate,
+  ...props
+}) =>
   product ? (
     <Layout
-      leftIcon={<GoBack to="/" />}
+      leftIcon={<UserBalance />}
       caption={<Caption difficulty={difficulty} />}
     >
       <Typography align="center" variant="h5">
@@ -29,6 +37,8 @@ const InnerComponent = ({ product, classes, difficulty, navigate, ...props }) =>
         amount={3}
         clearProduct={props.clearProduct}
         navigate={navigate}
+        currentUser={currentUser}
+        setCurrentUser={setCurrentUser}
       />
 
       <Button
@@ -54,11 +64,11 @@ export const mapState = ({ basket = {} }) => ({
 const ClaimProductScreen = connect(
   mapState,
   { clearProduct },
-)(props => <InnerComponent {...props} />)
+)(ClaimProductComponent)
 
 export default ({ currentUser, ...props }) =>
   currentUser ? (
-    <ClaimProductScreen {...props} />
+    <ClaimProductScreen currentUser={currentUser} {...props} />
   ) : (
     <Redirect to="/sign-in?next=/game" noThrow />
   )

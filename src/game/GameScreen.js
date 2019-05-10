@@ -6,7 +6,7 @@ import { Typography } from '@material-ui/core'
 
 import { chooseProduct } from 'store/basket/actions'
 
-import GoBack from 'design/GoBack/GoBack'
+import UserBalance from 'design/UserBalance'
 import Caption from 'design/Caption/Caption'
 import Layout from 'design/Layout/Layout'
 import Roulette from './Roulette'
@@ -17,7 +17,7 @@ const GameComponent = connect(
   { chooseProduct },
 )(({ speed, difficulty, list, multiplier, ...props }) => (
   <Layout
-    leftIcon={<GoBack to="/" />}
+    leftIcon={<UserBalance />}
     caption={<Caption difficulty={difficulty} />}
   >
     <Roulette

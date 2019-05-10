@@ -3,6 +3,7 @@ import { List } from 'croods'
 import get from 'lodash/get'
 import { withStyles } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
+import { Redirect } from '@reach/router'
 import CircularProgress from '@material-ui/core/CircularProgress'
 
 import TransactionComponent from 'game/TransactionComponent'
@@ -104,9 +105,13 @@ export const DifficultyButtonComponent = withStyles(styles)(
 
 export default props => (
   <TransactionComponent
-    render={renderProps => (
-      <DifficultyButtonComponent {...props} {...renderProps} />
-    )}
+    render={({ error, ...renderProps }) =>
+      error ? (
+        <Redirect to="/buy-more" noThrow />
+      ) : (
+        <DifficultyButtonComponent {...props} {...renderProps} />
+      )
+    }
     afterCreate={afterCreate(props)}
   />
 )

@@ -4,6 +4,7 @@ import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
+import UserBalance from 'design/UserBalance'
 import DifficultyButton from './DifficultyButton'
 import SpeedComponent from './SpeedComponent'
 
@@ -34,7 +35,7 @@ const difficulties = [
 
 const ChooseDifficultyScreen = withStyles(styles)(
   ({ navigate, classes, settings, currentUser, setCurrentUser }) => (
-    <Layout>
+    <Layout leftIcon={<UserBalance />}>
       <Typography align="center" variant="h5">
         Pick a difficulty!
       </Typography>

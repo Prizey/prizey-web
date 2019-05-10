@@ -5,7 +5,7 @@ import { Button, Typography } from '@material-ui/core'
 
 import { clearProduct } from 'store/basket/actions'
 
-import GoBack from 'design/GoBack/GoBack'
+import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
 import ProductImage from 'design/ProductImage'
 
@@ -17,7 +17,7 @@ const ShippingComponent = ({
   ...props
 }) =>
   product ? (
-    <Layout leftIcon={<GoBack to="/" />}>
+    <Layout leftIcon={<UserBalance />}>
       <Typography align="center" variant="h5">
         Sweet!
       </Typography>
