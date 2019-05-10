@@ -1,11 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`redirects correctly 1`] = `null`;
-
-exports[`renders correctly 1`] = `
+exports[`when component is mounted when user is logged in renders correctly 1`] = `
 <div
   name="products"
-  path="/products/easy"
+  path="/products/homepage"
   render={[Function]}
 >
    - Render: 
@@ -18,36 +16,32 @@ exports[`renders correctly 1`] = `
     Info -
      
     <div
-      className="Component-root-8"
+      className="Component-root-9"
     >
       <div
-        className="Component-header-6"
+        className="Component-header-7"
       />
       <div
-        className="Component-container-3"
+        className="Component-container-4"
       >
         <img
           alt="Prizey"
-          className="Component-logoImage-7"
+          className="Component-logoImage-8"
           src="/logo.png"
         />
         <div
-          className="Component-caption-1"
+          className="Component-caption-2"
         />
         <div
-          className="Component-children-2"
+          className="Component-children-3"
         >
           <a
+            className="Component-root-1"
             href="/game"
             onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "none",
-              }
-            }
           >
             <div
-              className="Component-root-10"
+              className="Component-root-11"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -55,7 +49,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="trump"
-                  className="Component-img-9"
+                  className="Component-img-10"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -67,7 +61,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-9"
+                  className="Component-img-10"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -79,7 +73,7 @@ exports[`renders correctly 1`] = `
               >
                 <img
                   alt="shoe"
-                  className="Component-img-9"
+                  className="Component-img-10"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -88,16 +82,15 @@ exports[`renders correctly 1`] = `
             </div>
             <br />
             <h5
-              className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-12 MuiTypography-h5-28 MuiTypography-alignCenter-35"
             >
               Tap the screen, 
               <br />
               win what you tap.
             </h5>
-            <br />
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-containedPrimary-59 MuiButton-raised-61 MuiButton-raisedPrimary-62 MuiButton-fullWidth-72"
+              className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-containedPrimary-60 MuiButton-raised-62 MuiButton-raisedPrimary-63 MuiButton-fullWidth-73"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -114,63 +107,238 @@ exports[`renders correctly 1`] = `
               type="button"
             >
               <span
-                className="MuiButton-label-48"
+                className="MuiButton-label-49"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-76"
+                className="MuiTouchRipple-root-77"
               />
             </button>
           </a>
         </div>
         <div
-          className="Component-footer-4"
+          className="Component-footer-5"
         >
           <a
-            className="Component-footerLink-5"
+            className="Component-footerLink-6"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               TERMS
             </span>
           </a>
           <a
-            className="Component-footerLink-5"
+            className="Component-footerLink-6"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               PRIVACY
             </span>
           </a>
           <a
-            className="Component-footerLink-5"
+            className="Component-footerLink-6"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               FAIRNESS
             </span>
           </a>
           <a
-            className="Component-footerLink-5"
+            className="Component-footerLink-6"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-11 MuiTypography-caption-21 MuiTypography-colorTextSecondary-44 MuiTypography-alignCenter-34"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`when component is mounted when user is not logged in redirects correctly 1`] = `
+<div
+  name="products"
+  path="/products/homepage"
+  render={[Function]}
+>
+   - Render: 
+  <div
+    id={1}
+    name="game"
+    path="/game_setting"
+    render={[Function]}
+  >
+    Info -
+     
+    <div
+      className="Component-root-9"
+    >
+      <div
+        className="Component-header-7"
+      />
+      <div
+        className="Component-container-4"
+      >
+        <img
+          alt="Prizey"
+          className="Component-logoImage-8"
+          src="/logo.png"
+        />
+        <div
+          className="Component-caption-2"
+        />
+        <div
+          className="Component-children-3"
+        >
+          <a
+            className="Component-root-1"
+            href="/game"
+            onClick={[Function]}
+          >
+            <div
+              className="Component-root-11"
+            >
+              <div
+                aria-label="rouletteItem-0"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="trump"
+                  className="Component-img-10"
+                  pose="enter"
+                  speed={NaN}
+                  src="/mocks/trump-mask.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-1"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="sweatshirt"
+                  className="Component-img-10"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/sweatshirt.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-2"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="shoe"
+                  className="Component-img-10"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/shoe.png"
+                />
+              </div>
+            </div>
+            <br />
+            <h5
+              className="MuiTypography-root-12 MuiTypography-h5-28 MuiTypography-alignCenter-35"
+            >
+              Tap the screen, 
+              <br />
+              win what you tap.
+            </h5>
+            <button
+              aria-label="I want it"
+              className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-containedPrimary-60 MuiButton-raised-62 MuiButton-raisedPrimary-63 MuiButton-fullWidth-73"
+              disabled={false}
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-49"
+              >
+                PLAY FOR $1
+              </span>
+              <span
+                className="MuiTouchRipple-root-77"
+              />
+            </button>
+          </a>
+        </div>
+        <div
+          className="Component-footer-5"
+        >
+          <a
+            className="Component-footerLink-6"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-6"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-6"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+            >
+              FAIRNESS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-6"
+            href="https://termly.io/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               ALL PRIZES
             </span>
