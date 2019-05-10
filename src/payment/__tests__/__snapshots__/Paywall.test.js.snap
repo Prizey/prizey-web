@@ -55,7 +55,54 @@ exports[`renders correctly 1`] = `
           </svg>
         </span>
         <span
-          className="MuiTouchRipple-root-94"
+          className="MuiTouchRipple-root-95"
+        />
+      </a>
+      <a
+        aria-label="My profile"
+        className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-32"
+        href="/profile"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-19"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-23 MuiSvgIcon-fontSizeLarge-31"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <g>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+              />
+              <path
+                d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+              />
+            </g>
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-95"
         />
       </a>
     </div>
@@ -74,7 +121,7 @@ exports[`renders correctly 1`] = `
         className="Component-children-6"
       >
         <h5
-          className="MuiTypography-root-32 MuiTypography-h5-48 MuiTypography-alignCenter-55"
+          className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56"
         >
           Purchase diamonds to play, win something every time.
         </h5>
@@ -82,7 +129,7 @@ exports[`renders correctly 1`] = `
           className="Component-buttonGroup-3"
         >
           <a
-            className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-button0-1"
+            className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94 Component-button0-1"
             href="/payment/1"
             onBlur={[Function]}
             onClick={[Function]}
@@ -100,7 +147,7 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-69"
+              className="MuiButton-label-70"
             >
               <img
                 alt="diamond"
@@ -110,11 +157,11 @@ exports[`renders correctly 1`] = `
               10 Diamonds = $ 10.00
             </span>
             <span
-              className="MuiTouchRipple-root-94"
+              className="MuiTouchRipple-root-95"
             />
           </a>
           <a
-            className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-button1-2"
+            className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94 Component-button1-2"
             href="/payment/2"
             onBlur={[Function]}
             onClick={[Function]}
@@ -132,7 +179,7 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-69"
+              className="MuiButton-label-70"
             >
               <img
                 alt="diamond"
@@ -142,11 +189,11 @@ exports[`renders correctly 1`] = `
               25 Diamonds = $ 25.00
             </span>
             <span
-              className="MuiTouchRipple-root-94"
+              className="MuiTouchRipple-root-95"
             />
           </a>
           <a
-            className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93"
+            className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
             href="/payment/3"
             onBlur={[Function]}
             onClick={[Function]}
@@ -164,7 +211,7 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-69"
+              className="MuiButton-label-70"
             >
               <img
                 alt="diamond"
@@ -174,12 +221,12 @@ exports[`renders correctly 1`] = `
               50 Diamonds = $ 50.00
             </span>
             <span
-              className="MuiTouchRipple-root-94"
+              className="MuiTouchRipple-root-95"
             />
           </a>
         </div>
         <p
-          className="MuiTypography-root-32 MuiTypography-body2-40 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+          className="MuiTypography-root-33 MuiTypography-body2-41 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
         >
           By proceeding, you agree you're 18+.
         </p>
@@ -194,7 +241,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
           >
             TERMS
           </span>
@@ -206,7 +253,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
           >
             PRIVACY
           </span>
@@ -218,7 +265,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
           >
             FAIRNESS
           </span>
@@ -230,7 +277,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
           >
             ALL PRIZES
           </span>

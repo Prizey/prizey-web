@@ -55,7 +55,54 @@ exports[`renders correctly 1`] = `
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-250"
+            className="MuiTouchRipple-root-251"
+          />
+        </a>
+        <a
+          aria-label="My profile"
+          className="MuiButtonBase-root-18 MuiIconButton-root-12 Component-root-30"
+          href="/profile"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiIconButton-label-17"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-21 MuiSvgIcon-fontSizeLarge-29"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <g>
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+                />
+                <path
+                  d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+                />
+              </g>
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-251"
           />
         </a>
       </div>
@@ -74,7 +121,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-4"
         >
           <h5
-            className="MuiTypography-root-30 MuiTypography-h5-46 MuiTypography-alignCenter-53 Component-purchase-2"
+            className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54 Component-purchase-2"
           >
             <img
               alt="diamond"
@@ -96,20 +143,20 @@ exports[`renders correctly 1`] = `
                   onSubmit={[Function]}
                 >
                   <fieldset
-                    className="MuiFormControl-root-66 MuiFormControl-fullWidth-69"
+                    className="MuiFormControl-root-67 MuiFormControl-fullWidth-70"
                   >
                     <label
-                      className="MuiFormLabel-root-81 MuiInputLabel-root-70 MuiInputLabel-formControl-75 MuiInputLabel-animated-78"
+                      className="MuiFormLabel-root-82 MuiInputLabel-root-71 MuiInputLabel-formControl-76 MuiInputLabel-animated-79"
                       data-shrink={false}
                     >
                       Card Number
                     </label>
                     <div
-                      className="MuiInputBase-root-101 MuiInput-root-88 MuiInput-underline-92 MuiInputBase-fullWidth-110 MuiInput-fullWidth-95 MuiInputBase-formControl-102 MuiInput-formControl-89"
+                      className="MuiInputBase-root-102 MuiInput-root-89 MuiInput-underline-93 MuiInputBase-fullWidth-111 MuiInput-fullWidth-96 MuiInputBase-formControl-103 MuiInput-formControl-90"
                       onClick={[Function]}
                     >
                       <input
-                        className="Component-root-118"
+                        className="Component-root-119"
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
@@ -128,30 +175,30 @@ exports[`renders correctly 1`] = `
                       />
                     </div>
                     <p
-                      className="MuiFormHelperText-root-119"
+                      className="MuiFormHelperText-root-120"
                     />
                   </fieldset>
                   <div
-                    className="MuiGrid-container-127 MuiGrid-spacing-xs-24-151"
+                    className="MuiGrid-container-128 MuiGrid-spacing-xs-24-152"
                   >
                     <div
-                      className="MuiGrid-item-128 MuiGrid-grid-xs-true-155"
+                      className="MuiGrid-item-129 MuiGrid-grid-xs-true-156"
                     >
                       <fieldset
-                        className="MuiFormControl-root-66 MuiFormControl-fullWidth-69"
+                        className="MuiFormControl-root-67 MuiFormControl-fullWidth-70"
                       >
                         <label
-                          className="MuiFormLabel-root-81 MuiInputLabel-root-70 MuiInputLabel-formControl-75 MuiInputLabel-animated-78"
+                          className="MuiFormLabel-root-82 MuiInputLabel-root-71 MuiInputLabel-formControl-76 MuiInputLabel-animated-79"
                           data-shrink={false}
                         >
                           Expiry (MM / YY)
                         </label>
                         <div
-                          className="MuiInputBase-root-101 MuiInput-root-88 MuiInput-underline-92 MuiInputBase-fullWidth-110 MuiInput-fullWidth-95 MuiInputBase-formControl-102 MuiInput-formControl-89"
+                          className="MuiInputBase-root-102 MuiInput-root-89 MuiInput-underline-93 MuiInputBase-fullWidth-111 MuiInput-fullWidth-96 MuiInputBase-formControl-103 MuiInput-formControl-90"
                           onClick={[Function]}
                         >
                           <input
-                            className="Component-root-118"
+                            className="Component-root-119"
                             onBlur={[Function]}
                             onChange={[Function]}
                             onFocus={[Function]}
@@ -170,28 +217,28 @@ exports[`renders correctly 1`] = `
                           />
                         </div>
                         <p
-                          className="MuiFormHelperText-root-119"
+                          className="MuiFormHelperText-root-120"
                         />
                       </fieldset>
                     </div>
                     <div
-                      className="MuiGrid-item-128 MuiGrid-grid-xs-true-155"
+                      className="MuiGrid-item-129 MuiGrid-grid-xs-true-156"
                     >
                       <fieldset
-                        className="MuiFormControl-root-66 MuiFormControl-fullWidth-69"
+                        className="MuiFormControl-root-67 MuiFormControl-fullWidth-70"
                       >
                         <label
-                          className="MuiFormLabel-root-81 MuiInputLabel-root-70 MuiInputLabel-formControl-75 MuiInputLabel-animated-78"
+                          className="MuiFormLabel-root-82 MuiInputLabel-root-71 MuiInputLabel-formControl-76 MuiInputLabel-animated-79"
                           data-shrink={false}
                         >
                           CVC
                         </label>
                         <div
-                          className="MuiInputBase-root-101 MuiInput-root-88 MuiInput-underline-92 MuiInputBase-fullWidth-110 MuiInput-fullWidth-95 MuiInputBase-formControl-102 MuiInput-formControl-89"
+                          className="MuiInputBase-root-102 MuiInput-root-89 MuiInput-underline-93 MuiInputBase-fullWidth-111 MuiInput-fullWidth-96 MuiInputBase-formControl-103 MuiInput-formControl-90"
                           onClick={[Function]}
                         >
                           <input
-                            className="Component-root-118"
+                            className="Component-root-119"
                             onBlur={[Function]}
                             onChange={[Function]}
                             onFocus={[Function]}
@@ -210,7 +257,7 @@ exports[`renders correctly 1`] = `
                           />
                         </div>
                         <p
-                          className="MuiFormHelperText-root-119"
+                          className="MuiFormHelperText-root-120"
                         />
                       </fieldset>
                     </div>
@@ -223,7 +270,7 @@ exports[`renders correctly 1`] = `
                     }
                   />
                   <button
-                    className="MuiButtonBase-root-18 MuiButton-root-224 MuiButton-contained-235 MuiButton-containedPrimary-236 MuiButton-raised-238 MuiButton-raisedPrimary-239 MuiButton-fullWidth-249"
+                    className="MuiButtonBase-root-18 MuiButton-root-225 MuiButton-contained-236 MuiButton-containedPrimary-237 MuiButton-raised-239 MuiButton-raisedPrimary-240 MuiButton-fullWidth-250"
                     disabled={false}
                     onBlur={[Function]}
                     onContextMenu={[Function]}
@@ -240,12 +287,12 @@ exports[`renders correctly 1`] = `
                     type="submit"
                   >
                     <span
-                      className="MuiButton-label-225"
+                      className="MuiButton-label-226"
                     >
                       PAY
                     </span>
                     <span
-                      className="MuiTouchRipple-root-250"
+                      className="MuiTouchRipple-root-251"
                     />
                   </button>
                 </form>
@@ -263,7 +310,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-30 MuiTypography-caption-40 MuiTypography-colorTextSecondary-63 MuiTypography-alignCenter-53"
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
             >
               TERMS
             </span>
@@ -275,7 +322,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-30 MuiTypography-caption-40 MuiTypography-colorTextSecondary-63 MuiTypography-alignCenter-53"
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
             >
               PRIVACY
             </span>
@@ -287,7 +334,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-30 MuiTypography-caption-40 MuiTypography-colorTextSecondary-63 MuiTypography-alignCenter-53"
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
             >
               FAIRNESS
             </span>
@@ -299,7 +346,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-30 MuiTypography-caption-40 MuiTypography-colorTextSecondary-63 MuiTypography-alignCenter-53"
+              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
             >
               ALL PRIZES
             </span>

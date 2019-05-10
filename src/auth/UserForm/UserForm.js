@@ -40,6 +40,26 @@ export default withStyles(styles)(props => (
           />
         ))}
 
+        {props.showPassword && (
+          <React.Fragment>
+            <Field
+              key="password"
+              component={InputField}
+              name="password"
+              label="New Password"
+              type="password"
+            />
+
+            <Field
+              key="password_confirmation"
+              component={InputField}
+              name="password_confirmation"
+              label="Password Confirmation"
+              type="password"
+            />
+          </React.Fragment>
+        )}
+
         <div style={{ textAlign: 'center' }}>
           {props.submitting && <CircularProgress color="primary" size={36} />}
           {props.submitError && (

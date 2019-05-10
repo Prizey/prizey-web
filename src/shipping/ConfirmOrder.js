@@ -10,6 +10,7 @@ import ErrorComponent from 'design/Error/Error'
 import PlayAgain from 'design/PlayAgain'
 
 import { fieldList } from 'auth/UserForm'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 
 const styles = theme => ({
   field: {
@@ -99,7 +100,11 @@ export class ConfirmOrderComponent extends React.Component {
     }
 
     return (
-      <Layout location={location} currentUser={currentUser}>
+      <Layout
+        location={location}
+        currentUser={currentUser}
+        rightIcon={<ProfileLink />}
+      >
         {this.renderHeader(this.props)}
         {this.renderFields(this.props)}
         {this.renderBottom(this.props)}

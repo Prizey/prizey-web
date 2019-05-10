@@ -18,6 +18,8 @@ import ShippingConfirmation from 'shipping/ShippingConfirmation'
 import ShippingInfo from 'shipping/ShippingInfo'
 import ConfirmOrder from 'shipping/ConfirmOrder'
 
+import UserProfile from 'profile/UserProfile'
+
 import PaymentInfo from 'payment/PaymentInfo'
 import Paywall from 'payment/Paywall'
 
@@ -39,6 +41,8 @@ export default props => (
     <ShippingConfirmation {...props} path="/shipping-confirmation" />
     <ShippingInfo {...props} path="/shipping-info" />
     <ConfirmOrder {...props} path="/shipping-info/confirm" />
+
+    <UserProfile {...props} path="/profile" />
 
     <Paywall {...props} path="/buy-diamonds" />
     <Paywall {...props} path="/buy-more" buyMore />

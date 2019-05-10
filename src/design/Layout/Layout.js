@@ -31,7 +31,10 @@ const styles = theme => ({
     textDecoration: 'none',
   },
   header: {
+    alignItems: 'center',
+    display: 'flex',
     height: `${parseInt(theme.spacing.md, 10) * 2}px`,
+    justifyContent: 'space-between',
     padding: [
       `${parseInt(theme.spacing.xs, 10) / 2}px`,
       `${parseInt(theme.spacing.md, 10) / 2}px`,

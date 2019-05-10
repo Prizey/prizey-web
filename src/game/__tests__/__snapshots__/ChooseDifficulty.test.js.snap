@@ -14,7 +14,55 @@ exports[`renders correctly 1`] = `
   >
     <div
       className="Component-header-7"
-    />
+    >
+      <a
+        aria-label="My profile"
+        className="MuiButtonBase-root-17 MuiIconButton-root-11 Component-root-10"
+        href="/profile"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-16"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-20 MuiSvgIcon-fontSizeLarge-28"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <g>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+              />
+              <path
+                d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+              />
+            </g>
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-109"
+        />
+      </a>
+    </div>
     <div
       className="Component-container-4"
     >
@@ -30,7 +78,7 @@ exports[`renders correctly 1`] = `
         className="Component-children-3"
       >
         <h5
-          className="MuiTypography-root-10 MuiTypography-h5-26 MuiTypography-alignCenter-33"
+          className="MuiTypography-root-29 MuiTypography-h5-45 MuiTypography-alignCenter-52"
         >
           Pick a difficulty!
         </h5>
@@ -47,7 +95,7 @@ exports[`renders correctly 1`] = `
             <div>
               render - 
               <button
-                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_easy-51"
+                className="MuiButtonBase-root-17 MuiButton-root-73 MuiButton-contained-84 MuiButton-containedPrimary-85 MuiButton-raised-87 MuiButton-raisedPrimary-88 MuiButton-fullWidth-98 Component-root_easy-70"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -65,7 +113,7 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-55"
+                  className="MuiButton-label-74"
                 >
                   <div
                     name="products"
@@ -77,12 +125,12 @@ exports[`renders correctly 1`] = `
                      - Render: 
                     <img
                       alt="product"
-                      className="Component-product-49"
+                      className="Component-product-68"
                       src="/mocks/trump-mask.png"
                     />
                     RenderLoading: 
                     <div
-                      className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
+                      className="MuiCircularProgress-root-99 MuiCircularProgress-indeterminate-101 Component-loading-67"
                       role="progressbar"
                       style={
                         Object {
@@ -92,11 +140,11 @@ exports[`renders correctly 1`] = `
                       }
                     >
                       <svg
-                        className="MuiCircularProgress-svg-88"
+                        className="MuiCircularProgress-svg-104"
                         viewBox="22 22 44 44"
                       >
                         <circle
-                          className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
+                          className="MuiCircularProgress-circle-105 MuiCircularProgress-circleIndeterminate-107"
                           cx={44}
                           cy={44}
                           fill="none"
@@ -108,23 +156,23 @@ exports[`renders correctly 1`] = `
                     </div>
                   </div>
                   <span
-                    className="Component-label-47"
+                    className="Component-label-66"
                   >
                     EASY
                   </span>
                   <img
                     alt="diamond"
-                    className="Component-icon-46"
+                    className="Component-icon-65"
                     src="/icons/diamond.png"
                   />
                   <span
-                    className="Component-quantity-50"
+                    className="Component-quantity-69"
                   >
                     1
                   </span>
                 </span>
                 <span
-                  className="MuiTouchRipple-root-93"
+                  className="MuiTouchRipple-root-109"
                 />
               </button>
             </div>
@@ -139,7 +187,7 @@ exports[`renders correctly 1`] = `
             <div>
               render - 
               <button
-                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_medium-53"
+                className="MuiButtonBase-root-17 MuiButton-root-73 MuiButton-contained-84 MuiButton-containedPrimary-85 MuiButton-raised-87 MuiButton-raisedPrimary-88 MuiButton-fullWidth-98 Component-root_medium-72"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -157,7 +205,7 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-55"
+                  className="MuiButton-label-74"
                 >
                   <div
                     name="products"
@@ -169,12 +217,12 @@ exports[`renders correctly 1`] = `
                      - Render: 
                     <img
                       alt="product"
-                      className="Component-product-49"
+                      className="Component-product-68"
                       src="/mocks/trump-mask.png"
                     />
                     RenderLoading: 
                     <div
-                      className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
+                      className="MuiCircularProgress-root-99 MuiCircularProgress-indeterminate-101 Component-loading-67"
                       role="progressbar"
                       style={
                         Object {
@@ -184,11 +232,11 @@ exports[`renders correctly 1`] = `
                       }
                     >
                       <svg
-                        className="MuiCircularProgress-svg-88"
+                        className="MuiCircularProgress-svg-104"
                         viewBox="22 22 44 44"
                       >
                         <circle
-                          className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
+                          className="MuiCircularProgress-circle-105 MuiCircularProgress-circleIndeterminate-107"
                           cx={44}
                           cy={44}
                           fill="none"
@@ -200,23 +248,23 @@ exports[`renders correctly 1`] = `
                     </div>
                   </div>
                   <span
-                    className="Component-label-47"
+                    className="Component-label-66"
                   >
                     MEDIUM
                   </span>
                   <img
                     alt="diamond"
-                    className="Component-icon-46"
+                    className="Component-icon-65"
                     src="/icons/diamond.png"
                   />
                   <span
-                    className="Component-quantity-50"
+                    className="Component-quantity-69"
                   >
                     3
                   </span>
                 </span>
                 <span
-                  className="MuiTouchRipple-root-93"
+                  className="MuiTouchRipple-root-109"
                 />
               </button>
             </div>
@@ -231,7 +279,7 @@ exports[`renders correctly 1`] = `
             <div>
               render - 
               <button
-                className="MuiButtonBase-root-80 MuiButton-root-54 MuiButton-contained-65 MuiButton-containedPrimary-66 MuiButton-raised-68 MuiButton-raisedPrimary-69 MuiButton-fullWidth-79 Component-root_hard-52"
+                className="MuiButtonBase-root-17 MuiButton-root-73 MuiButton-contained-84 MuiButton-containedPrimary-85 MuiButton-raised-87 MuiButton-raisedPrimary-88 MuiButton-fullWidth-98 Component-root_hard-71"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -249,7 +297,7 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-55"
+                  className="MuiButton-label-74"
                 >
                   <div
                     name="products"
@@ -261,12 +309,12 @@ exports[`renders correctly 1`] = `
                      - Render: 
                     <img
                       alt="product"
-                      className="Component-product-49"
+                      className="Component-product-68"
                       src="/mocks/trump-mask.png"
                     />
                     RenderLoading: 
                     <div
-                      className="MuiCircularProgress-root-83 MuiCircularProgress-indeterminate-85 Component-loading-48"
+                      className="MuiCircularProgress-root-99 MuiCircularProgress-indeterminate-101 Component-loading-67"
                       role="progressbar"
                       style={
                         Object {
@@ -276,11 +324,11 @@ exports[`renders correctly 1`] = `
                       }
                     >
                       <svg
-                        className="MuiCircularProgress-svg-88"
+                        className="MuiCircularProgress-svg-104"
                         viewBox="22 22 44 44"
                       >
                         <circle
-                          className="MuiCircularProgress-circle-89 MuiCircularProgress-circleIndeterminate-91"
+                          className="MuiCircularProgress-circle-105 MuiCircularProgress-circleIndeterminate-107"
                           cx={44}
                           cy={44}
                           fill="none"
@@ -292,28 +340,28 @@ exports[`renders correctly 1`] = `
                     </div>
                   </div>
                   <span
-                    className="Component-label-47"
+                    className="Component-label-66"
                   >
                     HARD
                   </span>
                   <img
                     alt="diamond"
-                    className="Component-icon-46"
+                    className="Component-icon-65"
                     src="/icons/diamond.png"
                   />
                   <span
-                    className="Component-quantity-50"
+                    className="Component-quantity-69"
                   />
                 </span>
                 <span
-                  className="MuiTouchRipple-root-93"
+                  className="MuiTouchRipple-root-109"
                 />
               </button>
             </div>
           </div>
         </div>
         <p
-          className="MuiTypography-root-10 MuiTypography-body1-19 MuiTypography-alignCenter-33"
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignCenter-52"
         >
           The harder difficulty, 
           <br />
@@ -330,7 +378,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             TERMS
           </span>
@@ -342,7 +390,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             PRIVACY
           </span>
@@ -354,7 +402,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             FAIRNESS
           </span>
@@ -366,7 +414,7 @@ exports[`renders correctly 1`] = `
           target="_blank"
         >
           <span
-            className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             ALL PRIZES
           </span>

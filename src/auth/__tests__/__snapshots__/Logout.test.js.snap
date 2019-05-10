@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  render={[Function]}
+  renderDestroyed={[Function]}
+>
+  SignOut - 
+  <span
+    onClick={[MockFunction]}
+    style={
+      Object {
+        "color": "white",
+        "cursor": "pointer",
+      }
+    }
+  >
+    Logout
+  </span>
+  -
+  <div
+    noThrow={true}
+    to="/sign-in"
+  >
+    Redirect
+  </div>
+</div>
+`;

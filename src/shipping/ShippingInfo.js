@@ -5,6 +5,7 @@ import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
 import UserForm from 'auth/UserForm'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 
 export const ShippingForm = ({
   currentUser,
@@ -13,7 +14,11 @@ export const ShippingForm = ({
   creating,
   error,
 }) => (
-  <Layout location={location} currentUser={currentUser}>
+  <Layout
+    rightIcon={<ProfileLink />}
+    location={location}
+    currentUser={currentUser}
+  >
     <Typography align="center" variant="h5">
       Shipping Address
     </Typography>

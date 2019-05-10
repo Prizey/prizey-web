@@ -10,6 +10,7 @@ import Layout from 'design/Layout/Layout'
 import Caption from 'design/Caption/Caption'
 import ProductImage from 'design/ProductImage'
 
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import SellItBack from './SellItBack'
 
 const ClaimProductComponent = ({
@@ -27,6 +28,7 @@ const ClaimProductComponent = ({
       location={location}
       currentUser={currentUser}
       leftIcon={<UserBalance />}
+      rightIcon={<ProfileLink />}
       caption={<Caption difficulty={difficulty} />}
     >
       <Typography align="center" variant="h5">

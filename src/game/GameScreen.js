@@ -9,6 +9,7 @@ import { chooseProduct } from 'store/basket/actions'
 import UserBalance from 'design/UserBalance'
 import Caption from 'design/Caption/Caption'
 import Layout from 'design/Layout/Layout'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import Roulette from './Roulette'
 import SpeedComponent from './SpeedComponent'
 
@@ -30,6 +31,7 @@ const GameComponent = connect(
       caption={<Caption difficulty={difficulty} />}
       location={location}
       currentUser={currentUser}
+      rightIcon={<ProfileLink />}
     >
       <Roulette
         aria-label="roulette"

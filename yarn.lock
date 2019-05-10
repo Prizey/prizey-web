@@ -7736,7 +7736,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
@@ -8614,6 +8614,13 @@ seasoned-components@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/seasoned-components/-/seasoned-components-0.1.0.tgz#60263de3145fb162fda60bed220a2527a8ad8816"
   integrity sha512-QG7VrX+VNFIHfrzoyIDPr2iWtowfWYJNshCW+ubSxLu4kdoBMqsklo0KW4hs3BftRHkrRlgczdQolG7UdviIGw==
+
+seasoned-flash@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seasoned-flash/-/seasoned-flash-0.0.2.tgz#bab3b64d796ed359b7024794e90f82d15be9e095"
+  integrity sha512-YurLIBDFBrg17rAL0oen/fAihwvCA2Tu9x9qmY8HQTlZ+UdlxkZZD3lSY52GiZ6/mLP3sRFdrhJ0ccieJfe9dQ==
+  dependencies:
+    seasoned-components "^0.1.0"
 
 select-hose@^2.0.0:
   version "2.0.0"

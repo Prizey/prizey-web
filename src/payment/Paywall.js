@@ -9,6 +9,7 @@ import { Redirect, Link } from '@reach/router'
 import GoBack from 'design/GoBack/GoBack'
 import UserBalance from 'design/UserBalance'
 
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import getButtonText from './purchaseDescription'
 
 const styles = theme => ({
@@ -40,6 +41,7 @@ const PaywallScreen = withStyles(styles)(
       location={location}
       currentUser={currentUser}
       leftIcon={buyMore ? <UserBalance /> : <GoBack to="/" />}
+      rightIcon={<ProfileLink />}
     >
       <Typography align="center" variant="h5">
         {buyMore
