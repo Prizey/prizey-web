@@ -23,10 +23,10 @@ const InnerComponent = ({
 }) =>
   product ? (
     <Layout
-      leftIcon={<GoBack to="/" />}
-      caption={<Caption difficulty={difficulty} />}
       location={location}
       currentUser={currentUser}
+      leftIcon={<GoBack to="/" />}
+      caption={<Caption difficulty={difficulty} />}
     >
       <Typography align="center" variant="h5">
         {product.title}
