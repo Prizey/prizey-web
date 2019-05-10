@@ -33,7 +33,7 @@ const difficulties = [
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
-  ({ classes, settings, currentUser }) => (
+  ({ navigate, classes, settings, currentUser, setCurrentUser }) => (
     <Layout>
       <Typography align="center" variant="h5">
         Pick a difficulty!
@@ -46,6 +46,8 @@ const ChooseDifficultyScreen = withStyles(styles)(
             {...item}
             quantity={settings[`${item.difficulty}TicketAmount`]}
             availableTickets={currentUser.tickets}
+            navigate={navigate}
+            setCurrentUser={setCurrentUser}
           />
         ))}
       </div>
@@ -58,7 +60,11 @@ const ChooseDifficultyScreen = withStyles(styles)(
   ),
 )
 
-const RedirectUserWithoutBalance = ({ currentUser }) => (
+const RedirectUserWithoutBalance = ({
+  navigate,
+  currentUser,
+  setCurrentUser,
+}) => (
   <SpeedComponent
     render={settings => {
       const userCanPlay = difficulties.filter(
@@ -67,7 +73,12 @@ const RedirectUserWithoutBalance = ({ currentUser }) => (
       )
 
       return userCanPlay.length ? (
-        <ChooseDifficultyScreen settings={settings} currentUser={currentUser} />
+        <ChooseDifficultyScreen
+          navigate={navigate}
+          settings={settings}
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+        />
       ) : (
         <Redirect to="/buy-diamonds" noThrow />
       )
@@ -75,9 +86,13 @@ const RedirectUserWithoutBalance = ({ currentUser }) => (
   />
 )
 
-export default ({ currentUser }) =>
+export default ({ navigate, setCurrentUser, currentUser }) =>
   currentUser ? (
-    <RedirectUserWithoutBalance currentUser={currentUser} />
+    <RedirectUserWithoutBalance
+      navigate={navigate}
+      setCurrentUser={setCurrentUser}
+      currentUser={currentUser}
+    />
   ) : (
     <Redirect to="/sign-in" noThrow />
   )
