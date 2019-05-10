@@ -16,7 +16,7 @@ jest.mock('react-stripe-elements', () => ({
   CardExpiryElement: props => <input {...props} />,
   CardNumberElement: props => <input {...props} />,
   Elements: props => <div {...props} />,
-  StripeProvider: props => <div {...props} />,
+  StripeProvider: ({ children }) => <div>{children}</div>,
   injectStripe: Component => Component,
 }))
 
