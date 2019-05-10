@@ -5,6 +5,7 @@ import Layout from 'design/Layout/Layout'
 import { Redirect } from '@reach/router'
 
 import UserForm from 'auth/UserForm'
+import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 
 export const ShippingForm = ({
@@ -15,6 +16,7 @@ export const ShippingForm = ({
   error,
 }) => (
   <Layout
+    leftIcon={<UserBalance />}
     rightIcon={<ProfileLink />}
     location={location}
     currentUser={currentUser}
