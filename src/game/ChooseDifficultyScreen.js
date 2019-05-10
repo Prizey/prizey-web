@@ -67,9 +67,9 @@ const ChooseDifficultyScreen = withStyles(styles)(
 
 const RedirectUserWithoutBalance = ({
   navigate,
-  location,
   currentUser,
   setCurrentUser,
+  location,
 }) => (
   <SpeedComponent
     render={settings => {
