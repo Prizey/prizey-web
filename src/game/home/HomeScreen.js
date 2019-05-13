@@ -5,6 +5,8 @@ import { Button, Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 import Layout from 'design/Layout/Layout'
+import UserBalance from 'design/UserBalance'
+import ProfileLink from 'design/ProfileLink/ProfileLink'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
 
@@ -20,7 +22,22 @@ const styles = theme => ({
 
 const ScreenWithRoullette = withStyles(styles)(
   ({ classes, speed, list, multiplier, currentUser, location }) => (
-    <Layout location={location} currentUser={currentUser}>
+    <Layout
+      leftIcon={<UserBalance />}
+      rightIcon={
+        currentUser ? (
+          <ProfileLink />
+        ) : (
+          <Link to={'/sign-in'} style={{ textDecoration: 'none' }}>
+            <Typography align="left" style={{ marginRight: '20px' }}>
+              Login
+            </Typography>
+          </Link>
+        )
+      }
+      location={location}
+      currentUser={currentUser}
+    >
       <Link to={nextUrl} className={classes.root}>
         <Roulette
           aria-label="roulette"
