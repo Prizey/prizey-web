@@ -5,3 +5,9 @@ exports[`whith currentUser renders correctly 1`] = `
   Foo bar foo
 </div>
 `;
+
+exports[`whith currentUser when have a custom authenticate method renders correctly 1`] = `
+<div>
+  Foo bar foo
+</div>
+`;

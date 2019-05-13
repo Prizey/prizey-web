@@ -5,7 +5,9 @@ import { navigate } from '@reach/router'
 import Route, { getState } from '../Route'
 
 jest.mock('react-redux', () => ({
-  connect: () => Component => props => <Component {...props} state={{}} />,
+  connect: () => Component => props => (
+    <Component {...props} state={{ foo: 'bar' }} />
+  ),
 }))
 
 jest.mock('@reach/router', () => ({
@@ -65,5 +67,34 @@ describe('whith currentUser', () => {
       />,
     )
     expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
+  })
+
+  describe('when have a custom authenticate method', () => {
+    it('renders correctly', () => {
+      const tree = renderer
+        .create(
+          <Route
+            Component={Component}
+            location={location}
+            currentUser={{ id: 1, name: 'foo' }}
+            authorize={state => state.foo === 'bar'}
+          />,
+        )
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+
+    it('redirects correctly', () => {
+      renderer.create(
+        <Route
+          Component={Component}
+          location={location}
+          currentUser={{ blocked: false, id: 1, name: 'foo' }}
+          authorize={state => state.foo !== 'bar'}
+          unauthorized="/foo"
+        />,
+      )
+      expect(navigate).toHaveBeenCalled()
+    })
   })
 })
