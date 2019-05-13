@@ -7,7 +7,7 @@ export default class RegisterPageView extends React.Component {
   }
 
   componentDidMount() {
-    const { location, currentUser } = this.props
+    const { location = window.location, currentUser } = this.props
     const gaOptions = currentUser
       ? {
           gaOptions: {

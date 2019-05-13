@@ -157,12 +157,6 @@ exports[`renders correctly 1`] = `
   </div>
   <div>
     renderCreated - 
-    <div
-      noThrow={true}
-      to="/"
-    >
-      Redirect - 
-    </div>
   </div>
 </div>
 `;

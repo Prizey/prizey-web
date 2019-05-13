@@ -1,12 +1,14 @@
 import React from 'react'
 import { List } from 'croods'
 import get from 'lodash/get'
+import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
 import { Redirect } from '@reach/router'
 import CircularProgress from '@material-ui/core/CircularProgress'
 
 import TransactionComponent from 'game/TransactionComponent'
+import { insertCoin } from 'store/basket/actions'
 
 const styles = theme => ({
   icon: {
@@ -61,10 +63,14 @@ export const handleClick = ({
   return create({ amount: quantity * -1 })
 }
 
-export const afterCreate = ({ setCurrentUser, navigate, to }) => ({
-  created: { user },
-}) => {
+export const afterCreate = ({
+  setCurrentUser,
+  navigate,
+  to,
+  insertCoin: insertCoinAction,
+}) => ({ created: { user } }) => {
   setCurrentUser(user)
+  insertCoinAction()
   return navigate(to)
 }
 
@@ -103,7 +109,10 @@ export const DifficultyButtonComponent = withStyles(styles)(
   ),
 )
 
-export default props => (
+export default connect(
+  null,
+  { insertCoin },
+)(props => (
   <TransactionComponent
     render={({ error, ...renderProps }) =>
       error ? (
@@ -114,4 +123,4 @@ export default props => (
     }
     afterCreate={afterCreate(props)}
   />
-)
+))
