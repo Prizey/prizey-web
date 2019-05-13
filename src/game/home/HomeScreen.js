@@ -28,7 +28,7 @@ const ScreenWithRoullette = withStyles(styles)(
         currentUser ? (
           <ProfileLink />
         ) : (
-          <Link to={'/sign-in'} style={{ textDecoration: 'none' }}>
+          <Link to={'/sign-in?next=/game'} style={{ textDecoration: 'none' }}>
             <Typography align="left" style={{ marginRight: '20px' }}>
               Login
             </Typography>

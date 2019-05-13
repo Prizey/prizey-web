@@ -274,7 +274,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
           </p>
         </div>
         <a
-          href="/sign-in"
+          href="/sign-in?next=/game"
           onClick={[Function]}
           style={
             Object {
