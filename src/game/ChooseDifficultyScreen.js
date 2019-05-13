@@ -69,7 +69,7 @@ const ChooseDifficultyScreen = withStyles(styles)(
 
 const RedirectUserWithoutBalance = ({
   navigate,
-  currentUser,
+  currentUser = {},
   setCurrentUser,
   location,
 }) => (

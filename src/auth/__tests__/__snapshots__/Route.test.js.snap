@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`whith currentUser renders correctly 1`] = `
+<div>
+  Foo bar foo
+</div>
+`;

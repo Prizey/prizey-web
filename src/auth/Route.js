@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import { connect } from 'react-redux'
 import { navigate } from '@reach/router'
 
+export const getState = state => ({ state })
+
 export default connect(
-  state => ({ state }),
+  getState,
   null,
 )(
   ({
@@ -15,7 +17,7 @@ export default connect(
     location,
     ...props
   }) => {
-    useEffect(() => {
+    useLayoutEffect(() => {
       if (!currentUser) {
         navigate(`/sign-in?next=${location.pathname}`)
       } else if (currentUser.blocked) {
@@ -27,7 +29,7 @@ export default connect(
       }
     }, [authorize, currentUser, location, state, unauthorized])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
       window.scrollTo(0, 0)
     }, [location])
 
