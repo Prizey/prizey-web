@@ -22,9 +22,23 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
       <div
         className="Component-header-7"
       >
+        <div
+          className="Component-root-11"
+        >
+          <img
+            alt="diamond"
+            className="Component-icon-10"
+            src="/icons/diamond.png"
+          />
+          <p
+            className="MuiTypography-root-12 MuiTypography-body1-21"
+          >
+            0
+          </p>
+        </div>
         <a
           aria-label="My profile"
-          className="MuiButtonBase-root-17 MuiIconButton-root-11 Component-root-10"
+          className="MuiButtonBase-root-55 MuiIconButton-root-49 Component-root-48"
           href="/profile"
           onBlur={[Function]}
           onClick={[Function]}
@@ -42,11 +56,11 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
           tabIndex="0"
         >
           <span
-            className="MuiIconButton-label-16"
+            className="MuiIconButton-label-54"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-20 MuiSvgIcon-fontSizeLarge-28"
+              className="MuiSvgIcon-root-58 MuiSvgIcon-fontSizeLarge-66"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -66,7 +80,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-93"
+            className="MuiTouchRipple-root-95"
           />
         </a>
       </div>
@@ -90,7 +104,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             onClick={[Function]}
           >
             <div
-              className="Component-root-30"
+              className="Component-root-68"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -98,7 +112,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="trump"
-                  className="Component-img-29"
+                  className="Component-img-67"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -110,7 +124,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-29"
+                  className="Component-img-67"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -122,7 +136,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="shoe"
-                  className="Component-img-29"
+                  className="Component-img-67"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -131,7 +145,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             </div>
             <br />
             <h5
-              className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-h5-28 MuiTypography-alignCenter-35"
             >
               Tap the screen, 
               <br />
@@ -139,7 +153,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             </h5>
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-17 MuiButton-root-67 MuiButton-contained-78 MuiButton-containedPrimary-79 MuiButton-raised-81 MuiButton-raisedPrimary-82 MuiButton-fullWidth-92"
+              className="MuiButtonBase-root-55 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -156,12 +170,12 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               type="button"
             >
               <span
-                className="MuiButton-label-68"
+                className="MuiButton-label-70"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-93"
+                className="MuiTouchRipple-root-95"
               />
             </button>
           </a>
@@ -176,7 +190,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               TERMS
             </span>
@@ -188,7 +202,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               PRIVACY
             </span>
@@ -200,7 +214,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               FAIRNESS
             </span>
@@ -212,7 +226,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               ALL PRIZES
             </span>
@@ -245,52 +259,39 @@ exports[`when component is mounted when user is not logged in redirects correctl
       <div
         className="Component-header-7"
       >
-        <a
-          aria-label="My profile"
-          className="MuiButtonBase-root-17 MuiIconButton-root-11 Component-root-10"
-          href="/profile"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+        <div
+          className="Component-root-11"
         >
-          <span
-            className="MuiIconButton-label-16"
-          >
-            <svg
-              aria-hidden="true"
-              className="MuiSvgIcon-root-20 MuiSvgIcon-fontSizeLarge-28"
-              focusable="false"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <g>
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
-                />
-                <path
-                  d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
-                />
-              </g>
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root-93"
+          <img
+            alt="diamond"
+            className="Component-icon-10"
+            src="/icons/diamond.png"
           />
+          <p
+            className="MuiTypography-root-12 MuiTypography-body1-21"
+          >
+            0
+          </p>
+        </div>
+        <a
+          href="/sign-in?next=/game"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <p
+            className="MuiTypography-root-12 MuiTypography-body1-21 MuiTypography-alignLeft-34"
+            style={
+              Object {
+                "marginRight": "20px",
+              }
+            }
+          >
+            Login
+          </p>
         </a>
       </div>
       <div
@@ -313,7 +314,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             onClick={[Function]}
           >
             <div
-              className="Component-root-30"
+              className="Component-root-68"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -321,7 +322,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="trump"
-                  className="Component-img-29"
+                  className="Component-img-67"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -333,7 +334,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-29"
+                  className="Component-img-67"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -345,7 +346,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="shoe"
-                  className="Component-img-29"
+                  className="Component-img-67"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -354,7 +355,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             </div>
             <br />
             <h5
-              className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-h5-28 MuiTypography-alignCenter-35"
             >
               Tap the screen, 
               <br />
@@ -362,7 +363,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             </h5>
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-17 MuiButton-root-67 MuiButton-contained-78 MuiButton-containedPrimary-79 MuiButton-raised-81 MuiButton-raisedPrimary-82 MuiButton-fullWidth-92"
+              className="MuiButtonBase-root-55 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -379,12 +380,12 @@ exports[`when component is mounted when user is not logged in redirects correctl
               type="button"
             >
               <span
-                className="MuiButton-label-68"
+                className="MuiButton-label-70"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-93"
+                className="MuiTouchRipple-root-95"
               />
             </button>
           </a>
@@ -399,7 +400,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               TERMS
             </span>
@@ -411,7 +412,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               PRIVACY
             </span>
@@ -423,7 +424,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               FAIRNESS
             </span>
@@ -435,7 +436,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             target="_blank"
           >
             <span
-              className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
             >
               ALL PRIZES
             </span>

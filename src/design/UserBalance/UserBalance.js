@@ -19,7 +19,7 @@ const styles = theme => ({
 export const UserBalanceComponent = withStyles(styles)(({ classes, user }) => (
   <div className={classes.root}>
     <img src="/icons/diamond.png" alt="diamond" className={classes.icon} />
-    <Typography>{user.tickets}</Typography>
+    <Typography>{user ? user.tickets : '0'}</Typography>
   </div>
 ))
 
