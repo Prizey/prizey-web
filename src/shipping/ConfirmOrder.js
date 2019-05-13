@@ -8,7 +8,7 @@ import { Redirect } from '@reach/router'
 import Layout from 'design/Layout/Layout'
 import ErrorComponent from 'design/Error/Error'
 import PlayAgain from 'design/PlayAgain'
-
+import UserBalance from 'design/UserBalance'
 import { fieldList } from 'auth/UserForm'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 
@@ -102,6 +102,7 @@ export class ConfirmOrderComponent extends React.Component {
     return (
       <Layout
         location={location}
+        leftIcon={<UserBalance />}
         currentUser={currentUser}
         rightIcon={<ProfileLink />}
       >

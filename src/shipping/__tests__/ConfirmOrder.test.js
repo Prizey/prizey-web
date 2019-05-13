@@ -10,6 +10,7 @@ import ConfirmOrder, {
 } from '../ConfirmOrder'
 
 jest.mock('../../design/Layout/RegisterPageView')
+jest.mock('design/UserBalance', () => () => null)
 
 jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
   <div {...props}>{children}</div>

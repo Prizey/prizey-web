@@ -76,12 +76,18 @@ const PaywallScreen = withStyles(styles)(
   ),
 )
 
-export default ({ currentUser, buyMore = false }) =>
+export default ({ currentUser, buyMore = false, location }) =>
   currentUser ? (
     <List
       name="purchaseOptions"
       path="/purchase_options"
-      render={buttons => <PaywallScreen buyMore={buyMore} buttons={buttons} />}
+      render={buttons => (
+        <PaywallScreen
+          buyMore={buyMore}
+          buttons={buttons}
+          location={location}
+        />
+      )}
     />
   ) : (
     <Redirect

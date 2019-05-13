@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer'
 import ShippingInfo from '../ShippingInfo'
 
 jest.mock('../../design/Layout/RegisterPageView')
+jest.mock('design/UserBalance', () => () => null)
 
 jest.mock('croods', () => ({
   New: props => (
