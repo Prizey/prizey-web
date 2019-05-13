@@ -57,8 +57,16 @@ const styles = theme => ({
 })
 
 const footerLinks = [
-  { href: 'https://termly.io/en/', label: 'TERMS' },
-  { href: 'https://termly.io/en/', label: 'PRIVACY' },
+  {
+    href:
+      'https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb',
+    label: 'TERMS',
+  },
+  {
+    href:
+      'https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3',
+    label: 'PRIVACY',
+  },
   { href: 'https://termly.io/en/', label: 'FAIRNESS' },
   { href: 'https://termly.io/en/', label: 'ALL PRIZES' },
 ]
