@@ -33,8 +33,8 @@ export default connect(
       window.scrollTo(0, 0)
     }, [location])
 
-    return (
+    return currentUser ? (
       <Component {...props} currentUser={currentUser} location={location} />
-    )
+    ) : null
   },
 )
