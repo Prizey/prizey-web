@@ -11,6 +11,12 @@ const mockList = [
 jest.mock('../../design/Layout/RegisterPageView')
 jest.mock('design/UserBalance', () => () => null)
 
+jest.mock('react-redux', () => ({
+  connect: () => Component => props => (
+    <Component {...props} insertCoin={jest.fn} />
+  ),
+}))
+
 jest.mock('croods', () => ({
   Info: ({ children, ...props }) => (
     <div {...props}>

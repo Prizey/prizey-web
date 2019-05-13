@@ -425,4 +425,14 @@ exports[`renders correctly 1`] = `
 </div>
 `;
 
-exports[`when we don't have the currentUser yet redirects correctly 1`] = `null`;
+exports[`when we don't have the currentUser yet redirects correctly 1`] = `
+<div
+  id={1}
+  name="game"
+  path="/game_setting"
+  render={[Function]}
+>
+  Info -
+   
+</div>
+`;

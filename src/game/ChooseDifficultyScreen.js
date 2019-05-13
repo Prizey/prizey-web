@@ -69,7 +69,7 @@ const ChooseDifficultyScreen = withStyles(styles)(
 
 const RedirectUserWithoutBalance = ({
   navigate,
-  currentUser,
+  currentUser = {},
   setCurrentUser,
   location,
 }) => (
@@ -95,14 +95,11 @@ const RedirectUserWithoutBalance = ({
   />
 )
 
-export default ({ navigate, setCurrentUser, currentUser, location }) =>
-  currentUser ? (
-    <RedirectUserWithoutBalance
-      navigate={navigate}
-      setCurrentUser={setCurrentUser}
-      location={location}
-      currentUser={currentUser}
-    />
-  ) : (
-    <Redirect to="/sign-in" noThrow />
-  )
+export default ({ navigate, setCurrentUser, currentUser, location }) => (
+  <RedirectUserWithoutBalance
+    navigate={navigate}
+    setCurrentUser={setCurrentUser}
+    location={location}
+    currentUser={currentUser}
+  />
+)
