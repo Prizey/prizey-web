@@ -4,6 +4,7 @@ import { Provider as CroodsProvider } from 'croods'
 import { Auth, credentials as credentialsProps } from 'croods-auth'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { MuiThemeProvider } from '@material-ui/core/styles'
+import { navigate } from '@reach/router'
 
 import LoadingComponent from 'design/Loading/Loading'
 import ErrorComponent from 'design/Error/Error'
@@ -26,6 +27,11 @@ export default class extends Component {
               baseUrl={process.env.REACT_APP_API_URL}
               renderLoading={LoadingComponent}
               renderError={ErrorComponent}
+              afterFailure={response => {
+                if (response.status === 503) {
+                  navigate('/game-down')
+                }
+              }}
               {...credentialsProps}
             >
               <Auth

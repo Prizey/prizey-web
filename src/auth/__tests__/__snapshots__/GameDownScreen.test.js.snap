@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Component-root-9"
+>
+  <div
+    className="Component-header-7"
+  />
+  <div
+    className="Component-container-4"
+  >
+    <img
+      alt="Prizey"
+      className="Component-logoImage-8"
+      src="/logo.png"
+    />
+    <div
+      className="Component-caption-2"
+    />
+    <div
+      className="Component-children-3"
+    >
+      <h2
+        className="MuiTypography-root-10 MuiTypography-h2-23 MuiTypography-alignCenter-33 Component-pageTitle-1"
+      >
+        The game is currently unavailable
+      </h2>
+      <h5
+        className="MuiTypography-root-10 MuiTypography-h5-26 MuiTypography-alignCenter-33"
+      >
+        <a
+          className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
+          href="mailto:contact@prizeyapp.com"
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiButton-label-47"
+          >
+            contact@prizeyapp.com
+          </span>
+          <span
+            className="MuiTouchRipple-root-75"
+          />
+        </a>
+      </h5>
+    </div>
+    <div
+      className="Component-footer-5"
+    >
+      <a
+        className="Component-footerLink-6"
+        href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          TERMS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          PRIVACY
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          FAIRNESS
+        </span>
+      </a>
+      <a
+        className="Component-footerLink-6"
+        href="https://termly.io/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          className="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-colorTextSecondary-43 MuiTypography-alignCenter-33"
+        >
+          ALL PRIZES
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;
