@@ -32,6 +32,7 @@ describe('when the component is clicked', () => {
 
     it('call the afterCreate method', () => {
       const params = {
+        insertCoin: jest.fn(),
         navigate: jest.fn(),
         setCurrentUser: jest.fn(),
         to: '/url',

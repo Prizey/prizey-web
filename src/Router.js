@@ -1,6 +1,8 @@
 import React from 'react'
 import { Router } from '@reach/router'
 
+import Route from 'auth/Route'
+
 import ChooseDifficultyScreen from 'game/ChooseDifficultyScreen'
 import HomeScreen from 'game/home/HomeScreen'
 import GameScreen from 'game/GameScreen'
@@ -23,13 +25,36 @@ import UserProfile from 'profile/UserProfile'
 import PaymentInfo from 'payment/PaymentInfo'
 import Paywall from 'payment/Paywall'
 
+export const authorizeGameFlow = state => state.basket.paid
+export const authorizeShippingFlow = state =>
+  state.basket.paid && state.basket.product
+
 export default props => (
   <Router>
     <HomeScreen {...props} path="/" />
-    <ChooseDifficultyScreen {...props} path="/game" />
-    <GameScreen {...props} path="/game/:difficulty" />
-    <ClaimProductScreen {...props} path="/game/:difficulty/claim" />
-    <SoldBackScreen {...props} path="/sold-back" />
+
+    <Route Component={ChooseDifficultyScreen} {...props} path="/game" />
+    <Route
+      Component={GameScreen}
+      {...props}
+      path="/game/:difficulty"
+      authorize={authorizeGameFlow}
+      unauthorized="/game"
+    />
+    <Route
+      Component={ClaimProductScreen}
+      {...props}
+      authorize={authorizeShippingFlow}
+      unauthorized="/game"
+      path="/game/:difficulty/claim"
+    />
+    <Route
+      Component={SoldBackScreen}
+      {...props}
+      authorize={authorizeShippingFlow}
+      unauthorized="/game"
+      path="/sold-back"
+    />
 
     <SignInScreen {...props} path="/sign-in" />
     <SignUpScreen {...props} path="/sign-up" />
@@ -38,14 +63,32 @@ export default props => (
     <ForgotPasswordScreen {...props} path="/forgot-password" />
     <ForgotSentScreen {...props} path="/forgot-password/sent" />
 
-    <ShippingConfirmation {...props} path="/shipping-confirmation" />
-    <ShippingInfo {...props} path="/shipping-info" />
-    <ConfirmOrder {...props} path="/shipping-info/confirm" />
+    <Route
+      Component={ShippingConfirmation}
+      {...props}
+      authorize={authorizeShippingFlow}
+      unauthorized="/game"
+      path="/shipping-confirmation"
+    />
+    <Route
+      Component={ShippingInfo}
+      {...props}
+      authorize={authorizeShippingFlow}
+      unauthorized="/game"
+      path="/shipping-info"
+    />
+    <Route
+      Component={ConfirmOrder}
+      {...props}
+      authorize={authorizeShippingFlow}
+      unauthorized="/game"
+      path="/shipping-info/confirm"
+    />
 
     <UserProfile {...props} path="/profile" />
 
-    <Paywall {...props} path="/buy-diamonds" />
-    <Paywall {...props} path="/buy-more" buyMore />
-    <PaymentInfo {...props} path="/payment/:purchaseId" />
+    <Route Component={Paywall} {...props} path="/buy-diamonds" />
+    <Route Component={Paywall} {...props} path="/buy-more" buyMore />
+    <Route Component={PaymentInfo} {...props} path="/payment/:purchaseId" />
   </Router>
 )

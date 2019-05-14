@@ -46,6 +46,9 @@ it('renders correctly', () => {
 it('redirect correctly', () => {
   const params = {
     currentUser: true,
+    location: {
+      search: '',
+    },
     navigate: jest.fn(),
   }
   const tree = renderer.create(<SignInScreen {...params} />)

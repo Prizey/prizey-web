@@ -373,7 +373,7 @@ exports[`renders correctly 1`] = `
       >
         <a
           className="Component-footerLink-6"
-          href="https://termly.io/en/"
+          href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -385,7 +385,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="Component-footerLink-6"
-          href="https://termly.io/en/"
+          href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -425,4 +425,14 @@ exports[`renders correctly 1`] = `
 </div>
 `;
 
-exports[`when we don't have the currentUser yet redirects correctly 1`] = `null`;
+exports[`when we don't have the currentUser yet redirects correctly 1`] = `
+<div
+  id={1}
+  name="game"
+  path="/game_setting"
+  render={[Function]}
+>
+  Info -
+   
+</div>
+`;
