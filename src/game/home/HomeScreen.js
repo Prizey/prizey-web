@@ -13,10 +13,28 @@ import SpeedComponent from '../SpeedComponent'
 const nextUrl = '/game'
 
 const styles = theme => ({
+  login: {
+    align: 'left',
+    marginRight: '20px',
+    [theme.breakpoints.down('xs')]: {
+      marginRight: 0,
+    },
+  },
   root: {
     display: 'block',
     marginTop: parseInt(theme.spacing.lg, 10) * -0.5,
     textDecoration: 'none',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 0,
+    },
+  },
+  typography: {
+    marginBottom: theme.spacing.md,
+    marginTop: theme.spacing.md,
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: theme.spacing.xs,
+      marginTop: theme.spacing.xs,
+    },
   },
 })
 
@@ -29,9 +47,7 @@ const ScreenWithRoullette = withStyles(styles)(
           <ProfileLink />
         ) : (
           <Link to={'/sign-in?next=/game'} style={{ textDecoration: 'none' }}>
-            <Typography align="left" style={{ marginRight: '20px' }}>
-              Login
-            </Typography>
+            <Typography className={classes.login}>Login</Typography>
           </Link>
         )
       }
@@ -45,8 +61,7 @@ const ScreenWithRoullette = withStyles(styles)(
           data={list}
           multiplier={multiplier}
         />
-        <br />
-        <Typography align="center" variant="h5">
+        <Typography align="center" variant="h5" className={classes.typography}>
           Tap the screen, <br />
           win what you tap.
         </Typography>
