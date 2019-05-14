@@ -12,7 +12,9 @@ const styles = theme => ({
   root: {
     alignItems: 'center',
     display: 'flex',
-    marginTop: theme.spacing.xs,
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 0,
+    },
   },
 })
 
