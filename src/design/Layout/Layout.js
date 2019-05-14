@@ -7,6 +7,10 @@ const styles = theme => ({
   caption: {
     height: theme.spacing.lg,
     marginTop: theme.spacing.xs,
+    [theme.breakpoints.down('xs')]: {
+      marginTop: `${parseInt(theme.spacing.xs, 10) / 2}px`,
+      maxHeight: `${parseInt(theme.spacing.lg, 10) / 2}px`,
+    },
   },
   children: {
     flexGrow: 1,
@@ -20,12 +24,19 @@ const styles = theme => ({
     maxWidth: '375px',
     padding: theme.spacing.md,
     width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '320px',
+      paddingTop: theme.spacing.xs,
+    },
   },
   footer: {
     display: 'flex',
     justifyContent: 'space-between',
     marginTop: theme.spacing.md,
     width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: theme.spacing.sm,
+    },
   },
   footerLink: {
     textDecoration: 'none',
@@ -40,10 +51,17 @@ const styles = theme => ({
       `${parseInt(theme.spacing.md, 10) / 2}px`,
     ].join(' '),
     width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      height: `45px`,
+      padding: [`0`, `${parseInt(theme.spacing.md, 10) / 2}px`].join(' '),
+    },
   },
   logoImage: {
     marginBottom: theme.spacing.xs,
     width: '145px',
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: 0,
+    },
   },
   root: {
     alignItems: 'center',
