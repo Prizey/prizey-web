@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
@@ -69,47 +69,45 @@ const ChooseDifficultyScreen = withStyles(styles)(
 
 const RedirectUserWithoutBalance = ({
   navigate,
+  settings,
   currentUser = {},
   setCurrentUser,
   location,
 }) => {
-  const firstRun = useRef(true)
+  const [userCanPlay, setUserCanPlay] = useState(true)
 
-  return (
-    <SpeedComponent
-      render={settings => {
-        let userCanPlay = true
+  useLayoutEffect(() => {
+    const userDifficulties = difficulties.filter(
+      ({ difficulty }) =>
+        currentUser.tickets >= settings[`${difficulty}TicketAmount`],
+    )
 
-        if (firstRun.current) {
-          firstRun.current = false
-          userCanPlay =
-            difficulties.filter(
-              ({ difficulty }) =>
-                currentUser.tickets >= settings[`${difficulty}TicketAmount`],
-            ).length > 0
-        }
+    setUserCanPlay(userDifficulties.length > 0)
+  }, [currentUser.tickets, settings])
 
-        return userCanPlay ? (
-          <ChooseDifficultyScreen
-            location={location}
-            navigate={navigate}
-            settings={settings}
-            currentUser={currentUser}
-            setCurrentUser={setCurrentUser}
-          />
-        ) : (
-          <Redirect to="/buy-diamonds" noThrow />
-        )
-      }}
+  return userCanPlay ? (
+    <ChooseDifficultyScreen
+      location={location}
+      navigate={navigate}
+      settings={settings}
+      currentUser={currentUser}
+      setCurrentUser={setCurrentUser}
     />
+  ) : (
+    <Redirect to="/buy-diamonds" noThrow />
   )
 }
 
 export default ({ navigate, setCurrentUser, currentUser, location }) => (
-  <RedirectUserWithoutBalance
-    navigate={navigate}
-    setCurrentUser={setCurrentUser}
-    location={location}
-    currentUser={currentUser}
+  <SpeedComponent
+    render={settings => (
+      <RedirectUserWithoutBalance
+        navigate={navigate}
+        settings={settings}
+        setCurrentUser={setCurrentUser}
+        location={location}
+        currentUser={currentUser}
+      />
+    )}
   />
 )
