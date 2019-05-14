@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
@@ -72,28 +72,38 @@ const RedirectUserWithoutBalance = ({
   currentUser = {},
   setCurrentUser,
   location,
-}) => (
-  <SpeedComponent
-    render={settings => {
-      const userCanPlay = difficulties.filter(
-        ({ difficulty }) =>
-          currentUser.tickets >= settings[`${difficulty}TicketAmount`],
-      )
+}) => {
+  const firstRun = useRef(true)
 
-      return userCanPlay.length ? (
-        <ChooseDifficultyScreen
-          location={location}
-          navigate={navigate}
-          settings={settings}
-          currentUser={currentUser}
-          setCurrentUser={setCurrentUser}
-        />
-      ) : (
-        <Redirect to="/buy-diamonds" noThrow />
-      )
-    }}
-  />
-)
+  return (
+    <SpeedComponent
+      render={settings => {
+        let userCanPlay = true
+
+        if (firstRun.current) {
+          firstRun.current = false
+          userCanPlay =
+            difficulties.filter(
+              ({ difficulty }) =>
+                currentUser.tickets >= settings[`${difficulty}TicketAmount`],
+            ).length > 0
+        }
+
+        return userCanPlay ? (
+          <ChooseDifficultyScreen
+            location={location}
+            navigate={navigate}
+            settings={settings}
+            currentUser={currentUser}
+            setCurrentUser={setCurrentUser}
+          />
+        ) : (
+          <Redirect to="/buy-diamonds" noThrow />
+        )
+      }}
+    />
+  )
+}
 
 export default ({ navigate, setCurrentUser, currentUser, location }) => (
   <RedirectUserWithoutBalance
