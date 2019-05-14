@@ -15,6 +15,7 @@ import StripeField from 'design/StripeField'
 import CreditCardItem from './CreditCardItem'
 
 export const handleSubmit = ({
+  selectedCard,
   setError,
   stripe,
   create,
@@ -23,12 +24,19 @@ export const handleSubmit = ({
   evt.preventDefault()
 
   try {
-    const result = await stripe.createToken({ type: 'card' })
-    if (result.error) {
-      setError(result.error.message)
+    if (selectedCard === 'new') {
+      const result = await stripe.createToken({ type: 'card' })
+      if (result.error) {
+        setError(result.error.message)
+      } else {
+        create({
+          credit_card_token: result.token.id,
+          purchase_option_id: purchase.id,
+        })
+      }
     } else {
       create({
-        credit_card_token: result.token.id,
+        credit_card_source: selectedCard,
         purchase_option_id: purchase.id,
       })
     }
@@ -39,7 +47,7 @@ export const handleSubmit = ({
   return false
 }
 
-const CreditCardFields = () => (
+export const CreditCardFields = () => (
   <React.Fragment>
     <StripeField label="Card Number" component={CardNumberElement} />
 
@@ -56,10 +64,12 @@ const CreditCardFields = () => (
 
 const styles = () => ({
   list: {
-    maxHeight: '35vh',
-    overflow: 'auto',
+    maxHeight: '45vh',
+    overflowY: 'auto',
   },
 })
+
+export const handleSelectCard = (dispatch, card) => () => dispatch(card)
 
 export const CreditCardComponent = withStyles(styles)(
   ({ cards, classes, creating, error, ...props }) => {
@@ -75,18 +85,18 @@ export const CreditCardComponent = withStyles(styles)(
                 key={card.id}
                 brand={card.brand}
                 digits={card.last4}
-                onClick={() => setSelectedCard(card.id)}
+                onClick={handleSelectCard(setSelectedCard, card.id)}
                 selected={selectedCard === card.id}
               />
             ))}
             <CreditCardItem
-              onClick={() => setSelectedCard('new')}
+              onClick={handleSelectCard(setSelectedCard, 'new')}
               brand="Use another card"
               selected={selectedCard === 'new'}
             />
           </List>
-          {selectedCard === 'new' && <CreditCardFields />}
         </div>
+        {selectedCard === 'new' && <CreditCardFields />}
 
         <div style={{ textAlign: 'center' }}>
           {creating && <CircularProgress color="primary" size={36} />}
