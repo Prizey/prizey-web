@@ -74,16 +74,17 @@ const RedirectUserWithoutBalance = ({
   setCurrentUser,
   location,
 }) => {
+  const { tickets } = currentUser
   const [userCanPlay, setUserCanPlay] = useState(true)
 
   useLayoutEffect(() => {
     const userDifficulties = difficulties.filter(
-      ({ difficulty }) =>
-        currentUser.tickets >= settings[`${difficulty}TicketAmount`],
+      ({ difficulty }) => tickets >= settings[`${difficulty}TicketAmount`],
     )
 
     setUserCanPlay(userDifficulties.length > 0)
-  }, [currentUser.tickets, settings])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return userCanPlay ? (
     <ChooseDifficultyScreen
