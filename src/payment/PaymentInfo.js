@@ -36,7 +36,15 @@ export const afterPurchase = ({
 }
 
 export const PaymentInfoComponent = withStyles(styles)(
-  ({ navigate, currentUser, setCurrentUser, classes, purchase, location }) => (
+  ({
+    navigate,
+    currentUser,
+    setCurrentUser,
+    cards,
+    classes,
+    purchase,
+    location,
+  }) => (
     <StripeProvider apiKey={process.env.REACT_APP_STRIPE_TOKEN}>
       <Layout
         location={location}
@@ -57,7 +65,7 @@ export const PaymentInfoComponent = withStyles(styles)(
           name="payments"
           render={props => (
             <Elements>
-              <CreditCardForm purchase={purchase} {...props} />
+              <CreditCardForm purchase={purchase} cards={cards} {...props} />
             </Elements>
           )}
           afterCreate={afterPurchase({
@@ -70,6 +78,13 @@ export const PaymentInfoComponent = withStyles(styles)(
       </Layout>
     </StripeProvider>
   ),
+)
+
+export const CardListComponent = props => (
+  <List
+    name="cards"
+    render={cards => <PaymentInfoComponent {...props} cards={cards} />}
+  />
 )
 
 export const reducePurchaseState = (list, id) =>
@@ -87,7 +102,7 @@ export default ({
       name="purchaseOptions"
       path="/purchase_options"
       render={purchases => (
-        <PaymentInfoComponent
+        <CardListComponent
           location={location}
           navigate={navigate}
           currentUser={currentUser}
