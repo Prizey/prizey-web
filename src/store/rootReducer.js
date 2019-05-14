@@ -6,6 +6,7 @@ import basketReducer from './basket/reducer'
 const reducers = {
   auth: createAuthReducer(),
   basket: basketReducer,
+  cards: createReducer('cards'),
   game: createReducer('game'),
   orders: createReducer('orders'),
   payments: createReducer('payments'),
