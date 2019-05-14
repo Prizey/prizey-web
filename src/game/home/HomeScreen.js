@@ -32,7 +32,7 @@ const styles = theme => ({
     marginBottom: theme.spacing.md,
     marginTop: theme.spacing.md,
     [theme.breakpoints.down('xs')]: {
-      marginBottom: theme.spacing.xs,
+      marginBottom: 0,
       marginTop: theme.spacing.xs,
     },
   },

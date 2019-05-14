@@ -8,7 +8,7 @@ const styles = theme => ({
     height: theme.spacing.lg,
     marginTop: theme.spacing.xs,
     [theme.breakpoints.down('xs')]: {
-      marginTop: `${parseInt(theme.spacing.xs, 10) / 2}px`,
+      marginTop: theme.spacing.xs,
       maxHeight: `${parseInt(theme.spacing.lg, 10) / 2}px`,
     },
   },
