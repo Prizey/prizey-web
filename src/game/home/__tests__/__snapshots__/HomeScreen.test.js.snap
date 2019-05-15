@@ -87,11 +87,22 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
       <div
         className="Component-container-6"
       >
-        <img
-          alt="Prizey"
-          className="Component-logoImage-10"
-          src="/logo.png"
-        />
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <img
+            alt="Prizey"
+            className="Component-logoImage-10"
+            src="/logo.png"
+          />
+        </a>
         <div
           className="Component-caption-4"
         />
@@ -291,11 +302,22 @@ exports[`when component is mounted when user is not logged in redirects correctl
       <div
         className="Component-container-6"
       >
-        <img
-          alt="Prizey"
-          className="Component-logoImage-10"
-          src="/logo.png"
-        />
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <img
+            alt="Prizey"
+            className="Component-logoImage-10"
+            src="/logo.png"
+          />
+        </a>
         <div
           className="Component-caption-4"
         />

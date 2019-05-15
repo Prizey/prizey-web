@@ -239,11 +239,22 @@ exports[`when component is mounted renders correctly 1`] = `
         <div
           className="Component-container-5"
         >
-          <img
-            alt="Prizey"
-            className="Component-logoImage-9"
-            src="/logo.png"
-          />
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+          >
+            <img
+              alt="Prizey"
+              className="Component-logoImage-9"
+              src="/logo.png"
+            />
+          </a>
           <div
             className="Component-caption-3"
           />
