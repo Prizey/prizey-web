@@ -16,7 +16,7 @@ import theme from './theme'
 
 import 'App.css'
 
-const checkStatus = response => {
+export const checkStatus = response => {
   if (response.status === 503) {
     navigate('/game-down')
   } else if (response.status === 403) {

@@ -110,5 +110,6 @@ exports[`renders correctly 1`] = `
       renderLoading={[Function]}
     />
   </div>
+  AfterFailure - 
 </div>
 `;
