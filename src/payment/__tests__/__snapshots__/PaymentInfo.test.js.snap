@@ -653,7 +653,7 @@ exports[`when component is mounted renders correctly 1`] = `
             </a>
             <a
               className="Component-footerLink-7"
-              href="https://termly.io/en/"
+              href="/all-prizes"
               rel="noopener noreferrer"
               target="_blank"
             >

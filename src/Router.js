@@ -8,6 +8,7 @@ import HomeScreen from 'game/home/HomeScreen'
 import GameScreen from 'game/GameScreen'
 import ClaimProductScreen from 'game/ClaimProductScreen'
 import SoldBackScreen from 'game/SoldBackScreen'
+import AllPrizesScreen from 'game/AllPrizesScreen'
 
 import SignInScreen from 'auth/SignInScreen'
 import SignUpScreen from 'auth/SignUpScreen'
@@ -56,6 +57,7 @@ export default props => (
       unauthorized="/game"
       path="/sold-back"
     />
+    <AllPrizesScreen {...props} path="/all-prizes" />
 
     <SignInScreen {...props} path="/sign-in" />
     <SignUpScreen {...props} path="/sign-up" />

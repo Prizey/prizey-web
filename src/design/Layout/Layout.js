@@ -86,7 +86,7 @@ const footerLinks = [
     label: 'PRIVACY',
   },
   { href: 'https://termly.io/en/', label: 'FAIRNESS' },
-  { href: 'https://termly.io/en/', label: 'ALL PRIZES' },
+  { href: '/all-prizes', label: 'ALL PRIZES' },
 ]
 
 export default withStyles(styles)(
