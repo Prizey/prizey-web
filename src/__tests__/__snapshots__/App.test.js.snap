@@ -2,6 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
+  afterFailure={[Function]}
   baseUrl="https://prizey-api-staging.herokuapp.com/"
   foo="bar"
   renderError={[Function]}
@@ -101,6 +102,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <h5
+      afterFailure={[Function]}
       baseUrl="https://prizey-api-staging.herokuapp.com/"
       className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-colorError-45"
       foo="bar"
@@ -108,5 +110,6 @@ exports[`renders correctly 1`] = `
       renderLoading={[Function]}
     />
   </div>
+  AfterFailure - 
 </div>
 `;
