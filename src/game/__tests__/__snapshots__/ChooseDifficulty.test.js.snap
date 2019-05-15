@@ -409,7 +409,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="Component-footerLink-6"
-          href="https://termly.io/en/"
+          href="/all-prizes"
           rel="noopener noreferrer"
           target="_blank"
         >
