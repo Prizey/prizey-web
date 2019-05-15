@@ -20,8 +20,6 @@ export default connect(
     useLayoutEffect(() => {
       if (!currentUser) {
         navigate(`/sign-in?next=${location.pathname}`)
-      } else if (currentUser.blocked) {
-        navigate('/blocked')
       }
 
       if (authorize) {
