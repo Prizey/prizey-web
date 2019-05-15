@@ -13,6 +13,7 @@ import AllPrizesScreen from 'game/AllPrizesScreen'
 import SignInScreen from 'auth/SignInScreen'
 import SignUpScreen from 'auth/SignUpScreen'
 import UserBlockedScreen from 'auth/UserBlockedScreen'
+import GameDownScreen from 'auth/GameDownScreen'
 import ResetPasswordScreen from 'auth/ResetPasswordScreen'
 import ForgotPasswordScreen from 'auth/ForgotPasswordScreen'
 import ForgotSentScreen from 'auth/ForgotSentScreen'
@@ -61,6 +62,7 @@ export default props => (
     <SignInScreen {...props} path="/sign-in" />
     <SignUpScreen {...props} path="/sign-up" />
     <UserBlockedScreen {...props} path="/blocked" />
+    <GameDownScreen {...props} path="/game-down" />
     <ResetPasswordScreen {...props} path="/reset-password" />
     <ForgotPasswordScreen {...props} path="/forgot-password" />
     <ForgotSentScreen {...props} path="/forgot-password/sent" />

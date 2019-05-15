@@ -47,17 +47,6 @@ describe('whith currentUser', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('redirect to blocked when the currentUser is blocked', () => {
-    renderer.create(
-      <Route
-        Component={Component}
-        location={location}
-        currentUser={{ blocked: true, id: 1, name: 'foo' }}
-      />,
-    )
-    expect(navigate).toHaveBeenCalledWith('/blocked')
-  })
-
   it('the page should be scrolled to the top', () => {
     renderer.create(
       <Route
