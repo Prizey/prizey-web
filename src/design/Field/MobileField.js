@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input, FormHelperText } from '@material-ui/core'
 
-export default ({ field, form, type = 'text', label, ...props }) => (
+export default ({ field, form, type = 'text', ...props }) => (
   <React.Fragment>
     <Input
       {...props}
