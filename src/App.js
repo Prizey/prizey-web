@@ -16,6 +16,13 @@ import theme from './theme'
 
 import 'App.css'
 
+const checkStatus = response => {
+  if (response.status === 503) {
+    navigate('/game-down')
+  } else if (response.status === 403) {
+    navigate('/blocked')
+  }
+}
 export default class extends Component {
   render() {
     return (
@@ -27,14 +34,7 @@ export default class extends Component {
               baseUrl={process.env.REACT_APP_API_URL}
               renderLoading={LoadingComponent}
               renderError={ErrorComponent}
-              afterFailure={response => {
-                if (response.status === 503) {
-                  navigate('/game-down')
-                }
-                if (response.status === 403) {
-                  navigate('/blocked')
-                }
-              }}
+              afterFailure={checkStatus}
               {...credentialsProps}
             >
               <Auth
