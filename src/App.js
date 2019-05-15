@@ -31,6 +31,9 @@ export default class extends Component {
                 if (response.status === 503) {
                   navigate('/game-down')
                 }
+                if (response.status === 403) {
+                  navigate('/blocked')
+                }
               }}
               {...credentialsProps}
             >
