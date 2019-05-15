@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
+import { Link } from '@reach/router'
 import RegisterPageView from './RegisterPageView'
 
 const styles = theme => ({
@@ -85,7 +86,7 @@ const footerLinks = [
       'https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3',
     label: 'PRIVACY',
   },
-  { href: 'https://termly.io/en/', label: 'FAIRNESS' },
+  { href: '/faq', label: 'FAIRNESS' },
   { href: 'https://termly.io/en/', label: 'ALL PRIZES' },
 ]
 
@@ -113,21 +114,21 @@ export default withStyles(styles)(
         <div className={classes.children}>{children}</div>
         <div className={classes.footer}>
           {footerLinks.map(link => (
-            <a
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={link.label}
+            <Link
+              to={link.href}
               className={classes.footerLink}
+              target={'_blank'}
+              rel={'noopener noreferer'}
+              key={link.label}
             >
               <Typography
                 align="center"
-                variant="caption"
                 color="textSecondary"
+                variant="caption"
               >
                 {link.label}
               </Typography>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
