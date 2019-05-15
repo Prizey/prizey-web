@@ -220,7 +220,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
           </a>
           <a
             className="Component-footerLink-8"
-            href="https://termly.io/en/"
+            href="/all-prizes"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -424,7 +424,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
           </a>
           <a
             className="Component-footerLink-8"
-            href="https://termly.io/en/"
+            href="/all-prizes"
             rel="noopener noreferrer"
             target="_blank"
           >
