@@ -69,9 +69,9 @@ export const afterCreate = ({
   to,
   insertCoin: insertCoinAction,
 }) => ({ created: { user } }) => {
+  navigate(to)
   setCurrentUser(user)
   insertCoinAction()
-  return navigate(to)
 }
 
 export const DifficultyButtonComponent = withStyles(styles)(

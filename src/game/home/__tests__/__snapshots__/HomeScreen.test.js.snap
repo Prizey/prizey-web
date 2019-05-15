@@ -17,28 +17,28 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
     Info -
      
     <div
-      className="Component-root-9"
+      className="Component-root-11"
     >
       <div
-        className="Component-header-7"
+        className="Component-header-9"
       >
         <div
-          className="Component-root-11"
+          className="Component-root-13"
         >
           <img
             alt="diamond"
-            className="Component-icon-10"
+            className="Component-icon-12"
             src="/icons/diamond.png"
           />
           <p
-            className="MuiTypography-root-12 MuiTypography-body1-21"
+            className="MuiTypography-root-14 MuiTypography-body1-23"
           >
             0
           </p>
         </div>
         <a
           aria-label="My profile"
-          className="MuiButtonBase-root-55 MuiIconButton-root-49 Component-root-48"
+          className="MuiButtonBase-root-57 MuiIconButton-root-51 Component-root-50"
           href="/profile"
           onBlur={[Function]}
           onClick={[Function]}
@@ -56,11 +56,11 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
           tabIndex="0"
         >
           <span
-            className="MuiIconButton-label-54"
+            className="MuiIconButton-label-56"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-58 MuiSvgIcon-fontSizeLarge-66"
+              className="MuiSvgIcon-root-60 MuiSvgIcon-fontSizeLarge-68"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -80,31 +80,31 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-95"
+            className="MuiTouchRipple-root-97"
           />
         </a>
       </div>
       <div
-        className="Component-container-4"
+        className="Component-container-6"
       >
         <img
           alt="Prizey"
-          className="Component-logoImage-8"
+          className="Component-logoImage-10"
           src="/logo.png"
         />
         <div
-          className="Component-caption-2"
+          className="Component-caption-4"
         />
         <div
-          className="Component-children-3"
+          className="Component-children-5"
         >
           <a
-            className="Component-root-1"
+            className="Component-root-2"
             href="/game"
             onClick={[Function]}
           >
             <div
-              className="Component-root-68"
+              className="Component-root-70"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -112,7 +112,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="trump"
-                  className="Component-img-67"
+                  className="Component-img-69"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -124,7 +124,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-67"
+                  className="Component-img-69"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -136,16 +136,15 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="shoe"
-                  className="Component-img-67"
+                  className="Component-img-69"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
                 />
               </div>
             </div>
-            <br />
             <h5
-              className="MuiTypography-root-12 MuiTypography-h5-28 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-h5-30 MuiTypography-alignCenter-37 Component-typography-3"
             >
               Tap the screen, 
               <br />
@@ -153,7 +152,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             </h5>
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-55 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
+              className="MuiButtonBase-root-57 MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-fullWidth-96"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -170,63 +169,63 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               type="button"
             >
               <span
-                className="MuiButton-label-70"
+                className="MuiButton-label-72"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-95"
+                className="MuiTouchRipple-root-97"
               />
             </button>
           </a>
         </div>
         <div
-          className="Component-footer-5"
+          className="Component-footer-7"
         >
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               TERMS
             </span>
           </a>
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               PRIVACY
             </span>
           </a>
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               FAIRNESS
             </span>
           </a>
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               ALL PRIZES
             </span>
@@ -254,21 +253,21 @@ exports[`when component is mounted when user is not logged in redirects correctl
     Info -
      
     <div
-      className="Component-root-9"
+      className="Component-root-11"
     >
       <div
-        className="Component-header-7"
+        className="Component-header-9"
       >
         <div
-          className="Component-root-11"
+          className="Component-root-13"
         >
           <img
             alt="diamond"
-            className="Component-icon-10"
+            className="Component-icon-12"
             src="/icons/diamond.png"
           />
           <p
-            className="MuiTypography-root-12 MuiTypography-body1-21"
+            className="MuiTypography-root-14 MuiTypography-body1-23"
           >
             0
           </p>
@@ -283,38 +282,33 @@ exports[`when component is mounted when user is not logged in redirects correctl
           }
         >
           <p
-            className="MuiTypography-root-12 MuiTypography-body1-21 MuiTypography-alignLeft-34"
-            style={
-              Object {
-                "marginRight": "20px",
-              }
-            }
+            className="MuiTypography-root-14 MuiTypography-body1-23 Component-login-1"
           >
             Login
           </p>
         </a>
       </div>
       <div
-        className="Component-container-4"
+        className="Component-container-6"
       >
         <img
           alt="Prizey"
-          className="Component-logoImage-8"
+          className="Component-logoImage-10"
           src="/logo.png"
         />
         <div
-          className="Component-caption-2"
+          className="Component-caption-4"
         />
         <div
-          className="Component-children-3"
+          className="Component-children-5"
         >
           <a
-            className="Component-root-1"
+            className="Component-root-2"
             href="/game"
             onClick={[Function]}
           >
             <div
-              className="Component-root-68"
+              className="Component-root-70"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -322,7 +316,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="trump"
-                  className="Component-img-67"
+                  className="Component-img-69"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -334,7 +328,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-67"
+                  className="Component-img-69"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -346,16 +340,15 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="shoe"
-                  className="Component-img-67"
+                  className="Component-img-69"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
                 />
               </div>
             </div>
-            <br />
             <h5
-              className="MuiTypography-root-12 MuiTypography-h5-28 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-h5-30 MuiTypography-alignCenter-37 Component-typography-3"
             >
               Tap the screen, 
               <br />
@@ -363,7 +356,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             </h5>
             <button
               aria-label="I want it"
-              className="MuiButtonBase-root-55 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
+              className="MuiButtonBase-root-57 MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-fullWidth-96"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -380,63 +373,63 @@ exports[`when component is mounted when user is not logged in redirects correctl
               type="button"
             >
               <span
-                className="MuiButton-label-70"
+                className="MuiButton-label-72"
               >
                 PLAY FOR $1
               </span>
               <span
-                className="MuiTouchRipple-root-95"
+                className="MuiTouchRipple-root-97"
               />
             </button>
           </a>
         </div>
         <div
-          className="Component-footer-5"
+          className="Component-footer-7"
         >
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               TERMS
             </span>
           </a>
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               PRIVACY
             </span>
           </a>
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               FAIRNESS
             </span>
           </a>
           <a
-            className="Component-footerLink-6"
+            className="Component-footerLink-8"
             href="https://termly.io/en/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-12 MuiTypography-caption-22 MuiTypography-colorTextSecondary-45 MuiTypography-alignCenter-35"
+              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
               ALL PRIZES
             </span>
