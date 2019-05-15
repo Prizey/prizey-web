@@ -13,7 +13,7 @@ const createGameDownPage = withStyles(styles)(
   ({ classes, currentUser, location }) => (
     <Layout location={location} currentUser={currentUser}>
       <Typography align="center" variant="h2" className={classes.pageTitle}>
-        The game is currently unavailable
+        The game is closed to maintanance
       </Typography>
 
       <Typography align="center" variant="h5">
