@@ -29,11 +29,7 @@ const UserProfile = ({
       </Logout>
     }
   >
-    <Typography
-      align="center"
-      variant="h5"
-      style={{ marginBottom: '50px', marginTop: '-50px' }}
-    >
+    <Typography align="center" variant="h5" style={{ marginTop: '-20px' }}>
       Profile
     </Typography>
 

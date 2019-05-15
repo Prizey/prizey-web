@@ -11,11 +11,14 @@ export const getItemSpeed = (price, speed, multiplier) => {
   return Math.min(Math.max(deltaSpeed, 80), 2000)
 }
 
-const styles = () => ({
+const styles = theme => ({
   img: {
     maxWidth: '300px',
     position: 'absolute',
     width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '250px',
+    },
   },
   root: {
     height: '300px',
@@ -23,6 +26,10 @@ const styles = () => ({
     maxWidth: '300px',
     position: 'relative',
     width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      height: '250px',
+      maxWidth: '250px',
+    },
   },
 })
 

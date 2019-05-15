@@ -102,8 +102,7 @@ exports[`renders correctly 1`] = `
             className="MuiTypography-root-28 MuiTypography-h5-44 MuiTypography-alignCenter-51"
             style={
               Object {
-                "marginBottom": "50px",
-                "marginTop": "-50px",
+                "marginTop": "-20px",
               }
             }
           >
