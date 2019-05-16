@@ -77,11 +77,7 @@ const AllPrizesScreen = withStyles(styles)(
                 name="products"
                 path={`/products/${difficulty.name}`}
                 renderLoading={() => (
-                  <CircularProgress
-                    color="inherit"
-                    size={30}
-                    className={classes.loading}
-                  />
+                  <CircularProgress color="primary" size={30} />
                 )}
                 render={products =>
                   products.map(item => (
