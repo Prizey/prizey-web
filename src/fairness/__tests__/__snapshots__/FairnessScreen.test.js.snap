@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  id="1"
+  name="game"
+  path="/game_setting"
+  render={[Function]}
+>
+  Info -
+   
+  <div
+    className="Component-root-9"
+  >
+    <div
+      className="Component-header-7"
+    >
+      <a
+        aria-current="page"
+        aria-label="Go Back"
+        className="MuiButtonBase-root-17 MuiIconButton-root-11 Component-root-10"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-16"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-20 MuiSvgIcon-fontSizeLarge-28"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-65"
+        />
+      </a>
+    </div>
+    <div
+      className="Component-container-4"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <img
+          alt="Prizey"
+          className="Component-logoImage-8"
+          src="/logo.png"
+        />
+      </a>
+      <div
+        className="Component-caption-2"
+      />
+      <div
+        className="Component-children-3"
+      >
+        <p
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignCenter-52 Component-root-1"
+        >
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "bla foo",
+              }
+            }
+          />
+        </p>
+      </div>
+      <div
+        className="Component-footer-5"
+      >
+        <a
+          className="Component-footerLink-6"
+          href="/https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
+          >
+            TERMS
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-6"
+          href="/https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
+          >
+            PRIVACY
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-6"
+          href="/faq"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
+          >
+            FAIRNESS
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-6"
+          href="/all-prizes"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
+          >
+            ALL PRIZES
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

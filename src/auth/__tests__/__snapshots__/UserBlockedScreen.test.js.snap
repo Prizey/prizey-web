@@ -75,8 +75,9 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="Component-footerLink-6"
-        href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
-        rel="noopener noreferrer"
+        href="/https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+        onClick={[Function]}
+        rel="noopener noreferer"
         target="_blank"
       >
         <span
@@ -87,8 +88,9 @@ exports[`renders correctly 1`] = `
       </a>
       <a
         className="Component-footerLink-6"
-        href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
-        rel="noopener noreferrer"
+        href="/https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+        onClick={[Function]}
+        rel="noopener noreferer"
         target="_blank"
       >
         <span
@@ -99,8 +101,9 @@ exports[`renders correctly 1`] = `
       </a>
       <a
         className="Component-footerLink-6"
-        href="https://termly.io/en/"
-        rel="noopener noreferrer"
+        href="/faq"
+        onClick={[Function]}
+        rel="noopener noreferer"
         target="_blank"
       >
         <span
@@ -112,7 +115,8 @@ exports[`renders correctly 1`] = `
       <a
         className="Component-footerLink-6"
         href="/all-prizes"
-        rel="noopener noreferrer"
+        onClick={[Function]}
+        rel="noopener noreferer"
         target="_blank"
       >
         <span
