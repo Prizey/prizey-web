@@ -372,7 +372,7 @@ exports[`renders correctly 1`] = `
             <span
               className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
             >
-              FAIRNESS
+              FAIRNESS / FAQ
             </span>
           </a>
           <a
