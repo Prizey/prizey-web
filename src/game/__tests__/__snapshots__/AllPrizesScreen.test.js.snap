@@ -187,7 +187,7 @@ exports[`renders correctly 1`] = `
               </li>
               RenderLoading: 
               <div
-                className="MuiCircularProgress-root-103 MuiCircularProgress-indeterminate-105"
+                className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
                 role="progressbar"
                 style={
                   Object {
@@ -317,7 +317,7 @@ exports[`renders correctly 1`] = `
               </li>
               RenderLoading: 
               <div
-                className="MuiCircularProgress-root-103 MuiCircularProgress-indeterminate-105"
+                className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
                 role="progressbar"
                 style={
                   Object {
@@ -447,7 +447,7 @@ exports[`renders correctly 1`] = `
               </li>
               RenderLoading: 
               <div
-                className="MuiCircularProgress-root-103 MuiCircularProgress-indeterminate-105"
+                className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
                 role="progressbar"
                 style={
                   Object {
