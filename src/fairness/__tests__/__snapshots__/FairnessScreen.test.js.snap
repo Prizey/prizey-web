@@ -10,15 +10,15 @@ exports[`renders correctly 1`] = `
   Info -
    
   <div
-    className="Component-root-8"
+    className="Component-root-9"
   >
     <div
-      className="Component-header-6"
+      className="Component-header-7"
     >
       <a
         aria-current="page"
         aria-label="Go Back"
-        className="MuiButtonBase-root-16 MuiIconButton-root-10 Component-root-9"
+        className="MuiButtonBase-root-17 MuiIconButton-root-11 Component-root-10"
         href="/"
         onBlur={[Function]}
         onClick={[Function]}
@@ -36,11 +36,11 @@ exports[`renders correctly 1`] = `
         tabIndex="0"
       >
         <span
-          className="MuiIconButton-label-15"
+          className="MuiIconButton-label-16"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-19 MuiSvgIcon-fontSizeLarge-27"
+            className="MuiSvgIcon-root-20 MuiSvgIcon-fontSizeLarge-28"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -55,12 +55,12 @@ exports[`renders correctly 1`] = `
           </svg>
         </span>
         <span
-          className="MuiTouchRipple-root-64"
+          className="MuiTouchRipple-root-65"
         />
       </a>
     </div>
     <div
-      className="Component-container-3"
+      className="Component-container-4"
     >
       <a
         aria-current="page"
@@ -74,18 +74,18 @@ exports[`renders correctly 1`] = `
       >
         <img
           alt="Prizey"
-          className="Component-logoImage-7"
+          className="Component-logoImage-8"
           src="/logo.png"
         />
       </a>
       <div
-        className="Component-caption-1"
+        className="Component-caption-2"
       />
       <div
-        className="Component-children-2"
+        className="Component-children-3"
       >
         <p
-          className="MuiTypography-root-28 MuiTypography-body1-37 MuiTypography-alignCenter-51"
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignCenter-52 Component-root-1"
         >
           <div
             dangerouslySetInnerHTML={
@@ -97,56 +97,56 @@ exports[`renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="Component-footer-4"
+        className="Component-footer-5"
       >
         <a
-          className="Component-footerLink-5"
+          className="Component-footerLink-6"
           href="/https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             TERMS
           </span>
         </a>
         <a
-          className="Component-footerLink-5"
+          className="Component-footerLink-6"
           href="/https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             PRIVACY
           </span>
         </a>
         <a
-          className="Component-footerLink-5"
+          className="Component-footerLink-6"
           href="/faq"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             FAIRNESS
           </span>
         </a>
         <a
-          className="Component-footerLink-5"
+          className="Component-footerLink-6"
           href="/all-prizes"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-28 MuiTypography-caption-38 MuiTypography-colorTextSecondary-61 MuiTypography-alignCenter-51"
+            className="MuiTypography-root-29 MuiTypography-caption-39 MuiTypography-colorTextSecondary-62 MuiTypography-alignCenter-52"
           >
             ALL PRIZES
           </span>

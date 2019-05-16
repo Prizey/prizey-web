@@ -91,7 +91,7 @@ export default props => (
     />
 
     <UserProfile {...props} path="/profile" />
-    <FairnessScreen {...props} path="/fairness" />
+    <FairnessScreen {...props} path="/faq" />
 
     <Route Component={Paywall} {...props} path="/buy-diamonds" />
     <Route Component={Paywall} {...props} path="/buy-more" buyMore />
