@@ -26,11 +26,21 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-container-78"
       >
-        <img
-          alt="Prizey"
-          className="Component-logoImage-82"
-          src="/logo.png"
-        />
+        <div
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+          to="/"
+        >
+          Link - 
+          <img
+            alt="Prizey"
+            className="Component-logoImage-82"
+            src="/logo.png"
+          />
+        </div>
         <div
           className="Component-caption-76"
         />
@@ -145,7 +155,7 @@ exports[`renders correctly 1`] = `
             className="Component-footerLink-80"
             rel="noopener noreferer"
             target="_blank"
-            to="https://termly.io/en/"
+            to="/all-prizes"
           >
             Link - 
             <span

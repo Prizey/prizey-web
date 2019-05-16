@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import { Link } from '@reach/router'
@@ -87,7 +87,7 @@ const footerLinks = [
     label: 'PRIVACY',
   },
   { href: '/faq', label: 'FAIRNESS' },
-  { href: 'https://termly.io/en/', label: 'ALL PRIZES' },
+  { href: '/all-prizes', label: 'ALL PRIZES' },
 ]
 
 export default withStyles(styles)(
@@ -107,9 +107,9 @@ export default withStyles(styles)(
         {rightIcon}
       </div>
       <div className={classes.container}>
-        <Fragment>
+        <Link to="/" style={{ textDecoration: 'none' }}>
           <img src={'/logo.png'} className={classes.logoImage} alt="Prizey" />
-        </Fragment>
+        </Link>
         <div className={classes.caption}>{caption}</div>
         <div className={classes.children}>{children}</div>
         <div className={classes.footer}>

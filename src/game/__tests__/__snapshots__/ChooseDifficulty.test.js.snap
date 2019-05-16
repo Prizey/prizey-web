@@ -66,11 +66,22 @@ exports[`renders correctly 1`] = `
     <div
       className="Component-container-4"
     >
-      <img
-        alt="Prizey"
-        className="Component-logoImage-8"
-        src="/logo.png"
-      />
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <img
+          alt="Prizey"
+          className="Component-logoImage-8"
+          src="/logo.png"
+        />
+      </a>
       <div
         className="Component-caption-2"
       />
@@ -412,7 +423,7 @@ exports[`renders correctly 1`] = `
         </a>
         <a
           className="Component-footerLink-6"
-          href="/https://termly.io/en"
+          href="/all-prizes"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"

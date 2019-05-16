@@ -35,13 +35,11 @@ exports[`renders correctly 1`] = `
       <h2
         className="MuiTypography-root-10 MuiTypography-h2-23 MuiTypography-alignCenter-33 Component-pageTitle-1"
       >
-        You are blocked!
+        The game is closed to maintanance
       </h2>
       <h5
         className="MuiTypography-root-10 MuiTypography-h5-26 MuiTypography-alignCenter-33"
       >
-        Due to recent events on your account history we blocked you, but do not worry, enter in contact through
-         
         <a
           className="MuiButtonBase-root-72 MuiButton-root-46 MuiButton-contained-57 MuiButton-containedPrimary-58 MuiButton-raised-60 MuiButton-raisedPrimary-61 MuiButton-fullWidth-71"
           href="mailto:contact@prizeyapp.com"
