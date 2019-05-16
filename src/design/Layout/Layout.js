@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import { Link } from '@reach/router'
+import Anchor from 'design/Anchor/Anchor'
 import RegisterPageView from './RegisterPageView'
 
 const styles = theme => ({
@@ -114,7 +115,7 @@ export default withStyles(styles)(
         <div className={classes.children}>{children}</div>
         <div className={classes.footer}>
           {footerLinks.map(link => (
-            <Link
+            <Anchor
               to={link.href}
               className={classes.footerLink}
               target={'_blank'}
@@ -128,7 +129,7 @@ export default withStyles(styles)(
               >
                 {link.label}
               </Typography>
-            </Link>
+            </Anchor>
           ))}
         </div>
       </div>
