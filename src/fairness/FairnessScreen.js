@@ -26,7 +26,7 @@ const FairnessText = props => (
 const FairnessTextContent = withStyles(styles)(
   ({ classes, info, location }) => (
     <Layout location={location} leftIcon={<GoBack to="/" />}>
-      <Typography align="center" variant="body1" className={classes.root}>
+      <Typography align="left" variant="body1" className={classes.root}>
         <div
           dangerouslySetInnerHTML={{
             __html: info.fairnessText,

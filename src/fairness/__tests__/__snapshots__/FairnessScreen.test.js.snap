@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
         className="Component-children-3"
       >
         <p
-          className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignCenter-52 Component-root-1"
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignLeft-51 Component-root-1"
         >
           <div
             dangerouslySetInnerHTML={
