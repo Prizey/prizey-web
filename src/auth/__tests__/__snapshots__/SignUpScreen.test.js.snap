@@ -146,7 +146,7 @@ exports[`renders correctly 1`] = `
             <span
               className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
             >
-              FAIRNESS
+              FAIRNESS / FAQ
             </span>
           </div>
           <div

@@ -87,7 +87,9 @@ const footerLinks = [
       'https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3',
     label: 'PRIVACY',
   },
-  { href: '/faq', label: 'FAIRNESS' },
+
+  { href: '/faq', label: 'FAIRNESS / FAQ' },
+
   { href: '/all-prizes', label: 'ALL PRIZES' },
 ]
 

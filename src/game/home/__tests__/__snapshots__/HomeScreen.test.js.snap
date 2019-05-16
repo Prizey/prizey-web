@@ -227,7 +227,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             <span
               className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
-              FAIRNESS
+              FAIRNESS / FAQ
             </span>
           </a>
           <a
@@ -444,7 +444,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
             <span
               className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
             >
-              FAIRNESS
+              FAIRNESS / FAQ
             </span>
           </a>
           <a
