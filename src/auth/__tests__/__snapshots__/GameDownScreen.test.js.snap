@@ -35,7 +35,7 @@ exports[`renders correctly 1`] = `
       <h2
         className="MuiTypography-root-10 MuiTypography-h2-23 MuiTypography-alignCenter-33 Component-pageTitle-1"
       >
-        The game is closed to maintanance
+        The game is closed for maintanance
       </h2>
       <h5
         className="MuiTypography-root-10 MuiTypography-h5-26 MuiTypography-alignCenter-33"
