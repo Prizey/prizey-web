@@ -43,7 +43,8 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="Component-footerLink-5"
-        href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+        href="/terms_of_service"
+        onClick={[Function]}
         rel="noopener noreferer"
         target="_blank"
       >
