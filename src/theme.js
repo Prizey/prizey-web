@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles'
+import { fade } from '@material-ui/core/styles/colorManipulator'
 
 export const colors = {
   white: '#ffffff',
@@ -79,7 +80,7 @@ const theme = createMuiTheme({
       second: '#536dfe',
     },
     primary: {
-      dark: '#ffff00',
+      dark: fade('#ffff00', 0.75),
       main: '#ffff00',
     },
     secondary: {
