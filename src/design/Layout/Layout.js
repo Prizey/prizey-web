@@ -77,8 +77,7 @@ const styles = theme => ({
 
 const footerLinks = [
   {
-    href:
-      'https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb',
+    href: '/terms_of_service',
     label: 'TERMS',
   },
   {

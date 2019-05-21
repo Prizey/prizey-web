@@ -197,7 +197,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
         >
           <a
             className="Component-footerLink-9"
-            href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+            href="/terms_of_service"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
@@ -418,7 +418,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
         >
           <a
             className="Component-footerLink-9"
-            href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+            href="/terms_of_service"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
