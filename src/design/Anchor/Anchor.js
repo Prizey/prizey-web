@@ -14,16 +14,18 @@ export const handleOnConfirm = to => () => navigate(to)
 export default ({ to, children, confirmLeave, ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
 
+  const dialog = confirmLeave && (
+    <ConfirmLeaveDialog
+      isOpen={isOpen}
+      close={handleClose(setIsOpen)}
+      confirm={handleOnConfirm(to)}
+    />
+  )
+
   if (to.startsWith('http')) {
     return (
       <React.Fragment>
-        {confirmLeave && (
-          <ConfirmLeaveDialog
-            isOpen={isOpen}
-            close={handleClose(setIsOpen)}
-            confirm={handleOnConfirm(to)}
-          />
-        )}
+        {dialog}
         <a href={to} {...props} onClick={handleClick(setIsOpen, confirmLeave)}>
           {children}
         </a>
@@ -33,13 +35,7 @@ export default ({ to, children, confirmLeave, ...props }) => {
 
   return (
     <React.Fragment>
-      {confirmLeave && (
-        <ConfirmLeaveDialog
-          isOpen={isOpen}
-          close={handleClose(setIsOpen)}
-          confirm={handleOnConfirm(to)}
-        />
-      )}
+      {dialog}
       <Link to={to} {...props} onClick={handleClick(setIsOpen, confirmLeave)}>
         {children}
       </Link>
