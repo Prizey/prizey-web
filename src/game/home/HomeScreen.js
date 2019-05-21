@@ -13,6 +13,11 @@ import SpeedComponent from '../SpeedComponent'
 const nextUrl = '/game'
 
 const styles = theme => ({
+  button: {
+    height: 'auto',
+    paddingBottom: theme.spacing.sm,
+    paddingTop: theme.spacing.sm,
+  },
   login: {
     align: 'left',
     marginRight: '20px',
@@ -69,9 +74,10 @@ const ScreenWithRoullette = withStyles(styles)(
           variant="contained"
           color="primary"
           fullWidth
-          aria-label="I want it"
+          aria-label="Play now for $5"
+          className={classes.button}
         >
-          PLAY FOR $1
+          <strong>Play now for $5</strong>
         </Button>
       </Link>
     </Layout>
