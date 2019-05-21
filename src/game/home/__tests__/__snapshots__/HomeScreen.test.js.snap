@@ -198,6 +198,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
           <a
             className="Component-footerLink-9"
             href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
@@ -210,6 +211,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
           <a
             className="Component-footerLink-9"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
@@ -417,6 +419,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
           <a
             className="Component-footerLink-9"
             href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
@@ -429,6 +432,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
           <a
             className="Component-footerLink-9"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >

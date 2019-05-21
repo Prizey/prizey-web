@@ -1,7 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
-import { Link } from '@reach/router'
 import Anchor from 'design/Anchor/Anchor'
 import RegisterPageView from './RegisterPageView'
 
@@ -102,6 +101,7 @@ export default withStyles(styles)(
     children,
     location,
     currentUser,
+    confirmLeave = false,
   }) => (
     <div className={classes.root}>
       <RegisterPageView location={location} currentUser={currentUser} />
@@ -110,9 +110,13 @@ export default withStyles(styles)(
         {rightIcon}
       </div>
       <div className={classes.container}>
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Anchor
+          to="/"
+          confirmLeave={confirmLeave}
+          style={{ textDecoration: 'none' }}
+        >
           <img src={'/logo.png'} className={classes.logoImage} alt="Prizey" />
-        </Link>
+        </Anchor>
         <div className={classes.caption}>{caption}</div>
         <div className={classes.children}>{children}</div>
         <div className={classes.footer}>
@@ -123,6 +127,7 @@ export default withStyles(styles)(
               target={'_blank'}
               rel={'noopener noreferer'}
               key={link.label}
+              confirmLeave={confirmLeave}
             >
               <Typography
                 align="center"

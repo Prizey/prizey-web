@@ -21,6 +21,97 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-header-9"
       >
+        <div
+          aria-labelledby="Are you sure?"
+          classes={
+            Object {
+              "paper": "PlayAgain-paper-22",
+            }
+          }
+          fullWidth={true}
+          onClose={[Function]}
+          open={false}
+        >
+          <div
+            className="MuiDialogTitle-root-23"
+          >
+            <h2
+              className="MuiTypography-root-24 MuiTypography-title-30"
+            >
+              Are you sure?
+            </h2>
+          </div>
+          <div
+            className="MuiDialogContent-root-60"
+          >
+            <p
+              className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
+            >
+              You are leaving the page and you will lose your tickets. Are you sure?
+            </p>
+          </div>
+          <div
+            className="MuiDialogActions-root-62"
+          >
+            <button
+              aria-label="cancel"
+              autoFocus={true}
+              className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-65"
+              >
+                Cancel
+              </span>
+              <span
+                className="MuiTouchRipple-root-99"
+              />
+            </button>
+            <button
+              aria-label="confirm"
+              className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-65"
+              >
+                Confirm
+              </span>
+              <span
+                className="MuiTouchRipple-root-99"
+              />
+            </button>
+          </div>
+        </div>
         <a
           aria-label="My profile"
           className="MuiButtonBase-root-19 MuiIconButton-root-13 Component-root-12"
@@ -45,7 +136,7 @@ exports[`renders correctly 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-22 MuiSvgIcon-fontSizeLarge-30"
+              className="MuiSvgIcon-root-90 MuiSvgIcon-fontSizeLarge-98"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -72,6 +163,97 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-container-6"
       >
+        <div
+          aria-labelledby="Are you sure?"
+          classes={
+            Object {
+              "paper": "PlayAgain-paper-22",
+            }
+          }
+          fullWidth={true}
+          onClose={[Function]}
+          open={false}
+        >
+          <div
+            className="MuiDialogTitle-root-23"
+          >
+            <h2
+              className="MuiTypography-root-24 MuiTypography-title-30"
+            >
+              Are you sure?
+            </h2>
+          </div>
+          <div
+            className="MuiDialogContent-root-60"
+          >
+            <p
+              className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
+            >
+              You are leaving the page and you will lose your tickets. Are you sure?
+            </p>
+          </div>
+          <div
+            className="MuiDialogActions-root-62"
+          >
+            <button
+              aria-label="cancel"
+              autoFocus={true}
+              className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-65"
+              >
+                Cancel
+              </span>
+              <span
+                className="MuiTouchRipple-root-99"
+              />
+            </button>
+            <button
+              aria-label="confirm"
+              className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-65"
+              >
+                Confirm
+              </span>
+              <span
+                className="MuiTouchRipple-root-99"
+              />
+            </button>
+          </div>
+        </div>
         <a
           aria-current="page"
           href="/"
@@ -98,7 +280,7 @@ exports[`renders correctly 1`] = `
             aria-labelledby="Are you sure?"
             classes={
               Object {
-                "paper": "PlayAgain-paper-31",
+                "paper": "PlayAgain-paper-22",
               }
             }
             fullWidth={true}
@@ -106,30 +288,30 @@ exports[`renders correctly 1`] = `
             open={false}
           >
             <div
-              className="MuiDialogTitle-root-32"
+              className="MuiDialogTitle-root-23"
             >
               <h2
-                className="MuiTypography-root-33 MuiTypography-title-39"
+                className="MuiTypography-root-24 MuiTypography-title-30"
               >
                 Are you sure?
               </h2>
             </div>
             <div
-              className="MuiDialogContent-root-69"
+              className="MuiDialogContent-root-60"
             >
               <p
-                className="MuiTypography-root-33 MuiDialogContentText-root-70 MuiTypography-subheading-40 MuiTypography-colorTextSecondary-66"
+                className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
               >
                 This action can't be undone.
               </p>
             </div>
             <div
-              className="MuiDialogActions-root-71"
+              className="MuiDialogActions-root-62"
             >
               <button
                 aria-label="cancel"
                 autoFocus={true}
-                className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-text-75 MuiButton-textPrimary-76 MuiButton-flat-78 MuiButton-flatPrimary-79 MuiDialogActions-action-72"
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -147,7 +329,7 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-74"
+                  className="MuiButton-label-65"
                 >
                   Cancel
                 </span>
@@ -157,7 +339,7 @@ exports[`renders correctly 1`] = `
               </button>
               <button
                 aria-label="confirm"
-                className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-text-75 MuiButton-textPrimary-76 MuiButton-flat-78 MuiButton-flatPrimary-79 MuiDialogActions-action-72"
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -175,7 +357,7 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-74"
+                  className="MuiButton-label-65"
                 >
                   Confirm
                 </span>
@@ -186,12 +368,12 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <h5
-            className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56 ConfirmOrderComponent-title-2"
+            className="MuiTypography-root-24 MuiTypography-h5-40 MuiTypography-alignCenter-47 ConfirmOrderComponent-title-2"
           >
             Confirm Order
           </h5>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             Full Name
             :
@@ -203,7 +385,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             Address
             :
@@ -215,7 +397,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             City
             :
@@ -227,7 +409,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             State / Province / Region
             :
@@ -239,7 +421,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             Postal Code / ZIP
             :
@@ -249,7 +431,7 @@ exports[`renders correctly 1`] = `
             />
           </p>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             Clothing Size
             :
@@ -261,7 +443,7 @@ exports[`renders correctly 1`] = `
             </span>
           </p>
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 ConfirmOrderComponent-field-1"
+            className="MuiTypography-root-24 MuiTypography-body2-32 ConfirmOrderComponent-field-1"
           >
             Shoe Size
             :
@@ -280,7 +462,7 @@ exports[`renders correctly 1`] = `
             }
           />
           <button
-            className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-contained-84 MuiButton-containedPrimary-85 MuiButton-raised-87 MuiButton-raisedPrimary-88 MuiButton-fullWidth-98"
+            className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-contained-75 MuiButton-containedPrimary-76 MuiButton-raised-78 MuiButton-raisedPrimary-79 MuiButton-fullWidth-89"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -298,7 +480,7 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-74"
+              className="MuiButton-label-65"
             >
               SHIP IT!
             </span>
@@ -308,7 +490,7 @@ exports[`renders correctly 1`] = `
           </button>
           <button
             aria-label="Cancel"
-            className="MuiButtonBase-root-19 MuiButton-root-73 MuiButton-outlined-81 MuiButton-outlinedPrimary-82 MuiButton-fullWidth-98"
+            className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-outlined-72 MuiButton-outlinedPrimary-73 MuiButton-fullWidth-89"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -326,7 +508,7 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-74"
+              className="MuiButton-label-65"
             >
               CANCEL
             </span>
@@ -338,30 +520,305 @@ exports[`renders correctly 1`] = `
         <div
           className="Component-footer-7"
         >
+          <div
+            aria-labelledby="Are you sure?"
+            classes={
+              Object {
+                "paper": "PlayAgain-paper-22",
+              }
+            }
+            fullWidth={true}
+            onClose={[Function]}
+            open={false}
+          >
+            <div
+              className="MuiDialogTitle-root-23"
+            >
+              <h2
+                className="MuiTypography-root-24 MuiTypography-title-30"
+              >
+                Are you sure?
+              </h2>
+            </div>
+            <div
+              className="MuiDialogContent-root-60"
+            >
+              <p
+                className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
+              >
+                You are leaving the page and you will lose your tickets. Are you sure?
+              </p>
+            </div>
+            <div
+              className="MuiDialogActions-root-62"
+            >
+              <button
+                aria-label="cancel"
+                autoFocus={true}
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Cancel
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+              <button
+                aria-label="confirm"
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Confirm
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+            </div>
+          </div>
           <a
             className="Component-footerLink-8"
             href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-24 MuiTypography-caption-34 MuiTypography-colorTextSecondary-57 MuiTypography-alignCenter-47"
             >
               TERMS
             </span>
           </a>
+          <div
+            aria-labelledby="Are you sure?"
+            classes={
+              Object {
+                "paper": "PlayAgain-paper-22",
+              }
+            }
+            fullWidth={true}
+            onClose={[Function]}
+            open={false}
+          >
+            <div
+              className="MuiDialogTitle-root-23"
+            >
+              <h2
+                className="MuiTypography-root-24 MuiTypography-title-30"
+              >
+                Are you sure?
+              </h2>
+            </div>
+            <div
+              className="MuiDialogContent-root-60"
+            >
+              <p
+                className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
+              >
+                You are leaving the page and you will lose your tickets. Are you sure?
+              </p>
+            </div>
+            <div
+              className="MuiDialogActions-root-62"
+            >
+              <button
+                aria-label="cancel"
+                autoFocus={true}
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Cancel
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+              <button
+                aria-label="confirm"
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Confirm
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+            </div>
+          </div>
           <a
             className="Component-footerLink-8"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-24 MuiTypography-caption-34 MuiTypography-colorTextSecondary-57 MuiTypography-alignCenter-47"
             >
               PRIVACY
             </span>
           </a>
+          <div
+            aria-labelledby="Are you sure?"
+            classes={
+              Object {
+                "paper": "PlayAgain-paper-22",
+              }
+            }
+            fullWidth={true}
+            onClose={[Function]}
+            open={false}
+          >
+            <div
+              className="MuiDialogTitle-root-23"
+            >
+              <h2
+                className="MuiTypography-root-24 MuiTypography-title-30"
+              >
+                Are you sure?
+              </h2>
+            </div>
+            <div
+              className="MuiDialogContent-root-60"
+            >
+              <p
+                className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
+              >
+                You are leaving the page and you will lose your tickets. Are you sure?
+              </p>
+            </div>
+            <div
+              className="MuiDialogActions-root-62"
+            >
+              <button
+                aria-label="cancel"
+                autoFocus={true}
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Cancel
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+              <button
+                aria-label="confirm"
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Confirm
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+            </div>
+          </div>
           <a
             className="Component-footerLink-8"
             href="/faq"
@@ -370,11 +827,102 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-24 MuiTypography-caption-34 MuiTypography-colorTextSecondary-57 MuiTypography-alignCenter-47"
             >
               FAIRNESS / FAQ
             </span>
           </a>
+          <div
+            aria-labelledby="Are you sure?"
+            classes={
+              Object {
+                "paper": "PlayAgain-paper-22",
+              }
+            }
+            fullWidth={true}
+            onClose={[Function]}
+            open={false}
+          >
+            <div
+              className="MuiDialogTitle-root-23"
+            >
+              <h2
+                className="MuiTypography-root-24 MuiTypography-title-30"
+              >
+                Are you sure?
+              </h2>
+            </div>
+            <div
+              className="MuiDialogContent-root-60"
+            >
+              <p
+                className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
+              >
+                You are leaving the page and you will lose your tickets. Are you sure?
+              </p>
+            </div>
+            <div
+              className="MuiDialogActions-root-62"
+            >
+              <button
+                aria-label="cancel"
+                autoFocus={true}
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Cancel
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+              <button
+                aria-label="confirm"
+                className="MuiButtonBase-root-19 MuiButton-root-64 MuiButton-text-66 MuiButton-textPrimary-67 MuiButton-flat-69 MuiButton-flatPrimary-70 MuiDialogActions-action-63"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-65"
+                >
+                  Confirm
+                </span>
+                <span
+                  className="MuiTouchRipple-root-99"
+                />
+              </button>
+            </div>
+          </div>
           <a
             className="Component-footerLink-8"
             href="/all-prizes"
@@ -383,7 +931,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-24 MuiTypography-caption-34 MuiTypography-colorTextSecondary-57 MuiTypography-alignCenter-47"
             >
               ALL PRIZES
             </span>

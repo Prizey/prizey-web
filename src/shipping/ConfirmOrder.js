@@ -104,7 +104,8 @@ export class ConfirmOrderComponent extends React.Component {
         location={location}
         leftIcon={<UserBalance />}
         currentUser={currentUser}
-        rightIcon={<ProfileLink />}
+        rightIcon={<ProfileLink confirmLeave />}
+        confirmLeave
       >
         {this.renderHeader(this.props)}
         {this.renderFields(this.props)}

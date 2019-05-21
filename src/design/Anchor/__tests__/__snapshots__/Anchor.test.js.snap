@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when the component is mounted renders correctly 1`] = `
+<div
+  onClick={[Function]}
+  to="/"
+>
+  Link - 
+</div>
+`;
+
+exports[`when the component is mounted renders correctly with confirmLeave 1`] = `
+<div
+  onClick={[Function]}
+  to="/"
+>
+  Link - 
+</div>
+`;

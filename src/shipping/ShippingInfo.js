@@ -17,9 +17,10 @@ export const ShippingForm = ({
 }) => (
   <Layout
     leftIcon={<UserBalance />}
-    rightIcon={<ProfileLink />}
+    rightIcon={<ProfileLink confirmLeave />}
     location={location}
     currentUser={currentUser}
+    confirmLeave
   >
     <Typography align="center" variant="h5">
       Shipping Address
