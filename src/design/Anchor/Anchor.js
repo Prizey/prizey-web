@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 import { Link, navigate } from '@reach/router'
 import ConfirmLeaveDialog from '../ConfirmLeaveDialog'
 
+export const handleClose = setIsOpen => () => setIsOpen(false)
 export const handleClick = (setIsOpen, confirmLeave) => evt => {
   if (confirmLeave) {
     evt.preventDefault()
     setIsOpen(true)
   }
 }
-const handleOnConfirm = to => () => navigate(to)
+export const handleOnConfirm = to => () => navigate(to)
 
 export default ({ to, children, confirmLeave, ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const onClose = () => setIsOpen(false)
 
   if (to.startsWith('http')) {
     return (
@@ -20,7 +20,7 @@ export default ({ to, children, confirmLeave, ...props }) => {
         {confirmLeave && (
           <ConfirmLeaveDialog
             isOpen={isOpen}
-            onClose={onClose}
+            onClose={handleClose(setIsOpen)}
             onConfirm={handleOnConfirm(to)}
           />
         )}
@@ -36,7 +36,7 @@ export default ({ to, children, confirmLeave, ...props }) => {
       {confirmLeave && (
         <ConfirmLeaveDialog
           isOpen={isOpen}
-          onClose={onClose}
+          onClose={handleClose(setIsOpen)}
           onConfirm={handleOnConfirm(to)}
         />
       )}
