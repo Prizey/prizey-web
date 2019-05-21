@@ -45,7 +45,7 @@ exports[`renders correctly 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-19 MuiSvgIcon-fontSizeLarge-27"
+              className="MuiSvgIcon-root-36 MuiSvgIcon-fontSizeLarge-44"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ exports[`renders correctly 1`] = `
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-71"
+            className="MuiTouchRipple-root-88"
           />
         </a>
       </div>
@@ -92,13 +92,13 @@ exports[`renders correctly 1`] = `
           className="Component-caption-1"
         >
           <div
-            className="Component-root-32"
+            className="Component-root-49"
           >
             <span
-              className="Component-icon-28 Component-icon_easy-29"
+              className="Component-icon-45 Component-icon_easy-46"
             />
             <h6
-              className="MuiTypography-root-33 MuiTypography-subtitle1-51"
+              className="MuiTypography-root-50 MuiTypography-subtitle1-68"
             >
               EASY
             </h6>
@@ -108,7 +108,7 @@ exports[`renders correctly 1`] = `
           className="Component-children-2"
         >
           <div
-            className="Component-root-70"
+            className="Component-root-87"
           >
             <div
               aria-label="rouletteItem-0"
@@ -116,7 +116,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="trump"
-                className="Component-img-69"
+                className="Component-img-86"
                 pose="enter"
                 speed={NaN}
                 src="/mocks/trump-mask.png"
@@ -128,7 +128,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="sweatshirt"
-                className="Component-img-69"
+                className="Component-img-86"
                 pose="leave"
                 speed={NaN}
                 src="/mocks/sweatshirt.png"
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="shoe"
-                className="Component-img-69"
+                className="Component-img-86"
                 pose="leave"
                 speed={NaN}
                 src="/mocks/shoe.png"
@@ -149,7 +149,7 @@ exports[`renders correctly 1`] = `
           </div>
           <br />
           <p
-            className="MuiTypography-root-33 MuiTypography-body2-41 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            className="MuiTypography-root-50 MuiTypography-body2-58 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
           >
             Tap the screen, 
             <br />
@@ -162,11 +162,12 @@ exports[`renders correctly 1`] = `
           <a
             className="Component-footerLink-5"
             href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
             >
               TERMS
             </span>
@@ -174,11 +175,12 @@ exports[`renders correctly 1`] = `
           <a
             className="Component-footerLink-5"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
             >
               PRIVACY
             </span>
@@ -191,7 +193,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
             >
               FAIRNESS / FAQ
             </span>
@@ -204,7 +206,7 @@ exports[`renders correctly 1`] = `
             target="_blank"
           >
             <span
-              className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+              className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
             >
               ALL PRIZES
             </span>

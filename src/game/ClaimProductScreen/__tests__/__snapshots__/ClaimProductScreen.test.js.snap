@@ -33,7 +33,7 @@ exports[`renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-19 MuiSvgIcon-fontSizeLarge-27"
+          className="MuiSvgIcon-root-36 MuiSvgIcon-fontSizeLarge-44"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ exports[`renders correctly 1`] = `
         </svg>
       </span>
       <span
-        className="MuiTouchRipple-root-116"
+        className="MuiTouchRipple-root-117"
       />
     </a>
   </div>
@@ -80,13 +80,13 @@ exports[`renders correctly 1`] = `
       className="Component-caption-1"
     >
       <div
-        className="Component-root-32"
+        className="Component-root-49"
       >
         <span
-          className="Component-icon-28 Component-icon_easy-29"
+          className="Component-icon-45 Component-icon_easy-46"
         />
         <h6
-          className="MuiTypography-root-33 MuiTypography-subtitle1-51"
+          className="MuiTypography-root-50 MuiTypography-subtitle1-68"
         >
           EASY
         </h6>
@@ -96,18 +96,18 @@ exports[`renders correctly 1`] = `
       className="Component-children-2"
     >
       <h5
-        className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56"
+        className="MuiTypography-root-50 MuiTypography-h5-66 MuiTypography-alignCenter-73"
       >
         Trump mask
       </h5>
       <img
         alt="Trump mask"
-        className="Component-productImage-69"
+        className="Component-productImage-86"
         src="/mock/trump-mask.png"
         style={Object {}}
       />
       <p
-        className="MuiTypography-root-33 MuiTypography-body1-42 MuiTypography-alignCenter-56"
+        className="MuiTypography-root-50 MuiTypography-body1-59 MuiTypography-alignCenter-73"
       >
         MSRP: $
       </p>
@@ -122,7 +122,7 @@ exports[`renders correctly 1`] = `
           render - 
           <button
             aria-label="Sell it Back"
-            className="MuiButtonBase-root-16 MuiButton-root-90 MuiButton-contained-101 MuiButton-containedSecondary-103 MuiButton-raised-104 MuiButton-raisedSecondary-106 MuiButton-fullWidth-115"
+            className="MuiButtonBase-root-16 MuiButton-root-91 MuiButton-contained-102 MuiButton-containedSecondary-104 MuiButton-raised-105 MuiButton-raisedSecondary-107 MuiButton-fullWidth-116"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -140,35 +140,35 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-91"
+              className="MuiButton-label-92"
             >
               <span>
                 SELL IT BACK
               </span>
               <div
-                className="Component-rightIcon-72"
+                className="Component-rightIcon-89"
               >
                 <img
                   alt="diamond"
-                  className="Component-icon-70"
+                  className="Component-icon-87"
                   src="/icons/diamond.png"
                 />
                 <span
-                  className="Component-quantity-71"
+                  className="Component-quantity-88"
                 >
                   3
                 </span>
               </div>
             </span>
             <span
-              className="MuiTouchRipple-root-116"
+              className="MuiTouchRipple-root-117"
             />
           </button>
         </div>
       </div>
       <button
         aria-label="I want it"
-        className="MuiButtonBase-root-16 MuiButton-root-90 MuiButton-contained-101 MuiButton-containedPrimary-102 MuiButton-raised-104 MuiButton-raisedPrimary-105 MuiButton-fullWidth-115"
+        className="MuiButtonBase-root-16 MuiButton-root-91 MuiButton-contained-102 MuiButton-containedPrimary-103 MuiButton-raised-105 MuiButton-raisedPrimary-106 MuiButton-fullWidth-116"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -186,12 +186,12 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-91"
+          className="MuiButton-label-92"
         >
           I WANT IT!
         </span>
         <span
-          className="MuiTouchRipple-root-116"
+          className="MuiTouchRipple-root-117"
         />
       </button>
     </div>
@@ -201,11 +201,12 @@ exports[`renders correctly 1`] = `
       <a
         className="Component-footerLink-5"
         href="https://app.termly.io/document/terms-and-conditions/4de5f3bb-a333-47bb-9daf-f82f7d4e1cfb"
+        onClick={[Function]}
         rel="noopener noreferer"
         target="_blank"
       >
         <span
-          className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
         >
           TERMS
         </span>
@@ -213,11 +214,12 @@ exports[`renders correctly 1`] = `
       <a
         className="Component-footerLink-5"
         href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+        onClick={[Function]}
         rel="noopener noreferer"
         target="_blank"
       >
         <span
-          className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
         >
           PRIVACY
         </span>
@@ -230,7 +232,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
         >
           FAIRNESS / FAQ
         </span>
@@ -243,7 +245,7 @@ exports[`renders correctly 1`] = `
         target="_blank"
       >
         <span
-          className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          className="MuiTypography-root-50 MuiTypography-caption-60 MuiTypography-colorTextSecondary-83 MuiTypography-alignCenter-73"
         >
           ALL PRIZES
         </span>

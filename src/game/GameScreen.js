@@ -31,7 +31,8 @@ const GameComponent = connect(
       caption={<Caption difficulty={difficulty} />}
       location={location}
       currentUser={currentUser}
-      rightIcon={<ProfileLink />}
+      rightIcon={<ProfileLink confirmLeave />}
+      confirmLeave
     >
       <Roulette
         aria-label="roulette"

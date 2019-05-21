@@ -28,8 +28,9 @@ const ClaimProductComponent = ({
       location={location}
       currentUser={currentUser}
       leftIcon={<UserBalance />}
-      rightIcon={<ProfileLink />}
+      rightIcon={<ProfileLink confirmLeave />}
       caption={<Caption difficulty={difficulty} />}
+      confirmLeave
     >
       <Typography align="center" variant="h5">
         {product.title}
