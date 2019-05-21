@@ -17,28 +17,28 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
     Info -
      
     <div
-      className="Component-root-11"
+      className="Component-root-12"
     >
       <div
-        className="Component-header-9"
+        className="Component-header-10"
       >
         <div
-          className="Component-root-13"
+          className="Component-root-14"
         >
           <img
             alt="diamond"
-            className="Component-icon-12"
+            className="Component-icon-13"
             src="/icons/diamond.png"
           />
           <p
-            className="MuiTypography-root-14 MuiTypography-body1-23"
+            className="MuiTypography-root-15 MuiTypography-body1-24"
           >
             0
           </p>
         </div>
         <a
           aria-label="My profile"
-          className="MuiButtonBase-root-57 MuiIconButton-root-51 Component-root-50"
+          className="MuiButtonBase-root-58 MuiIconButton-root-52 Component-root-51"
           href="/profile"
           onBlur={[Function]}
           onClick={[Function]}
@@ -56,11 +56,11 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
           tabIndex="0"
         >
           <span
-            className="MuiIconButton-label-56"
+            className="MuiIconButton-label-57"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-60 MuiSvgIcon-fontSizeLarge-68"
+              className="MuiSvgIcon-root-61 MuiSvgIcon-fontSizeLarge-69"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -80,12 +80,12 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-97"
+            className="MuiTouchRipple-root-98"
           />
         </a>
       </div>
       <div
-        className="Component-container-6"
+        className="Component-container-7"
       >
         <a
           aria-current="page"
@@ -99,23 +99,23 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
         >
           <img
             alt="Prizey"
-            className="Component-logoImage-10"
+            className="Component-logoImage-11"
             src="/logo.png"
           />
         </a>
         <div
-          className="Component-caption-4"
+          className="Component-caption-5"
         />
         <div
-          className="Component-children-5"
+          className="Component-children-6"
         >
           <a
-            className="Component-root-2"
+            className="Component-root-3"
             href="/game"
             onClick={[Function]}
           >
             <div
-              className="Component-root-70"
+              className="Component-root-71"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -123,7 +123,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="trump"
-                  className="Component-img-69"
+                  className="Component-img-70"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -135,7 +135,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-69"
+                  className="Component-img-70"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -147,7 +147,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               >
                 <img
                   alt="shoe"
-                  className="Component-img-69"
+                  className="Component-img-70"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -155,15 +155,15 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               </div>
             </div>
             <h5
-              className="MuiTypography-root-14 MuiTypography-h5-30 MuiTypography-alignCenter-37 Component-typography-3"
+              className="MuiTypography-root-15 MuiTypography-h5-31 MuiTypography-alignCenter-38 Component-typography-4"
             >
               Tap the screen, 
               <br />
               win what you tap.
             </h5>
             <button
-              aria-label="I want it"
-              className="MuiButtonBase-root-57 MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-fullWidth-96"
+              aria-label="Play now for $5"
+              className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -180,66 +180,69 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               type="button"
             >
               <span
-                className="MuiButton-label-72"
+                className="MuiButton-label-73"
               >
-                PLAY FOR $1
+                <strong>
+                  Play now for $5
+                </strong>
               </span>
               <span
-                className="MuiTouchRipple-root-97"
+                className="MuiTouchRipple-root-98"
               />
             </button>
           </a>
         </div>
         <div
-          className="Component-footer-7"
+          className="Component-footer-8"
         >
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="/terms_of_service"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               TERMS
             </span>
           </a>
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               PRIVACY
             </span>
           </a>
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="/faq"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               FAIRNESS / FAQ
             </span>
           </a>
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="/all-prizes"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               ALL PRIZES
             </span>
@@ -267,21 +270,21 @@ exports[`when component is mounted when user is not logged in redirects correctl
     Info -
      
     <div
-      className="Component-root-11"
+      className="Component-root-12"
     >
       <div
-        className="Component-header-9"
+        className="Component-header-10"
       >
         <div
-          className="Component-root-13"
+          className="Component-root-14"
         >
           <img
             alt="diamond"
-            className="Component-icon-12"
+            className="Component-icon-13"
             src="/icons/diamond.png"
           />
           <p
-            className="MuiTypography-root-14 MuiTypography-body1-23"
+            className="MuiTypography-root-15 MuiTypography-body1-24"
           >
             0
           </p>
@@ -296,14 +299,14 @@ exports[`when component is mounted when user is not logged in redirects correctl
           }
         >
           <p
-            className="MuiTypography-root-14 MuiTypography-body1-23 Component-login-1"
+            className="MuiTypography-root-15 MuiTypography-body1-24 Component-login-2"
           >
             Login
           </p>
         </a>
       </div>
       <div
-        className="Component-container-6"
+        className="Component-container-7"
       >
         <a
           aria-current="page"
@@ -317,23 +320,23 @@ exports[`when component is mounted when user is not logged in redirects correctl
         >
           <img
             alt="Prizey"
-            className="Component-logoImage-10"
+            className="Component-logoImage-11"
             src="/logo.png"
           />
         </a>
         <div
-          className="Component-caption-4"
+          className="Component-caption-5"
         />
         <div
-          className="Component-children-5"
+          className="Component-children-6"
         >
           <a
-            className="Component-root-2"
+            className="Component-root-3"
             href="/game"
             onClick={[Function]}
           >
             <div
-              className="Component-root-70"
+              className="Component-root-71"
             >
               <div
                 aria-label="rouletteItem-0"
@@ -341,7 +344,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="trump"
-                  className="Component-img-69"
+                  className="Component-img-70"
                   pose="enter"
                   speed={NaN}
                   src="/mocks/trump-mask.png"
@@ -353,7 +356,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="sweatshirt"
-                  className="Component-img-69"
+                  className="Component-img-70"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/sweatshirt.png"
@@ -365,7 +368,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
               >
                 <img
                   alt="shoe"
-                  className="Component-img-69"
+                  className="Component-img-70"
                   pose="leave"
                   speed={NaN}
                   src="/mocks/shoe.png"
@@ -373,15 +376,15 @@ exports[`when component is mounted when user is not logged in redirects correctl
               </div>
             </div>
             <h5
-              className="MuiTypography-root-14 MuiTypography-h5-30 MuiTypography-alignCenter-37 Component-typography-3"
+              className="MuiTypography-root-15 MuiTypography-h5-31 MuiTypography-alignCenter-38 Component-typography-4"
             >
               Tap the screen, 
               <br />
               win what you tap.
             </h5>
             <button
-              aria-label="I want it"
-              className="MuiButtonBase-root-57 MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-fullWidth-96"
+              aria-label="Play now for $5"
+              className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -398,66 +401,69 @@ exports[`when component is mounted when user is not logged in redirects correctl
               type="button"
             >
               <span
-                className="MuiButton-label-72"
+                className="MuiButton-label-73"
               >
-                PLAY FOR $1
+                <strong>
+                  Play now for $5
+                </strong>
               </span>
               <span
-                className="MuiTouchRipple-root-97"
+                className="MuiTouchRipple-root-98"
               />
             </button>
           </a>
         </div>
         <div
-          className="Component-footer-7"
+          className="Component-footer-8"
         >
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="/terms_of_service"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               TERMS
             </span>
           </a>
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               PRIVACY
             </span>
           </a>
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="/faq"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               FAIRNESS / FAQ
             </span>
           </a>
           <a
-            className="Component-footerLink-8"
+            className="Component-footerLink-9"
             href="/all-prizes"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
             <span
-              className="MuiTypography-root-14 MuiTypography-caption-24 MuiTypography-colorTextSecondary-47 MuiTypography-alignCenter-37"
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
             >
               ALL PRIZES
             </span>

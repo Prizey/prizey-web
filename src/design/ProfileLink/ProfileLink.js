@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from '@reach/router'
 import { withStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import AccountCircleIcon from '@material-ui/icons/AccountCircleOutlined'
+import Anchor from 'design/Anchor/Anchor'
 
 const styles = theme => ({
   root: {
@@ -10,11 +10,13 @@ const styles = theme => ({
   },
 })
 
-export default withStyles(styles)(({ classes }) => (
+export default withStyles(styles)(({ classes, confirmLeave = false }) => (
   <IconButton
     className={classes.root}
     aria-label="My profile"
-    component={props => <Link to={'/profile'} {...props} />}
+    component={props => (
+      <Anchor confirmLeave={confirmLeave} to={'/profile'} {...props} />
+    )}
   >
     <AccountCircleIcon fontSize="large" />
   </IconButton>

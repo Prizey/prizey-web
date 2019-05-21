@@ -27,6 +27,7 @@ exports[`renders correctly 1`] = `
         className="Component-container-78"
       >
         <div
+          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -114,6 +115,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             className="Component-footerLink-80"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
             to="/terms_of_service"
@@ -128,6 +130,7 @@ exports[`renders correctly 1`] = `
           <a
             className="Component-footerLink-80"
             href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
           >
@@ -139,6 +142,7 @@ exports[`renders correctly 1`] = `
           </a>
           <div
             className="Component-footerLink-80"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
             to="/faq"
@@ -152,6 +156,7 @@ exports[`renders correctly 1`] = `
           </div>
           <div
             className="Component-footerLink-80"
+            onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
             to="/all-prizes"
