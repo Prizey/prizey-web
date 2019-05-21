@@ -20,8 +20,8 @@ export default ({ to, children, confirmLeave, ...props }) => {
         {confirmLeave && (
           <ConfirmLeaveDialog
             isOpen={isOpen}
-            onClose={handleClose(setIsOpen)}
-            onConfirm={handleOnConfirm(to)}
+            close={handleClose(setIsOpen)}
+            confirm={handleOnConfirm(to)}
           />
         )}
         <a href={to} {...props} onClick={handleClick(setIsOpen, confirmLeave)}>
@@ -36,8 +36,8 @@ export default ({ to, children, confirmLeave, ...props }) => {
       {confirmLeave && (
         <ConfirmLeaveDialog
           isOpen={isOpen}
-          onClose={handleClose(setIsOpen)}
-          onConfirm={handleOnConfirm(to)}
+          close={handleClose(setIsOpen)}
+          confirm={handleOnConfirm(to)}
         />
       )}
       <Link to={to} {...props} onClick={handleClick(setIsOpen, confirmLeave)}>

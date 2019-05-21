@@ -8,21 +8,21 @@ jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
 
 it('call the close on click on cancel', () => {
   const params = {
-    onClose: jest.fn(),
+    close: jest.fn(),
   }
   const tree = renderer.create(<ConfirmLeaveDialog {...params} />).root
 
   tree.findByProps({ 'aria-label': 'cancel' }).props.onClick()
-  expect(params.onClose).toHaveBeenCalledTimes(1)
+  expect(params.close).toHaveBeenCalledTimes(1)
 })
 
 it('call the confirm on click on confirm', () => {
   const params = {
-    onClose: jest.fn(),
-    onConfirm: jest.fn(),
+    close: jest.fn(),
+    confirm: jest.fn(),
   }
   const tree = renderer.create(<ConfirmLeaveDialog {...params} />).root
 
   tree.findByProps({ 'aria-label': 'confirm' }).props.onClick()
-  expect(params.onConfirm).toHaveBeenCalledTimes(1)
+  expect(params.confirm).toHaveBeenCalledTimes(1)
 })

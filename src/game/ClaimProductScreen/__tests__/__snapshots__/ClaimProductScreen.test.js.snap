@@ -53,7 +53,7 @@ exports[`renders correctly 1`] = `
         </svg>
       </span>
       <span
-        className="MuiTouchRipple-root-117"
+        className="MuiTouchRipple-root-116"
       />
     </a>
   </div>
@@ -122,7 +122,7 @@ exports[`renders correctly 1`] = `
           render - 
           <button
             aria-label="Sell it Back"
-            className="MuiButtonBase-root-16 MuiButton-root-91 MuiButton-contained-102 MuiButton-containedSecondary-104 MuiButton-raised-105 MuiButton-raisedSecondary-107 MuiButton-fullWidth-116"
+            className="MuiButtonBase-root-16 MuiButton-root-90 MuiButton-contained-101 MuiButton-containedSecondary-103 MuiButton-raised-104 MuiButton-raisedSecondary-106 MuiButton-fullWidth-115"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-92"
+              className="MuiButton-label-91"
             >
               <span>
                 SELL IT BACK
@@ -161,14 +161,14 @@ exports[`renders correctly 1`] = `
               </div>
             </span>
             <span
-              className="MuiTouchRipple-root-117"
+              className="MuiTouchRipple-root-116"
             />
           </button>
         </div>
       </div>
       <button
         aria-label="I want it"
-        className="MuiButtonBase-root-16 MuiButton-root-91 MuiButton-contained-102 MuiButton-containedPrimary-103 MuiButton-raised-105 MuiButton-raisedPrimary-106 MuiButton-fullWidth-116"
+        className="MuiButtonBase-root-16 MuiButton-root-90 MuiButton-contained-101 MuiButton-containedPrimary-102 MuiButton-raised-104 MuiButton-raisedPrimary-105 MuiButton-fullWidth-115"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -186,12 +186,12 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-92"
+          className="MuiButton-label-91"
         >
           I WANT IT!
         </span>
         <span
-          className="MuiTouchRipple-root-117"
+          className="MuiTouchRipple-root-116"
         />
       </button>
     </div>
