@@ -594,8 +594,8 @@ exports[`when component is mounted renders correctly 1`] = `
                       }
                     />
                     <button
-                      className="MuiButtonBase-root-18 MuiButton-root-101 MuiButton-contained-112 MuiButton-containedPrimary-113 MuiButton-raised-115 MuiButton-raisedPrimary-116 MuiButton-fullWidth-126"
-                      disabled={false}
+                      className="MuiButtonBase-root-18 MuiButtonBase-disabled-19 MuiButton-root-101 MuiButton-contained-112 MuiButton-containedPrimary-113 MuiButton-raised-115 MuiButton-raisedPrimary-116 MuiButton-disabled-121 MuiButton-fullWidth-126"
+                      disabled={true}
                       onBlur={[Function]}
                       onContextMenu={[Function]}
                       onFocus={[Function]}
@@ -607,7 +607,7 @@ exports[`when component is mounted renders correctly 1`] = `
                       onTouchEnd={[Function]}
                       onTouchMove={[Function]}
                       onTouchStart={[Function]}
-                      tabIndex="0"
+                      tabIndex="-1"
                       type="submit"
                     >
                       <span
@@ -615,9 +615,6 @@ exports[`when component is mounted renders correctly 1`] = `
                       >
                         PAY
                       </span>
-                      <span
-                        className="MuiTouchRipple-root-127"
-                      />
                     </button>
                   </form>
                 </div>
