@@ -47,7 +47,7 @@ const ShippingComponent = ({
       </Button>
     </Layout>
   ) : (
-    <Redirect to="/" noThrow />
+    <Redirect to="/game" noThrow />
   )
 
 export const mapState = ({ basket = {} }) => ({
