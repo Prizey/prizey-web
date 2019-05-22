@@ -2,3 +2,7 @@ body {
   background: linear-gradient(135deg, #6243db 5%, #d9427d 50%, #de4d40 90%) no-repeat;
   background-size: cover;
 }
+
+input:-webkit-autofill {
+  -webkit-transition-delay: 99999s;
+}
