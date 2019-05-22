@@ -4,6 +4,7 @@ import { New } from 'croods'
 import { withStyles } from '@material-ui/core/styles'
 import { Button, Typography, CircularProgress } from '@material-ui/core'
 import { Redirect } from '@reach/router'
+import toString from 'lodash/toString'
 
 import Layout from 'design/Layout/Layout'
 import ErrorComponent from 'design/Error/Error'
@@ -26,7 +27,7 @@ const styles = theme => ({
 
 export const handleCancel = navigate => () => navigate('/')
 export const handleShipIt = (product = {}, create) => () =>
-  create({ productId: product.id || 0 })
+  create({ productId: toString(product.id) || '0' })
 
 export const handleAfterCreate = navigate => () =>
   navigate('/shipping-confirmation')

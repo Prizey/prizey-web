@@ -105,7 +105,7 @@ it('check shipIt action', () => {
   const product = { id: 1 }
 
   handleShipIt(product, create)()
-  expect(create).toHaveBeenCalledWith({ productId: product.id })
+  expect(create).toHaveBeenCalledWith({ productId: '1' })
 })
 
 it('map the state to props', () => {

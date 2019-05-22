@@ -47,7 +47,7 @@ exports[`renders correctly 1`] = `
             <p
               className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
             >
-              You are leaving the page and you will lose your tickets. Are you sure?
+              You are leaving the page and you will lose your diamonds. Are you sure?
             </p>
           </div>
           <div
@@ -189,7 +189,7 @@ exports[`renders correctly 1`] = `
             <p
               className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
             >
-              You are leaving the page and you will lose your tickets. Are you sure?
+              You are leaving the page and you will lose your diamonds. Are you sure?
             </p>
           </div>
           <div
@@ -546,7 +546,7 @@ exports[`renders correctly 1`] = `
               <p
                 className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
               >
-                You are leaving the page and you will lose your tickets. Are you sure?
+                You are leaving the page and you will lose your diamonds. Are you sure?
               </p>
             </div>
             <div
@@ -650,7 +650,7 @@ exports[`renders correctly 1`] = `
               <p
                 className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
               >
-                You are leaving the page and you will lose your tickets. Are you sure?
+                You are leaving the page and you will lose your diamonds. Are you sure?
               </p>
             </div>
             <div
@@ -754,7 +754,7 @@ exports[`renders correctly 1`] = `
               <p
                 className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
               >
-                You are leaving the page and you will lose your tickets. Are you sure?
+                You are leaving the page and you will lose your diamonds. Are you sure?
               </p>
             </div>
             <div
@@ -858,7 +858,7 @@ exports[`renders correctly 1`] = `
               <p
                 className="MuiTypography-root-24 MuiDialogContentText-root-61 MuiTypography-subheading-31 MuiTypography-colorTextSecondary-57"
               >
-                You are leaving the page and you will lose your tickets. Are you sure?
+                You are leaving the page and you will lose your diamonds. Are you sure?
               </p>
             </div>
             <div
