@@ -10,11 +10,18 @@ const styles = theme => ({
   },
 })
 
-export default withStyles(styles)(({ classes, to }) => (
+export const handleClick = to => evt => {
+  if (!to) {
+    evt.preventDefault()
+    window.history.back()
+  }
+}
+
+export default withStyles(styles)(({ classes, to = '' }) => (
   <IconButton
     className={classes.root}
     aria-label="Go Back"
-    component={props => <Link to={to} {...props} />}
+    component={props => <Link to={to} {...props} onClick={handleClick(to)} />}
   >
     <ArrowLeftIcon fontSize="large" />
   </IconButton>

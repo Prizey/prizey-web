@@ -28,6 +28,7 @@ import PaymentInfo from 'payment/PaymentInfo'
 import Paywall from 'payment/Paywall'
 import FairnessScreen from 'fairness/FairnessScreen'
 import TermsOfService from 'termsOfService/TermsOfServiceScreen'
+import PrivacyPolicy from 'privacyPolicy/PrivacyPolicy'
 
 export const authorizeGameFlow = state => state.basket.paid
 export const authorizeShippingFlow = state =>
@@ -94,6 +95,7 @@ export default props => (
     <UserProfile {...props} path="/profile" />
     <FairnessScreen {...props} path="/faq" />
     <TermsOfService {...props} path="/terms_of_service" />
+    <PrivacyPolicy {...props} path="/privacy-policy" />
 
     <Route Component={Paywall} {...props} path="/buy-diamonds" />
     <Route Component={Paywall} {...props} path="/buy-more" buyMore />

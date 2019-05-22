@@ -83,6 +83,7 @@ export const PaymentInfoComponent = withStyles(styles)(
 export const CardListComponent = props => (
   <List
     name="cards"
+    disableCache
     render={cards => <PaymentInfoComponent {...props} cards={cards} />}
   />
 )
