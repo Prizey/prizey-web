@@ -74,8 +74,9 @@ export const handleSelectCard = (dispatch, card) => () => dispatch(card)
 export const CreditCardComponent = withStyles(styles)(
   ({ cards, classes, creating, error, ...props }) => {
     const [stripeError, setError] = useState(null)
-    const [selectedCard, setSelectedCard] = useState(null)
-    const showForm = cards.length === 0 || selectedCard === 'new'
+    const [selectedCard, setSelectedCard] = useState(
+      cards.length > 0 ? null : 'new',
+    )
 
     return (
       <form onSubmit={handleSubmit({ selectedCard, setError, ...props })}>
@@ -99,7 +100,7 @@ export const CreditCardComponent = withStyles(styles)(
             </List>
           </div>
         )}
-        {showForm && <CreditCardFields />}
+        {selectedCard === 'new' && <CreditCardFields />}
 
         <div style={{ textAlign: 'center' }}>
           {creating && <CircularProgress color="primary" size={36} />}
