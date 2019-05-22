@@ -75,35 +75,44 @@ export const CreditCardComponent = withStyles(styles)(
   ({ cards, classes, creating, error, ...props }) => {
     const [stripeError, setError] = useState(null)
     const [selectedCard, setSelectedCard] = useState(null)
+    const showForm = cards.length === 0 || selectedCard === 'new'
 
     return (
       <form onSubmit={handleSubmit({ selectedCard, setError, ...props })}>
-        <div className={classes.list}>
-          <List>
-            {cards.map(card => (
+        {cards.length > 0 && (
+          <div className={classes.list}>
+            <List>
+              {cards.map(card => (
+                <CreditCardItem
+                  key={card.id}
+                  brand={card.brand}
+                  digits={card.last4}
+                  onClick={handleSelectCard(setSelectedCard, card.id)}
+                  selected={selectedCard === card.id}
+                />
+              ))}
               <CreditCardItem
-                key={card.id}
-                brand={card.brand}
-                digits={card.last4}
-                onClick={handleSelectCard(setSelectedCard, card.id)}
-                selected={selectedCard === card.id}
+                onClick={handleSelectCard(setSelectedCard, 'new')}
+                brand="Use another card"
+                selected={selectedCard === 'new'}
               />
-            ))}
-            <CreditCardItem
-              onClick={handleSelectCard(setSelectedCard, 'new')}
-              brand="Use another card"
-              selected={selectedCard === 'new'}
-            />
-          </List>
-        </div>
-        {selectedCard === 'new' && <CreditCardFields />}
+            </List>
+          </div>
+        )}
+        {showForm && <CreditCardFields />}
 
         <div style={{ textAlign: 'center' }}>
           {creating && <CircularProgress color="primary" size={36} />}
           {error && <ErrorComponent>{error}</ErrorComponent>}
           {stripeError && <ErrorComponent>{stripeError}</ErrorComponent>}
         </div>
-        <Button variant="contained" color="primary" type="submit" fullWidth>
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          disabled={selectedCard === null}
+          fullWidth
+        >
           PAY
         </Button>
       </form>
