@@ -25,7 +25,7 @@ const HtmlPage = props => (
 
 const HtmlPageContent = withStyles(styles)(
   ({ classes, info, location, contentKey }) => (
-    <Layout location={location} leftIcon={<GoBack to="/" />}>
+    <Layout location={location} leftIcon={<GoBack />}>
       <Typography align="left" variant="body1" className={classes.root}>
         <div
           dangerouslySetInnerHTML={{

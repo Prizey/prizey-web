@@ -717,7 +717,7 @@ exports[`renders correctly 1`] = `
           </div>
           <a
             className="Component-footerLink-8"
-            href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
+            href="/privacy-policy"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"

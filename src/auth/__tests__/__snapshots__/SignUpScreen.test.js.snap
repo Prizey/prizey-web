@@ -127,19 +127,20 @@ exports[`renders correctly 1`] = `
               TERMS
             </span>
           </div>
-          <a
+          <div
             className="Component-footerLink-80"
-            href="https://app.termly.io/document/privacy-policy/8192f107-a2dc-4548-bf83-97907c6d83c3"
             onClick={[Function]}
             rel="noopener noreferer"
             target="_blank"
+            to="/privacy-policy"
           >
+            Link - 
             <span
               className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
             >
               PRIVACY
             </span>
-          </a>
+          </div>
           <div
             className="Component-footerLink-80"
             onClick={[Function]}
