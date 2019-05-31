@@ -1,5 +1,4 @@
 import React from 'react'
-import { List } from 'croods'
 import get from 'lodash/get'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography, Button } from '@material-ui/core'
@@ -11,6 +10,7 @@ import UserBalance from 'design/UserBalance'
 
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import getButtonText from './purchaseDescription'
+import PurchaseOptions from './PurchaseOptions'
 
 const styles = theme => ({
   button0: {
@@ -78,9 +78,7 @@ const PaywallScreen = withStyles(styles)(
 
 export default ({ currentUser, buyMore = false, location }) =>
   currentUser ? (
-    <List
-      name="purchaseOptions"
-      path="/purchase_options"
+    <PurchaseOptions
       render={buttons => (
         <PaywallScreen
           buyMore={buyMore}
