@@ -161,35 +161,42 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
               <br />
               win what you tap.
             </h5>
-            <button
-              aria-label="Play now for $5"
-              className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
-              disabled={false}
-              onBlur={[Function]}
-              onContextMenu={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              tabIndex="0"
-              type="button"
+            <div
+              name="purchaseOptions"
+              path="/purchase_options"
+              render={[Function]}
             >
-              <span
-                className="MuiButton-label-73"
+               - Render: 
+              <button
+                aria-label="Play now for $undefined"
+                className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                <strong>
-                  Play now for $5
-                </strong>
-              </span>
-              <span
-                className="MuiTouchRipple-root-98"
-              />
-            </button>
+                <span
+                  className="MuiButton-label-73"
+                >
+                  <strong>
+                    Play now for $undefined
+                  </strong>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-98"
+                />
+              </button>
+            </div>
           </a>
         </div>
         <div
@@ -382,35 +389,42 @@ exports[`when component is mounted when user is not logged in redirects correctl
               <br />
               win what you tap.
             </h5>
-            <button
-              aria-label="Play now for $5"
-              className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
-              disabled={false}
-              onBlur={[Function]}
-              onContextMenu={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              tabIndex="0"
-              type="button"
+            <div
+              name="purchaseOptions"
+              path="/purchase_options"
+              render={[Function]}
             >
-              <span
-                className="MuiButton-label-73"
+               - Render: 
+              <button
+                aria-label="Play now for $undefined"
+                className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                <strong>
-                  Play now for $5
-                </strong>
-              </span>
-              <span
-                className="MuiTouchRipple-root-98"
-              />
-            </button>
+                <span
+                  className="MuiButton-label-73"
+                >
+                  <strong>
+                    Play now for $undefined
+                  </strong>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-98"
+                />
+              </button>
+            </div>
           </a>
         </div>
         <div

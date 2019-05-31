@@ -9,6 +9,7 @@ import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
+import PurchaseOptions from '../../payment/PurchaseOptions'
 
 const nextUrl = '/game'
 
@@ -70,15 +71,23 @@ const ScreenWithRoullette = withStyles(styles)(
           Tap the screen, <br />
           win what you tap.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          aria-label="Play now for $5"
-          className={classes.button}
-        >
-          <strong>Play now for $5</strong>
-        </Button>
+        <PurchaseOptions
+          render={buttons => {
+            const button = buttons[0]
+
+            return (
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                aria-label={`Play now for $${button.price}`}
+                className={classes.button}
+              >
+                <strong>{`Play now for $${button.price}`}</strong>
+              </Button>
+            )
+          }}
+        />
       </Link>
     </Layout>
   ),
