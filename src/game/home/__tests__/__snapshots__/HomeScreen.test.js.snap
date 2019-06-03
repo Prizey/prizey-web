@@ -189,7 +189,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
                   className="MuiButton-label-73"
                 >
                   <strong>
-                    Play now for $undefined
+                    Play now for $NaN
                   </strong>
                 </span>
                 <span
@@ -417,7 +417,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
                   className="MuiButton-label-73"
                 >
                   <strong>
-                    Play now for $undefined
+                    Play now for $NaN
                   </strong>
                 </span>
                 <span

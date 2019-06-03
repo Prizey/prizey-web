@@ -83,7 +83,7 @@ const ScreenWithRoullette = withStyles(styles)(
                 aria-label={`Play now for $${button.price}`}
                 className={classes.button}
               >
-                <strong>{`Play now for $${button.price}`}</strong>
+                <strong>{`Play now for $${parseInt(button.price, 10)}`}</strong>
               </Button>
             )
           }}
