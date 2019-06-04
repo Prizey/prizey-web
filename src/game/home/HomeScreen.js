@@ -9,7 +9,6 @@ import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
-import PurchaseOptions from '../../payment/PurchaseOptions'
 
 const nextUrl = '/game'
 
@@ -45,7 +44,15 @@ const styles = theme => ({
 })
 
 const ScreenWithRoullette = withStyles(styles)(
-  ({ classes, speed, list, multiplier, currentUser, location }) => (
+  ({
+    classes,
+    speed,
+    list,
+    multiplier,
+    currentUser,
+    homepageCta,
+    location,
+  }) => (
     <Layout
       leftIcon={<UserBalance />}
       rightIcon={
@@ -71,23 +78,15 @@ const ScreenWithRoullette = withStyles(styles)(
           Tap the screen, <br />
           win what you tap.
         </Typography>
-        <PurchaseOptions
-          render={buttons => {
-            const button = buttons[0]
-
-            return (
-              <Button
-                variant="contained"
-                color="primary"
-                fullWidth
-                aria-label={`Play now for $${button.price}`}
-                className={classes.button}
-              >
-                <strong>{`Play now for $${parseInt(button.price, 10)}`}</strong>
-              </Button>
-            )
-          }}
-        />
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          aria-label={homepageCta}
+          className={classes.button}
+        >
+          <strong>{homepageCta}</strong>
+        </Button>
       </Link>
     </Layout>
   ),
@@ -108,6 +107,7 @@ const ScreenWithSpeed = (
           list={list}
           difficulty={difficulty}
           multiplier={settings.priceMultiplier}
+          homepageCta={settings.homepageCta}
           navigate={navigate}
           speed={speed}
           currentUser={currentUser}
