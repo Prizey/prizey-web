@@ -1,9 +1,9 @@
 import React from 'react'
-import { Info } from 'croods'
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import Layout from 'design/Layout/Layout'
 import GoBack from 'design/GoBack/GoBack'
+import AdminText from 'design/AdminText/AdminText'
 
 const styles = theme => ({
   root: {
@@ -15,10 +15,8 @@ const styles = theme => ({
 })
 
 const HtmlPage = props => (
-  <Info
-    id="1"
-    name="game"
-    path="/game_setting"
+  <AdminText
+    tags={props.tags}
     render={info => <HtmlPageContent info={info} {...props} />}
   />
 )
@@ -29,7 +27,7 @@ const HtmlPageContent = withStyles(styles)(
       <Typography align="left" variant="body1" className={classes.root}>
         <div
           dangerouslySetInnerHTML={{
-            __html: info[contentKey],
+            __html: info[0][contentKey],
           }}
         />
       </Typography>

@@ -9,6 +9,7 @@ import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
+import AdminText from 'design/AdminText/AdminText'
 
 const nextUrl = '/game'
 
@@ -50,7 +51,6 @@ const ScreenWithRoullette = withStyles(styles)(
     list,
     multiplier,
     currentUser,
-    homepageCta,
     location,
   }) => (
     <Layout
@@ -78,15 +78,22 @@ const ScreenWithRoullette = withStyles(styles)(
           Tap the screen, <br />
           win what you tap.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          aria-label={homepageCta}
-          className={classes.button}
-        >
-          <strong>{homepageCta}</strong>
-        </Button>
+          <AdminText
+            tags={'homepage_cta'}
+            render={ info => (
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                aria-label={info[0].homepageCta}
+                className={classes.button}
+              >
+                <strong>{info[0].homepageCta}</strong>
+              </Button>
+              )
+            }
+          />
+
       </Link>
     </Layout>
   ),
@@ -107,7 +114,6 @@ const ScreenWithSpeed = (
           list={list}
           difficulty={difficulty}
           multiplier={settings.priceMultiplier}
-          homepageCta={settings.homepageCta}
           navigate={navigate}
           speed={speed}
           currentUser={currentUser}

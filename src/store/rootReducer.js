@@ -8,6 +8,7 @@ const reducers = {
   basket: basketReducer,
   cards: createReducer('cards'),
   game: createReducer('game'),
+  adminText: createReducer('adminText'),
   orders: createReducer('orders'),
   payments: createReducer('payments'),
   products: createReducer('products'),
