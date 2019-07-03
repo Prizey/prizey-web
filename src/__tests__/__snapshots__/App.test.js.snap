@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <div
   afterFailure={[Function]}
-  baseUrl="https://prizey-api-staging.herokuapp.com/"
+  baseUrl="https://ac0a55c8.ngrok.io:3001"
   foo="bar"
   renderError={[Function]}
   renderLoading={[Function]}
@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
   >
     <h5
       afterFailure={[Function]}
-      baseUrl="https://prizey-api-staging.herokuapp.com/"
+      baseUrl="https://ac0a55c8.ngrok.io:3001"
       className="MuiTypography-root-11 MuiTypography-h5-27 MuiTypography-colorError-45"
       foo="bar"
       renderError={[Function]}

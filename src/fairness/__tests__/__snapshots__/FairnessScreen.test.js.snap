@@ -2,9 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  id="1"
-  name="game"
-  path="/game_setting"
+  disableCache={true}
+  id="fairness_text"
+  name="adminText"
+  parseResponse={[Function]}
+  path="/admin_texts?tags[]=fairness_text"
   render={[Function]}
 >
   Info -
@@ -84,7 +86,7 @@ exports[`renders correctly 1`] = `
       <div
         className="Component-children-3"
       >
-        <p
+        <div
           className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-alignLeft-51 Component-root-1"
         >
           <div
@@ -94,7 +96,7 @@ exports[`renders correctly 1`] = `
               }
             }
           />
-        </p>
+        </div>
       </div>
       <div
         className="Component-footer-5"

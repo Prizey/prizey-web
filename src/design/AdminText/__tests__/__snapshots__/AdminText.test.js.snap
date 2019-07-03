@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when the component is mounted renders correctly 1`] = `
+<div
+  disableCache={true}
+  id="homepage_cta"
+  name="adminText"
+  path="/admin_texts?tags[]=homepage_cta"
+>
+  Info - 
+  <div>
+    the result
+  </div>
+</div>
+`;

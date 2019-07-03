@@ -9,8 +9,10 @@ const styles = theme => ({
   root: {
     height: '65vh',
     marginBottom: theme.spacing.md,
+    marginRight: parseInt(theme.spacing.sm, 10) * -1,
     marginTop: parseInt(theme.spacing.md, 10) * -1,
     overflow: 'auto',
+    paddingRight: theme.spacing.sm,
   },
 })
 
@@ -24,10 +26,15 @@ const HtmlPage = props => (
 const HtmlPageContent = withStyles(styles)(
   ({ classes, info, location, contentKey }) => (
     <Layout location={location} leftIcon={<GoBack />}>
-      <Typography align="left" variant="body1" className={classes.root}>
+      <Typography
+        align="left"
+        variant="body1"
+        component="div"
+        className={classes.root}
+      >
         <div
           dangerouslySetInnerHTML={{
-            __html: info[0][contentKey],
+            __html: info[contentKey],
           }}
         />
       </Typography>
