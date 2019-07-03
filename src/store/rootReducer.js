@@ -4,6 +4,7 @@ import { createReducer as createAuthReducer } from 'croods-auth'
 import basketReducer from './basket/reducer'
 
 const reducers = {
+  adminText: createReducer('adminText'),
   auth: createAuthReducer(),
   basket: basketReducer,
   cards: createReducer('cards'),

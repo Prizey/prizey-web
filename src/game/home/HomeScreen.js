@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Layout from 'design/Layout/Layout'
 import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
+import AdminText from 'design/AdminText/AdminText'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
 
@@ -44,15 +45,7 @@ const styles = theme => ({
 })
 
 const ScreenWithRoullette = withStyles(styles)(
-  ({
-    classes,
-    speed,
-    list,
-    multiplier,
-    currentUser,
-    homepageCta,
-    location,
-  }) => (
+  ({ classes, speed, list, multiplier, currentUser, location }) => (
     <Layout
       leftIcon={<UserBalance />}
       rightIcon={
@@ -78,15 +71,20 @@ const ScreenWithRoullette = withStyles(styles)(
           Tap the screen, <br />
           win what you tap.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          aria-label={homepageCta}
-          className={classes.button}
-        >
-          <strong>{homepageCta}</strong>
-        </Button>
+        <AdminText
+          tags={'homepage_cta'}
+          render={info => (
+            <Button
+              variant="contained"
+              color="primary"
+              fullWidth
+              aria-label={info.homepageCta}
+              className={classes.button}
+            >
+              <strong>{info.homepageCta}</strong>
+            </Button>
+          )}
+        />
       </Link>
     </Layout>
   ),
@@ -107,7 +105,6 @@ const ScreenWithSpeed = (
           list={list}
           difficulty={difficulty}
           multiplier={settings.priceMultiplier}
-          homepageCta={settings.homepageCta}
           navigate={navigate}
           speed={speed}
           currentUser={currentUser}
