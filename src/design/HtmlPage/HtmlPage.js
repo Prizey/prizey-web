@@ -1,4 +1,5 @@
 import React from 'react'
+import snakeCase from 'lodash/snakeCase'
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import Layout from 'design/Layout/Layout'
@@ -18,7 +19,7 @@ const styles = theme => ({
 
 const HtmlPage = props => (
   <AdminText
-    tags={props.tags}
+    tags={snakeCase(props.contentKey)}
     render={info => <HtmlPageContent info={info} {...props} />}
   />
 )
