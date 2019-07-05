@@ -23,6 +23,7 @@ import ShippingInfo from 'shipping/ShippingInfo'
 import ConfirmOrder from 'shipping/ConfirmOrder'
 
 import UserProfile from 'profile/UserProfile'
+import AdVideoScreen from 'advideo/AdVideoScreen'
 
 import PaymentInfo from 'payment/PaymentInfo'
 import Paywall from 'payment/Paywall'
@@ -91,6 +92,8 @@ export default props => (
       unauthorized="/game"
       path="/shipping-info/confirm"
     />
+
+    <AdVideoScreen {...props} path="/advertising" />
 
     <UserProfile {...props} path="/profile" />
     <FairnessScreen {...props} path="/faq" />
