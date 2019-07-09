@@ -67,6 +67,9 @@ const theme = createMuiTheme({
     },
   },
   palette: {
+    advertising: {
+      background: '#000000',
+    },
     difficulty: {
       easy: '#76ff03',
       hard: '#ff1744',
@@ -77,6 +80,7 @@ const theme = createMuiTheme({
     },
     paywall: {
       first: '#40c4ff',
+      reward: '#76ff03',
       second: '#536dfe',
     },
     primary: {

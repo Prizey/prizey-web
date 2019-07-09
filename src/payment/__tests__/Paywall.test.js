@@ -11,6 +11,14 @@ const mockList = [
 jest.mock('../../design/Layout/RegisterPageView')
 
 jest.mock('croods', () => ({
+  Info: ({ children, ...props }) => (
+    <div {...props}>
+      Info -{' '}
+      {props.render({
+        paywallRewardCta: 'bla foo',
+      })}
+    </div>
+  ),
   List: props => (
     <div {...props}>
       {props.children} - Render: {props.render(mockList)}

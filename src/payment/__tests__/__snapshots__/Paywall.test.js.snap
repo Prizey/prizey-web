@@ -10,15 +10,15 @@ exports[`renders correctly 1`] = `
 >
    - Render: 
   <div
-    className="Component-root-12"
+    className="Component-root-13"
   >
     <div
-      className="Component-header-10"
+      className="Component-header-11"
     >
       <a
         aria-current="page"
         aria-label="Go Back"
-        className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-13"
+        className="MuiButtonBase-root-21 MuiIconButton-root-15 Component-root-14"
         href="/"
         onBlur={[Function]}
         onClick={[Function]}
@@ -36,11 +36,11 @@ exports[`renders correctly 1`] = `
         tabIndex="0"
       >
         <span
-          className="MuiIconButton-label-19"
+          className="MuiIconButton-label-20"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-23 MuiSvgIcon-fontSizeLarge-31"
+            className="MuiSvgIcon-root-24 MuiSvgIcon-fontSizeLarge-32"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -55,12 +55,12 @@ exports[`renders correctly 1`] = `
           </svg>
         </span>
         <span
-          className="MuiTouchRipple-root-95"
+          className="MuiTouchRipple-root-96"
         />
       </a>
       <a
         aria-label="My profile"
-        className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-32"
+        className="MuiButtonBase-root-21 MuiIconButton-root-15 Component-root-33"
         href="/profile"
         onBlur={[Function]}
         onClick={[Function]}
@@ -78,11 +78,11 @@ exports[`renders correctly 1`] = `
         tabIndex="0"
       >
         <span
-          className="MuiIconButton-label-19"
+          className="MuiIconButton-label-20"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-23 MuiSvgIcon-fontSizeLarge-31"
+            className="MuiSvgIcon-root-24 MuiSvgIcon-fontSizeLarge-32"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -102,12 +102,12 @@ exports[`renders correctly 1`] = `
           </svg>
         </span>
         <span
-          className="MuiTouchRipple-root-95"
+          className="MuiTouchRipple-root-96"
         />
       </a>
     </div>
     <div
-      className="Component-container-7"
+      className="Component-container-8"
     >
       <a
         aria-current="page"
@@ -121,18 +121,18 @@ exports[`renders correctly 1`] = `
       >
         <img
           alt="Prizey"
-          className="Component-logoImage-11"
+          className="Component-logoImage-12"
           src="/logo.png"
         />
       </a>
       <div
-        className="Component-caption-5"
+        className="Component-caption-6"
       />
       <div
-        className="Component-children-6"
+        className="Component-children-7"
       >
         <h5
-          className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56"
+          className="MuiTypography-root-34 MuiTypography-h5-50 MuiTypography-alignCenter-57"
         >
           Purchase diamonds to play, win something every time.
         </h5>
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
           className="Component-buttonGroup-3"
         >
           <a
-            className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94 Component-button0-1"
+            className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button0-1"
             href="/payment/1"
             onBlur={[Function]}
             onClick={[Function]}
@@ -158,21 +158,21 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-70"
+              className="MuiButton-label-71"
             >
               <img
                 alt="diamond"
-                className="Component-icon-4"
+                className="Component-icon-5"
                 src="/icons/diamond.png"
               />
               10 Diamonds = $ 10.00
             </span>
             <span
-              className="MuiTouchRipple-root-95"
+              className="MuiTouchRipple-root-96"
             />
           </a>
           <a
-            className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94 Component-button1-2"
+            className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button1-2"
             href="/payment/2"
             onBlur={[Function]}
             onClick={[Function]}
@@ -190,21 +190,21 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-70"
+              className="MuiButton-label-71"
             >
               <img
                 alt="diamond"
-                className="Component-icon-4"
+                className="Component-icon-5"
                 src="/icons/diamond.png"
               />
               25 Diamonds = $ 25.00
             </span>
             <span
-              className="MuiTouchRipple-root-95"
+              className="MuiTouchRipple-root-96"
             />
           </a>
           <a
-            className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
+            className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95"
             href="/payment/3"
             onBlur={[Function]}
             onClick={[Function]}
@@ -222,77 +222,115 @@ exports[`renders correctly 1`] = `
             tabIndex="0"
           >
             <span
-              className="MuiButton-label-70"
+              className="MuiButton-label-71"
             >
               <img
                 alt="diamond"
-                className="Component-icon-4"
+                className="Component-icon-5"
                 src="/icons/diamond.png"
               />
               50 Diamonds = $ 50.00
             </span>
             <span
-              className="MuiTouchRipple-root-95"
+              className="MuiTouchRipple-root-96"
             />
           </a>
+          <div
+            disableCache={true}
+            id="paywall_reward_cta"
+            name="adminText"
+            parseResponse={[Function]}
+            path="/admin_texts?tags[]=paywall_reward_cta"
+            render={[Function]}
+          >
+            Info -
+             
+            <a
+              className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-buttonReward-4"
+              href="/reward"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <span
+                className="MuiButton-label-71"
+              >
+                bla foo
+              </span>
+              <span
+                className="MuiTouchRipple-root-96"
+              />
+            </a>
+          </div>
         </div>
         <p
-          className="MuiTypography-root-33 MuiTypography-body2-41 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          className="MuiTypography-root-34 MuiTypography-body2-42 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
         >
           By proceeding, you agree you're 18+.
         </p>
       </div>
       <div
-        className="Component-footer-8"
+        className="Component-footer-9"
       >
         <a
-          className="Component-footerLink-9"
+          className="Component-footerLink-10"
           href="/terms_of_service"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
           >
             TERMS
           </span>
         </a>
         <a
-          className="Component-footerLink-9"
+          className="Component-footerLink-10"
           href="/privacy-policy"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
           >
             PRIVACY
           </span>
         </a>
         <a
-          className="Component-footerLink-9"
+          className="Component-footerLink-10"
           href="/faq"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
           >
             FAIRNESS / FAQ
           </span>
         </a>
         <a
-          className="Component-footerLink-9"
+          className="Component-footerLink-10"
           href="/all-prizes"
           onClick={[Function]}
           rel="noopener noreferer"
           target="_blank"
         >
           <span
-            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
           >
             ALL PRIZES
           </span>

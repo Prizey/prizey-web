@@ -8,6 +8,7 @@ import { Redirect, Link } from '@reach/router'
 import GoBack from 'design/GoBack/GoBack'
 import UserBalance from 'design/UserBalance'
 
+import AdminText from 'design/AdminText/AdminText'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import getButtonText from './purchaseDescription'
 import PurchaseOptions from './PurchaseOptions'
@@ -28,6 +29,13 @@ const styles = theme => ({
   buttonGroup: {
     marginBottom: theme.spacing.md,
     marginTop: theme.spacing.md,
+  },
+  buttonReward: {
+    '&:hover': {
+      background: get(theme.palette, 'paywall.reward'),
+    },
+    background: get(theme.palette, 'paywall.reward'),
+    padding: '6px',
   },
   icon: {
     height: theme.spacing.md,
@@ -67,6 +75,20 @@ const PaywallScreen = withStyles(styles)(
             {getButtonText(ticketAmount, price)}
           </Button>
         ))}
+        <AdminText
+          tags="paywall_reward_cta"
+          render={info => (
+            <Button
+              variant="contained"
+              color="primary"
+              fullWidth
+              className={classes.buttonReward}
+              component={props => <Link to="/advertising" {...props} />}
+            >
+              {info.paywallRewardCta || ''}
+            </Button>
+          )}
+        />
       </div>
 
       <Typography align="center" variant="body2" color="textSecondary">
