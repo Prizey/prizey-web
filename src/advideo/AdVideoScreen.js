@@ -46,15 +46,23 @@ const styles = theme => ({
   },
 })
 
+export const setVideoLength = (settings, setAdLength) => () => {
+  VastXml.parse(settings.vastTag).then(vastJson => {
+    setAdLength(vastJson.vast.ad.length)
+  })
+}
+
+export const handleEnd = ({ creating, create, amount }) => () => {
+  if (!creating) {
+    create({ amount })
+  }
+}
+
 export const AdVideoScreen = withStyles(styles)(
   ({ settings, classes, creating, create }) => {
     const [adLength, setAdLength] = useState(0)
 
-    useLayoutEffect(() => {
-      VastXml.parse(settings.vastTag).then(vastJson => {
-        setAdLength(vastJson.vast.ad.length)
-      })
-    })
+    useLayoutEffect(setVideoLength(settings, setAdLength))
 
     return (
       <div className={classes.root}>
@@ -63,11 +71,11 @@ export const AdVideoScreen = withStyles(styles)(
           width={window.screen.width}
           vastXml={settings.vastTag}
           videoOptions={{ disableControls: true }}
-          onEnded={() => {
-            if (!creating) {
-              create({ amount: settings.adDiamondsReward })
-            }
-          }}
+          onEnded={handleEnd({
+            amount: settings.adDiamondsReward,
+            create,
+            creating,
+          })}
         />
         <div className={classes.appBar}>
           <div className={classes.row}>
