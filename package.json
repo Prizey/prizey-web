@@ -30,7 +30,8 @@
     "seasoned-auth-forms-web": "^0.3.3",
     "seasoned-components": "^0.1.0",
     "seasoned-flash": "^0.0.2",
-    "vast-player-react": "^0.4.1"
+    "vast-player-react": "^0.4.1",
+    "vast-xml-4": "^0.1.0"
   },
   "scripts": {
     "lint": "node_modules/.bin/eslint --max-warnings 0 .",

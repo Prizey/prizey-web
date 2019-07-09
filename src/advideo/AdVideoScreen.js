@@ -1,20 +1,25 @@
-import React from 'react'
+import React, { useLayoutEffect, useState } from 'react'
+import get from 'lodash/get'
 import VastPlayer from 'vast-player-react'
-// import VastXml from 'vast-xml-4'
-import { LinearProgress } from '@material-ui/core'
+import VastXml from 'vast-xml-4'
+
+import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 import GoBack from 'design/GoBack/GoBack'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import SpeedComponent from 'game/SpeedComponent'
+import TransactionComponent from 'game/TransactionComponent'
+
+import ProgressBar from './ProgressBar'
 
 const styles = theme => ({
   appBar: {
-    display: 'flex',
-    justifyContent: 'space-between',
     paddingLeft: theme.spacing.sm,
     paddingRight: theme.spacing.sm,
     paddingTop: theme.spacing.xs,
+    position: 'relative',
+    zIndex: 1,
   },
   footerBar: {
     bottom: 0,
@@ -27,39 +32,82 @@ const styles = theme => ({
   },
   root: {
     '& video': {
-      background: theme.palette.advertising.background,
+      background: get(theme.palette, 'advertising.background'),
       height: window.screen.height,
       width: window.screen.width,
     },
   },
+  row: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  title: {
+    marginTop: theme.spacing.md,
+  },
 })
 
-export const AdVideoScreen = withStyles(styles)(({ settings, classes }) => (
-  <div className={classes.root}>
-    <VastPlayer
-      height={window.screen.height}
-      width={window.screen.width}
-      vastXml={settings.vastTag}
-      videoOptions={{ disableControls: true }}
-      onEnded={() => {
-        // VastXml.parse(settings.vastTag).then(json => {
-        //   console.log(json)
-        // })
-      }}
-    />
-    <div className={classes.appBar}>
-      <GoBack />
-      <ProfileLink />
-    </div>
+export const AdVideoScreen = withStyles(styles)(
+  ({ settings, classes, creating, create }) => {
+    const [adLength, setAdLength] = useState(0)
 
-    <div className={classes.footerBar}>
-      <LinearProgress variant="determinate" value={80} />
-    </div>
-  </div>
-))
+    useLayoutEffect(() => {
+      VastXml.parse(settings.vastTag).then(vastJson => {
+        setAdLength(vastJson.vast.ad.length)
+      })
+    })
+
+    return (
+      <div className={classes.root}>
+        <VastPlayer
+          height={window.screen.height}
+          width={window.screen.width}
+          vastXml={settings.vastTag}
+          videoOptions={{ disableControls: true }}
+          onEnded={() => {
+            if (!creating) {
+              create({ amount: settings.adDiamondsReward })
+            }
+          }}
+        />
+        <div className={classes.appBar}>
+          <div className={classes.row}>
+            <GoBack />
+            <ProfileLink />
+          </div>
+
+          <Typography align="center" className={classes.title} variant="body2">
+            watch {adLength} ads and get {settings.adDiamondsReward} diamonds.
+          </Typography>
+        </div>
+
+        <div className={classes.footerBar}>
+          <ProgressBar length={adLength} />
+        </div>
+      </div>
+    )
+  },
+)
+
+export const afterCreate = (
+  { navigate, currentUser, setCurrentUser },
+  amount,
+) => () => {
+  setCurrentUser({
+    ...currentUser,
+    tickets: currentUser.tickets + amount,
+  })
+  navigate('/reward')
+}
 
 export default withStyles(styles)(props => (
   <SpeedComponent
-    render={settings => <AdVideoScreen {...props} settings={settings} />}
+    render={settings => (
+      <TransactionComponent
+        afterCreate={afterCreate(props, settings.adDiamondsReward)}
+        render={renderProps => (
+          <AdVideoScreen {...renderProps} {...props} settings={settings} />
+        )}
+      />
+    )}
   />
 ))

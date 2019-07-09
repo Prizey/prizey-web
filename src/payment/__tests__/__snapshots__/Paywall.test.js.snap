@@ -247,7 +247,7 @@ exports[`renders correctly 1`] = `
              
             <a
               className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-buttonReward-4"
-              href="/reward"
+              href="/advertising"
               onBlur={[Function]}
               onClick={[Function]}
               onContextMenu={[Function]}
