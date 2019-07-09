@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  id={1}
+  name="game"
+  path="/game_setting"
+  render={[Function]}
+>
+  Info -
+   
+  <div
+    className="Component-root-12"
+  >
+    <div
+      className="Component-header-10"
+    >
+      <a
+        aria-current="page"
+        aria-label="Go Back"
+        className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-13"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-19"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-23 MuiSvgIcon-fontSizeLarge-31"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-95"
+        />
+      </a>
+      <a
+        aria-label="My profile"
+        className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-32"
+        href="/profile"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiIconButton-label-19"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-23 MuiSvgIcon-fontSizeLarge-31"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <g>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+              />
+              <path
+                d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+              />
+            </g>
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-95"
+        />
+      </a>
+    </div>
+    <div
+      className="Component-container-7"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <img
+          alt="Prizey"
+          className="Component-logoImage-11"
+          src="/logo.png"
+        />
+      </a>
+      <div
+        className="Component-caption-5"
+      />
+      <div
+        className="Component-children-6"
+      >
+        <h5
+          className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56"
+        >
+          You got 
+          5
+           
+          <br />
+           diamonds!
+        </h5>
+        <div
+          className="Component-imgWrapper-4 Component-imgWrapper-2"
+        >
+          <img
+            alt="diamond"
+            className="Component-icon-3 Component-icon-1"
+            src="/icons/diamond.png"
+          />
+        </div>
+        <a
+          className="MuiButtonBase-root-20 MuiButton-root-69 MuiButton-contained-80 MuiButton-containedPrimary-81 MuiButton-raised-83 MuiButton-raisedPrimary-84 MuiButton-fullWidth-94"
+          href="/game"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiButton-label-70"
+          >
+            LET’S PLAY!
+          </span>
+          <span
+            className="MuiTouchRipple-root-95"
+          />
+        </a>
+      </div>
+      <div
+        className="Component-footer-8"
+      >
+        <a
+          className="Component-footerLink-9"
+          href="/terms_of_service"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          >
+            TERMS
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-9"
+          href="/privacy-policy"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          >
+            PRIVACY
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-9"
+          href="/faq"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          >
+            FAIRNESS / FAQ
+          </span>
+        </a>
+        <a
+          className="Component-footerLink-9"
+          href="/all-prizes"
+          onClick={[Function]}
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          <span
+            className="MuiTypography-root-33 MuiTypography-caption-43 MuiTypography-colorTextSecondary-66 MuiTypography-alignCenter-56"
+          >
+            ALL PRIZES
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
