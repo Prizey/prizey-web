@@ -4,247 +4,247 @@ exports[`redirects correctly 1`] = `null`;
 
 exports[`renders correctly 1`] = `
 <div
-  name="purchaseOptions"
-  path="/purchase_options"
+  disableCache={true}
+  id="paywall_reward_cta"
+  name="adminText"
+  parseResponse={[Function]}
+  path="/admin_texts?tags[]=paywall_reward_cta"
   render={[Function]}
 >
-   - Render: 
+  Info -
+   
   <div
-    className="Component-root-13"
+    name="purchaseOptions"
+    path="/purchase_options"
+    render={[Function]}
   >
+     - Render: 
     <div
-      className="Component-header-11"
+      className="Component-root-13"
     >
-      <a
-        aria-current="page"
-        aria-label="Go Back"
-        className="MuiButtonBase-root-21 MuiIconButton-root-15 Component-root-14"
-        href="/"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onContextMenu={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        role="button"
-        tabIndex="0"
+      <div
+        className="Component-header-11"
       >
-        <span
-          className="MuiIconButton-label-20"
+        <a
+          aria-current="page"
+          aria-label="Go Back"
+          className="MuiButtonBase-root-21 MuiIconButton-root-15 Component-root-14"
+          href="/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-24 MuiSvgIcon-fontSizeLarge-32"
-            focusable="false"
-            role="presentation"
-            viewBox="0 0 24 24"
+          <span
+            className="MuiIconButton-label-20"
           >
-            <path
-              d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
-            />
-            <path
-              d="M0 0h24v24H0V0z"
-              fill="none"
-            />
-          </svg>
-        </span>
-        <span
-          className="MuiTouchRipple-root-96"
-        />
-      </a>
-      <a
-        aria-label="My profile"
-        className="MuiButtonBase-root-21 MuiIconButton-root-15 Component-root-33"
-        href="/profile"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onContextMenu={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        role="button"
-        tabIndex="0"
-      >
-        <span
-          className="MuiIconButton-label-20"
-        >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-24 MuiSvgIcon-fontSizeLarge-32"
-            focusable="false"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M0 0h24v24H0V0z"
-              fill="none"
-            />
-            <g>
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-24 MuiSvgIcon-fontSizeLarge-32"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
               <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+                d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
               />
               <path
-                d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+                d="M0 0h24v24H0V0z"
+                fill="none"
               />
-            </g>
-          </svg>
-        </span>
-        <span
-          className="MuiTouchRipple-root-96"
-        />
-      </a>
-    </div>
-    <div
-      className="Component-container-8"
-    >
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
-        style={
-          Object {
-            "textDecoration": "none",
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-96"
+          />
+        </a>
+        <a
+          aria-label="My profile"
+          className="MuiButtonBase-root-21 MuiIconButton-root-15 Component-root-33"
+          href="/profile"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiIconButton-label-20"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-24 MuiSvgIcon-fontSizeLarge-32"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <g>
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+                />
+                <path
+                  d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+                />
+              </g>
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-96"
+          />
+        </a>
+      </div>
+      <div
+        className="Component-container-8"
+      >
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
           }
-        }
-      >
-        <img
-          alt="Prizey"
-          className="Component-logoImage-12"
-          src="/logo.png"
-        />
-      </a>
-      <div
-        className="Component-caption-6"
-      />
-      <div
-        className="Component-children-7"
-      >
-        <h5
-          className="MuiTypography-root-34 MuiTypography-h5-50 MuiTypography-alignCenter-57"
         >
-          Purchase diamonds to play, win something every time.
-        </h5>
+          <img
+            alt="Prizey"
+            className="Component-logoImage-12"
+            src="/logo.png"
+          />
+        </a>
         <div
-          className="Component-buttonGroup-3"
+          className="Component-caption-6"
+        />
+        <div
+          className="Component-children-7"
         >
-          <a
-            className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button0-1"
-            href="/payment/1"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
+          <h5
+            className="MuiTypography-root-34 MuiTypography-h5-50 MuiTypography-alignCenter-57"
           >
-            <span
-              className="MuiButton-label-71"
-            >
-              <img
-                alt="diamond"
-                className="Component-icon-5"
-                src="/icons/diamond.png"
-              />
-              10 Diamonds = $ 10.00
-            </span>
-            <span
-              className="MuiTouchRipple-root-96"
-            />
-          </a>
-          <a
-            className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button1-2"
-            href="/payment/2"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
-          >
-            <span
-              className="MuiButton-label-71"
-            >
-              <img
-                alt="diamond"
-                className="Component-icon-5"
-                src="/icons/diamond.png"
-              />
-              25 Diamonds = $ 25.00
-            </span>
-            <span
-              className="MuiTouchRipple-root-96"
-            />
-          </a>
-          <a
-            className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95"
-            href="/payment/3"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
-          >
-            <span
-              className="MuiButton-label-71"
-            >
-              <img
-                alt="diamond"
-                className="Component-icon-5"
-                src="/icons/diamond.png"
-              />
-              50 Diamonds = $ 50.00
-            </span>
-            <span
-              className="MuiTouchRipple-root-96"
-            />
-          </a>
+            Purchase diamonds to play, win something every time.
+          </h5>
           <div
-            disableCache={true}
-            id="paywall_reward_cta"
-            name="adminText"
-            parseResponse={[Function]}
-            path="/admin_texts?tags[]=paywall_reward_cta"
-            render={[Function]}
+            className="Component-buttonGroup-3"
           >
-            Info -
-             
+            <a
+              className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button0-1"
+              href="/payment/1"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <span
+                className="MuiButton-label-71"
+              >
+                <img
+                  alt="diamond"
+                  className="Component-icon-5"
+                  src="/icons/diamond.png"
+                />
+                10 Diamonds = $ 10.00
+              </span>
+              <span
+                className="MuiTouchRipple-root-96"
+              />
+            </a>
+            <a
+              className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button1-2"
+              href="/payment/2"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <span
+                className="MuiButton-label-71"
+              >
+                <img
+                  alt="diamond"
+                  className="Component-icon-5"
+                  src="/icons/diamond.png"
+                />
+                25 Diamonds = $ 25.00
+              </span>
+              <span
+                className="MuiTouchRipple-root-96"
+              />
+            </a>
+            <a
+              className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95"
+              href="/payment/3"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <span
+                className="MuiButton-label-71"
+              >
+                <img
+                  alt="diamond"
+                  className="Component-icon-5"
+                  src="/icons/diamond.png"
+                />
+                50 Diamonds = $ 50.00
+              </span>
+              <span
+                className="MuiTouchRipple-root-96"
+              />
+            </a>
             <a
               className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-buttonReward-4"
               href="/advertising"
@@ -273,68 +273,68 @@ exports[`renders correctly 1`] = `
               />
             </a>
           </div>
+          <p
+            className="MuiTypography-root-34 MuiTypography-body2-42 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+          >
+            By proceeding, you agree you're 18+.
+          </p>
         </div>
-        <p
-          className="MuiTypography-root-34 MuiTypography-body2-42 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+        <div
+          className="Component-footer-9"
         >
-          By proceeding, you agree you're 18+.
-        </p>
-      </div>
-      <div
-        className="Component-footer-9"
-      >
-        <a
-          className="Component-footerLink-10"
-          href="/terms_of_service"
-          onClick={[Function]}
-          rel="noopener noreferer"
-          target="_blank"
-        >
-          <span
-            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+          <a
+            className="Component-footerLink-10"
+            href="/terms_of_service"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
           >
-            TERMS
-          </span>
-        </a>
-        <a
-          className="Component-footerLink-10"
-          href="/privacy-policy"
-          onClick={[Function]}
-          rel="noopener noreferer"
-          target="_blank"
-        >
-          <span
-            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            <span
+              className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-10"
+            href="/privacy-policy"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
           >
-            PRIVACY
-          </span>
-        </a>
-        <a
-          className="Component-footerLink-10"
-          href="/faq"
-          onClick={[Function]}
-          rel="noopener noreferer"
-          target="_blank"
-        >
-          <span
-            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            <span
+              className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-10"
+            href="/faq"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
           >
-            FAIRNESS / FAQ
-          </span>
-        </a>
-        <a
-          className="Component-footerLink-10"
-          href="/all-prizes"
-          onClick={[Function]}
-          rel="noopener noreferer"
-          target="_blank"
-        >
-          <span
-            className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            <span
+              className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            >
+              FAIRNESS / FAQ
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-10"
+            href="/all-prizes"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
           >
-            ALL PRIZES
-          </span>
-        </a>
+            <span
+              className="MuiTypography-root-34 MuiTypography-caption-44 MuiTypography-colorTextSecondary-67 MuiTypography-alignCenter-57"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

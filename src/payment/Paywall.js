@@ -44,7 +44,7 @@ const styles = theme => ({
 })
 
 const PaywallScreen = withStyles(styles)(
-  ({ classes, buttons, buyMore = false, currentUser, location }) => (
+  ({ classes, buttons, buyMore = false, info, currentUser, location }) => (
     <Layout
       location={location}
       currentUser={currentUser}
@@ -75,20 +75,15 @@ const PaywallScreen = withStyles(styles)(
             {getButtonText(ticketAmount, price)}
           </Button>
         ))}
-        <AdminText
-          tags="paywall_reward_cta"
-          render={info => (
-            <Button
-              variant="contained"
-              color="primary"
-              fullWidth
-              className={classes.buttonReward}
-              component={props => <Link to="/advertising" {...props} />}
-            >
-              {info.paywallRewardCta || ''}
-            </Button>
-          )}
-        />
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          className={classes.buttonReward}
+          component={props => <Link to="/advertising" {...props} />}
+        >
+          {info.paywallRewardCta || ''}
+        </Button>
       </div>
 
       <Typography align="center" variant="body2" color="textSecondary">
@@ -100,12 +95,18 @@ const PaywallScreen = withStyles(styles)(
 
 export default ({ currentUser, buyMore = false, location }) =>
   currentUser ? (
-    <PurchaseOptions
-      render={buttons => (
-        <PaywallScreen
-          buyMore={buyMore}
-          buttons={buttons}
-          location={location}
+    <AdminText
+      tags="paywall_reward_cta"
+      render={info => (
+        <PurchaseOptions
+          render={buttons => (
+            <PaywallScreen
+              info={info}
+              buyMore={buyMore}
+              buttons={buttons}
+              location={location}
+            />
+          )}
         />
       )}
     />
