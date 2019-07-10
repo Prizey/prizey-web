@@ -60,6 +60,11 @@ const theme = createMuiTheme({
         transform: 'none',
       },
     },
+    MuiLinearProgress: {
+      colorPrimary: {
+        backgroundColor: fade('#ffffff', 0.4),
+      },
+    },
     MuiSvgIcon: {
       root: {
         color: '#ffffff',
