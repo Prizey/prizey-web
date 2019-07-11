@@ -1,19 +1,14 @@
-import { watchVideo } from '../ProgressBar'
+import { updateProgress } from '../ProgressBar'
 
 describe('when component is mounted', () => {
   it('set the progress of videos played', () => {
     const params = {
-      diff: 50,
+      duration: 50,
       progress: 0,
       setProgress: jest.fn(),
-      videos: [
-        {
-          addEventListener: (kind, callback) => callback(),
-        },
-      ],
     }
-    watchVideo(params)()
+    updateProgress(params)()
 
-    expect(params.setProgress).toHaveBeenCalledWith(50)
+    expect(params.setProgress).toHaveBeenCalledWith(1)
   })
 })

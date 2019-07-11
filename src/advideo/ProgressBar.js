@@ -1,26 +1,14 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useState } from 'react'
 import { LinearProgress } from '@material-ui/core'
+import { useInterval } from 'seasoned-components'
 
-export const watchVideo = ({ videos, progress, setProgress, diff }) => () => {
-  Array.from(videos).map(video =>
-    video.addEventListener('ended', () => {
-      setProgress(progress + diff)
-    }),
-  )
+export const updateProgress = ({ duration, progress, setProgress }) => () => {
+  setProgress(progress + 50 / duration)
 }
 
-export default ({ length }) => {
+export default ({ duration }) => {
   const [progress, setProgress] = useState(0)
-  const diff = 100 / length
-
-  useLayoutEffect(
-    watchVideo({
-      diff,
-      progress,
-      setProgress,
-      videos: document.getElementsByTagName('video'),
-    }),
-  )
+  useInterval(updateProgress({ duration, progress, setProgress }), 500)
 
   return <LinearProgress variant="determinate" value={progress} />
 }
