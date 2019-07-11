@@ -1,22 +1,23 @@
 import React, { useState, useLayoutEffect } from 'react'
 import { LinearProgress } from '@material-ui/core'
 
-export const watchVideo = ({ videos, progress, setProgress, diff }) => () => {
+export const watchVideo = ({ videos, setProgress }) => () => {
   Array.from(videos).map(video =>
-    video.addEventListener('ended', () => {
-      setProgress(progress + diff)
+    video.addEventListener('progress', evt => {
+      const { target } = evt
+      const currentPercent = (target.currentTime * 100) / target.duration
+
+      setProgress(currentPercent)
     }),
   )
 }
 
 export default ({ length }) => {
   const [progress, setProgress] = useState(0)
-  const diff = 100 / length
 
   useLayoutEffect(
     watchVideo({
-      diff,
-      progress,
+      length,
       setProgress,
       videos: document.getElementsByTagName('video'),
     }),
