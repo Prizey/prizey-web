@@ -8661,6 +8661,11 @@ seasoned-components@^0.1.0:
   resolved "https://registry.yarnpkg.com/seasoned-components/-/seasoned-components-0.1.0.tgz#60263de3145fb162fda60bed220a2527a8ad8816"
   integrity sha512-QG7VrX+VNFIHfrzoyIDPr2iWtowfWYJNshCW+ubSxLu4kdoBMqsklo0KW4hs3BftRHkrRlgczdQolG7UdviIGw==
 
+seasoned-components@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/seasoned-components/-/seasoned-components-0.1.2.tgz#a62ae19dc2cf3cf4233e100672b43c2f0fe3843a"
+  integrity sha512-8t4x1ar6Z7XGJMCLAWo8f/QQ9+4rNSlwAn+pnOdCwyeJuu23Yoj2pehLkfsDlJrAYW7PCffouM8gkQjuaAHraA==
+
 seasoned-flash@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/seasoned-flash/-/seasoned-flash-0.0.2.tgz#bab3b64d796ed359b7024794e90f82d15be9e095"

@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react'
 import get from 'lodash/get'
+import sumBy from 'lodash/sumBy'
 import VastPlayer from 'vast-player-react'
 import VastXml from 'vast-xml-4'
 
@@ -46,8 +47,23 @@ const styles = theme => ({
   },
 })
 
-export const setVideoLength = (settings, setAdLength) => () => {
+export const setVideoLength = (settings, setAdLength, setDuration) => () => {
   VastXml.parse(settings.vastTag).then(vastJson => {
+    const duration = sumBy(vastJson.vast.ad, adItem => {
+      const time = get(
+        adItem,
+        'inLine.creatives.creative.0.linear.duration._value',
+      )
+
+      const timeParts = time.split(':')
+      return (
+        parseInt(timeParts[0] * 3600, 10) +
+        parseInt(timeParts[1] * 60, 10) +
+        parseInt(timeParts[2], 10)
+      )
+    })
+
+    setDuration(duration)
     setAdLength(vastJson.vast.ad.length)
   })
 }
@@ -61,8 +77,9 @@ export const handleEnd = ({ creating, create, amount }) => () => {
 export const AdVideoScreen = withStyles(styles)(
   ({ settings, classes, creating, create }) => {
     const [adLength, setAdLength] = useState(0)
+    const [duration, setDuration] = useState(0)
 
-    useLayoutEffect(setVideoLength(settings, setAdLength))
+    useLayoutEffect(setVideoLength(settings, setAdLength, setDuration))
 
     return (
       <div className={classes.root}>
@@ -89,7 +106,7 @@ export const AdVideoScreen = withStyles(styles)(
         </div>
 
         <div className={classes.footerBar}>
-          <ProgressBar length={adLength} />
+          <ProgressBar duration={duration} />
         </div>
       </div>
     )

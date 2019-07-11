@@ -9,7 +9,17 @@ import AdVideo, {
 jest.mock('vast-xml-4', () => ({
   parse: () =>
     Promise.resolve({
-      vast: { ad: [] },
+      vast: {
+        ad: [
+          {
+            inLine: {
+              creatives: {
+                creative: [{ linear: { duration: { _value: '00:00:30' } } }],
+              },
+            },
+          },
+        ],
+      },
     }),
 }))
 
