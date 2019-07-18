@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import sumBy from 'lodash/sumBy'
 import VastPlayer from 'vast-player-react'
 import VastXml from 'vast-xml-4'
+import axios from 'axios'
 
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
@@ -47,24 +48,28 @@ const styles = theme => ({
   },
 })
 
-export const setVideoLength = (settings, setAdLength, setDuration) => () => {
-  VastXml.parse(settings.vastTag).then(vastJson => {
-    const duration = sumBy(vastJson.vast.ad, adItem => {
-      const time = get(
-        adItem,
-        'inLine.creatives.creative.0.linear.duration._value',
-      )
+export const setVideoProperties = (settings, setVastXml, setDuration) => () => {
+  axios.get(settings.vastTag).then(response => {
+    const vastXml = response.data.replace('version="3.0"', 'version="4.0"')
 
-      const timeParts = time.split(':')
-      return (
-        parseInt(timeParts[0] * 3600, 10) +
-        parseInt(timeParts[1] * 60, 10) +
-        parseInt(timeParts[2], 10)
-      )
+    VastXml.parse(vastXml).then(vastJson => {
+      const duration = sumBy(vastJson.vast.ad, adItem => {
+        const time = get(
+          adItem,
+          'inLine.creatives.creative.0.linear.duration._value',
+        )
+
+        const timeParts = time.split(':')
+        return (
+          parseInt(timeParts[0], 10) * 3600 +
+          parseInt(timeParts[1], 10) * 60 +
+          parseInt(timeParts[2], 10)
+        )
+      })
+
+      setDuration(duration)
+      setVastXml(vastXml)
     })
-
-    setDuration(duration)
-    setAdLength(vastJson.vast.ad.length)
   })
 }
 
@@ -76,24 +81,27 @@ export const handleEnd = ({ creating, create, amount }) => () => {
 
 export const AdVideoScreen = withStyles(styles)(
   ({ settings, classes, creating, create }) => {
-    const [adLength, setAdLength] = useState(0)
+    const adLength = 1
+    const [vastXml, setVastXml] = useState(null)
     const [duration, setDuration] = useState(0)
 
-    useLayoutEffect(setVideoLength(settings, setAdLength, setDuration))
+    useLayoutEffect(setVideoProperties(settings, setVastXml, setDuration), [])
 
     return (
       <div className={classes.root}>
-        <VastPlayer
-          height={window.screen.height}
-          width={window.screen.width}
-          vastXml={settings.vastTag}
-          videoOptions={{ disableControls: true }}
-          onEnded={handleEnd({
-            amount: settings.adDiamondsReward,
-            create,
-            creating,
-          })}
-        />
+        {vastXml && (
+          <VastPlayer
+            height={window.screen.height}
+            width={window.screen.width}
+            vastXml={vastXml}
+            videoOptions={{ disableControls: true }}
+            onEnded={handleEnd({
+              amount: settings.adDiamondsReward,
+              create,
+              creating,
+            })}
+          />
+        )}
         <div className={classes.appBar}>
           <div className={classes.row}>
             <GoBack />

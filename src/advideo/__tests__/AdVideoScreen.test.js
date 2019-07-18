@@ -3,9 +3,12 @@ import renderer, { act } from 'react-test-renderer'
 import AdVideo, {
   afterCreate,
   handleEnd,
-  setVideoLength,
+  setVideoProperties,
 } from '../AdVideoScreen'
 
+jest.mock('axios', () => ({
+  get: () => Promise.resolve({ data: '' }),
+}))
 jest.mock('vast-xml-4', () => ({
   parse: () =>
     Promise.resolve({
@@ -14,7 +17,7 @@ jest.mock('vast-xml-4', () => ({
           {
             inLine: {
               creatives: {
-                creative: [{ linear: { duration: { _value: '00:00:30' } } }],
+                creative: [{ linear: { duration: { _value: '00:00:30.0' } } }],
               },
             },
           },
@@ -56,7 +59,7 @@ describe('when component is mounted', () => {
   it('count the videos from vast tag', () => {
     const setAdLength = jest.fn()
 
-    setVideoLength({ vastTag: '' }, setAdLength)()
+    setVideoProperties({ vastTag: '' }, setAdLength)()
     setTimeout(() => {
       expect(setAdLength).toHaveBeenCalledTimes(1)
     }, 100)
