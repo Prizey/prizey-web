@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import sumBy from 'lodash/sumBy'
 import VastPlayer from 'vast-player-react'
 import VastXml from 'vast-xml-4'
+// import axios from 'axios'
 
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
@@ -48,6 +49,7 @@ const styles = theme => ({
 })
 
 export const setVideoLength = (settings, setAdLength, setDuration) => () => {
+  // load the vast tag and add here
   VastXml.parse(settings.vastTag).then(vastJson => {
     const duration = sumBy(vastJson.vast.ad, adItem => {
       const time = get(
