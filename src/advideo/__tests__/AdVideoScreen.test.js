@@ -3,6 +3,8 @@ import renderer, { act } from 'react-test-renderer'
 import AdVideo, {
   afterCreate,
   handleEnd,
+  vastReducer,
+  autoplayTrick,
   setVideoProperties,
 } from '../AdVideoScreen'
 
@@ -57,36 +59,101 @@ describe('when component is mounted', () => {
   })
 
   it('count the videos from vast tag', () => {
-    const setAdLength = jest.fn()
+    const params = {
+      dispatch: jest.fn(),
+      settings: {
+        vastTag: '',
+      },
+    }
 
-    setVideoProperties({ vastTag: '' }, setAdLength)()
+    setVideoProperties(params)()
     setTimeout(() => {
-      expect(setAdLength).toHaveBeenCalledTimes(1)
+      expect(params.dispatch).toHaveBeenCalledTimes(1)
     }, 100)
+  })
+
+  it('force the play if the browser block autoplay videos', () => {
+    jest.useFakeTimers()
+
+    const mockPlay = jest.fn()
+    autoplayTrick({
+      querySelector: () => ({
+        play: () => {
+          mockPlay()
+          return Promise.reject()
+        },
+      }),
+    })()
+
+    jest.runOnlyPendingTimers()
+    expect(mockPlay).toHaveBeenCalledTimes(1)
   })
 })
 
-describe('when finish the ad videos', () => {
-  it('call the create when finish the video', () => {
+describe('when finish one ad video', () => {
+  it('load the next video', () => {
     const params = {
-      amount: 3,
-      create: jest.fn(),
-      creating: false,
+      current: 0,
+      dispatch: jest.fn(),
+      endParams: {
+        amount: 3,
+        create: jest.fn(),
+        creating: false,
+      },
+      length: 3,
     }
 
     handleEnd(params)()
-    expect(params.create).toHaveBeenCalledTimes(1)
+    expect(params.dispatch).toHaveBeenCalledTimes(1)
+  })
+
+  it('update the count on videos played', () => {
+    const action = { type: 'fetchNextVast' }
+    const state = {
+      current: 1,
+      vastXml: 'xml string',
+    }
+
+    expect(vastReducer(state, action)).toEqual({
+      current: 2,
+      vastXml: null,
+    })
+
+    expect(vastReducer(state, { type: '' })).toEqual(state)
+  })
+})
+
+describe('when finish the ad video list', () => {
+  it('call the create when finish the video', () => {
+    const params = {
+      current: 2,
+      dispatch: jest.fn(),
+      endParams: {
+        amount: 3,
+        create: jest.fn(),
+        creating: false,
+      },
+      length: 3,
+    }
+
+    handleEnd(params)()
+    expect(params.endParams.create).toHaveBeenCalledTimes(1)
   })
 
   it("do nothing if it's creating", () => {
     const params = {
-      amount: 3,
-      create: jest.fn(),
-      creating: true,
+      current: 2,
+      dispatch: jest.fn(),
+      endParams: {
+        amount: 3,
+        create: jest.fn(),
+        creating: true,
+      },
+      length: 3,
     }
 
     handleEnd(params)()
-    expect(params.create).not.toHaveBeenCalled()
+    expect(params.endParams.create).not.toHaveBeenCalled()
   })
 
   it('call the navigate and set the user tickets', () => {

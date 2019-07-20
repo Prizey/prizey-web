@@ -33,8 +33,8 @@ const styles = theme => ({
   root: {
     '& video': {
       background: get(theme.palette, 'advertising.background'),
-      height: window.screen.height,
-      width: window.screen.width,
+      height: window.innerHeight,
+      width: window.innerWidth,
     },
     height: '100vh',
   },
@@ -52,6 +52,24 @@ export const setVideoProperties = ({ dispatch, settings }) => () => {
     const vastXml = response.data.replace('version="3.0"', 'version="4.0"')
     dispatch({ payload: vastXml, type: 'fetchNextVastSuccess' })
   })
+}
+
+export const autoplayTrick = document => () => {
+  // trick to the autoplay problem
+  setTimeout(() => {
+    const video = document.querySelector('video')
+    if (video) {
+      const promise = video.play()
+
+      if (promise !== undefined) {
+        promise.catch(() => {
+          // Show something in the UI that the video is muted
+          video.muted = true
+          video.play()
+        })
+      }
+    }
+  }, 100)
 }
 
 export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
@@ -80,7 +98,7 @@ export const vastReducer = (state, action) => {
 
 export const AdVideoScreen = withStyles(styles)(
   ({ settings, classes, creating, create }) => {
-    const adLength = 6
+    const adLength = settings.videoAdsForReward || 6
     const duration = adLength * 30
 
     const [state, dispatch] = useReducer(vastReducer, {
@@ -89,13 +107,14 @@ export const AdVideoScreen = withStyles(styles)(
     })
 
     useLayoutEffect(setVideoProperties({ dispatch, settings }), [state.current])
+    useLayoutEffect(autoplayTrick(document), [state.current, state.vastXml])
 
     return (
       <div className={classes.root}>
         {state.vastXml && (
           <VastPlayer
-            height={window.screen.height}
-            width={window.screen.width}
+            height={window.innerHeight}
+            width={window.innerWidth}
             vastXml={state.vastXml}
             videoOptions={{ disableControls: true }}
             onEnded={handleEnd({

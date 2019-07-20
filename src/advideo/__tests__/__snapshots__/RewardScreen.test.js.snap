@@ -16,10 +16,9 @@ exports[`renders correctly 1`] = `
       className="Component-header-10"
     >
       <a
-        aria-current="page"
         aria-label="Go Back"
         className="MuiButtonBase-root-20 MuiIconButton-root-14 Component-root-13"
-        href="/"
+        href="/game"
         onBlur={[Function]}
         onClick={[Function]}
         onContextMenu={[Function]}
