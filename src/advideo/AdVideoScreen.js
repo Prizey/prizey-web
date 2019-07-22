@@ -1,8 +1,6 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useReducer } from 'react'
 import get from 'lodash/get'
-import sumBy from 'lodash/sumBy'
 import VastPlayer from 'vast-player-react'
-import VastXml from 'vast-xml-4'
 import axios from 'axios'
 
 import { Typography } from '@material-ui/core'
@@ -35,9 +33,10 @@ const styles = theme => ({
   root: {
     '& video': {
       background: get(theme.palette, 'advertising.background'),
-      height: window.screen.height,
-      width: window.screen.width,
+      height: window.innerHeight,
+      width: window.innerWidth,
     },
+    height: '100vh',
   },
   row: {
     display: 'flex',
@@ -48,57 +47,87 @@ const styles = theme => ({
   },
 })
 
-export const setVideoProperties = (settings, setVastXml, setDuration) => () => {
+export const setVideoProperties = ({ dispatch, settings }) => () => {
   axios.get(settings.vastTag).then(response => {
     const vastXml = response.data.replace('version="3.0"', 'version="4.0"')
-
-    VastXml.parse(vastXml).then(vastJson => {
-      const duration = sumBy(vastJson.vast.ad, adItem => {
-        const time = get(
-          adItem,
-          'inLine.creatives.creative.0.linear.duration._value',
-        )
-
-        const timeParts = time.split(':')
-        return (
-          parseInt(timeParts[0], 10) * 3600 +
-          parseInt(timeParts[1], 10) * 60 +
-          parseInt(timeParts[2], 10)
-        )
-      })
-
-      setDuration(duration)
-      setVastXml(vastXml)
-    })
+    dispatch({ payload: vastXml, type: 'fetchNextVastSuccess' })
   })
 }
 
-export const handleEnd = ({ creating, create, amount }) => () => {
-  if (!creating) {
-    create({ amount })
+const triggerVideoPlay = document => {
+  const video = document.querySelector('video')
+  if (video) {
+    const promise = video.play()
+
+    if (promise !== undefined) {
+      promise.catch(() => {
+        // Show something in the UI that the video is muted
+        video.muted = true
+        video.play()
+      })
+    }
+  }
+}
+
+export const autoplayTrick = document => () => {
+  // trick to the autoplay problem
+  setTimeout(() => triggerVideoPlay(document), 100)
+}
+
+export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
+  if (current + 1 >= length) {
+    const { creating, create, amount } = endParams
+    if (!creating) {
+      create({ amount })
+    }
+  } else {
+    dispatch({ type: 'fetchNextVast' })
+  }
+}
+
+export const vastReducer = (state, action) => {
+  switch (action.type) {
+    case 'fetchNextVast':
+      return { ...state, current: state.current + 1, vastXml: null }
+
+    case 'fetchNextVastSuccess':
+      return { ...state, vastXml: action.payload }
+
+    default:
+      return state
   }
 }
 
 export const AdVideoScreen = withStyles(styles)(
   ({ settings, classes, creating, create }) => {
-    const adLength = 1
-    const [vastXml, setVastXml] = useState(null)
-    const [duration, setDuration] = useState(0)
+    const adLength = settings.videoAdsForReward || 6
+    const duration = adLength * 30
 
-    useLayoutEffect(setVideoProperties(settings, setVastXml, setDuration), [])
+    const [state, dispatch] = useReducer(vastReducer, {
+      current: 0,
+      vastXml: null,
+    })
+
+    useLayoutEffect(setVideoProperties({ dispatch, settings }), [state.current])
+    useLayoutEffect(autoplayTrick(document), [state.current, state.vastXml])
 
     return (
       <div className={classes.root}>
-        {vastXml && (
+        {state.vastXml && (
           <VastPlayer
-            height={window.screen.height}
-            width={window.screen.width}
-            vastXml={vastXml}
+            height={window.innerHeight}
+            width={window.innerWidth}
+            vastXml={state.vastXml}
             videoOptions={{ disableControls: true }}
             onEnded={handleEnd({
-              amount: settings.adDiamondsReward,
-              create,
-              creating,
+              current: state.current,
+              dispatch,
+              endParams: {
+                amount: settings.adDiamondsReward,
+                create,
+                creating,
+              },
+              length: adLength,
             })}
           />
         )}

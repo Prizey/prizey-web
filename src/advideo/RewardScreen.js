@@ -24,7 +24,7 @@ export const RewardScreen = withStyles(styles)(
   ({ classes, location, settings }) => (
     <Layout
       location={location}
-      leftIcon={<GoBack />}
+      leftIcon={<GoBack to="/game" />}
       rightIcon={<ProfileLink />}
     >
       <Typography align="center" variant="h5">
