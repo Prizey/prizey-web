@@ -133,7 +133,9 @@ exports[`renders correctly 1`] = `
         <h5
           className="MuiTypography-root-33 MuiTypography-h5-49 MuiTypography-alignCenter-56"
         >
-          You got 
+          You
+          '
+          ve got 
           5
            
           <br />
