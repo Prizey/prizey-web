@@ -3,7 +3,7 @@ import get from 'lodash/get'
 import VastPlayer from 'vast-player-react'
 import axios from 'axios'
 
-import { Typography } from '@material-ui/core'
+import { Typography, Grid } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 import GoBack from 'design/GoBack/GoBack'
@@ -29,6 +29,12 @@ const styles = theme => ({
     paddingRight: theme.spacing.md,
     position: 'absolute',
     right: 0,
+  },
+  icon: {
+    height: 20,
+    marginLeft: 5,
+    marginTop: -5,
+    width: 20,
   },
   root: {
     '& video': {
@@ -137,9 +143,22 @@ export const AdVideoScreen = withStyles(styles)(
             <ProfileLink />
           </div>
 
-          <Typography align="center" className={classes.title} variant="body2">
-            watch {adLength} ads and get {settings.adDiamondsReward} diamonds.
-          </Typography>
+          <Grid
+            container
+            className={classes.title}
+            justify="center"
+            alignItems="center"
+          >
+            <Typography align="center" variant="body2" component="div">
+              Watch {adLength} videos and get {settings.adDiamondsReward}{' '}
+              diamonds
+            </Typography>
+            <img
+              src="/icons/diamond.png"
+              alt="diamond"
+              className={classes.icon}
+            />
+          </Grid>
         </div>
 
         <div className={classes.footerBar}>

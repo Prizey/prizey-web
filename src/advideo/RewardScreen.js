@@ -28,7 +28,7 @@ export const RewardScreen = withStyles(styles)(
       rightIcon={<ProfileLink />}
     >
       <Typography align="center" variant="h5">
-        You got {settings.adDiamondsReward} <br /> diamonds!
+        You{"'"}ve got {settings.adDiamondsReward} <br /> diamonds!
       </Typography>
 
       <div className={classes.imgWrapper}>
