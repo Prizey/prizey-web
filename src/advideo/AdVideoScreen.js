@@ -54,22 +54,24 @@ export const setVideoProperties = ({ dispatch, settings }) => () => {
   })
 }
 
+const triggerVideoPlay = document => {
+  const video = document.querySelector('video')
+  if (video) {
+    const promise = video.play()
+
+    if (promise !== undefined) {
+      promise.catch(() => {
+        // Show something in the UI that the video is muted
+        video.muted = true
+        video.play()
+      })
+    }
+  }
+}
+
 export const autoplayTrick = document => () => {
   // trick to the autoplay problem
-  setTimeout(() => {
-    const video = document.querySelector('video')
-    if (video) {
-      const promise = video.play()
-
-      if (promise !== undefined) {
-        promise.catch(() => {
-          // Show something in the UI that the video is muted
-          video.muted = true
-          video.play()
-        })
-      }
-    }
-  }, 100)
+  setTimeout(() => triggerVideoPlay(document), 100)
 }
 
 export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
