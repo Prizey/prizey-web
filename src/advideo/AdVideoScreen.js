@@ -150,7 +150,8 @@ export const AdVideoScreen = withStyles(styles)(
             alignItems="center"
           >
             <Typography align="center" variant="body2" component="div">
-              Watch {adLength} ads and get {settings.adDiamondsReward} diamonds
+              Watch {adLength} videos and get {settings.adDiamondsReward}{' '}
+              diamonds
             </Typography>
             <img
               src="/icons/diamond.png"
