@@ -5,6 +5,7 @@ import AdVideo, {
   handleEnd,
   vastReducer,
   autoplayTrick,
+  handlePlayButton,
   setVideoProperties,
 } from '../AdVideoScreen'
 
@@ -72,21 +73,40 @@ describe('when component is mounted', () => {
     }, 100)
   })
 
-  it('force the play if the browser block autoplay videos', () => {
+  it('force the pause to wait for user gesture', () => {
     jest.useFakeTimers()
 
-    const mockPlay = jest.fn()
+    const mockPause = jest.fn()
     autoplayTrick({
       querySelector: () => ({
-        play: () => {
-          mockPlay()
-          return Promise.reject()
-        },
+        pause: mockPause,
       }),
     })()
 
     jest.runOnlyPendingTimers()
+    expect(mockPause).toHaveBeenCalledTimes(1)
+  })
+
+  it('play the video on user gesture', () => {
+    const mockPlay = jest.fn()
+    const dispatch = jest.fn()
+
+    handlePlayButton(
+      {
+        querySelector: () => ({
+          play: () => {
+            mockPlay()
+            return Promise.resolve()
+          },
+        }),
+      },
+      dispatch,
+    )()
+
     expect(mockPlay).toHaveBeenCalledTimes(1)
+    setTimeout(() => {
+      expect(dispatch).toHaveBeenCalledTimes(1)
+    }, 100)
   })
 })
 
@@ -111,12 +131,20 @@ describe('when finish one ad video', () => {
     const action = { type: 'fetchNextVast' }
     const state = {
       current: 1,
+      showPlay: true,
       vastXml: 'xml string',
     }
 
     expect(vastReducer(state, action)).toEqual({
       current: 2,
+      showPlay: true,
       vastXml: null,
+    })
+
+    expect(vastReducer(state, { type: 'playVideo' })).toEqual({
+      current: 1,
+      showPlay: false,
+      vastXml: 'xml string',
     })
 
     expect(vastReducer(state, { type: '' })).toEqual(state)
