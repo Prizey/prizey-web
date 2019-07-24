@@ -198,7 +198,7 @@ export const AdVideoScreen = withStyles(styles)(
         )}
 
         <div className={classes.footerBar}>
-          <ProgressBar duration={duration} />
+          <ProgressBar duration={duration} paused={state.showPlay} />
         </div>
       </div>
     )
