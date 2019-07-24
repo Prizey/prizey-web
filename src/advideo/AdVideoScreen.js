@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import VastPlayer from 'vast-player-react'
 import axios from 'axios'
 
+import PlayCircleFilledWhite from '@material-ui/icons/PlayCircleFilledWhite'
 import { Typography, Grid } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -36,6 +37,22 @@ const styles = theme => ({
     marginTop: -5,
     width: 20,
   },
+  playButton: {
+    background: theme.palette.grey[500],
+    borderRadius: '100%',
+    cursor: 'pointer',
+    height: 64,
+    left: '50%',
+    position: 'absolute',
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 64,
+    zIndex: 2,
+  },
+  playIcon: {
+    cursor: 'pointer',
+    fontSize: 64,
+  },
   root: {
     '& video': {
       background: get(theme.palette, 'advertising.background'),
@@ -60,24 +77,26 @@ export const setVideoProperties = ({ dispatch, settings }) => () => {
   })
 }
 
-const triggerVideoPlay = document => {
+const triggerVideoPause = document => {
   const video = document.querySelector('video')
   if (video) {
-    const promise = video.play()
+    video.playsInline = true
+    video.pause()
+  }
+}
 
-    if (promise !== undefined) {
-      promise.catch(() => {
-        // Show something in the UI that the video is muted
-        video.muted = true
-        video.play()
-      })
-    }
+export const handlePlayButton = (document, dispatch) => () => {
+  const video = document.querySelector('video')
+  if (video) {
+    video.play().then(() => {
+      dispatch({ type: 'playVideo' })
+    })
   }
 }
 
 export const autoplayTrick = document => () => {
   // trick to the autoplay problem
-  setTimeout(() => triggerVideoPlay(document), 100)
+  setTimeout(() => triggerVideoPause(document), 100)
 }
 
 export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
@@ -94,10 +113,17 @@ export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
 export const vastReducer = (state, action) => {
   switch (action.type) {
     case 'fetchNextVast':
-      return { ...state, current: state.current + 1, vastXml: null }
+      return {
+        ...state,
+        current: state.current + 1,
+        vastXml: null,
+      }
 
     case 'fetchNextVastSuccess':
-      return { ...state, vastXml: action.payload }
+      return { ...state, showPlay: true, vastXml: action.payload }
+
+    case 'playVideo':
+      return { ...state, showPlay: false }
 
     default:
       return state
@@ -111,6 +137,7 @@ export const AdVideoScreen = withStyles(styles)(
 
     const [state, dispatch] = useReducer(vastReducer, {
       current: 0,
+      showPlay: false,
       vastXml: null,
     })
 
@@ -160,6 +187,15 @@ export const AdVideoScreen = withStyles(styles)(
             />
           </Grid>
         </div>
+
+        {state.showPlay && (
+          <div className={classes.playButton}>
+            <PlayCircleFilledWhite
+              onClick={handlePlayButton(document, dispatch)}
+              className={classes.playIcon}
+            />
+          </div>
+        )}
 
         <div className={classes.footerBar}>
           <ProgressBar duration={duration} />
