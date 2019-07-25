@@ -170,7 +170,13 @@ exports[`renders correctly 1`] = `
               <span
                 className="MuiButton-label-71"
               >
-                bla foo
+                <div
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "bla foo",
+                    }
+                  }
+                />
               </span>
               <span
                 className="MuiTouchRipple-root-96"

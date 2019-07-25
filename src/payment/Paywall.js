@@ -65,7 +65,11 @@ const PaywallScreen = withStyles(styles)(
           className={classes.buttonReward}
           component={props => <Link to="/advertising" {...props} />}
         >
-          {info.paywallRewardCta || ''}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: info.paywallRewardCta || '',
+            }}
+          />
         </Button>
         {buttons.map(({ id, ticketAmount, price }, idx) => (
           <Button
