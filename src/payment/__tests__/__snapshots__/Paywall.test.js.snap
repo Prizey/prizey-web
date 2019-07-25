@@ -150,6 +150,33 @@ exports[`renders correctly 1`] = `
             className="Component-buttonGroup-3"
           >
             <a
+              className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-buttonReward-4"
+              href="/advertising"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <span
+                className="MuiButton-label-71"
+              >
+                bla foo
+              </span>
+              <span
+                className="MuiTouchRipple-root-96"
+              />
+            </a>
+            <a
               className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-button0-1"
               href="/payment/1"
               onBlur={[Function]}
@@ -240,33 +267,6 @@ exports[`renders correctly 1`] = `
                   src="/icons/diamond.png"
                 />
                 50 Diamonds = $ 50.00
-              </span>
-              <span
-                className="MuiTouchRipple-root-96"
-              />
-            </a>
-            <a
-              className="MuiButtonBase-root-21 MuiButton-root-70 MuiButton-contained-81 MuiButton-containedPrimary-82 MuiButton-raised-84 MuiButton-raisedPrimary-85 MuiButton-fullWidth-95 Component-buttonReward-4"
-              href="/advertising"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onContextMenu={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="button"
-              tabIndex="0"
-            >
-              <span
-                className="MuiButton-label-71"
-              >
-                bla foo
               </span>
               <span
                 className="MuiTouchRipple-root-96"

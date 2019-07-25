@@ -58,6 +58,15 @@ const PaywallScreen = withStyles(styles)(
       </Typography>
 
       <div className={classes.buttonGroup}>
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          className={classes.buttonReward}
+          component={props => <Link to="/advertising" {...props} />}
+        >
+          {info.paywallRewardCta || ''}
+        </Button>
         {buttons.map(({ id, ticketAmount, price }, idx) => (
           <Button
             key={idx}
@@ -75,15 +84,6 @@ const PaywallScreen = withStyles(styles)(
             {getButtonText(ticketAmount, price)}
           </Button>
         ))}
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          className={classes.buttonReward}
-          component={props => <Link to="/advertising" {...props} />}
-        >
-          {info.paywallRewardCta || ''}
-        </Button>
       </div>
 
       <Typography align="center" variant="body2" color="textSecondary">
