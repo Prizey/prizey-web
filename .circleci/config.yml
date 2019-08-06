@@ -1,20 +1,37 @@
-version: 2
+executors:
+  node:
+    docker:
+      - image: circleci/node:10
+
+aliases:
+  restore_cache: &restore_cache
+    restore_cache:
+      name: Restore Npm Package Cache
+      keys:
+        - yarn-cache-netlify-{{ checksum "yarn.lock" }}
+
+  install_node_modules: &install_node_modules
+    run:
+      name: Install dependencies
+      command: yarn
+
+  save_cache: &save_cache
+    save_cache:
+      name: Save NPM package cache
+      key: yarn-cache-netlify-{{ checksum "yarn.lock" }}
+      paths:
+        - ./node_modules
+
+version: 2.1
+
 jobs:
   test:
-    working_directory: ~/mern-starter
-    docker:
-      - image: circleci/node:8.10
+    executor: node
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-      - run:
-          name: Instal dependencies
-          command: yarn install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-          paths:
-            - ./node_modules
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - <<: *save_cache
       - run:
           name: Run linter
           command: yarn lint
@@ -29,20 +46,24 @@ jobs:
             ./cc-test-reporter before-build
             yarn test --ci --coverage --maxWorkers=2
             ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
-  deploy_production:
-    working_directory: ~/mern-starter
-    docker:
-      - image: circleci/node:8.9
+
+  build_and_deploy:
+    executor: node
     steps:
       - checkout
+      - attach_workspace:
+          at: ./
+      - <<: *restore_cache
+      - <<: *install_node_modules
       - run:
-        command: |
-          echo "Deploy master"
-          yarn run build
-          ./node_modules/netlify-cli/bin/cli.js deploy \
-            --site-id ${NETLIFY_PROD_APP} \
-            -p build/ \
-            --access-token ${NETLIFY_TOKEN}
+          name: Build
+          command: yarn build
+      - run:
+          name: Install netlify-cli
+          command: sudo npm install -g --silent netlify-cli
+      - run:
+          name: Deploy to Netlify
+          command: netlify deploy --dir=./build -p
 
 workflows:
   version: 2
@@ -53,13 +74,10 @@ workflows:
           filters:
             tags:
               ignore: /.*/
-
-      - deploy_production:
+      - build_and_deploy:
           context: org-global
           filters:
             tags:
               only: /v[0-9]+/
             branches:
               ignore: /.*/
-          requires:
-            - test
