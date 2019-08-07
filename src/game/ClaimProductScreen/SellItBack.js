@@ -106,6 +106,7 @@ export const afterCreate = ({
 
 export default withStyles(styles)(props => (
   <TransactionComponent
+    source="sell"
     render={renderProps => <SellItBackComponent {...props} {...renderProps} />}
     afterCreate={afterCreate(props)}
   />

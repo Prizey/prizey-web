@@ -220,6 +220,7 @@ export default withStyles(styles)(props => (
   <SpeedComponent
     render={settings => (
       <TransactionComponent
+        source="reward"
         afterCreate={afterCreate(props, settings.adDiamondsReward)}
         render={renderProps => (
           <AdVideoScreen {...renderProps} {...props} settings={settings} />
