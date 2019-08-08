@@ -141,6 +141,12 @@ describe('when finish one ad video', () => {
       vastXml: null,
     })
 
+    expect(vastReducer(state, { type: 'resetVast' })).toEqual({
+      current: 0,
+      showPlay: false,
+      vastXml: null,
+    })
+
     expect(vastReducer(state, { type: 'playVideo' })).toEqual({
       current: 1,
       showPlay: false,

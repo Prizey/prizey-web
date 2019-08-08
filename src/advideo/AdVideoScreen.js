@@ -103,6 +103,7 @@ export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
   if (current + 1 >= length) {
     const { creating, create, amount } = endParams
     if (!creating) {
+      dispatch({ type: 'resetVast' })
       create({ amount })
     }
   } else {
@@ -124,6 +125,9 @@ export const vastReducer = (state, action) => {
 
     case 'playVideo':
       return { ...state, showPlay: false }
+
+    case 'resetVast':
+      return { current: 0, showPlay: false, vastXml: null }
 
     default:
       return state
@@ -220,6 +224,7 @@ export default withStyles(styles)(props => (
   <SpeedComponent
     render={settings => (
       <TransactionComponent
+        source="reward"
         afterCreate={afterCreate(props, settings.adDiamondsReward)}
         render={renderProps => (
           <AdVideoScreen {...renderProps} {...props} settings={settings} />

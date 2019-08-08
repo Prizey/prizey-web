@@ -114,6 +114,7 @@ export default connect(
   { insertCoin },
 )(props => (
   <TransactionComponent
+    source="play"
     render={({ error, ...renderProps }) =>
       error ? (
         <Redirect to="/buy-more" noThrow />
