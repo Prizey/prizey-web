@@ -82,11 +82,17 @@ exports[`renders correctly 1`] = `
     <div
       className="Component-children-2"
     >
-      <h5
-        className="MuiTypography-root-28 MuiTypography-h5-44 MuiTypography-alignCenter-51"
-      >
-        Congrats! You sold the product for 3 diamonds.
-      </h5>
+      <div>
+        SpeedComponent -
+         
+        <h5
+          className="MuiTypography-root-28 MuiTypography-h5-44 MuiTypography-alignCenter-51"
+        >
+          Congrats! You sold the product for 
+          5
+           diamonds.
+        </h5>
+      </div>
       <br />
       <button
         aria-label="Go to home"

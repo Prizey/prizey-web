@@ -5,8 +5,7 @@ import CircularProgress from '@material-ui/core/CircularProgress'
 
 import PlayAgain from 'design/PlayAgain'
 import TransactionComponent from 'game/TransactionComponent'
-
-const TICKET_AMOUNT = 3
+import SpeedComponent from 'game/SpeedComponent'
 
 const styles = theme => ({
   icon: {
@@ -63,7 +62,7 @@ export class SellItBackComponent extends React.Component {
               alt="diamond"
               className={classes.icon}
             />
-            <span className={classes.quantity}>{TICKET_AMOUNT}</span>
+            <span className={classes.quantity}>{this.props.amount}</span>
           </div>
         </Fragment>
       )}
@@ -72,7 +71,6 @@ export class SellItBackComponent extends React.Component {
 
   render() {
     const { dialogIsOpen } = this.state
-
     return (
       <Fragment>
         {this.renderError(this.props)}
@@ -96,18 +94,29 @@ export const afterCreate = ({
   navigate,
   currentUser,
   setCurrentUser,
+  sellItBackAmount,
 }) => () => {
   setCurrentUser({
     ...currentUser,
-    tickets: currentUser.tickets + TICKET_AMOUNT,
+    tickets: currentUser.tickets + sellItBackAmount,
   })
   navigate('/sold-back')
 }
 
 export default withStyles(styles)(props => (
-  <TransactionComponent
-    source="sell"
-    render={renderProps => <SellItBackComponent {...props} {...renderProps} />}
-    afterCreate={afterCreate(props)}
+  <SpeedComponent
+    render={({ sellItBackAmount }) => (
+      <TransactionComponent
+        source="sell"
+        render={renderProps => (
+          <SellItBackComponent
+            {...props}
+            {...renderProps}
+            amount={sellItBackAmount}
+          />
+        )}
+        afterCreate={afterCreate({ sellItBackAmount, ...props })}
+      />
+    )}
   />
 ))

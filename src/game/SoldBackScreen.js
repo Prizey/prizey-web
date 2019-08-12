@@ -5,6 +5,7 @@ import { Button, Typography } from '@material-ui/core'
 import UserBalance from 'design/UserBalance'
 import Layout from 'design/Layout/Layout'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
+import SpeedComponent from 'game/SpeedComponent'
 
 const SoldBackComponent = ({ navigate, currentUser, location }) => (
   <Layout
@@ -13,9 +14,14 @@ const SoldBackComponent = ({ navigate, currentUser, location }) => (
     leftIcon={<UserBalance />}
     rightIcon={<ProfileLink />}
   >
-    <Typography align="center" variant="h5">
-      Congrats! You sold the product for 3 diamonds.
-    </Typography>
+    <SpeedComponent
+      render={({ sellItBackAmount }) => (
+        <Typography align="center" variant="h5">
+          Congrats! You sold the product for {sellItBackAmount} diamonds.
+        </Typography>
+      )}
+    />
+
     <br />
     <Button
       variant="contained"

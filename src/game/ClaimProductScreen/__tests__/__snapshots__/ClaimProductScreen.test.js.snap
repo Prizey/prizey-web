@@ -112,58 +112,69 @@ exports[`renders correctly 1`] = `
         MSRP: $
       </p>
       <div
-        afterCreate={[Function]}
-        name="tickets"
-        path="/ticket_transactions"
+        id={1}
+        name="game"
+        path="/game_setting"
         render={[Function]}
       >
         New - 
         <div>
           render - 
-          <button
-            aria-label="Sell it Back"
-            className="MuiButtonBase-root-16 MuiButton-root-90 MuiButton-contained-101 MuiButton-containedSecondary-103 MuiButton-raised-104 MuiButton-raisedSecondary-106 MuiButton-fullWidth-115"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex="0"
-            type="button"
+          <div
+            afterCreate={[Function]}
+            name="tickets"
+            path="/ticket_transactions"
+            render={[Function]}
           >
-            <span
-              className="MuiButton-label-91"
-            >
-              <span>
-                SELL IT BACK
-              </span>
-              <div
-                className="Component-rightIcon-89"
+            New - 
+            <div>
+              render - 
+              <button
+                aria-label="Sell it Back"
+                className="MuiButtonBase-root-16 MuiButton-root-90 MuiButton-contained-101 MuiButton-containedSecondary-103 MuiButton-raised-104 MuiButton-raisedSecondary-106 MuiButton-fullWidth-115"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                <img
-                  alt="diamond"
-                  className="Component-icon-87"
-                  src="/icons/diamond.png"
-                />
                 <span
-                  className="Component-quantity-88"
+                  className="MuiButton-label-91"
                 >
-                  3
+                  <span>
+                    SELL IT BACK
+                  </span>
+                  <div
+                    className="Component-rightIcon-89"
+                  >
+                    <img
+                      alt="diamond"
+                      className="Component-icon-87"
+                      src="/icons/diamond.png"
+                    />
+                    <span
+                      className="Component-quantity-88"
+                    >
+                      5
+                    </span>
+                  </div>
                 </span>
-              </div>
-            </span>
-            <span
-              className="MuiTouchRipple-root-116"
-            />
-          </button>
+                <span
+                  className="MuiTouchRipple-root-116"
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <button
