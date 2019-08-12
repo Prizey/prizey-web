@@ -4,6 +4,14 @@ import SoldBackScreen from '../SoldBackScreen'
 
 jest.mock('../../design/Layout/RegisterPageView')
 jest.mock('design/UserBalance', () => () => null)
+jest.mock('game/SpeedComponent', () => ({ render, ...props }) => (
+  <div {...props}>
+    SpeedComponent -{' '}
+    {render({
+      sellItBackAmount: 5,
+    })}
+  </div>
+))
 
 it('renders correctly', () => {
   const tree = renderer.create(<SoldBackScreen currentUser />).toJSON()
