@@ -40,7 +40,6 @@ const ClaimProductComponent = ({
       <Typography align="center">MSRP: ${product.price}</Typography>
 
       <SellItBack
-        amount={3}
         clearProduct={props.clearProduct}
         navigate={navigate}
         currentUser={currentUser}

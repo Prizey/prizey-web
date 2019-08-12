@@ -11,6 +11,11 @@ jest.mock('@material-ui/core/Dialog', () => ({ children, ...props }) => (
 ))
 
 jest.mock('croods', () => ({
+  Info: props => (
+    <div {...props}>
+      New - <div>render - {props.render({ sellItBackAmount: 5 })}</div>
+    </div>
+  ),
   New: props => (
     <div {...props}>
       New - <div>render - {props.render(props)}</div>
@@ -35,7 +40,6 @@ describe('when component is mounted', () => {
 describe('when component is triggered', () => {
   it('open modal', () => {
     const params = {
-      amount: 3,
       classes: {},
       clearProduct: jest.fn(),
     }
@@ -70,7 +74,6 @@ describe('when component is triggered', () => {
 
     it('close the dialog when click on close button', () => {
       const params = {
-        amount: 3,
         classes: {},
         clearProduct: jest.fn(),
       }
@@ -86,6 +89,7 @@ describe('when component is triggered', () => {
       const params = {
         currentUser: { id: 1, tickets: 10 },
         navigate: jest.fn(),
+        sellItBackAmount: 3,
         setCurrentUser: jest.fn(),
       }
 
