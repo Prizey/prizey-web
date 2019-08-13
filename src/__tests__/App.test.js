@@ -33,6 +33,18 @@ jest.mock('croods-auth', () => ({
   credentials: { foo: 'bar' },
 }))
 
+const OLD_ENV = process.env
+
+beforeEach(() => {
+  jest.resetModules()
+  process.env = { ...OLD_ENV, REACT_APP_API_URL: 'https://api.foobar.com' }
+  delete process.env.NODE_ENV
+})
+
+afterEach(() => {
+  process.env = OLD_ENV
+})
+
 it('renders correctly', () => {
   const tree = renderer.create(<App />).toJSON()
   expect(tree).toMatchSnapshot()
