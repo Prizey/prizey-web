@@ -20,13 +20,14 @@ describe('when the component is clicked', () => {
       const params = {
         availableTickets: 10,
         create: jest.fn(),
+        difficulty: 'easy',
         navigate: jest.fn(),
         quantity: 10,
       }
 
       handleClick(params)()
       expect(params.create).toHaveBeenCalledWith({
-        amount: -10,
+        difficulty: 'easy',
       })
     })
 

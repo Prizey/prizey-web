@@ -25,9 +25,9 @@ const styles = theme => ({
   },
 })
 
-export const handleConfirm = ({ creating, create, amount }) => () => {
+export const handleConfirm = ({ creating, create }) => () => {
   if (!creating) {
-    create({ amount })
+    create({})
   }
 }
 

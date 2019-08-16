@@ -101,10 +101,10 @@ export const autoplayTrick = document => () => {
 
 export const handleEnd = ({ current, length, dispatch, endParams }) => () => {
   if (current + 1 >= length) {
-    const { creating, create, amount } = endParams
+    const { creating, create } = endParams
     if (!creating) {
       dispatch({ type: 'resetVast' })
-      create({ amount })
+      create({})
     }
   } else {
     dispatch({ type: 'fetchNextVast' })
@@ -160,7 +160,6 @@ export const AdVideoScreen = withStyles(styles)(
               current: state.current,
               dispatch,
               endParams: {
-                amount: settings.adDiamondsReward,
                 create,
                 creating,
               },
