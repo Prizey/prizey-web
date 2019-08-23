@@ -1,13 +1,14 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
-import { Redirect } from '@reach/router'
+import { List } from 'croods'
+import get from 'lodash/get'
 
 import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
+import { Redirect } from '@reach/router'
 import DifficultyButton from './DifficultyButton'
-import SpeedComponent from './SpeedComponent'
 import AdminText from '../design/AdminText/AdminText'
 
 const styles = theme => ({
@@ -36,7 +37,7 @@ const difficulties = ([firstLabel, secondLabel, thirdLabel] = []) => [
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
-  ({ navigate, classes, settings, currentUser, location, setCurrentUser }) => (
+  ({ navigate, classes, currentUser, purchases, location, setCurrentUser }) => (
     <AdminText
       tags={[
         'difficulty_title',
@@ -61,23 +62,24 @@ const ChooseDifficultyScreen = withStyles(styles)(
           <Typography align="center" variant="h5">
             {difficultyTitle}
           </Typography>
+
           <div className={classes.buttonGroup}>
             {difficulties([
               difficultyFirstLevelLabel,
               difficultySecondLevelLabel,
               difficultyThirdLevelLabel,
-            ]).map(item => (
+            ]).map((item, position) => (
               <DifficultyButton
                 key={item.difficulty}
+                paymentId={get(purchases[position], 'id')}
                 {...item}
-                quantity={settings[`${item.difficulty}TicketAmount`]}
+                quantity={get(purchases[position], 'ticketAmount')}
                 availableTickets={currentUser.tickets}
                 navigate={navigate}
                 setCurrentUser={setCurrentUser}
               />
             ))}
           </div>
-
           <Typography align="center">{difficultyBottomText}</Typography>
         </Layout>
       )}
@@ -85,48 +87,21 @@ const ChooseDifficultyScreen = withStyles(styles)(
   ),
 )
 
-const RedirectUserWithoutBalance = ({
-  navigate,
-  settings,
-  currentUser = {},
-  setCurrentUser,
-  location,
-}) => {
-  const { tickets } = currentUser
-  const [userCanPlay, setUserCanPlay] = useState(true)
-
-  useLayoutEffect(() => {
-    const userDifficulties = difficulties().filter(
-      ({ difficulty }) => tickets >= settings[`${difficulty}TicketAmount`],
-    )
-
-    setUserCanPlay(userDifficulties.length > 0)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  return userCanPlay ? (
-    <ChooseDifficultyScreen
-      location={location}
-      navigate={navigate}
-      settings={settings}
-      currentUser={currentUser}
-      setCurrentUser={setCurrentUser}
+export default ({ navigate, setCurrentUser, currentUser, location }) =>
+  currentUser ? (
+    <List
+      name="purchaseOptions"
+      path="/purchase_options"
+      render={purchases => (
+        <ChooseDifficultyScreen
+          location={location}
+          navigate={navigate}
+          purchases={purchases}
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+        />
+      )}
     />
   ) : (
-    <Redirect to="/buy-diamonds" noThrow />
+    <Redirect to="/sign-in?next=/game" noThrow />
   )
-}
-
-export default ({ navigate, setCurrentUser, currentUser, location }) => (
-  <SpeedComponent
-    render={settings => (
-      <RedirectUserWithoutBalance
-        navigate={navigate}
-        settings={settings}
-        setCurrentUser={setCurrentUser}
-        location={location}
-        currentUser={currentUser}
-      />
-    )}
-  />
-)
