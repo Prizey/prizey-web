@@ -18,7 +18,12 @@ jest.mock('react-redux', () => ({
 }))
 
 jest.mock('croods', () => ({
-  List: props => <div {...props}>List: {props.render(mockList)}</div>,
+  List: props => (
+    <div {...props}>
+      List: {props.render(mockList)} - renderLoading -{' '}
+      {props.renderLoading && props.renderLoading()}
+    </div>
+  ),
   New: props => (
     <div {...props}>
       New - <div>render - {props.render(props)}</div>

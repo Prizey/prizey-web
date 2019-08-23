@@ -147,6 +147,8 @@ exports[`renders correctly 1`] = `
                       renderLoading={[Function]}
                     >
                       List: 
+                       - renderLoading -
+                       
                     </div>
                     <span
                       className="Component-label-66"
@@ -208,6 +210,8 @@ exports[`renders correctly 1`] = `
                       renderLoading={[Function]}
                     >
                       List: 
+                       - renderLoading -
+                       
                     </div>
                     <span
                       className="Component-label-66"
@@ -269,6 +273,8 @@ exports[`renders correctly 1`] = `
                       renderLoading={[Function]}
                     >
                       List: 
+                       - renderLoading -
+                       
                     </div>
                     <span
                       className="Component-label-66"
@@ -362,6 +368,8 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
   </div>
+   - renderLoading -
+   
 </div>
 `;
 
