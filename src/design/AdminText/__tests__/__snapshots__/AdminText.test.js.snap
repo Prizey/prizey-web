@@ -13,3 +13,17 @@ exports[`when the component is mounted renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`with more than one tag renders the path correctly 1`] = `
+<div
+  disableCache={true}
+  id="homepage_cta,foobar_text"
+  name="adminText"
+  path="/admin_texts?tags[]=homepage_cta&tags[]=foobar_text"
+>
+  Info - 
+  <div>
+    the result
+  </div>
+</div>
+`;

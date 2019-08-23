@@ -38,3 +38,15 @@ describe('when the component is mounted', () => {
     })
   })
 })
+
+describe('with more than one tag', () => {
+  it('renders the path correctly', () => {
+    const params = {
+      render: () => <div>the result</div>,
+      tags: ['homepage_cta', 'foobar_text'],
+    }
+
+    const tree = renderer.create(<AdminText {...params} />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})

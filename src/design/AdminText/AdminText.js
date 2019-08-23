@@ -1,18 +1,27 @@
 import React from 'react'
 import { Info } from 'croods'
 
-const AdminText = ({ render, tags = '' }) => (
-  <Info
-    id={tags}
-    name="adminText"
-    path={`/admin_texts?tags[]=${tags}`}
-    render={render}
-    parseResponse={response => {
-      const item = response[0]
-      return { info: { id: tags, ...item } }
-    }}
-    disableCache
-  />
-)
+const AdminText = ({ render, tags = '' }) => {
+  let pathTags
+  if (Array.isArray(tags)) {
+    pathTags = tags.join('&tags[]=')
+  }
+
+  return (
+    <Info
+      id={tags.toString()}
+      name="adminText"
+      path={`/admin_texts?tags[]=${pathTags || tags}`}
+      render={render}
+      parseResponse={response => ({
+        info: {
+          id: tags.toString(),
+          ...response.reduce((agg, item) => ({ ...agg, ...item }), {}),
+        },
+      })}
+      disableCache
+    />
+  )
+}
 
 export default AdminText
