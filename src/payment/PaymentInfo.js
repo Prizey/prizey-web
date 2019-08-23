@@ -49,7 +49,7 @@ export const PaymentInfoComponent = withStyles(styles)(
       <Layout
         location={location}
         currentUser={currentUser}
-        leftIcon={<GoBack to="/buy-diamonds" />}
+        leftIcon={<GoBack to="/game" />}
         rightIcon={<ProfileLink />}
       >
         <Typography align="center" variant="h5" className={classes.purchase}>
