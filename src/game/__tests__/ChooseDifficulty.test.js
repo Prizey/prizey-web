@@ -3,9 +3,9 @@ import renderer from 'react-test-renderer'
 import ChooseDifficultyScreen from '../ChooseDifficultyScreen'
 
 const mockList = [
-  { id: 1, image: '/mocks/trump-mask.png', title: 'trump' },
-  { id: 2, image: '/mocks/sweatshirt.png', title: 'sweatshirt' },
-  { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
+  { id: 1, price: 10.0, ticketAmount: 10 },
+  { id: 2, price: 20.0, ticketAmount: 20 },
+  { id: 3, price: 30.0, ticketAmount: 30 },
 ]
 
 jest.mock('../../design/Layout/RegisterPageView')
@@ -18,20 +18,10 @@ jest.mock('react-redux', () => ({
 }))
 
 jest.mock('croods', () => ({
-  Info: ({ children, ...props }) => (
-    <div {...props}>
-      Info -{' '}
-      {props.render({
-        easyTicketAmount: 1,
-        hardicketAmount: 2,
-        mediumTicketAmount: 3,
-      })}
-    </div>
-  ),
   List: props => (
     <div {...props}>
-      {props.children} - Render: {props.render(mockList)}
-      RenderLoading: {props.renderLoading()}
+      List: {props.render(mockList)} - renderLoading -{' '}
+      {props.renderLoading && props.renderLoading()}
     </div>
   ),
   New: props => (
@@ -39,10 +29,6 @@ jest.mock('croods', () => ({
       New - <div>render - {props.render(props)}</div>
     </div>
   ),
-  Provider: ({ children, ...props }) => (
-    <div {...props}>Provider - {children}</div>
-  ),
-  createReducer: () => (state = {}) => state,
 }))
 
 jest.mock('../../design/AdminText/AdminText', () => props => (
@@ -57,6 +43,12 @@ jest.mock('../../design/AdminText/AdminText', () => props => (
     })}
   </div>
 ))
+
+jest.mock('@reach/router', () => ({
+  Link: ({ children, ...props }) => <div {...props}>Link - {children}</div>,
+  Redirect: props => <div {...props}>Redirect</div>,
+  navigate: jest.fn(),
+}))
 
 it('renders correctly', () => {
   const params = {

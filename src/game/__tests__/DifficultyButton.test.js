@@ -2,16 +2,17 @@ import { afterCreate, handleClick } from '../DifficultyButton'
 
 describe('when the component is clicked', () => {
   describe("when the user doesn't have tickets enough", () => {
-    it('navigate to the paywall', () => {
+    it('navigate to payment with the pack information', () => {
       const params = {
         availableTickets: 1,
         create: jest.fn(),
         navigate: jest.fn(),
+        paymentId: 23,
         quantity: 10,
       }
 
       handleClick(params)()
-      expect(params.navigate).toHaveBeenCalledWith('/buy-more')
+      expect(params.navigate).toHaveBeenCalledWith('/payment/23')
     })
   })
 

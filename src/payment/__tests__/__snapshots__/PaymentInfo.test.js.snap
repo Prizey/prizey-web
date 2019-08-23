@@ -150,7 +150,7 @@ exports[`when component is mounted renders correctly 1`] = `
           <a
             aria-label="Go Back"
             className="MuiButtonBase-root-18 MuiIconButton-root-12 Component-root-11"
-            href="/buy-diamonds"
+            href="/game"
             onBlur={[Function]}
             onClick={[Function]}
             onContextMenu={[Function]}

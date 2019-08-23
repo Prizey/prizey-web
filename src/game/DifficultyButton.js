@@ -50,6 +50,7 @@ const styles = theme => ({
 })
 
 export const handleClick = ({
+  paymentId,
   availableTickets,
   quantity,
   navigate,
@@ -57,7 +58,7 @@ export const handleClick = ({
   difficulty,
 }) => () => {
   if (availableTickets < quantity) {
-    return navigate('/buy-more')
+    return navigate(`/payment/${paymentId}`)
   }
 
   return create({ difficulty })
@@ -106,7 +107,7 @@ export default connect(
     source="play"
     render={({ error, ...renderProps }) =>
       error ? (
-        <Redirect to="/buy-more" noThrow />
+        <Redirect to="/game" noThrow />
       ) : (
         <DifficultyButtonComponent {...props} {...renderProps} />
       )

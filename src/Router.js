@@ -27,7 +27,6 @@ import AdVideoScreen from 'advideo/AdVideoScreen'
 import RewardScreen from 'advideo/RewardScreen'
 
 import PaymentInfo from 'payment/PaymentInfo'
-import Paywall from 'payment/Paywall'
 import FairnessScreen from 'fairness/FairnessScreen'
 import TermsOfService from 'termsOfService/TermsOfServiceScreen'
 import PrivacyPolicy from 'privacyPolicy/PrivacyPolicy'
@@ -102,8 +101,6 @@ export default props => (
     <TermsOfService {...props} path="/terms_of_service" />
     <PrivacyPolicy {...props} path="/privacy-policy" />
 
-    <Route Component={Paywall} {...props} path="/buy-diamonds" />
-    <Route Component={Paywall} {...props} path="/buy-more" buyMore />
     <Route Component={PaymentInfo} {...props} path="/payment/:purchaseId" />
   </Router>
 )
