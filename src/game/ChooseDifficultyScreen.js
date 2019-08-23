@@ -8,6 +8,7 @@ import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
 import DifficultyButton from './DifficultyButton'
 import SpeedComponent from './SpeedComponent'
+import AdminText from '../design/AdminText/AdminText'
 
 const styles = theme => ({
   buttonGroup: {
@@ -16,54 +17,71 @@ const styles = theme => ({
   },
 })
 
-const difficulties = [
+const difficulties = ([firstLabel, secondLabel, thirdLabel] = []) => [
   {
     difficulty: 'easy',
-    label: 'EASY',
+    label: firstLabel || 'EASY',
     to: '/game/easy',
   },
   {
     difficulty: 'medium',
-    label: 'MEDIUM',
+    label: secondLabel || 'MEDIUM',
     to: '/game/medium',
   },
   {
     difficulty: 'hard',
-    label: 'HARD',
+    label: thirdLabel || 'HARD',
     to: '/game/hard',
   },
 ]
 
 const ChooseDifficultyScreen = withStyles(styles)(
   ({ navigate, classes, settings, currentUser, location, setCurrentUser }) => (
-    <Layout
-      location={location}
-      currentUser={currentUser}
-      leftIcon={<UserBalance />}
-      rightIcon={<ProfileLink />}
-    >
-      <Typography align="center" variant="h5">
-        Pick a difficulty!
-      </Typography>
+    <AdminText
+      tags={[
+        'difficulty_title',
+        'difficulty_bottom_text',
+        'difficulty_first_level_label',
+        'difficulty_second_level_label',
+        'difficulty_third_level_label',
+      ]}
+      render={({
+        difficultyTitle,
+        difficultyBottomText,
+        difficultyFirstLevelLabel,
+        difficultySecondLevelLabel,
+        difficultyThirdLevelLabel,
+      }) => (
+        <Layout
+          location={location}
+          currentUser={currentUser}
+          leftIcon={<UserBalance />}
+          rightIcon={<ProfileLink />}
+        >
+          <Typography align="center" variant="h5">
+            {difficultyTitle}
+          </Typography>
+          <div className={classes.buttonGroup}>
+            {difficulties([
+              difficultyFirstLevelLabel,
+              difficultySecondLevelLabel,
+              difficultyThirdLevelLabel,
+            ]).map(item => (
+              <DifficultyButton
+                key={item.difficulty}
+                {...item}
+                quantity={settings[`${item.difficulty}TicketAmount`]}
+                availableTickets={currentUser.tickets}
+                navigate={navigate}
+                setCurrentUser={setCurrentUser}
+              />
+            ))}
+          </div>
 
-      <div className={classes.buttonGroup}>
-        {difficulties.map(item => (
-          <DifficultyButton
-            key={item.difficulty}
-            {...item}
-            quantity={settings[`${item.difficulty}TicketAmount`]}
-            availableTickets={currentUser.tickets}
-            navigate={navigate}
-            setCurrentUser={setCurrentUser}
-          />
-        ))}
-      </div>
-
-      <Typography align="center">
-        The harder difficulty, <br />
-        the better the prizes.
-      </Typography>
-    </Layout>
+          <Typography align="center">{difficultyBottomText}</Typography>
+        </Layout>
+      )}
+    />
   ),
 )
 
@@ -78,7 +96,7 @@ const RedirectUserWithoutBalance = ({
   const [userCanPlay, setUserCanPlay] = useState(true)
 
   useLayoutEffect(() => {
-    const userDifficulties = difficulties.filter(
+    const userDifficulties = difficulties().filter(
       ({ difficulty }) => tickets >= settings[`${difficulty}TicketAmount`],
     )
 

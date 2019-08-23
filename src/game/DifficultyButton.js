@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
 import { Redirect } from '@reach/router'
-import CircularProgress from '@material-ui/core/CircularProgress'
 
 import TransactionComponent from 'game/TransactionComponent'
 import { insertCoin } from 'store/basket/actions'
@@ -88,19 +87,8 @@ export const DifficultyButtonComponent = withStyles(styles)(
         parentId={difficulty}
         name="products"
         path={`/products/${difficulty}`}
-        renderLoading={() => (
-          <CircularProgress
-            color="inherit"
-            size={30}
-            className={classes.loading}
-          />
-        )}
-        render={list => {
-          const productImage = list[0].image
-          return (
-            <img src={productImage} alt="product" className={classes.product} />
-          )
-        }}
+        renderLoading={() => null}
+        render={() => null}
       />
 
       <span className={classes.label}>{label}</span>

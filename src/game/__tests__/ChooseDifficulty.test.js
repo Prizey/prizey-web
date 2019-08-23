@@ -45,6 +45,19 @@ jest.mock('croods', () => ({
   createReducer: () => (state = {}) => state,
 }))
 
+jest.mock('../../design/AdminText/AdminText', () => props => (
+  <div {...props}>
+    AdminText -{' '}
+    {props.render({
+      difficultyBottomText: 'The harder difficulty, the better the prizes.',
+      difficultyFirstLevelLabel: 'EASY',
+      difficultySecondLevelLabel: 'MEDIUM',
+      difficultyThirdLevelLabel: 'HARD',
+      difficultyTitle: 'Pick a difficulty',
+    })}
+  </div>
+))
+
 it('renders correctly', () => {
   const params = {
     currentUser: {
