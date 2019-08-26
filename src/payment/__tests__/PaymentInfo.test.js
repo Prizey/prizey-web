@@ -51,6 +51,7 @@ jest.mock('../../design/AdminText/AdminText', () => props => (
     {props.render({
       creditCardTitle: 'Purchase diamonds to play',
     })}
+    renderLoading - {props.renderLoading()}
   </div>
 ))
 

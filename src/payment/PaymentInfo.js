@@ -125,6 +125,7 @@ export default ({
   currentUser ? (
     <AdminText
       tags="credit_card_title"
+      renderLoading={() => null}
       render={({ creditCardTitle }) => (
         <List
           name="purchaseOptions"
