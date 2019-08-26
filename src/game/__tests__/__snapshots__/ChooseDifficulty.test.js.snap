@@ -139,17 +139,6 @@ exports[`renders correctly 1`] = `
                   <span
                     className="MuiButton-label-74"
                   >
-                    <div
-                      name="products"
-                      parentId="easy"
-                      path="/products/easy"
-                      render={[Function]}
-                      renderLoading={[Function]}
-                    >
-                      List: 
-                       - renderLoading -
-                       
-                    </div>
                     <span
                       className="Component-label-66"
                     >
@@ -202,17 +191,6 @@ exports[`renders correctly 1`] = `
                   <span
                     className="MuiButton-label-74"
                   >
-                    <div
-                      name="products"
-                      parentId="medium"
-                      path="/products/medium"
-                      render={[Function]}
-                      renderLoading={[Function]}
-                    >
-                      List: 
-                       - renderLoading -
-                       
-                    </div>
                     <span
                       className="Component-label-66"
                     >
@@ -265,17 +243,6 @@ exports[`renders correctly 1`] = `
                   <span
                     className="MuiButton-label-74"
                   >
-                    <div
-                      name="products"
-                      parentId="hard"
-                      path="/products/hard"
-                      render={[Function]}
-                      renderLoading={[Function]}
-                    >
-                      List: 
-                       - renderLoading -
-                       
-                    </div>
                     <span
                       className="Component-label-66"
                     >

@@ -1,5 +1,4 @@
 import React from 'react'
-import { List } from 'croods'
 import get from 'lodash/get'
 import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles'
@@ -83,14 +82,6 @@ export const DifficultyButtonComponent = withStyles(styles)(
       className={classes[`root_${difficulty}`]}
       onClick={handleClick(props)}
     >
-      <List
-        parentId={difficulty}
-        name="products"
-        path={`/products/${difficulty}`}
-        renderLoading={() => null}
-        render={() => null}
-      />
-
       <span className={classes.label}>{label}</span>
       <img src="/icons/diamond.png" alt="diamond" className={classes.icon} />
       <span className={classes.quantity}>{props.quantity}</span>
