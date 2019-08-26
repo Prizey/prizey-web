@@ -1,7 +1,7 @@
 import React from 'react'
 import { Info } from 'croods'
 
-const AdminText = ({ render, tags = '' }) => {
+const AdminText = ({ render, tags = '', ...props }) => {
   let pathTags
   if (Array.isArray(tags)) {
     pathTags = tags.join('&tags[]=')
@@ -20,6 +20,7 @@ const AdminText = ({ render, tags = '' }) => {
         },
       })}
       disableCache
+      {...props}
     />
   )
 }
