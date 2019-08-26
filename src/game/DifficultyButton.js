@@ -55,13 +55,12 @@ export const handleClick = ({
   quantity,
   navigate,
   create,
-  difficulty,
 }) => () => {
   if (availableTickets < quantity) {
     return navigate(`/payment/${paymentId}`)
   }
 
-  return create({ difficulty })
+  return create({ pack: paymentId })
 }
 
 export const afterCreate = ({
@@ -82,7 +81,7 @@ export const DifficultyButtonComponent = withStyles(styles)(
       color="primary"
       fullWidth
       className={classes[`root_${difficulty}`]}
-      onClick={handleClick({ difficulty, ...props })}
+      onClick={handleClick(props)}
     >
       <List
         parentId={difficulty}
