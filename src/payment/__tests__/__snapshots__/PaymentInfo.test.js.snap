@@ -5,20 +5,20 @@ exports[`when component is mounted redirects correctly 1`] = `null`;
 exports[`when component is mounted render the card form 1`] = `
 Array [
   <fieldset
-    className="MuiFormControl-root-134 MuiFormControl-fullWidth-137"
+    className="MuiFormControl-root-135 MuiFormControl-fullWidth-138"
   >
     <label
-      className="MuiFormLabel-root-149 MuiInputLabel-root-138 MuiInputLabel-formControl-143 MuiInputLabel-animated-146"
+      className="MuiFormLabel-root-150 MuiInputLabel-root-139 MuiInputLabel-formControl-144 MuiInputLabel-animated-147"
       data-shrink={false}
     >
       Card Number
     </label>
     <div
-      className="MuiInputBase-root-169 MuiInput-root-156 MuiInput-underline-160 MuiInputBase-fullWidth-178 MuiInput-fullWidth-163 MuiInputBase-formControl-170 MuiInput-formControl-157"
+      className="MuiInputBase-root-170 MuiInput-root-157 MuiInput-underline-161 MuiInputBase-fullWidth-179 MuiInput-fullWidth-164 MuiInputBase-formControl-171 MuiInput-formControl-158"
       onClick={[Function]}
     >
       <input
-        className="Component-root-186"
+        className="Component-root-187"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -37,30 +37,30 @@ Array [
       />
     </div>
     <p
-      className="MuiFormHelperText-root-187"
+      className="MuiFormHelperText-root-188"
     />
   </fieldset>,
   <div
-    className="MuiGrid-container-195 MuiGrid-spacing-xs-24-219"
+    className="MuiGrid-container-196 MuiGrid-spacing-xs-24-220"
   >
     <div
-      className="MuiGrid-item-196 MuiGrid-grid-xs-true-223"
+      className="MuiGrid-item-197 MuiGrid-grid-xs-true-224"
     >
       <fieldset
-        className="MuiFormControl-root-134 MuiFormControl-fullWidth-137"
+        className="MuiFormControl-root-135 MuiFormControl-fullWidth-138"
       >
         <label
-          className="MuiFormLabel-root-149 MuiInputLabel-root-138 MuiInputLabel-formControl-143 MuiInputLabel-animated-146"
+          className="MuiFormLabel-root-150 MuiInputLabel-root-139 MuiInputLabel-formControl-144 MuiInputLabel-animated-147"
           data-shrink={false}
         >
           Expiry (MM / YY)
         </label>
         <div
-          className="MuiInputBase-root-169 MuiInput-root-156 MuiInput-underline-160 MuiInputBase-fullWidth-178 MuiInput-fullWidth-163 MuiInputBase-formControl-170 MuiInput-formControl-157"
+          className="MuiInputBase-root-170 MuiInput-root-157 MuiInput-underline-161 MuiInputBase-fullWidth-179 MuiInput-fullWidth-164 MuiInputBase-formControl-171 MuiInput-formControl-158"
           onClick={[Function]}
         >
           <input
-            className="Component-root-186"
+            className="Component-root-187"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -79,28 +79,28 @@ Array [
           />
         </div>
         <p
-          className="MuiFormHelperText-root-187"
+          className="MuiFormHelperText-root-188"
         />
       </fieldset>
     </div>
     <div
-      className="MuiGrid-item-196 MuiGrid-grid-xs-true-223"
+      className="MuiGrid-item-197 MuiGrid-grid-xs-true-224"
     >
       <fieldset
-        className="MuiFormControl-root-134 MuiFormControl-fullWidth-137"
+        className="MuiFormControl-root-135 MuiFormControl-fullWidth-138"
       >
         <label
-          className="MuiFormLabel-root-149 MuiInputLabel-root-138 MuiInputLabel-formControl-143 MuiInputLabel-animated-146"
+          className="MuiFormLabel-root-150 MuiInputLabel-root-139 MuiInputLabel-formControl-144 MuiInputLabel-animated-147"
           data-shrink={false}
         >
           CVC
         </label>
         <div
-          className="MuiInputBase-root-169 MuiInput-root-156 MuiInput-underline-160 MuiInputBase-fullWidth-178 MuiInput-fullWidth-163 MuiInputBase-formControl-170 MuiInput-formControl-157"
+          className="MuiInputBase-root-170 MuiInput-root-157 MuiInput-underline-161 MuiInputBase-fullWidth-179 MuiInput-fullWidth-164 MuiInputBase-formControl-171 MuiInput-formControl-158"
           onClick={[Function]}
         >
           <input
-            className="Component-root-186"
+            className="Component-root-187"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -119,7 +119,7 @@ Array [
           />
         </div>
         <p
-          className="MuiFormHelperText-root-187"
+          className="MuiFormHelperText-root-188"
         />
       </fieldset>
     </div>
@@ -129,201 +129,185 @@ Array [
 
 exports[`when component is mounted renders correctly 1`] = `
 <div
-  name="purchaseOptions"
-  path="/purchase_options"
   render={[Function]}
+  tags="credit_card_title"
 >
-   - Render: 
+  AdminText -
+   
   <div
-    disableCache={true}
-    name="cards"
+    name="purchaseOptions"
+    path="/purchase_options"
     render={[Function]}
   >
      - Render: 
-    <div>
-      <div
-        className="Component-root-10"
-      >
+    <div
+      disableCache={true}
+      name="cards"
+      render={[Function]}
+    >
+       - Render: 
+      <div>
         <div
-          className="Component-header-8"
+          className="Component-root-11"
         >
-          <a
-            aria-label="Go Back"
-            className="MuiButtonBase-root-18 MuiIconButton-root-12 Component-root-11"
-            href="/game"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
+          <div
+            className="Component-header-9"
           >
-            <span
-              className="MuiIconButton-label-17"
+            <a
+              aria-label="Go Back"
+              className="MuiButtonBase-root-19 MuiIconButton-root-13 Component-root-12"
+              href="/game"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-21 MuiSvgIcon-fontSizeLarge-29"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <span
+                className="MuiIconButton-label-18"
               >
-                <path
-                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
-                />
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-            <span
-              className="MuiTouchRipple-root-127"
-            />
-          </a>
-          <a
-            aria-label="My profile"
-            className="MuiButtonBase-root-18 MuiIconButton-root-12 Component-root-30"
-            href="/profile"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex="0"
-          >
-            <span
-              className="MuiIconButton-label-17"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-21 MuiSvgIcon-fontSizeLarge-29"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <g>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root-22 MuiSvgIcon-fontSizeLarge-30"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
                   <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+                    d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
                   />
                   <path
-                    d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
                   />
-                </g>
-              </svg>
-            </span>
-            <span
-              className="MuiTouchRipple-root-127"
-            />
-          </a>
-        </div>
-        <div
-          className="Component-container-5"
-        >
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "none",
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root-128"
+              />
+            </a>
+            <a
+              aria-label="My profile"
+              className="MuiButtonBase-root-19 MuiIconButton-root-13 Component-root-31"
+              href="/profile"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <span
+                className="MuiIconButton-label-18"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root-22 MuiSvgIcon-fontSizeLarge-30"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <g>
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83z"
+                    />
+                    <path
+                      d="M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root-128"
+              />
+            </a>
+          </div>
+          <div
+            className="Component-container-6"
+          >
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+              style={
+                Object {
+                  "textDecoration": "none",
+                }
               }
-            }
-          >
-            <img
-              alt="Prizey"
-              className="Component-logoImage-9"
-              src="/logo.png"
-            />
-          </a>
-          <div
-            className="Component-caption-3"
-          />
-          <div
-            className="Component-children-4"
-          >
-            <h5
-              className="MuiTypography-root-31 MuiTypography-h5-47 MuiTypography-alignCenter-54 Component-purchase-2"
             >
               <img
-                alt="diamond"
-                className="Component-icon-1"
-                src="/icons/diamond.png"
+                alt="Prizey"
+                className="Component-logoImage-10"
+                src="/logo.png"
               />
-              10 Diamonds = $ 10.00
-            </h5>
+            </a>
             <div
-              afterCreate={[Function]}
-              name="payments"
-              render={[Function]}
+              className="Component-caption-4"
+            />
+            <div
+              className="Component-children-5"
             >
-              New - 
-              <div>
-                render - 
+              <h1
+                className="MuiTypography-root-32 MuiTypography-h6-49 MuiTypography-alignCenter-55 Component-title-3"
+              >
+                Purchase diamonds to play
+              </h1>
+              <h2
+                className="MuiTypography-root-32 MuiTypography-h6-49 MuiTypography-alignCenter-55 Component-purchase-2"
+              >
+                <img
+                  alt="diamond"
+                  className="Component-icon-1"
+                  src="/icons/diamond.png"
+                />
+                10 Diamonds = $ 10.00
+              </h2>
+              <div
+                afterCreate={[Function]}
+                name="payments"
+                render={[Function]}
+              >
+                New - 
                 <div>
-                  <form
-                    onSubmit={[Function]}
-                  >
-                    <div
-                      className="Component-list-67"
+                  render - 
+                  <div>
+                    <form
+                      onSubmit={[Function]}
                     >
-                      <ul
-                        className="MuiList-root-68 MuiList-padding-69"
+                      <div
+                        className="Component-list-68"
                       >
-                        <li
-                          className="MuiListItem-container-73"
+                        <ul
+                          className="MuiList-root-69 MuiList-padding-70"
                         >
-                          <div
-                            className="MuiButtonBase-root-18 MuiListItem-root-72 MuiListItem-default-75 MuiListItem-gutters-80 MuiListItem-button-81 MuiListItem-secondaryAction-82"
-                            onBlur={[Function]}
-                            onClick={[Function]}
-                            onContextMenu={[Function]}
-                            onFocus={[Function]}
-                            onKeyDown={[Function]}
-                            onKeyUp={[Function]}
-                            onMouseDown={[Function]}
-                            onMouseLeave={[Function]}
-                            onMouseUp={[Function]}
-                            onTouchEnd={[Function]}
-                            onTouchMove={[Function]}
-                            onTouchStart={[Function]}
-                            role="button"
-                            tabIndex="0"
+                          <li
+                            className="MuiListItem-container-74"
                           >
                             <div
-                              className="MuiListItemText-root-84"
-                            />
-                            <span
-                              className="MuiTouchRipple-root-127"
-                            />
-                          </div>
-                          <div
-                            className="MuiListItemSecondaryAction-root-90"
-                            onClick={[Function]}
-                          >
-                            <span
-                              className="MuiButtonBase-root-18 MuiIconButton-root-12 MuiPrivateSwitchBase-root-97 MuiCheckbox-root-91 MuiCheckbox-colorSecondary-96"
+                              className="MuiButtonBase-root-19 MuiListItem-root-73 MuiListItem-default-76 MuiListItem-gutters-81 MuiListItem-button-82 MuiListItem-secondaryAction-83"
                               onBlur={[Function]}
+                              onClick={[Function]}
                               onContextMenu={[Function]}
                               onFocus={[Function]}
                               onKeyDown={[Function]}
@@ -334,218 +318,68 @@ exports[`when component is mounted renders correctly 1`] = `
                               onTouchEnd={[Function]}
                               onTouchMove={[Function]}
                               onTouchStart={[Function]}
-                              tabIndex={null}
+                              role="button"
+                              tabIndex="0"
                             >
+                              <div
+                                className="MuiListItemText-root-85"
+                              />
                               <span
-                                className="MuiIconButton-label-17"
-                              >
-                                <svg
-                                  aria-hidden="true"
-                                  className="MuiSvgIcon-root-21"
-                                  focusable="false"
-                                  role="presentation"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                                  />
-                                </svg>
-                                <input
-                                  checked={false}
-                                  className="MuiPrivateSwitchBase-input-100"
-                                  data-indeterminate={false}
-                                  onChange={[Function]}
-                                  tabIndex={-1}
-                                  type="checkbox"
-                                />
-                              </span>
-                            </span>
-                          </div>
-                        </li>
-                        <li
-                          className="MuiListItem-container-73"
-                        >
-                          <div
-                            className="MuiButtonBase-root-18 MuiListItem-root-72 MuiListItem-default-75 MuiListItem-gutters-80 MuiListItem-button-81 MuiListItem-secondaryAction-82"
-                            onBlur={[Function]}
-                            onClick={[Function]}
-                            onContextMenu={[Function]}
-                            onFocus={[Function]}
-                            onKeyDown={[Function]}
-                            onKeyUp={[Function]}
-                            onMouseDown={[Function]}
-                            onMouseLeave={[Function]}
-                            onMouseUp={[Function]}
-                            onTouchEnd={[Function]}
-                            onTouchMove={[Function]}
-                            onTouchStart={[Function]}
-                            role="button"
-                            tabIndex="0"
-                          >
+                                className="MuiTouchRipple-root-128"
+                              />
+                            </div>
                             <div
-                              className="MuiListItemText-root-84"
-                            />
-                            <span
-                              className="MuiTouchRipple-root-127"
-                            />
-                          </div>
-                          <div
-                            className="MuiListItemSecondaryAction-root-90"
-                            onClick={[Function]}
-                          >
-                            <span
-                              className="MuiButtonBase-root-18 MuiIconButton-root-12 MuiPrivateSwitchBase-root-97 MuiCheckbox-root-91 MuiCheckbox-colorSecondary-96"
-                              onBlur={[Function]}
-                              onContextMenu={[Function]}
-                              onFocus={[Function]}
-                              onKeyDown={[Function]}
-                              onKeyUp={[Function]}
-                              onMouseDown={[Function]}
-                              onMouseLeave={[Function]}
-                              onMouseUp={[Function]}
-                              onTouchEnd={[Function]}
-                              onTouchMove={[Function]}
-                              onTouchStart={[Function]}
-                              tabIndex={null}
+                              className="MuiListItemSecondaryAction-root-91"
+                              onClick={[Function]}
                             >
                               <span
-                                className="MuiIconButton-label-17"
+                                className="MuiButtonBase-root-19 MuiIconButton-root-13 MuiPrivateSwitchBase-root-98 MuiCheckbox-root-92 MuiCheckbox-colorSecondary-97"
+                                onBlur={[Function]}
+                                onContextMenu={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyUp={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseUp={[Function]}
+                                onTouchEnd={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                tabIndex={null}
                               >
-                                <svg
-                                  aria-hidden="true"
-                                  className="MuiSvgIcon-root-21"
-                                  focusable="false"
-                                  role="presentation"
-                                  viewBox="0 0 24 24"
+                                <span
+                                  className="MuiIconButton-label-18"
                                 >
-                                  <path
-                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                  <svg
+                                    aria-hidden="true"
+                                    className="MuiSvgIcon-root-22"
+                                    focusable="false"
+                                    role="presentation"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                    />
+                                  </svg>
+                                  <input
+                                    checked={false}
+                                    className="MuiPrivateSwitchBase-input-101"
+                                    data-indeterminate={false}
+                                    onChange={[Function]}
+                                    tabIndex={-1}
+                                    type="checkbox"
                                   />
-                                </svg>
-                                <input
-                                  checked={false}
-                                  className="MuiPrivateSwitchBase-input-100"
-                                  data-indeterminate={false}
-                                  onChange={[Function]}
-                                  tabIndex={-1}
-                                  type="checkbox"
-                                />
-                              </span>
-                            </span>
-                          </div>
-                        </li>
-                        <li
-                          className="MuiListItem-container-73"
-                        >
-                          <div
-                            className="MuiButtonBase-root-18 MuiListItem-root-72 MuiListItem-default-75 MuiListItem-gutters-80 MuiListItem-button-81 MuiListItem-secondaryAction-82"
-                            onBlur={[Function]}
-                            onClick={[Function]}
-                            onContextMenu={[Function]}
-                            onFocus={[Function]}
-                            onKeyDown={[Function]}
-                            onKeyUp={[Function]}
-                            onMouseDown={[Function]}
-                            onMouseLeave={[Function]}
-                            onMouseUp={[Function]}
-                            onTouchEnd={[Function]}
-                            onTouchMove={[Function]}
-                            onTouchStart={[Function]}
-                            role="button"
-                            tabIndex="0"
-                          >
-                            <div
-                              className="MuiListItemText-root-84"
-                            />
-                            <span
-                              className="MuiTouchRipple-root-127"
-                            />
-                          </div>
-                          <div
-                            className="MuiListItemSecondaryAction-root-90"
-                            onClick={[Function]}
-                          >
-                            <span
-                              className="MuiButtonBase-root-18 MuiIconButton-root-12 MuiPrivateSwitchBase-root-97 MuiCheckbox-root-91 MuiCheckbox-colorSecondary-96"
-                              onBlur={[Function]}
-                              onContextMenu={[Function]}
-                              onFocus={[Function]}
-                              onKeyDown={[Function]}
-                              onKeyUp={[Function]}
-                              onMouseDown={[Function]}
-                              onMouseLeave={[Function]}
-                              onMouseUp={[Function]}
-                              onTouchEnd={[Function]}
-                              onTouchMove={[Function]}
-                              onTouchStart={[Function]}
-                              tabIndex={null}
-                            >
-                              <span
-                                className="MuiIconButton-label-17"
-                              >
-                                <svg
-                                  aria-hidden="true"
-                                  className="MuiSvgIcon-root-21"
-                                  focusable="false"
-                                  role="presentation"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                                  />
-                                </svg>
-                                <input
-                                  checked={false}
-                                  className="MuiPrivateSwitchBase-input-100"
-                                  data-indeterminate={false}
-                                  onChange={[Function]}
-                                  tabIndex={-1}
-                                  type="checkbox"
-                                />
-                              </span>
-                            </span>
-                          </div>
-                        </li>
-                        <li
-                          className="MuiListItem-container-73"
-                        >
-                          <div
-                            className="MuiButtonBase-root-18 MuiListItem-root-72 MuiListItem-default-75 MuiListItem-gutters-80 MuiListItem-button-81 MuiListItem-secondaryAction-82"
-                            onBlur={[Function]}
-                            onClick={[Function]}
-                            onContextMenu={[Function]}
-                            onFocus={[Function]}
-                            onKeyDown={[Function]}
-                            onKeyUp={[Function]}
-                            onMouseDown={[Function]}
-                            onMouseLeave={[Function]}
-                            onMouseUp={[Function]}
-                            onTouchEnd={[Function]}
-                            onTouchMove={[Function]}
-                            onTouchStart={[Function]}
-                            role="button"
-                            tabIndex="0"
-                          >
-                            <div
-                              className="MuiListItemText-root-84"
-                            >
-                              <span
-                                className="MuiTypography-root-31 MuiTypography-subheading-38 MuiListItemText-primary-87"
-                              >
-                                Use another card
+                                </span>
                               </span>
                             </div>
-                            <span
-                              className="MuiTouchRipple-root-127"
-                            />
-                          </div>
-                          <div
-                            className="MuiListItemSecondaryAction-root-90"
-                            onClick={[Function]}
+                          </li>
+                          <li
+                            className="MuiListItem-container-74"
                           >
-                            <span
-                              className="MuiButtonBase-root-18 MuiIconButton-root-12 MuiPrivateSwitchBase-root-97 MuiCheckbox-root-91 MuiCheckbox-colorSecondary-96"
+                            <div
+                              className="MuiButtonBase-root-19 MuiListItem-root-73 MuiListItem-default-76 MuiListItem-gutters-81 MuiListItem-button-82 MuiListItem-secondaryAction-83"
                               onBlur={[Function]}
+                              onClick={[Function]}
                               onContextMenu={[Function]}
                               onFocus={[Function]}
                               onKeyDown={[Function]}
@@ -556,126 +390,304 @@ exports[`when component is mounted renders correctly 1`] = `
                               onTouchEnd={[Function]}
                               onTouchMove={[Function]}
                               onTouchStart={[Function]}
-                              tabIndex={null}
+                              role="button"
+                              tabIndex="0"
+                            >
+                              <div
+                                className="MuiListItemText-root-85"
+                              />
+                              <span
+                                className="MuiTouchRipple-root-128"
+                              />
+                            </div>
+                            <div
+                              className="MuiListItemSecondaryAction-root-91"
+                              onClick={[Function]}
                             >
                               <span
-                                className="MuiIconButton-label-17"
+                                className="MuiButtonBase-root-19 MuiIconButton-root-13 MuiPrivateSwitchBase-root-98 MuiCheckbox-root-92 MuiCheckbox-colorSecondary-97"
+                                onBlur={[Function]}
+                                onContextMenu={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyUp={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseUp={[Function]}
+                                onTouchEnd={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                tabIndex={null}
                               >
-                                <svg
-                                  aria-hidden="true"
-                                  className="MuiSvgIcon-root-21"
-                                  focusable="false"
-                                  role="presentation"
-                                  viewBox="0 0 24 24"
+                                <span
+                                  className="MuiIconButton-label-18"
                                 >
-                                  <path
-                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                  <svg
+                                    aria-hidden="true"
+                                    className="MuiSvgIcon-root-22"
+                                    focusable="false"
+                                    role="presentation"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                    />
+                                  </svg>
+                                  <input
+                                    checked={false}
+                                    className="MuiPrivateSwitchBase-input-101"
+                                    data-indeterminate={false}
+                                    onChange={[Function]}
+                                    tabIndex={-1}
+                                    type="checkbox"
                                   />
-                                </svg>
-                                <input
-                                  checked={false}
-                                  className="MuiPrivateSwitchBase-input-100"
-                                  data-indeterminate={false}
-                                  onChange={[Function]}
-                                  tabIndex={-1}
-                                  type="checkbox"
-                                />
+                                </span>
                               </span>
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      style={
-                        Object {
-                          "textAlign": "center",
+                            </div>
+                          </li>
+                          <li
+                            className="MuiListItem-container-74"
+                          >
+                            <div
+                              className="MuiButtonBase-root-19 MuiListItem-root-73 MuiListItem-default-76 MuiListItem-gutters-81 MuiListItem-button-82 MuiListItem-secondaryAction-83"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onContextMenu={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              role="button"
+                              tabIndex="0"
+                            >
+                              <div
+                                className="MuiListItemText-root-85"
+                              />
+                              <span
+                                className="MuiTouchRipple-root-128"
+                              />
+                            </div>
+                            <div
+                              className="MuiListItemSecondaryAction-root-91"
+                              onClick={[Function]}
+                            >
+                              <span
+                                className="MuiButtonBase-root-19 MuiIconButton-root-13 MuiPrivateSwitchBase-root-98 MuiCheckbox-root-92 MuiCheckbox-colorSecondary-97"
+                                onBlur={[Function]}
+                                onContextMenu={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyUp={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseUp={[Function]}
+                                onTouchEnd={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                tabIndex={null}
+                              >
+                                <span
+                                  className="MuiIconButton-label-18"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="MuiSvgIcon-root-22"
+                                    focusable="false"
+                                    role="presentation"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                    />
+                                  </svg>
+                                  <input
+                                    checked={false}
+                                    className="MuiPrivateSwitchBase-input-101"
+                                    data-indeterminate={false}
+                                    onChange={[Function]}
+                                    tabIndex={-1}
+                                    type="checkbox"
+                                  />
+                                </span>
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            className="MuiListItem-container-74"
+                          >
+                            <div
+                              className="MuiButtonBase-root-19 MuiListItem-root-73 MuiListItem-default-76 MuiListItem-gutters-81 MuiListItem-button-82 MuiListItem-secondaryAction-83"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onContextMenu={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              role="button"
+                              tabIndex="0"
+                            >
+                              <div
+                                className="MuiListItemText-root-85"
+                              >
+                                <span
+                                  className="MuiTypography-root-32 MuiTypography-subheading-39 MuiListItemText-primary-88"
+                                >
+                                  Use another card
+                                </span>
+                              </div>
+                              <span
+                                className="MuiTouchRipple-root-128"
+                              />
+                            </div>
+                            <div
+                              className="MuiListItemSecondaryAction-root-91"
+                              onClick={[Function]}
+                            >
+                              <span
+                                className="MuiButtonBase-root-19 MuiIconButton-root-13 MuiPrivateSwitchBase-root-98 MuiCheckbox-root-92 MuiCheckbox-colorSecondary-97"
+                                onBlur={[Function]}
+                                onContextMenu={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyUp={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseUp={[Function]}
+                                onTouchEnd={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                tabIndex={null}
+                              >
+                                <span
+                                  className="MuiIconButton-label-18"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="MuiSvgIcon-root-22"
+                                    focusable="false"
+                                    role="presentation"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                    />
+                                  </svg>
+                                  <input
+                                    checked={false}
+                                    className="MuiPrivateSwitchBase-input-101"
+                                    data-indeterminate={false}
+                                    onChange={[Function]}
+                                    tabIndex={-1}
+                                    type="checkbox"
+                                  />
+                                </span>
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "textAlign": "center",
+                          }
                         }
-                      }
-                    />
-                    <button
-                      className="MuiButtonBase-root-18 MuiButtonBase-disabled-19 MuiButton-root-101 MuiButton-contained-112 MuiButton-containedPrimary-113 MuiButton-raised-115 MuiButton-raisedPrimary-116 MuiButton-disabled-121 MuiButton-fullWidth-126"
-                      disabled={true}
-                      onBlur={[Function]}
-                      onContextMenu={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                      tabIndex="-1"
-                      type="submit"
-                    >
-                      <span
-                        className="MuiButton-label-102"
+                      />
+                      <button
+                        className="MuiButtonBase-root-19 MuiButtonBase-disabled-20 MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
+                        disabled={true}
+                        onBlur={[Function]}
+                        onContextMenu={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        tabIndex="-1"
+                        type="submit"
                       >
-                        PAY
-                      </span>
-                    </button>
-                  </form>
+                        <span
+                          className="MuiButton-label-103"
+                        >
+                          PAY
+                        </span>
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            className="Component-footer-6"
-          >
-            <a
-              className="Component-footerLink-7"
-              href="/terms_of_service"
-              onClick={[Function]}
-              rel="noopener noreferer"
-              target="_blank"
+            <div
+              className="Component-footer-7"
             >
-              <span
-                className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+              <a
+                className="Component-footerLink-8"
+                href="/terms_of_service"
+                onClick={[Function]}
+                rel="noopener noreferer"
+                target="_blank"
               >
-                TERMS
-              </span>
-            </a>
-            <a
-              className="Component-footerLink-7"
-              href="/privacy-policy"
-              onClick={[Function]}
-              rel="noopener noreferer"
-              target="_blank"
-            >
-              <span
-                className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+                <span
+                  className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+                >
+                  TERMS
+                </span>
+              </a>
+              <a
+                className="Component-footerLink-8"
+                href="/privacy-policy"
+                onClick={[Function]}
+                rel="noopener noreferer"
+                target="_blank"
               >
-                PRIVACY
-              </span>
-            </a>
-            <a
-              className="Component-footerLink-7"
-              href="/faq"
-              onClick={[Function]}
-              rel="noopener noreferer"
-              target="_blank"
-            >
-              <span
-                className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+                <span
+                  className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+                >
+                  PRIVACY
+                </span>
+              </a>
+              <a
+                className="Component-footerLink-8"
+                href="/faq"
+                onClick={[Function]}
+                rel="noopener noreferer"
+                target="_blank"
               >
-                FAIRNESS / FAQ
-              </span>
-            </a>
-            <a
-              className="Component-footerLink-7"
-              href="/all-prizes"
-              onClick={[Function]}
-              rel="noopener noreferer"
-              target="_blank"
-            >
-              <span
-                className="MuiTypography-root-31 MuiTypography-caption-41 MuiTypography-colorTextSecondary-64 MuiTypography-alignCenter-54"
+                <span
+                  className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+                >
+                  FAIRNESS / FAQ
+                </span>
+              </a>
+              <a
+                className="Component-footerLink-8"
+                href="/all-prizes"
+                onClick={[Function]}
+                rel="noopener noreferer"
+                target="_blank"
               >
-                ALL PRIZES
-              </span>
-            </a>
+                <span
+                  className="MuiTypography-root-32 MuiTypography-caption-42 MuiTypography-colorTextSecondary-65 MuiTypography-alignCenter-55"
+                >
+                  ALL PRIZES
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

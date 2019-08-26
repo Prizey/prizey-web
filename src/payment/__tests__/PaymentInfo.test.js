@@ -45,6 +45,15 @@ jest.mock('croods', () => ({
   ),
 }))
 
+jest.mock('../../design/AdminText/AdminText', () => props => (
+  <div {...props}>
+    AdminText -{' '}
+    {props.render({
+      creditCardTitle: 'Purchase diamonds to play',
+    })}
+  </div>
+))
+
 describe('when component is mounted', () => {
   it('renders correctly', () => {
     const tree = renderer
