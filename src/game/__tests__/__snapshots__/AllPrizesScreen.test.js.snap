@@ -80,401 +80,414 @@ exports[`renders correctly 1`] = `
     <div
       className="Component-children-7"
     >
-      <ul
-        className="MuiList-root-33 MuiList-padding-34 MuiList-subheader-36 Component-root-3"
+      <div
+        render={[Function]}
+        tags={
+          Array [
+            "difficulty_first_level_label",
+            "difficulty_second_level_label",
+            "difficulty_third_level_label",
+          ]
+        }
       >
-        <li />
-        <li>
-          <ul
-            className="Component-sectionList-4"
-          >
-            <li
-              className="MuiListSubheader-root-37 MuiListSubheader-gutters-40 Component-subheader-5"
+        AdminText -
+         
+        <ul
+          className="MuiList-root-33 MuiList-padding-34 MuiList-subheader-36 Component-root-3"
+        >
+          <li />
+          <li>
+            <ul
+              className="Component-sectionList-4"
             >
-              EASY
-            </li>
-            <div
-              name="products"
-              parentId="easy"
-              path="/products/easy"
-              render={[Function]}
-              renderLoading={[Function]}
-            >
-               - Render: 
               <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
+                className="MuiListSubheader-root-37 MuiListSubheader-gutters-40 Component-subheader-5"
               >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="trump"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/trump-mask.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    trump
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
+                Foo 1
               </li>
-              <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
-              >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="sweatshirt"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/sweatshirt.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    sweatshirt
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
-              >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="shoe"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/shoe.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    shoe
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
-              </li>
-              RenderLoading: 
               <div
-                className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
-                role="progressbar"
-                style={
-                  Object {
-                    "height": 30,
-                    "width": 30,
+                name="products"
+                parentId="easy"
+                path="/products/easy"
+                render={[Function]}
+                renderLoading={[Function]}
+              >
+                 - Render: 
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="trump"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/trump-mask.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      trump
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="sweatshirt"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/sweatshirt.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      sweatshirt
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="shoe"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/shoe.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      shoe
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                RenderLoading: 
+                <div
+                  className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
+                  role="progressbar"
+                  style={
+                    Object {
+                      "height": 30,
+                      "width": 30,
+                    }
                   }
-                }
-              >
-                <svg
-                  className="MuiCircularProgress-svg-108"
-                  viewBox="22 22 44 44"
                 >
-                  <circle
-                    className="MuiCircularProgress-circle-109 MuiCircularProgress-circleIndeterminate-111"
-                    cx={44}
-                    cy={44}
-                    fill="none"
-                    r={20.2}
-                    strokeWidth={3.6}
-                    style={Object {}}
-                  />
-                </svg>
+                  <svg
+                    className="MuiCircularProgress-svg-108"
+                    viewBox="22 22 44 44"
+                  >
+                    <circle
+                      className="MuiCircularProgress-circle-109 MuiCircularProgress-circleIndeterminate-111"
+                      cx={44}
+                      cy={44}
+                      fill="none"
+                      r={20.2}
+                      strokeWidth={3.6}
+                      style={Object {}}
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <ul
-            className="Component-sectionList-4"
-          >
-            <li
-              className="MuiListSubheader-root-37 MuiListSubheader-gutters-40 Component-subheader-5"
+            </ul>
+          </li>
+          <li>
+            <ul
+              className="Component-sectionList-4"
             >
-              MEDIUM
-            </li>
-            <div
-              name="products"
-              parentId="medium"
-              path="/products/medium"
-              render={[Function]}
-              renderLoading={[Function]}
-            >
-               - Render: 
               <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
+                className="MuiListSubheader-root-37 MuiListSubheader-gutters-40 Component-subheader-5"
               >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="trump"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/trump-mask.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    trump
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
+                Foo 2
               </li>
-              <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
-              >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="sweatshirt"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/sweatshirt.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    sweatshirt
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
-              >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="shoe"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/shoe.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    shoe
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
-              </li>
-              RenderLoading: 
               <div
-                className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
-                role="progressbar"
-                style={
-                  Object {
-                    "height": 30,
-                    "width": 30,
+                name="products"
+                parentId="medium"
+                path="/products/medium"
+                render={[Function]}
+                renderLoading={[Function]}
+              >
+                 - Render: 
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="trump"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/trump-mask.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      trump
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="sweatshirt"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/sweatshirt.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      sweatshirt
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="shoe"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/shoe.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      shoe
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                RenderLoading: 
+                <div
+                  className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
+                  role="progressbar"
+                  style={
+                    Object {
+                      "height": 30,
+                      "width": 30,
+                    }
                   }
-                }
-              >
-                <svg
-                  className="MuiCircularProgress-svg-108"
-                  viewBox="22 22 44 44"
                 >
-                  <circle
-                    className="MuiCircularProgress-circle-109 MuiCircularProgress-circleIndeterminate-111"
-                    cx={44}
-                    cy={44}
-                    fill="none"
-                    r={20.2}
-                    strokeWidth={3.6}
-                    style={Object {}}
-                  />
-                </svg>
+                  <svg
+                    className="MuiCircularProgress-svg-108"
+                    viewBox="22 22 44 44"
+                  >
+                    <circle
+                      className="MuiCircularProgress-circle-109 MuiCircularProgress-circleIndeterminate-111"
+                      cx={44}
+                      cy={44}
+                      fill="none"
+                      r={20.2}
+                      strokeWidth={3.6}
+                      style={Object {}}
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <ul
-            className="Component-sectionList-4"
-          >
-            <li
-              className="MuiListSubheader-root-37 MuiListSubheader-gutters-40 Component-subheader-5"
+            </ul>
+          </li>
+          <li>
+            <ul
+              className="Component-sectionList-4"
             >
-              HARD
-            </li>
-            <div
-              name="products"
-              parentId="hard"
-              path="/products/hard"
-              render={[Function]}
-              renderLoading={[Function]}
-            >
-               - Render: 
               <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
+                className="MuiListSubheader-root-37 MuiListSubheader-gutters-40 Component-subheader-5"
               >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="trump"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/trump-mask.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    trump
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
+                Foo 3
               </li>
-              <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
-              >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="sweatshirt"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/sweatshirt.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    sweatshirt
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
-                disabled={false}
-              >
-                <div
-                  className="MuiAvatar-root-58"
-                >
-                  <img
-                    alt="shoe"
-                    className="MuiAvatar-img-60"
-                    src="/mocks/shoe.png"
-                  />
-                </div>
-                <div
-                  className="MuiListItemText-root-61"
-                >
-                  <span
-                    className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
-                  >
-                    shoe
-                  </span>
-                  <p
-                    className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
-                  >
-                    MSRP: $NaN
-                  </p>
-                </div>
-              </li>
-              RenderLoading: 
               <div
-                className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
-                role="progressbar"
-                style={
-                  Object {
-                    "height": 30,
-                    "width": 30,
-                  }
-                }
+                name="products"
+                parentId="hard"
+                path="/products/hard"
+                render={[Function]}
+                renderLoading={[Function]}
               >
-                <svg
-                  className="MuiCircularProgress-svg-108"
-                  viewBox="22 22 44 44"
+                 - Render: 
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
                 >
-                  <circle
-                    className="MuiCircularProgress-circle-109 MuiCircularProgress-circleIndeterminate-111"
-                    cx={44}
-                    cy={44}
-                    fill="none"
-                    r={20.2}
-                    strokeWidth={3.6}
-                    style={Object {}}
-                  />
-                </svg>
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="trump"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/trump-mask.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      trump
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="sweatshirt"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/sweatshirt.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      sweatshirt
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="MuiListItem-root-43 MuiListItem-default-46 MuiListItem-dense-47 MuiListItem-gutters-51 Component-listItem-1"
+                  disabled={false}
+                >
+                  <div
+                    className="MuiAvatar-root-58"
+                  >
+                    <img
+                      alt="shoe"
+                      className="MuiAvatar-img-60"
+                      src="/mocks/shoe.png"
+                    />
+                  </div>
+                  <div
+                    className="MuiListItemText-root-61"
+                  >
+                    <span
+                      className="MuiTypography-root-67 MuiTypography-subheading-74 MuiListItemText-primary-64"
+                    >
+                      shoe
+                    </span>
+                    <p
+                      className="MuiTypography-root-67 MuiTypography-body1-76 MuiTypography-colorTextSecondary-100 MuiListItemText-secondary-65"
+                    >
+                      MSRP: $2.00
+                    </p>
+                  </div>
+                </li>
+                RenderLoading: 
+                <div
+                  className="MuiCircularProgress-root-103 MuiCircularProgress-colorPrimary-106 MuiCircularProgress-indeterminate-105"
+                  role="progressbar"
+                  style={
+                    Object {
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                >
+                  <svg
+                    className="MuiCircularProgress-svg-108"
+                    viewBox="22 22 44 44"
+                  >
+                    <circle
+                      className="MuiCircularProgress-circle-109 MuiCircularProgress-circleIndeterminate-111"
+                      cx={44}
+                      cy={44}
+                      fill="none"
+                      r={20.2}
+                      strokeWidth={3.6}
+                      style={Object {}}
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </ul>
-        </li>
-      </ul>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div
       className="Component-footer-9"
