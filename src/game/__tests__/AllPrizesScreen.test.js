@@ -3,9 +3,9 @@ import renderer from 'react-test-renderer'
 import AllPrizesScreen from '../AllPrizesScreen'
 
 const mockList = [
-  { id: 1, image: '/mocks/trump-mask.png', title: 'trump' },
-  { id: 2, image: '/mocks/sweatshirt.png', title: 'sweatshirt' },
-  { id: 3, image: '/mocks/shoe.png', title: 'shoe' },
+  { id: 1, image: '/mocks/trump-mask.png', price: 2, title: 'trump' },
+  { id: 2, image: '/mocks/sweatshirt.png', price: 2, title: 'sweatshirt' },
+  { id: 3, image: '/mocks/shoe.png', price: 2, title: 'shoe' },
 ]
 
 jest.mock('../../design/Layout/RegisterPageView')
@@ -44,6 +44,17 @@ jest.mock('croods', () => ({
   ),
   createReducer: () => (state = {}) => state,
 }))
+
+jest.mock('design/AdminText/AdminText', () => props => (
+  <div {...props}>
+    AdminText -{' '}
+    {props.render({
+      difficultyFirstLevelLabel: 'Foo 1',
+      difficultySecondLevelLabel: 'Foo 2',
+      difficultyThirdLevelLabel: 'Foo 3',
+    })}
+  </div>
+))
 
 it('renders correctly', () => {
   const params = {

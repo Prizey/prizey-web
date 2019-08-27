@@ -15,12 +15,9 @@ import CircularProgress from '@material-ui/core/CircularProgress'
 import Layout from 'design/Layout/Layout'
 import UserBalance from 'design/UserBalance'
 import ProfileLink from 'design/ProfileLink/ProfileLink'
+import AdminText from 'design/AdminText/AdminText'
 
-const difficulties = [
-  { label: 'EASY', name: 'easy' },
-  { label: 'MEDIUM', name: 'medium' },
-  { label: 'HARD', name: 'hard' },
-]
+const difficulties = [{ name: 'easy' }, { name: 'medium' }, { name: 'hard' }]
 
 const styles = theme => ({
   listItem: {
@@ -65,43 +62,64 @@ const AllPrizesScreen = withStyles(styles)(
       location={location}
       currentUser={currentUser}
     >
-      <List subheader={<li />} className={classes.root}>
-        {difficulties.map(difficulty => (
-          <li key={`section-${difficulty.name}`}>
-            <ul className={classes.sectionList}>
-              <ListSubheader className={classes.subheader} disableSticky>
-                {difficulty.label}
-              </ListSubheader>
-              <CroodsList
-                parentId={difficulty.name}
-                name="products"
-                path={`/products/${difficulty.name}`}
-                renderLoading={() => (
-                  <CircularProgress color="primary" size={30} />
-                )}
-                render={products =>
-                  products.map(item => (
-                    <ListItem
-                      key={`item-${difficulty.name}-${item.id}`}
-                      className={classes.listItem}
-                    >
-                      <ListItemAvatar>
-                        <Avatar src={item.image} alt={item.title} />
-                      </ListItemAvatar>
-                      <ListItemText
-                        primary={item.title}
-                        secondary={`MSRP: $${parseFloat(item.price).toFixed(
-                          2,
-                        )}`}
-                      />
-                    </ListItem>
-                  ))
-                }
-              />
-            </ul>
-          </li>
-        ))}
-      </List>
+      <AdminText
+        tags={[
+          'difficulty_first_level_label',
+          'difficulty_second_level_label',
+          'difficulty_third_level_label',
+        ]}
+        render={({
+          difficultyFirstLevelLabel,
+          difficultySecondLevelLabel,
+          difficultyThirdLevelLabel,
+        }) => {
+          const labels = {
+            easy: difficultyFirstLevelLabel,
+            hard: difficultyThirdLevelLabel,
+            medium: difficultySecondLevelLabel,
+          }
+
+          return (
+            <List subheader={<li />} className={classes.root}>
+              {difficulties.map(difficulty => (
+                <li key={`section-${difficulty.name}`}>
+                  <ul className={classes.sectionList}>
+                    <ListSubheader className={classes.subheader} disableSticky>
+                      {labels[difficulty.name]}
+                    </ListSubheader>
+                    <CroodsList
+                      parentId={difficulty.name}
+                      name="products"
+                      path={`/products/${difficulty.name}`}
+                      renderLoading={() => (
+                        <CircularProgress color="primary" size={30} />
+                      )}
+                      render={products =>
+                        products.map(item => (
+                          <ListItem
+                            key={`item-${difficulty.name}-${item.id}`}
+                            className={classes.listItem}
+                          >
+                            <ListItemAvatar>
+                              <Avatar src={item.image} alt={item.title} />
+                            </ListItemAvatar>
+                            <ListItemText
+                              primary={item.title}
+                              secondary={`MSRP: $${parseFloat(
+                                item.price,
+                              ).toFixed(2)}`}
+                            />
+                          </ListItem>
+                        ))
+                      }
+                    />
+                  </ul>
+                </li>
+              ))}
+            </List>
+          )
+        }}
+      />
     </Layout>
   ),
 )
