@@ -115,7 +115,7 @@ const ScreenWithSpeed = (
   />
 )
 
-export default ({ currentUser, location, navigate, difficulty = 'medium' }) => (
+export default ({ currentUser, location, navigate, difficulty = 'home' }) => (
   <List
     currentUser={currentUser}
     location={location}

@@ -17,7 +17,7 @@ it('gets the correct item speed when multiplier is less than zero', () => {
 
 it('gets the correct item speed', () => {
   const speed = getItemSpeed(10, 100, 1)
-  expect(speed).toEqual(1000)
+  expect(speed).toEqual(80)
 })
 
 it('gets the correct transition information', () => {
