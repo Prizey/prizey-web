@@ -1,6 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
+import { Typography, Button } from '@material-ui/core'
 import Layout from 'design/Layout/Layout'
 import { List } from 'croods'
 import get from 'lodash/get'
@@ -16,14 +16,22 @@ const styles = theme => ({
     marginBottom: theme.spacing.md,
     marginTop: theme.spacing.md,
   },
+  freeDiamonds: {
+    '&:hover': {
+      background: get(theme.palette, 'difficulty.easy'),
+    },
+    background: get(theme.palette, 'difficulty.easy'),
+  },
+  icon: {
+    height: theme.spacing.md,
+  },
+  label: {
+    flexGrow: 1,
+    textAlign: 'center',
+  },
 })
 
-const difficulties = ([firstLabel, secondLabel, thirdLabel] = []) => [
-  {
-    difficulty: 'easy',
-    label: firstLabel || 'EASY',
-    to: '/game/easy',
-  },
+const difficulties = ([, secondLabel, thirdLabel] = []) => [
   {
     difficulty: 'medium',
     label: secondLabel || 'MEDIUM',
@@ -64,6 +72,21 @@ const ChooseDifficultyScreen = withStyles(styles)(
           </Typography>
 
           <div className={classes.buttonGroup}>
+            <a
+              href="https://www.liveappsearch.com/cl.php?id=bc4c7871d74a21ed7fa70b785d2cb6aa"
+              style={{ textDecoration: 'none' }}
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                className={classes.freeDiamonds}
+              >
+                <span className={classes.label}>
+                  {difficultyFirstLevelLabel}
+                </span>
+              </Button>
+            </a>
             {difficulties([
               difficultyFirstLevelLabel,
               difficultySecondLevelLabel,
