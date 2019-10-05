@@ -1,6 +1,4 @@
-## New react app
-
-<Add badges>
+## Prizey web
 
 ## Installation
 
