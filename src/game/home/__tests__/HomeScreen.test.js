@@ -40,14 +40,30 @@ jest.mock('../../../design/Layout/RegisterPageView')
 describe('when component is mounted', () => {
   describe('when user is logged in', () => {
     it('renders correctly', () => {
-      const tree = renderer.create(<HomeScreen currentUser />).toJSON()
+      const tree = renderer
+        .create(<HomeScreen nextUrl="foo" currentUser />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+
+    it('renders correctly with external nextUrl link', () => {
+      const tree = renderer
+        .create(<HomeScreen nextUrl="foo" currentUser isNextUrlExternal />)
+        .toJSON()
       expect(tree).toMatchSnapshot()
     })
   })
 
   describe('when user is not logged in', () => {
     it('redirects correctly', () => {
-      const tree = renderer.create(<HomeScreen />).toJSON()
+      const tree = renderer.create(<HomeScreen nextUrl="foo" />).toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+
+    it('redirects correctly with external nextUrl link', () => {
+      const tree = renderer
+        .create(<HomeScreen nextUrl="foo" isNextUrlExternal />)
+        .toJSON()
       expect(tree).toMatchSnapshot()
     })
   })
