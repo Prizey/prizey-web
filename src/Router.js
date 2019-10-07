@@ -35,9 +35,13 @@ export const authorizeGameFlow = state => state.basket.paid
 export const authorizeShippingFlow = state =>
   state.basket.paid && state.basket.product
 
+const blockUrl =
+  'https://www.liveappsearch.com/cl.php?id=bc4c7871d74a21ed7fa70b785d2cb6aa'
+
 export default props => (
   <Router>
-    <HomeScreen {...props} path="/" />
+    <HomeScreen {...props} nextUrl="/game" path="/" />
+    <HomeScreen {...props} nextUrl={blockUrl} path="/free" isNextUrlExternal />
 
     <Route Component={ChooseDifficultyScreen} {...props} path="/game" />
     <Route

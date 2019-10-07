@@ -11,8 +11,6 @@ import AdminText from 'design/AdminText/AdminText'
 import Roulette from '../Roulette'
 import SpeedComponent from '../SpeedComponent'
 
-const nextUrl = '/game'
-
 const styles = theme => ({
   button: {
     height: 'auto',
@@ -44,8 +42,32 @@ const styles = theme => ({
   },
 })
 
+const NextLink = ({ nextUrl, isNextUrlExternal, className, children }) => {
+  if (isNextUrlExternal) {
+    return (
+      <a href={nextUrl} className={className}>
+        {children}
+      </a>
+    )
+  }
+  return (
+    <Link to={nextUrl} className={className}>
+      {children}
+    </Link>
+  )
+}
+
 const ScreenWithRoullette = withStyles(styles)(
-  ({ classes, speed, list, multiplier, currentUser, location }) => (
+  ({
+    classes,
+    speed,
+    list,
+    multiplier,
+    currentUser,
+    location,
+    nextUrl,
+    isNextUrlExternal,
+  }) => (
     <Layout
       leftIcon={<UserBalance />}
       rightIcon={
@@ -60,7 +82,11 @@ const ScreenWithRoullette = withStyles(styles)(
       location={location}
       currentUser={currentUser}
     >
-      <Link to={nextUrl} className={classes.root}>
+      <NextLink
+        nextUrl={nextUrl}
+        isNextUrlExternal={isNextUrlExternal}
+        className={classes.root}
+      >
         <Roulette
           aria-label="roulette"
           speed={speed}
@@ -85,7 +111,7 @@ const ScreenWithRoullette = withStyles(styles)(
             </Button>
           )}
         />
-      </Link>
+      </NextLink>
     </Layout>
   ),
 )
@@ -95,6 +121,8 @@ const ScreenWithSpeed = (
   navigate,
   currentUser,
   location,
+  nextUrl,
+  isNextUrlExternal,
 ) => list => (
   <SpeedComponent
     render={settings => {
@@ -109,18 +137,34 @@ const ScreenWithSpeed = (
           speed={speed}
           currentUser={currentUser}
           location={location}
+          nextUrl={nextUrl}
+          isNextUrlExternal={isNextUrlExternal}
         />
       )
     }}
   />
 )
 
-export default ({ currentUser, location, navigate, difficulty = 'home' }) => (
+export default ({
+  currentUser,
+  location,
+  navigate,
+  difficulty = 'home',
+  nextUrl,
+  isNextUrlExternal,
+}) => (
   <List
     currentUser={currentUser}
     location={location}
     name="products"
     path={`/products/homepage`}
-    render={ScreenWithSpeed(difficulty, navigate, currentUser, location)}
+    render={ScreenWithSpeed(
+      difficulty,
+      navigate,
+      currentUser,
+      location,
+      nextUrl,
+      isNextUrlExternal,
+    )}
   />
 )
