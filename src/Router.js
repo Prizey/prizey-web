@@ -51,6 +51,7 @@ export default props => (
       authorize={authorizeGameFlow}
       unauthorized="/game"
     />
+    <GameScreen {...props} path="/freegame" freegame />
     <Route
       Component={ClaimProductScreen}
       {...props}
