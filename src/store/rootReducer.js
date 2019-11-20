@@ -8,6 +8,7 @@ const reducers = {
   auth: createAuthReducer(),
   basket: basketReducer,
   cards: createReducer('cards'),
+  freegameIps: createReducer('freegameIps'),
   game: createReducer('game'),
   orders: createReducer('orders'),
   payments: createReducer('payments'),
