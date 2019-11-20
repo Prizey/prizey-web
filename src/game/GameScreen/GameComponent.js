@@ -21,6 +21,7 @@ export default connect(
     multiplier,
     currentUser,
     location,
+    freegame,
     ...props
   }) => (
     <Layout
@@ -38,7 +39,11 @@ export default connect(
         multiplier={multiplier}
         onSelectItem={item => {
           props.chooseProduct(item)
-          props.navigate(`/game/${difficulty}/claim`)
+          if (freegame) {
+            props.navigate(`/freegame-play-again`)
+          } else {
+            props.navigate(`/game/${difficulty}/claim`)
+          }
         }}
       />
       <br />

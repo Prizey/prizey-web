@@ -2,7 +2,13 @@ import React from 'react'
 import SpeedComponent from '../SpeedComponent'
 import GameComponent from './GameComponent'
 
-export default (difficulty, navigate, currentUser, location) => list => (
+export default (
+  difficulty,
+  navigate,
+  currentUser,
+  location,
+  freegame,
+) => list => (
   <SpeedComponent
     render={settings => {
       const speed = settings[`${difficulty}CarouselSpeed`]
@@ -16,6 +22,7 @@ export default (difficulty, navigate, currentUser, location) => list => (
           multiplier={settings.priceMultiplier}
           navigate={navigate}
           speed={speed}
+          freegame={freegame}
         />
       )
     }}
