@@ -3,6 +3,7 @@
 exports[`when component is mounted when user is logged in renders correctly 1`] = `
 <div
   currentUser={true}
+  disableCache={true}
   name="products"
   path="/products/homepage"
   render={[Function]}
@@ -265,6 +266,7 @@ exports[`when component is mounted when user is logged in renders correctly 1`] 
 exports[`when component is mounted when user is logged in renders correctly with external nextUrl link 1`] = `
 <div
   currentUser={true}
+  disableCache={true}
   name="products"
   path="/products/homepage"
   render={[Function]}
@@ -525,6 +527,7 @@ exports[`when component is mounted when user is logged in renders correctly with
 
 exports[`when component is mounted when user is not logged in redirects correctly 1`] = `
 <div
+  disableCache={true}
   name="products"
   path="/products/homepage"
   render={[Function]}
@@ -754,6 +757,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
 
 exports[`when component is mounted when user is not logged in redirects correctly with external nextUrl link 1`] = `
 <div
+  disableCache={true}
   name="products"
   path="/products/homepage"
   render={[Function]}
