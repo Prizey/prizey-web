@@ -23,6 +23,7 @@ jest.mock('croods', () => ({
       Info -{' '}
       {props.render({
         easyCarouselSpeed: 500,
+        ipBlocked: true,
         priceMultiplier: 1,
       })}
     </div>
@@ -58,5 +59,19 @@ describe("when we don't have the currentUser yet", () => {
   it('redirects correctly', () => {
     const tree = renderer.create(<GameScreen />).toJSON()
     expect(tree).toMatchSnapshot()
+  })
+})
+
+describe('when is a freegame', () => {
+  it('trigger the alert', () => {
+    const navigate = jest.fn()
+    const tree = renderer.create(
+      <GameScreen currentUser navigate={navigate} freegame />,
+    ).root
+
+    tree
+      .findByProps({ 'aria-label': 'roulette' })
+      .props.onSelectItem({ title: 'item' })
+    expect(navigate).toHaveBeenCalledWith('/freegame-play-again')
   })
 })
