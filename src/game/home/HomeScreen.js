@@ -154,6 +154,7 @@ export default ({
   isNextUrlExternal,
 }) => (
   <List
+    disableCache
     currentUser={currentUser}
     location={location}
     name="products"

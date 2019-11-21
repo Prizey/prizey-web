@@ -6,6 +6,7 @@ import Route from 'auth/Route'
 import ChooseDifficultyScreen from 'game/ChooseDifficultyScreen'
 import HomeScreen from 'game/home/HomeScreen'
 import GameScreen from 'game/GameScreen'
+import FreeGamePlayAgain from 'game/GameScreen/FreeGamePlayAgain'
 import ClaimProductScreen from 'game/ClaimProductScreen'
 import SoldBackScreen from 'game/SoldBackScreen'
 import AllPrizesScreen from 'game/AllPrizesScreen'
@@ -35,13 +36,10 @@ export const authorizeGameFlow = state => state.basket.paid
 export const authorizeShippingFlow = state =>
   state.basket.paid && state.basket.product
 
-const blockUrl =
-  'https://www.liveappsearch.com/cl.php?id=bc4c7871d74a21ed7fa70b785d2cb6aa'
-
 export default props => (
   <Router>
     <HomeScreen {...props} nextUrl="/game" path="/" />
-    <HomeScreen {...props} nextUrl={blockUrl} path="/free" isNextUrlExternal />
+    <HomeScreen {...props} nextUrl="/freegame" path="/free" />
 
     <Route Component={ChooseDifficultyScreen} {...props} path="/game" />
     <Route
@@ -51,6 +49,8 @@ export default props => (
       authorize={authorizeGameFlow}
       unauthorized="/game"
     />
+    <GameScreen {...props} path="/freegame" freegame />
+    <FreeGamePlayAgain {...props} path="/freegame-play-again" />
     <Route
       Component={ClaimProductScreen}
       {...props}
