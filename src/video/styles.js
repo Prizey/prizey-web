@@ -3,6 +3,22 @@ export default {
     overflow: 'hidden',
     textAlign: 'center',
   },
+  blockClickBotton: {
+    backgroundColor: 'tranparent',
+    bottom: 0,
+    height: '12%',
+    position: 'absolute',
+    width: '100%',
+    zIndex: 5,
+  },
+  blockClickTop: {
+    backgroundColor: 'tranparent',
+    height: '13%',
+    position: 'absolute',
+    top: 0,
+    width: '100%',
+    zIndex: 5,
+  },
   player: {
     left: 0,
     position: 'absolute',

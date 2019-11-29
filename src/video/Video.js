@@ -27,6 +27,8 @@ const Video = ({ videoEmbedUrl, videoRedirectUrl, videoText }) => {
         <div style={styles.progressBar}>
           <div style={{ ...styles.progress, width: `${played}%` }} />
         </div>
+        <div style={styles.blockClickTop} />
+        <div style={styles.blockClickBotton} />
       </div>
     </div>
   )
