@@ -40,7 +40,7 @@ export const authorizeShippingFlow = state =>
 export default props => (
   <Router>
     <HomeScreen {...props} nextUrl="/game" path="/" />
-    <HomeScreen {...props} nextUrl="/freegame" path="/free" />
+    <HomeScreen {...props} nextUrl="/freegame" path="/free" hideLogin />
 
     <Route Component={ChooseDifficultyScreen} {...props} path="/game" />
     <Route

@@ -55,14 +55,23 @@ describe('when component is mounted', () => {
   })
 
   describe('when user is not logged in', () => {
-    it('redirects correctly', () => {
+    it('renders correctly', () => {
       const tree = renderer.create(<HomeScreen nextUrl="foo" />).toJSON()
       expect(tree).toMatchSnapshot()
     })
 
-    it('redirects correctly with external nextUrl link', () => {
+    it('renders correctly with external nextUrl link', () => {
       const tree = renderer
         .create(<HomeScreen nextUrl="foo" isNextUrlExternal />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when component login must be hidden', () => {
+    it('renders correctly', () => {
+      const tree = renderer
+        .create(<HomeScreen nextUrl="foo" hideLogin />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })

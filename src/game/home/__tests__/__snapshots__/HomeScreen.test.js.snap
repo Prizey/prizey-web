@@ -1,5 +1,220 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`when component is mounted when component login must be hidden renders correctly 1`] = `
+<div
+  disableCache={true}
+  name="products"
+  path="/products/homepage"
+  render={[Function]}
+>
+   - Render: 
+  <div
+    id={1}
+    name="game"
+    path="/game_setting"
+    render={[Function]}
+  >
+    Info -
+     
+    <div
+      className="Component-root-12"
+    >
+      <div
+        className="Component-header-10"
+      >
+        <div
+          className="Component-root-14"
+        >
+          <img
+            alt="diamond"
+            className="Component-icon-13"
+            src="/icons/diamond.png"
+          />
+          <p
+            className="MuiTypography-root-15 MuiTypography-body1-24"
+          >
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        className="Component-container-7"
+      >
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <img
+            alt="Prizey"
+            className="Component-logoImage-11"
+            src="/logo.png"
+          />
+        </a>
+        <div
+          className="Component-caption-5"
+        />
+        <div
+          className="Component-children-6"
+        >
+          <a
+            className="Component-root-3"
+            href="/foo"
+            onClick={[Function]}
+          >
+            <div
+              className="Component-root-71"
+            >
+              <div
+                aria-label="rouletteItem-0"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="trump"
+                  className="Component-img-70"
+                  pose="enter"
+                  speed={NaN}
+                  src="/mocks/trump-mask.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-1"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="sweatshirt"
+                  className="Component-img-70"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/sweatshirt.png"
+                />
+              </div>
+              <div
+                aria-label="rouletteItem-2"
+                onMouseDown={[Function]}
+              >
+                <img
+                  alt="shoe"
+                  className="Component-img-70"
+                  pose="leave"
+                  speed={NaN}
+                  src="/mocks/shoe.png"
+                />
+              </div>
+            </div>
+            <h5
+              className="MuiTypography-root-15 MuiTypography-h5-31 MuiTypography-alignCenter-38 Component-typography-4"
+            >
+              Tap the screen, 
+              <br />
+              win what you tap.
+            </h5>
+            <div
+              disableCache={true}
+              id="homepage_cta"
+              name="adminText"
+              parseResponse={[Function]}
+              path="/admin_texts?tags[]=homepage_cta"
+              render={[Function]}
+            >
+              Info -
+               
+              <button
+                className="MuiButtonBase-root-58 MuiButton-root-72 MuiButton-contained-83 MuiButton-containedPrimary-84 MuiButton-raised-86 MuiButton-raisedPrimary-87 MuiButton-fullWidth-97 Component-button-1"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-73"
+                >
+                  <strong />
+                </span>
+                <span
+                  className="MuiTouchRipple-root-98"
+                />
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          className="Component-footer-8"
+        >
+          <a
+            className="Component-footerLink-9"
+            href="/terms_of_service"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
+            >
+              TERMS
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-9"
+            href="/privacy-policy"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
+            >
+              PRIVACY
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-9"
+            href="/faq"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
+            >
+              FAIRNESS / FAQ
+            </span>
+          </a>
+          <a
+            className="Component-footerLink-9"
+            href="/all-prizes"
+            onClick={[Function]}
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <span
+              className="MuiTypography-root-15 MuiTypography-caption-25 MuiTypography-colorTextSecondary-48 MuiTypography-alignCenter-38"
+            >
+              ALL PRIZES
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`when component is mounted when user is logged in renders correctly 1`] = `
 <div
   currentUser={true}
@@ -525,7 +740,7 @@ exports[`when component is mounted when user is logged in renders correctly with
 </div>
 `;
 
-exports[`when component is mounted when user is not logged in redirects correctly 1`] = `
+exports[`when component is mounted when user is not logged in renders correctly 1`] = `
 <div
   disableCache={true}
   name="products"
@@ -755,7 +970,7 @@ exports[`when component is mounted when user is not logged in redirects correctl
 </div>
 `;
 
-exports[`when component is mounted when user is not logged in redirects correctly with external nextUrl link 1`] = `
+exports[`when component is mounted when user is not logged in renders correctly with external nextUrl link 1`] = `
 <div
   disableCache={true}
   name="products"
