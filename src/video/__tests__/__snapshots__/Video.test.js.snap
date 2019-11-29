@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "overflow": "hidden",
+      "textAlign": "center",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "height": "100vh",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      height="100%"
+      onEnded={[Function]}
+      onProgress={[Function]}
+      playing={true}
+      style={
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "zIndex": 1,
+        }
+      }
+      url="Foo videoEmbedUrl"
+      width="100%"
+    >
+      react-player - 
+    </div>
+    <div
+      style={
+        Object {
+          "color": "white",
+          "position": "absolute",
+          "textAlign": "center",
+          "top": "13%",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
+    >
+      Foo videoText
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.1)",
+          "bottom": "12%",
+          "height": "5px",
+          "left": "2.5%",
+          "position": "absolute",
+          "width": "95%",
+          "zIndex": 2,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgb(193, 233, 18)",
+            "height": "100%",
+            "transitionDuration": "3s",
+            "transitionProperty": "width",
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "tranparent",
+          "height": "13%",
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+          "zIndex": 5,
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "backgroundColor": "tranparent",
+          "bottom": 0,
+          "height": "12%",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 5,
+        }
+      }
+    />
+  </div>
+</div>
+`;

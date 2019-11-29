@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  render={[Function]}
+  tags={
+    Array [
+      "video_embed_url",
+      "video_redirect_url",
+      "video_text",
+    ]
+  }
+>
+  AdminText -
+   
+  <div
+    videoEmbedUrl="Foo videoEmbedUrl"
+    videoRedirectUrl="Foo videoRedirectUrl"
+    videoText="Foo videoText"
+  >
+    Video - 
+  </div>
+</div>
+`;
