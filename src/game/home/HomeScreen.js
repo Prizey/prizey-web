@@ -67,6 +67,7 @@ const ScreenWithRoullette = withStyles(styles)(
     location,
     nextUrl,
     isNextUrlExternal,
+    hideLogin,
   }) => (
     <Layout
       leftIcon={<UserBalance />}
@@ -74,9 +75,11 @@ const ScreenWithRoullette = withStyles(styles)(
         currentUser ? (
           <ProfileLink />
         ) : (
-          <Link to={'/sign-in?next=/game'} style={{ textDecoration: 'none' }}>
-            <Typography className={classes.login}>Login</Typography>
-          </Link>
+          !hideLogin && (
+            <Link to={'/sign-in?next=/game'} style={{ textDecoration: 'none' }}>
+              <Typography className={classes.login}>Login</Typography>
+            </Link>
+          )
         )
       }
       location={location}
@@ -123,6 +126,7 @@ const ScreenWithSpeed = (
   location,
   nextUrl,
   isNextUrlExternal,
+  hideLogin,
 ) => list => (
   <SpeedComponent
     render={settings => {
@@ -139,6 +143,7 @@ const ScreenWithSpeed = (
           location={location}
           nextUrl={nextUrl}
           isNextUrlExternal={isNextUrlExternal}
+          hideLogin={hideLogin}
         />
       )
     }}
@@ -152,6 +157,7 @@ export default ({
   difficulty = 'home',
   nextUrl,
   isNextUrlExternal,
+  hideLogin,
 }) => (
   <List
     disableCache
@@ -166,6 +172,7 @@ export default ({
       location,
       nextUrl,
       isNextUrlExternal,
+      hideLogin,
     )}
   />
 )

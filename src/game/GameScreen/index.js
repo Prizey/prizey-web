@@ -9,6 +9,7 @@ export default ({
   location,
   navigate,
   difficulty = 'easy',
+  hideLogin,
 }) => {
   if (freegame) {
     return (
@@ -34,6 +35,7 @@ export default ({
                 currentUser,
                 location,
                 freegame,
+                hideLogin,
               )}
             />
           )

@@ -26,6 +26,7 @@ import ConfirmOrder from 'shipping/ConfirmOrder'
 import UserProfile from 'profile/UserProfile'
 import AdVideoScreen from 'advideo/AdVideoScreen'
 import RewardScreen from 'advideo/RewardScreen'
+import Video from 'video'
 
 import PaymentInfo from 'payment/PaymentInfo'
 import FairnessScreen from 'fairness/FairnessScreen'
@@ -39,7 +40,7 @@ export const authorizeShippingFlow = state =>
 export default props => (
   <Router>
     <HomeScreen {...props} nextUrl="/game" path="/" />
-    <HomeScreen {...props} nextUrl="/freegame" path="/free" />
+    <HomeScreen {...props} nextUrl="/freegame" path="/free" hideLogin />
 
     <Route Component={ChooseDifficultyScreen} {...props} path="/game" />
     <Route
@@ -49,8 +50,11 @@ export default props => (
       authorize={authorizeGameFlow}
       unauthorized="/game"
     />
-    <GameScreen {...props} path="/freegame" freegame />
+    <GameScreen {...props} path="/freegame" freegame hideLogin />
     <FreeGamePlayAgain {...props} path="/freegame-play-again" />
+    <Video {...props} path="/video" />
+    <Video {...props} path="/video2" />
+    <Video {...props} path="/video3" />
     <Route
       Component={ClaimProductScreen}
       {...props}
