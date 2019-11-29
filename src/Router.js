@@ -50,7 +50,7 @@ export default props => (
       authorize={authorizeGameFlow}
       unauthorized="/game"
     />
-    <GameScreen {...props} path="/freegame" freegame />
+    <GameScreen {...props} path="/freegame" freegame hideLogin />
     <FreeGamePlayAgain {...props} path="/freegame-play-again" />
     <Video {...props} path="/video" />
     <Video {...props} path="/video2" />

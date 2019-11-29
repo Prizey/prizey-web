@@ -22,6 +22,7 @@ export default connect(
     currentUser,
     location,
     freegame,
+    hideLogin,
     ...props
   }) => (
     <Layout
@@ -29,7 +30,7 @@ export default connect(
       caption={<Caption difficulty={difficulty} />}
       location={location}
       currentUser={currentUser}
-      rightIcon={<ProfileLink confirmLeave />}
+      rightIcon={!hideLogin && <ProfileLink confirmLeave />}
       confirmLeave
     >
       <Roulette
