@@ -26,6 +26,7 @@ import ConfirmOrder from 'shipping/ConfirmOrder'
 import UserProfile from 'profile/UserProfile'
 import AdVideoScreen from 'advideo/AdVideoScreen'
 import RewardScreen from 'advideo/RewardScreen'
+import Video from 'video'
 
 import PaymentInfo from 'payment/PaymentInfo'
 import FairnessScreen from 'fairness/FairnessScreen'
@@ -51,6 +52,9 @@ export default props => (
     />
     <GameScreen {...props} path="/freegame" freegame />
     <FreeGamePlayAgain {...props} path="/freegame-play-again" />
+    <Video {...props} path="/video" />
+    <Video {...props} path="/video2" />
+    <Video {...props} path="/video3" />
     <Route
       Component={ClaimProductScreen}
       {...props}
