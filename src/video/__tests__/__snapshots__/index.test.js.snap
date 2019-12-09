@@ -22,3 +22,29 @@ exports[`renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`when the page is created by adminTexts renders correctly 1`] = `
+<div
+  render={[Function]}
+  tags={
+    Array [
+      "video_embed_url",
+      "video_redirect_url",
+      "video_text",
+      "video_embed_url_foobar",
+      "video_redirect_url_foobar",
+      "video_text_foobar",
+    ]
+  }
+>
+  AdminText -
+   
+  <div
+    videoEmbedUrl="Foo videoEmbedUrl"
+    videoRedirectUrl="Foo videoRedirectUrl"
+    videoText="Foo videoText"
+  >
+    Video - 
+  </div>
+</div>
+`;
