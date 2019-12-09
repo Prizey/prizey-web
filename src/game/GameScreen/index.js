@@ -10,14 +10,17 @@ export default ({
   navigate,
   difficulty = 'easy',
   hideLogin,
+  pageId,
 }) => {
+  const path = pageId ? `/freegame_ips/${pageId}` : 'freegame_ips'
+
   if (freegame) {
     return (
       <Info
         id={1}
         disableCache
         name="freegameIps"
-        path="/freegame_ips"
+        path={path}
         method="POST"
         render={info => {
           if (info && info.ipBlocked) {
