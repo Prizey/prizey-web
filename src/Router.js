@@ -53,6 +53,7 @@ export default props => (
     <GameScreen {...props} path="/freegame" freegame hideLogin />
     <GameScreen {...props} path="/freegame/:pageId" freegame hideLogin />
     <FreeGamePlayAgain {...props} path="/freegame-play-again" />
+    <FreeGamePlayAgain {...props} path="/freegame-play-again/:pageId" />
     <Video {...props} path="/video" />
     <Video {...props} path="/video/:pageId" />
     <Route
