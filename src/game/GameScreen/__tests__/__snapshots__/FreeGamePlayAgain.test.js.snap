@@ -1,156 +1,276 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`When there is a product renders correctly 1`] = `
+exports[`When there is a pageId renders correctly 1`] = `
 <div
-  caption={
-    <Unknown
-      difficulty="easy"
-    />
+  render={[Function]}
+  tags={
+    Array [
+      "free_game_main_text",
+      "free_game_button_text",
+      "free_game_button_url",
+      "free_game_main_text_foo",
+      "free_game_button_text_foo",
+      "free_game_button_url_foo",
+    ]
   }
-  confirmLeave={true}
-  currentUser={
-    Object {
-      "id": 1,
-      "name": "foo",
-    }
-  }
-  leftIcon={<Unknown />}
-  location="foo location"
 >
-  Layout - 
-  <h5
-    className="MuiTypography-root-1 MuiTypography-h5-17 MuiTypography-alignCenter-24"
-  >
-    foo title
-  </h5>
+  AdminText -
+   
   <div
-    product={
+    caption={
+      <Unknown
+        difficulty="easy"
+      />
+    }
+    confirmLeave={true}
+    currentUser={
       Object {
-        "image": "https://foo.image",
-        "title": "foo title",
+        "id": 1,
+        "name": "foo",
       }
     }
+    leftIcon={<Unknown />}
+    location="foo location"
   >
-    ProductImage - 
-  </div>
-  <a
-    href="https://www.verifyspot.net/cl.php?id=c6ab41e68cc1dd56233aa14ec2ed9859"
-    rel="noopener noreferrer"
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-    target="_blank"
-  >
-    <button
-      className="MuiButtonBase-root-63 MuiButton-root-37 MuiButton-contained-48 MuiButton-raised-51 MuiButton-fullWidth-62"
-      disabled={false}
-      onBlur={[Function]}
-      onContextMenu={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      style={
+    Layout - 
+    <h5
+      className="MuiTypography-root-1 MuiTypography-h5-17 MuiTypography-alignCenter-24"
+    >
+      foo title
+    </h5>
+    <div
+      product={
         Object {
-          "backgroundColor": "#76fc03",
+          "image": "https://foo.image",
+          "title": "foo title",
         }
       }
-      tabIndex="0"
-      type="button"
     >
-      <span
-        className="MuiButton-label-38"
+      ProductImage - 
+    </div>
+    <a
+      href="Foo free_game_button_url"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      target="_blank"
+    >
+      <button
+        className="MuiButtonBase-root-63 MuiButton-root-37 MuiButton-contained-48 MuiButton-raised-51 MuiButton-fullWidth-62"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#76fc03",
+          }
+        }
+        tabIndex="0"
+        type="button"
       >
-        Play Again
-      </span>
-      <span
-        className="MuiTouchRipple-root-66"
+        <span
+          className="MuiButton-label-38"
+        >
+          Foo free_game_button_text
+        </span>
+        <span
+          className="MuiTouchRipple-root-66"
+        />
+      </button>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`When there is a product renders correctly 1`] = `
+<div
+  render={[Function]}
+  tags={
+    Array [
+      "free_game_main_text",
+      "free_game_button_text",
+      "free_game_button_url",
+    ]
+  }
+>
+  AdminText -
+   
+  <div
+    caption={
+      <Unknown
+        difficulty="easy"
       />
-    </button>
-  </a>
+    }
+    confirmLeave={true}
+    currentUser={
+      Object {
+        "id": 1,
+        "name": "foo",
+      }
+    }
+    leftIcon={<Unknown />}
+    location="foo location"
+  >
+    Layout - 
+    <h5
+      className="MuiTypography-root-1 MuiTypography-h5-17 MuiTypography-alignCenter-24"
+    >
+      foo title
+    </h5>
+    <div
+      product={
+        Object {
+          "image": "https://foo.image",
+          "title": "foo title",
+        }
+      }
+    >
+      ProductImage - 
+    </div>
+    <a
+      href="Foo free_game_button_url"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      target="_blank"
+    >
+      <button
+        className="MuiButtonBase-root-63 MuiButton-root-37 MuiButton-contained-48 MuiButton-raised-51 MuiButton-fullWidth-62"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#76fc03",
+          }
+        }
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-38"
+        >
+          Foo free_game_button_text
+        </span>
+        <span
+          className="MuiTouchRipple-root-66"
+        />
+      </button>
+    </a>
+  </div>
 </div>
 `;
 
 exports[`When there is no product renders correctly 1`] = `
 <div
-  caption={
-    <Unknown
-      difficulty="easy"
-    />
+  render={[Function]}
+  tags={
+    Array [
+      "free_game_main_text",
+      "free_game_button_text",
+      "free_game_button_url",
+    ]
   }
-  confirmLeave={true}
-  currentUser={
-    Object {
-      "id": 1,
-      "name": "foo",
-    }
-  }
-  leftIcon={<Unknown />}
-  location="foo location"
 >
-  Layout - 
-  <h5
-    className="MuiTypography-root-1 MuiTypography-h5-17 MuiTypography-alignCenter-24"
-  >
-    Looks like you've already played this game, Click the "Play Again" below to Download Another App and play a new game
-  </h5>
+  AdminText -
+   
   <div
-    product={
+    caption={
+      <Unknown
+        difficulty="easy"
+      />
+    }
+    confirmLeave={true}
+    currentUser={
       Object {
-        "image": "cardi_placeholder.png",
+        "id": 1,
+        "name": "foo",
       }
     }
+    leftIcon={<Unknown />}
+    location="foo location"
   >
-    ProductImage - 
-  </div>
-  <a
-    href="https://www.verifyspot.net/cl.php?id=c6ab41e68cc1dd56233aa14ec2ed9859"
-    rel="noopener noreferrer"
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-    target="_blank"
-  >
-    <button
-      className="MuiButtonBase-root-63 MuiButton-root-37 MuiButton-contained-48 MuiButton-raised-51 MuiButton-fullWidth-62"
-      disabled={false}
-      onBlur={[Function]}
-      onContextMenu={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      style={
+    Layout - 
+    <h5
+      className="MuiTypography-root-1 MuiTypography-h5-17 MuiTypography-alignCenter-24"
+    >
+      Foo free_game_main_text
+    </h5>
+    <div
+      product={
         Object {
-          "backgroundColor": "#76fc03",
+          "image": "cardi_placeholder.png",
         }
       }
-      tabIndex="0"
-      type="button"
     >
-      <span
-        className="MuiButton-label-38"
+      ProductImage - 
+    </div>
+    <a
+      href="Foo free_game_button_url"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      target="_blank"
+    >
+      <button
+        className="MuiButtonBase-root-63 MuiButton-root-37 MuiButton-contained-48 MuiButton-raised-51 MuiButton-fullWidth-62"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#76fc03",
+          }
+        }
+        tabIndex="0"
+        type="button"
       >
-        Play Again
-      </span>
-      <span
-        className="MuiTouchRipple-root-66"
-      />
-    </button>
-  </a>
+        <span
+          className="MuiButton-label-38"
+        >
+          Foo free_game_button_text
+        </span>
+        <span
+          className="MuiTouchRipple-root-66"
+        />
+      </button>
+    </a>
+  </div>
 </div>
 `;
