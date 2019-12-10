@@ -8,6 +8,7 @@ export default (
   currentUser,
   location,
   freegame,
+  freegameNextPath,
   hideLogin,
 ) => list => (
   <SpeedComponent
@@ -24,6 +25,7 @@ export default (
           navigate={navigate}
           speed={speed}
           freegame={freegame}
+          freegameNextPath={freegameNextPath}
           hideLogin={hideLogin}
         />
       )

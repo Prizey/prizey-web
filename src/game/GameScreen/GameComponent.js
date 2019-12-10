@@ -22,6 +22,7 @@ export default connect(
     currentUser,
     location,
     freegame,
+    freegameNextPath,
     hideLogin,
     ...props
   }) => (
@@ -41,7 +42,7 @@ export default connect(
         onSelectItem={item => {
           props.chooseProduct(item)
           if (freegame) {
-            props.navigate(`/freegame-play-again`)
+            props.navigate(freegameNextPath)
           } else {
             props.navigate(`/game/${difficulty}/claim`)
           }
