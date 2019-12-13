@@ -109,45 +109,6 @@ exports[`renders correctly 1`] = `
           <div
             className="Component-buttonGroup-1"
           >
-            <a
-              href="https://www.liveappsearch.com/cl.php?id=bc4c7871d74a21ed7fa70b785d2cb6aa"
-              style={
-                Object {
-                  "textDecoration": "none",
-                }
-              }
-            >
-              <button
-                className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-freeDiamonds-2"
-                disabled={false}
-                onBlur={[Function]}
-                onContextMenu={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex="0"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label-69"
-                >
-                  <span
-                    className="Component-label-4"
-                  >
-                    EASY
-                  </span>
-                </span>
-                <span
-                  className="MuiTouchRipple-root-102"
-                />
-              </button>
-            </a>
             <div
               afterCreate={[Function]}
               name="tickets"
@@ -158,7 +119,7 @@ exports[`renders correctly 1`] = `
               <div>
                 render - 
                 <button
-                  className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-root_medium-101"
+                  className="MuiButtonBase-root-20 MuiButton-root-76 MuiButton-contained-87 MuiButton-containedPrimary-88 MuiButton-raised-90 MuiButton-raisedPrimary-91 MuiButton-fullWidth-101 Component-root_easy-73"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -176,20 +137,20 @@ exports[`renders correctly 1`] = `
                   type="button"
                 >
                   <span
-                    className="MuiButton-label-69"
+                    className="MuiButton-label-77"
                   >
                     <span
-                      className="Component-label-95"
+                      className="Component-label-69"
                     >
-                      MEDIUM
+                      EASY
                     </span>
                     <img
                       alt="diamond"
-                      className="Component-icon-94"
+                      className="Component-icon-68"
                       src="/icons/diamond.png"
                     />
                     <span
-                      className="Component-quantity-98"
+                      className="Component-quantity-72"
                     >
                       10
                     </span>
@@ -210,7 +171,7 @@ exports[`renders correctly 1`] = `
               <div>
                 render - 
                 <button
-                  className="MuiButtonBase-root-20 MuiButton-root-68 MuiButton-contained-79 MuiButton-containedPrimary-80 MuiButton-raised-82 MuiButton-raisedPrimary-83 MuiButton-fullWidth-93 Component-root_hard-100"
+                  className="MuiButtonBase-root-20 MuiButton-root-76 MuiButton-contained-87 MuiButton-containedPrimary-88 MuiButton-raised-90 MuiButton-raisedPrimary-91 MuiButton-fullWidth-101 Component-root_medium-75"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -228,22 +189,74 @@ exports[`renders correctly 1`] = `
                   type="button"
                 >
                   <span
-                    className="MuiButton-label-69"
+                    className="MuiButton-label-77"
                   >
                     <span
-                      className="Component-label-95"
+                      className="Component-label-69"
+                    >
+                      MEDIUM
+                    </span>
+                    <img
+                      alt="diamond"
+                      className="Component-icon-68"
+                      src="/icons/diamond.png"
+                    />
+                    <span
+                      className="Component-quantity-72"
+                    >
+                      20
+                    </span>
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root-102"
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              afterCreate={[Function]}
+              name="tickets"
+              path="/ticket_transactions"
+              render={[Function]}
+            >
+              New - 
+              <div>
+                render - 
+                <button
+                  className="MuiButtonBase-root-20 MuiButton-root-76 MuiButton-contained-87 MuiButton-containedPrimary-88 MuiButton-raised-90 MuiButton-raisedPrimary-91 MuiButton-fullWidth-101 Component-root_hard-74"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label-77"
+                  >
+                    <span
+                      className="Component-label-69"
                     >
                       HARD
                     </span>
                     <img
                       alt="diamond"
-                      className="Component-icon-94"
+                      className="Component-icon-68"
                       src="/icons/diamond.png"
                     />
                     <span
-                      className="Component-quantity-98"
+                      className="Component-quantity-72"
                     >
-                      20
+                      30
                     </span>
                   </span>
                   <span
