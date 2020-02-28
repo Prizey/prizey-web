@@ -13,7 +13,10 @@ export default (
 ) => list => (
   <SpeedComponent
     render={settings => {
-      const speed = settings[`${difficulty}CarouselSpeed`]
+      const speed =
+        difficulty === 'trial'
+          ? settings.easyCarouselSpeed
+          : settings[`${difficulty}CarouselSpeed`]
 
       return (
         <GameComponent
