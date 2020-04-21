@@ -21,7 +21,8 @@ export const FormBottom = withStyles(styles)(({ classes, ...props }) => (
   <React.Fragment>
     <SubmitButton {...props} label="REGISTER" />
     <Typography align="center" className={classes.message}>
-      By proceeding, you agree you&apos;re 18+.
+      By proceeding, you agree you&apos;re 18+ and agree to the terms of
+      service.
     </Typography>
 
     <div className={classes.links}>
